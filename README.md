@@ -13,7 +13,9 @@ It represents a single animal shelter where users can view animals and potential
 
 ## Features
 Currently, the site is under development, but it includes:
-
+- Language switching (Hungarian / English) via a button
+- Dynamic text translation using JSON-based i18n
+- Meta description and keywords adapted to the selected language
 
 ## Folder Structure
  * [public](./public)
@@ -23,8 +25,13 @@ Currently, the site is under development, but it includes:
         * [img](./public/assets/img)
  * [src](./src)
    * [controller](./src/controller)
+      * [events.js](./src/controller/events.js)
    * [model](./src/model)
    * [view](./src/view)
+      * [bodyLoader](./src/view/bodyLoader.js)
+   * [i18n](./src/i18n)
+     * [hu.json](./src/i18n/hu.json)
+     * [en.json](./src/i18n/en.json)
    * [main.js](./src/main.js)
  * [index.hu.html](./index.hu.html)
  * [index.en.html](./index.en.html)
@@ -40,7 +47,9 @@ git clone https://github.com/szludora/bringmehomeBringMeHome.git
 
 ## Technologies
 - HTML5
+- CSS3 + Bootstrap 5
 - Vanilla JavaScript (ES6 modules)
+- JSON-based internationalization (i18n)
 
 ---
 
