@@ -5,7 +5,7 @@
 It represents a single animal shelter where users can view animals and potentially adopt them.
 
 
-## Contributors
+## Collaborators
 - Ladóczki-Szabó Ágnes Lilla
 - Nándor Segyevy
 - Szlucska Dóra
