@@ -3,5 +3,7 @@
   "hu": "Magyar",
   "toggleLanguage": "English",
   "test": "Kattints a gombra a nyelv angolra váltásához",
-  "underConstruction": "Fejlesztés alatt..."
+  "underConstruction": "Fejlesztés alatt...",
+  "openForm": "Örökbe fogadás indítása.",
+  "closeForm": "Örökbe fogadás megszakítása."
 }

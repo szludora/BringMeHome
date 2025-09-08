@@ -3,5 +3,7 @@
   "hu": "Hungarian",
   "toggleLanguage": "Magyar",
   "test": "Click the button to change language to Hungarian",
-  "underConstruction": "Under construction..."
+  "underConstruction": "Under construction...",
+  "openForm": "Start adoption.",
+  "closeForm": "Cancel adoption."
 }
