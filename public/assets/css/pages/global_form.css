@@ -22,7 +22,7 @@
 }
 
 
-#sample_form_container{
+.sample_form_container{
     position: fixed;
     top: var(--form_container_indentation);
     left: var(--form_container_indentation);
@@ -34,14 +34,19 @@
     pointer-events: none;
 }
 
-#sample_form{
+.sample_form{
     background-color: var(--global_form_bg_color);
-    display: none;
     width: var(--global_form_dimension);
     height: var(--global_form_dimension);
     margin: var(--global_form_margin_left_right) var(--global_form_margin_top_bottom);
     border-radius: 0.75rem;
     pointer-events: none;
+    display: none;
+}
+
+.sample_form_active{
+    pointer-events: auto;
+    display: block;
 }
 
 .floating_action_btn {

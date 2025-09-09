@@ -23,15 +23,14 @@ export async function loadGlobalForm(formID) {
 
 export async function changeFormVisibility() {
     let myForm = document.getElementById("sample_form");
-    let isOpen = myForm.style.display === "block";
-    myForm.style.display = isOpen ? "none" : "block";
-    myForm.style.pointerEvents  = isOpen ? "none" : "auto";
+    myForm.classList.toggle("sample_form_active");
     myForm.reset();
 
+    let isOpen = myForm.classList.contains("sample_form_active");
     let fab = document.getElementById("visibility_btn");
-    fab.classList.toggle('is-open', !isOpen);
-    fab.setAttribute('aria-expanded', String(!isOpen));
-    const label = !isOpen ? getValueForKey("closeForm") : getValueForKey("openForm");
+    fab.classList.toggle('is-open', isOpen);
+    fab.setAttribute('aria-expanded', String(isOpen));
+    const label = isOpen ? getValueForKey("closeForm") : getValueForKey("openForm");
     fab.setAttribute('aria-label', label);
     fab.title = label;
 }
