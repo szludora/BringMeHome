@@ -25,6 +25,7 @@ export async function changeFormVisibility() {
     let myForm = document.getElementById("sample_form");
     let isOpen = myForm.style.display === "block";
     myForm.style.display = isOpen ? "none" : "block";
+    myForm.style.pointerEvents  = isOpen ? "none" : "auto";
     myForm.reset();
 
     let fab = document.getElementById("visibility_btn");
