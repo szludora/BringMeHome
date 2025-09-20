@@ -3,5 +3,12 @@
   "hu": "Hungarian",
   "toggleLanguage": "Magyar",
   "test": "Click the button to change language to Hungarian",
-  "underConstruction": "Under construction..."
+  "underConstruction": "Under construction...",
+  "testLanguageChanges": "Now it's English",
+  "nav-about": "About",
+  "nav-adopt": "Adopt",
+  "nav-adopters": "Adopters",
+  "nav-team": "Team",
+  "nav-givingForAdoption": "Give it to adoption",
+  "nav-qa": "QA"
 }

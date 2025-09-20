@@ -3,5 +3,12 @@
   "hu": "Magyar",
   "toggleLanguage": "English",
   "test": "Kattints a gombra a nyelv angolra váltásához",
-  "underConstruction": "Fejlesztés alatt..."
+  "underConstruction": "Fejlesztés alatt...",
+  "testLanguageChanges": "Most magyar",
+  "nav-about": "Rólunk",
+  "nav-adopt": "Örökbefogadás",
+  "nav-adopters": "Örökbefogadók",
+  "nav-team": "Csapat",
+  "nav-givingForAdoption": "Gazdikereső",
+  "nav-qa": "GYIK"
 }
