@@ -18,11 +18,9 @@ Currently, the site is under development, but it includes:
 - Meta description and keywords adapted to the selected language
 
 ## Folder Structure
- * [public](./public)
-    * [assets](./public/assets)
-        * [css](./public/assets/css)
-        * [fonts](./public/assets/fonts)
-        * [img](./public/assets/img)
+* [assets](./assets)
+   * [css](./assets/css)
+   * [img](./assets/img)
  * [src](./src)
    * [controller](./src/controller)
       * [events.js](./src/controller/events.js)
