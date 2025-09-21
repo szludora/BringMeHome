@@ -4,15 +4,15 @@ import { load, setPages } from "./view/load.js";
 
 const pages = {
   navbar: "/src/view/landing/navbar.html",
-  hero: "/src/view/landing/about.html",
+  hero: "/src/view/landing/hero.html",
   about: "/src/view/landing/about.html",
-  adopt: "/src/view/landing/about.html",
-  adopters: "/src/view/landing/about.html",
-  team: "/src/view/landing/about.html",
-  givingForAdoption: "/src/view/landing/about.html",
-  thanks: "/src/view/landing/about.html",
-  qa: "/src/view/landing/about.html",
-  footer: "/src/view/landing/about.html",
+  adopt: "/src/view/landing/adopt.html",
+  adopters: "/src/view/landing/adopters.html",
+  team: "/src/view/landing/team.html",
+  homeSeeker: "/src/view/landing/homeSeeker.html",
+  thanks: "/src/view/landing/thanks.html",
+  faq: "/src/view/landing/faq.html",
+  footer: "/src/view/landing/footer.html",
 };
 setPages(pages);
 
@@ -56,8 +56,19 @@ setPages(pages);
 
     switchEl.addEventListener("change", async () => {
       const newLang = switchEl.checked ? "en" : "hu";
-      localStorage.setItem("lang", newLang);
-      await loadLanguage(newLang);
+      try {
+        await loadLanguage(newLang);
+        localStorage.setItem("lang", newLang);
+      } catch (error) {
+        if (error instanceof ChangeLanguageError) {
+          console.error("Language error:", error.message);
+          alert(
+            "Error while changing the language. The language is set to the default language. Try again later."
+          );
+        } else {
+          console.error("Unknown error:", error);
+        }
+      }
       updateSwitchIcons(newLang);
     });
   });
