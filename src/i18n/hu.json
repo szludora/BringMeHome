@@ -7,8 +7,15 @@
   "testLanguageChanges": "Most magyar",
   "nav-about": "Rólunk",
   "nav-adopt": "Örökbefogadás",
-  "nav-adopters": "Örökbefogadók",
+  "nav-adopters": "Örökbefogadóink",
   "nav-team": "Csapat",
-  "nav-givingForAdoption": "Gazdikereső",
-  "nav-qa": "GYIK"
+  "nav-homeSeeker": "Gazdikereső",
+  "nav-faq": "GYIK",
+  "about": "Rólunk",
+  "adopt": "Fogadj örökbe",
+  "adopters": "Örökbefogadóink",
+  "team": "Csapatunk",
+  "homeSeeker": "Gazdikereső",
+  "thanks": "Köszönet",
+  "faq": "GYIK"
 }

@@ -9,6 +9,13 @@
   "nav-adopt": "Adopt",
   "nav-adopters": "Adopters",
   "nav-team": "Team",
-  "nav-givingForAdoption": "Give it to adoption",
-  "nav-qa": "QA"
+  "nav-homeSeeker": "Home Seeker",
+  "nav-faq": "FAQ",
+  "about": "About Us",
+  "adopt": "Adopt Me",
+  "adopters": "Our Adopters",
+  "team": "Our Team",
+  "homeSeeker": "Home Seeker",
+  "thanks": "Thank You",
+  "faq": "FAQ"
 }
