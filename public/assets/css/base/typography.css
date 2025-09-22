@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif; /* Egy tiszta, olvasható betűtípus */
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, serif; /* Egy másik betűtípus a címekhez */
+    color: var(--secondary-color);
+    line-height: 1.2;
+}

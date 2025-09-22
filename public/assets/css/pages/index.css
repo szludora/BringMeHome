@@ -1,0 +1,25 @@
+/* A Fogadj örökbe szekció elrendezése */
+.adopt-me-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.adopt-me-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+/* A "Tovább a cicákhoz" gomb stílusa */
+.button-wrapper {
+    margin-top: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
