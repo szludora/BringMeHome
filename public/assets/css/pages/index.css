@@ -1,7 +1,24 @@
-/* A Fogadj örökbe szekció elrendezése */
+/* A Fogadj örökbe szekció */
 .adopt-me-section {
     padding: 50px 0;
     text-align: center;
+}
+
+.adopt-me-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.adopt-me-text {
+    flex: 1;
+}
+
+.adopt-me-text p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: var(--text-color);
 }
 
 .adopt-me-section h2 {
@@ -9,7 +26,7 @@
     margin-bottom: 30px;
 }
 
-/* A "Tovább a cicákhoz" gomb stílusa */
+/* "Tovább a cicákhoz" gomb  */
 .button-wrapper {
     margin-top: 30px;
 }
