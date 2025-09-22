@@ -3,5 +3,19 @@
   "hu": "Hungarian",
   "toggleLanguage": "Magyar",
   "test": "Click the button to change language to Hungarian",
-  "underConstruction": "Under construction..."
+  "underConstruction": "Under construction...",
+  "testLanguageChanges": "Now it's English",
+  "nav-about": "About",
+  "nav-adopt": "Adopt",
+  "nav-adopters": "Adopters",
+  "nav-team": "Team",
+  "nav-homeSeeker": "Home Seeker",
+  "nav-faq": "FAQ",
+  "about": "About Us",
+  "adopt": "Adopt Me",
+  "adopters": "Our Adopters",
+  "team": "Our Team",
+  "homeSeeker": "Home Seeker",
+  "thanks": "Thank You",
+  "faq": "FAQ"
 }
