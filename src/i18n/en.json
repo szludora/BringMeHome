@@ -18,7 +18,16 @@
   "homeSeeker": "Home Seeker",
   "thanks": "Thank You",
   "faq": "FAQ",
-
+  "faq_q_1": "#1 Is this a real adoption center?",
+  "faq_q_2": "#2 What is the adoption fee, and what does it cover (vaccinations, microchip, spay/neuter, deworming)?",
+  "faq_q_3": "#3 Are the cats suitable for homes with children or other pets, and how should we do introductions?",
+  "faq_q_4": "#4 Do you offer a trial or foster-to-adopt period, and what’s your return policy if it isn’t a good match?",
+  "faq_q_5": "#5 How should I prepare my home before bringing a cat home?",
+  "faq_a_1": "#1 No. This is a university sample project to showcase webpage related skills.",
+  "faq_a_2": "#2 Attention: Answer is fictional with made up information. Adoption cost is 100$. Paid at the cat rescue center. Covers Vaccinations, microchip, spay/neuter, deworming.",
+  "faq_a_3": "#3 Attention: Answer is fictional with made up information. Stray cats tend not to trust at first. Please pay close attention when they first interact with other pets or children.",
+  "faq_a_4": "#4 Attention: Answer is fictional with made up information. We have a two week return policy. If a cat is not able to fit in even after two weeks, naturally we will search for a new place for them.",
+  "faq_a_5": "#5 Attention: Answer is fictional with made up information. At first prepare small portion of some brand of dry and wet food. The cats will need both and also fresh water. ",
   "hero": {
     "title": "Take Me Home",
     "subtitle": "Every paw needs a hand.",
