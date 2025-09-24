@@ -17,5 +17,15 @@
   "team": "Csapatunk",
   "homeSeeker": "Gazdikereső",
   "thanks": "Köszönet",
-  "faq": "GYIK"
+  "faq": "GYIK",
+  "hero": {
+    "title": "Vigyél haza",
+    "subtitle": "Minden mancshoz kell egy kéz.",
+    "bold-name": "BringMeHome",
+    "description": "-nál minden cica szerető otthonra vár. Amíg nem találják meg, nálunk boldogan dorombolnak.",
+    "founder-name": "Kovács Luca",
+    "founder-role": "Alapító",
+    "button-adopt": "Örökbe fogadok",
+    "link-learn-more": "Tudj meg többet"
+  }
 }

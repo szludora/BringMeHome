@@ -17,5 +17,16 @@
   "team": "Our Team",
   "homeSeeker": "Home Seeker",
   "thanks": "Thank You",
-  "faq": "FAQ"
+  "faq": "FAQ",
+
+  "hero": {
+    "title": "Take Me Home",
+    "subtitle": "Every paw needs a hand.",
+    "bold-name": "BringMeHome",
+    "description": " - every cat is waiting for a loving home. Until they find it, they happily purr with us.",
+    "founder-name": "Luca Kovács",
+    "founder-role": "Founder",
+    "button-adopt": "Adopt Me",
+    "link-learn-more": "Learn More"
+  }
 }
