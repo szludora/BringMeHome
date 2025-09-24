@@ -1,0 +1,70 @@
+
+.card-img-top {
+    height: 80%;
+    object-fit: cover;
+}
+
+.card-body {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.d-flex.overflow-x-auto {
+    width: 100%;
+}
+
+.d-flex.flex-nowrap > div {
+    width: 250px;
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+    overflow-x: hidden; 
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card.is-flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden; 
+}
+
+.flip-card-front {
+    background-color: #fff;
+    color: black;
+}
+
+.flip-card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5DC;
+    color: #000;
+    transform: rotateY(180deg);
+    padding: 1rem;
+    box-sizing: border-box;
+}
