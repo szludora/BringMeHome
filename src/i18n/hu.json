@@ -27,5 +27,15 @@
   "faq_a_2": "#2 Figyelem: A válasz kitalált információkat tartalmaz. Az örökbefogadás díja 40 000 Ft, amit a helyszínen kell megfizetni. Magában foglalja az oltásokat, a mikrochipet, az ivartalanítást és a féregtelenítést is.",
   "faq_a_3": "#3 Figyelem: A válasz kitalált információkat tartalmaz. A befogadott állatok eleinte nehezen bíznak meg másokban. Kérjük fokozottan figyeljen oda az első interakcióra más kedvencekkel vagy gyermekekkel.",
   "faq_a_4": "#4 Figyelem: A válasz kitalált információkat tartalmaz. 2 hetes elállási lehetőséget biztosítunk, ha egy cica még 2 hét után se tud beilleszkedni, természetesen keresünk neki új helyet.",
-  "faq_a_5": "#5 Figyelem: A válasz kitalált információkat tartalmaz. Első alkalommal készítsen elő kis adagokat több száraz és nedves eledelből. A macskéknak szükségük van mindkettőre illetve friss vízre."
+  "faq_a_5": "#5 Figyelem: A válasz kitalált információkat tartalmaz. Első alkalommal készítsen elő kis adagokat több száraz és nedves eledelből. A macskéknak szükségük van mindkettőre illetve friss vízre.",
+  "hero": {
+    "title": "Vigyél haza",
+    "subtitle": "Minden mancshoz kell egy kéz.",
+    "bold-name": "BringMeHome",
+    "description": "-nál minden cica szerető otthonra vár. Amíg nem találják meg, nálunk boldogan dorombolnak.",
+    "founder-name": "Kovács Luca",
+    "founder-role": "Alapító",
+    "button-adopt": "Örökbe fogadok",
+    "link-learn-more": "Tudj meg többet"
+  }
 }

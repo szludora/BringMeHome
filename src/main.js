@@ -3,7 +3,7 @@ import { initEvents } from "./controller/events.js";
 import { load, setPages } from "./view/load.js";
 
 const pages = {
-  navbar: "/src/view/landing/navbar.html",
+  navbar: "/src/view/layout/navbar.html",
   hero: "/src/view/landing/hero.html",
   about: "/src/view/landing/about.html",
   adopt: "/src/view/landing/adopt.html",
@@ -12,7 +12,7 @@ const pages = {
   homeSeeker: "/src/view/landing/homeSeeker.html",
   thanks: "/src/view/landing/thanks.html",
   faq: "/src/view/landing/faq.html",
-  footer: "/src/view/landing/footer.html",
+  footer: "/src/view/layout/footer.html",
 };
 setPages(pages);
 
