@@ -27,5 +27,15 @@
   "faq_a_2": "#2 Attention: Answer is fictional with made up information. Adoption cost is 100$. Paid at the cat rescue center. Covers Vaccinations, microchip, spay/neuter, deworming.",
   "faq_a_3": "#3 Attention: Answer is fictional with made up information. Stray cats tend not to trust at first. Please pay close attention when they first interact with other pets or children.",
   "faq_a_4": "#4 Attention: Answer is fictional with made up information. We have a two week return policy. If a cat is not able to fit in even after two weeks, naturally we will search for a new place for them.",
-  "faq_a_5": "#5 Attention: Answer is fictional with made up information. At first prepare small portion of some brand of dry and wet food. The cats will need both and also fresh water. "
+  "faq_a_5": "#5 Attention: Answer is fictional with made up information. At first prepare small portion of some brand of dry and wet food. The cats will need both and also fresh water. ",
+  "hero": {
+    "title": "Take Me Home",
+    "subtitle": "Every paw needs a hand.",
+    "bold-name": "BringMeHome",
+    "description": " - every cat is waiting for a loving home. Until they find it, they happily purr with us.",
+    "founder-name": "Luca Kovács",
+    "founder-role": "Founder",
+    "button-adopt": "Adopt Me",
+    "link-learn-more": "Learn More"
+  }
 }

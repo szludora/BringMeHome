@@ -1,0 +1,17 @@
+.learnMore {
+  text-decoration: none;
+  color: unset;
+}
+
+.learnMore:hover {
+  color: var(--color-primary-light);
+}
+
+#heroImage {
+  max-height: 80%;
+  display: block;
+}
+
+#heroTitle {
+  line-height: 2.5;
+}

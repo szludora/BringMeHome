@@ -10,11 +10,16 @@ export async function loadLanguage(lang) {
   updateTexts();
 }
 
+function getNestedTranslation(obj, key) {
+  return key.split(".").reduce((res, k) => (res ? res[k] : undefined), obj);
+}
+
 function updateTexts() {
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
-    if (translations[key]) {
-      el.textContent = translations[key] || key; // default value: key -> if there is no translation
+    const translation = getNestedTranslation(translations, key);
+    if (translation !== undefined) {
+      el.textContent = translation;
     } else {
       warn(`There is no translation for the key: ${key}`);
     }
