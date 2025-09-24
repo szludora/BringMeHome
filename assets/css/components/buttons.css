@@ -1,0 +1,20 @@
+.btn-primary {
+  background-color: var(--color-primary-secondary);
+  border: none;
+  box-shadow: 0 2px 4px var(--color-btn-shadow),
+    0 4px 4px var(--color-btn-shadow-inset1) inset,
+    0 -4px 4px var(--color-btn-shadow-inset2) inset;
+  padding: 12px 18px;
+  border-radius: 12px;
+  text-shadow: 0 2px 2px var(--color-btn-text-shadow);
+  justify-content: center;
+}
+
+.btn-primary:hover {
+  background-color: rgba(10, 75, 10, 0.57);
+}
+
+.btn-primary img {
+  width: 1.6em;
+  filter: drop-shadow(0 2px 2px var(--color-btn-img-shadow));
+}
