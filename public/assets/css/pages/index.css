@@ -1,27 +1,27 @@
 /* A Fogadj örökbe szekció */
-.adopt-me-section {
+.adopt-section {
     padding: 50px 0;
     text-align: center;
 }
 
-.adopt-me-content {
+.adopt-content {
     display: flex;
     align-items: center;
     gap: 40px;
     padding: 20px;
 }
 
-.adopt-me-text {
+.adopt-text {
     flex: 1;
 }
 
-.adopt-me-text p {
+.adopt-text p {
     font-size: 1.1em;
     line-height: 1.8;
     color: var(--text-color);
 }
 
-.adopt-me-section h2 {
+.adopt-section h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
 }

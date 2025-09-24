@@ -1,8 +1,8 @@
 /* --Colors */
 :root {
-    --primary-color: #F5F5DC;   /* Bézs háttérszín */
-    --secondary-color: #A0522D; /* Egy barna a szöveghez vagy kiemelésekhez */
-    --accent-color: #D2B48C;    /* Egy világosabb barna a kiemelésekhez */
-    --text-color: #333;         /* Sötétszürke a könnyen olvasható szöveghez */
-    --light-grey: #F8F8F8;      /* Világosszürke a dobozok, kártyák hátteréhez */
+    --primary-color: #F5F5DC;   
+    --secondary-color: #A0522D; 
+    --accent-color: #D2B48C;    
+    --text-color: #333;         
+    --light-grey: #F8F8F8;      
 }
