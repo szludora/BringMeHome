@@ -18,3 +18,22 @@
   width: 1.6em;
   filter: drop-shadow(0 2px 2px var(--color-btn-img-shadow));
 }
+
+.btn-secondary {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px var(--color-btn-shadow),
+    0 4px 4px var(--color-btn-shadow-inset1) inset,
+    0 -4px 4px var(--color-btn-shadow-inset2) inset;
+}
+
+.btn-secondary:hover {
+    background-color: #fff;
+    color: #2E4D2C;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 77, 44, 0.25);
+}
