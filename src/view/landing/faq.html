@@ -89,23 +89,23 @@
         display:flex;
         align-items:center;
         justify-content:center;
-        gap:1rem;                 /* space between text and the lines */
+        gap:1rem;
         margin:3rem auto;
         text-align:center;
         font:700 2rem/1.2 system-ui, -apple-system, Segoe UI, Roboto, Arial;
-        color:#222;               /* change to your accent color if you like */
+        color:#222;
     }
 
     .rule-title::before,
     .rule-title::after{
         content:"";
-        flex:1 1 120px;           /* lines grow to fill; min width ~120px */
+        flex:1 1 120px;
         border-top:2px solid currentColor;
-        opacity:.6;               /* optional subtlety */
+        opacity:.6;
     }
 
     .rule-title > span{
-        white-space:nowrap;       /* keeps the title on one line; remove if wrapping is okay */
+        white-space:nowrap;
     }
 
 
