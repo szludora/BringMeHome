@@ -12,8 +12,96 @@
   "nav-homeSeeker": "Gazdikereső",
   "nav-faq": "GYIK",
   "about": "Rólunk",
-  "adopt": "Fogadj örökbe",
-  "adopters": "Örökbefogadóink",
+  "adopt": { 
+    "title": "Fogadj örökbe",
+    "key-gender": "Neme:",
+    "key-age": "Kora:",
+    "key-breed": "Fajtája:",
+    "key-character": "Jellem:",
+    "key-special_features": "Különleges jegyek:",
+    "cat1": {
+      "name": "Csipesz",
+      "gender": "Lány",
+      "age": "3 év",
+      "breed": "Cirmos házimacska",
+      "character": "Kíváncsi és magabiztos, de a számára idegen helyzetekben tartózkodó. Intelligens és éber.",
+      "special_features": "Élénk zöld szemek és hosszú, elegáns bajusz."
+    },
+    "cat2": {
+      "name": "Karamell",
+      "gender": "Fiú",
+      "age": "2 év",
+      "breed": "Calico",
+      "character": "Barátságos és játékos, szeret a figyelem középpontjában lenni. Gyorsan alkalmazkodik új környezethez.",
+      "special_features": "Jellegzetes, háromszínű bundája (fehér, fekete és vörösesbarna foltokkal), valamint gyönyörű, borostyánszínű szemei."
+    },
+    "cat3": {
+      "name": "Nokedli",
+      "gender": "Fiú",
+      "age": "3 év",
+      "breed": "Fehér-cirmos házimacska",
+      "character": "Nyugodt, barátságos és kiegyensúlyozott. Megbízható és kedves társ.",
+      "special_features": "Különleges, világoszöld szemei és a sötétebb foltokat is rejtő bundája, amely a mancson is fellelhető."
+    },
+    "cat4": {
+      "name": "Tébláb",
+      "gender": "Fiú",
+      "age": "1 év",
+      "breed": "Szürke-cirmos házimacska",
+      "character": "Könnyen barátkozó, imádja a hasvakarást. Szívesen alszik a gazdija mellett.",
+      "special_features": "Rövid lábai és hosszú farka."
+    },
+    "cat5": {
+      "name": "Snow",
+      "gender": "Lány",
+      "age": "4 év",
+      "breed": "Házimacska (ragdoll jellegű)",
+      "character": "Kicsit vadóc, de nagyon ragaszkodó. Imád a gazdájával lenni.",
+      "special_features": "Csodálatos, élénk kék szemei és puha, krémszínű bundája, sötétebb foltokkal a pofáján és a fülein."
+    },
+    "cat6": {
+      "name": "Marci",
+      "gender": "Fiú",
+      "age": "6 év",
+      "breed": "Cirmos házimacska",
+      "character": "Nyugodt és magabiztos, igazi uralkodó típus. Erős és kiegyensúlyozott személyiség, aki élvezi a figyelmet.",
+      "special_features": "Jellegzetes, sötét barna cirmos bundája, izmos testalkata és a borostyánszínű szemei."
+    },
+    "cat7": {
+      "name": "Démon",
+      "gender": "Fiú",
+      "age": "3 év",
+      "breed": "Házimacska",
+      "character": "Imád a gazdájával lenni, nagyon szeret bújni. Nagyon türelmes.",
+      "special_features": "Koromfekete, fényes bundája és a zöld szeme, amely élénken kiemelkedik a sötét szőre alól."
+    },
+    "cat8": {
+      "name": "Tódor",
+      "gender": "Fiú",
+      "age": "5 év",
+      "breed": "Main Coon",
+      "character": "A \"szelíd óriás\" becenév tökéletesen illik rá. Nyugodt, barátságos és rendkívül ragaszkodó.",
+      "special_features": "Hatalmas, bozontos bundája, a fülei végén lévő szőrpamacsok és a fenséges kiállása."
+    },
+    "section-title": "Miért fogadj örökbe?",
+    "para1": "Ezek a cicák különleges történetekkel érkeztek hozzánk: van, aki félénk kezes, van, aki igazi bohóc - de mindannyian készen állnak szerető otthonra.",
+    "para2": "Az örökbe fogadás egy hosszú távú elköteleződés, de cserébe feltétel nélküli szeretetet kapsz. Nézz körül a galériában, és találd meg a neked való társat!",
+    "cta": "Tovább a cicákhoz"
+  },
+  "adopters": {
+    "title": "Örökbefogadóink",
+    "story1": {
+      "title": "Egy nagyszerű kaland kezdete",
+      "text": "A család mindig is egy cicáról álmodott, és amikor meglátták Fluffyt, rögtön tudták, hogy ő a tökéletes választás. A kis macska azonnal belopta magát a szívükbe, és azóta a család minden napja tele van játékkal és nevetéssel. Fluffy igazi otthonra talált, és a család boldogan adta neki a második esélyt."
+    },
+    "story2": {
+      "title": "Egy magányos szív gyógyulása",
+      "text": "Bella, a nyugodt és csendes cica, egyedül élt egy ideig, amíg rá nem talált az új gazdája, egy idősebb hölgy. Kettejük között azonnal kialakult a kötelék. Bella nyugalmat hozott az otthonba, és a gazdija háláját fejezi ki, amiért meleg otthont adhatott neki."
+    },
+    "cta-title": "Készen állsz te is egy ilyen kalandra?",
+    "cta-button1": "Ismerd meg örökbefogadható cicáinkat!",
+    "cta-button2": "További örökbefogadói történetek"
+  },
   "team": "Csapatunk",
   "homeSeeker": "Gazdikereső",
   "thanks": "Köszönet",
@@ -39,3 +127,4 @@
     "link-learn-more": "Tudj meg többet"
   }
 }
+
