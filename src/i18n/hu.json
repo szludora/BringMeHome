@@ -17,17 +17,31 @@
   "team": "Csapatunk",
   "homeSeeker": "Gazdikereső",
   "thanks": "Köszönet",
-  "faq": "GYIK",
-  "faq_q_1": "#1 Ez egy valódi örökbefogadó központ?",
-  "faq_q_2": "#2 Mennyibe kerül az örökbefogadás? Mit tartalmaz ez az összeg (oltások, mikrochip, ivartalanítás, féregtelenítés)?",
-  "faq_q_3": "#3 Ezen állatok alkalmasak gyerek és más kis kedvencekkel együtt élni?",
-  "faq_q_4": "#4 Milyen visszavételi lehetőségek vannak?",
-  "faq_q_5": "#5 Hogyan készüljek fel mielőtt hazaviszek egy macskát?",
-  "faq_a_1": "#1 Nem. Ez egy a weblap készítési képességeinket bemutatni hivatott oldal.",
-  "faq_a_2": "#2 Figyelem: A válasz kitalált információkat tartalmaz. Az örökbefogadás díja 40 000 Ft, amit a helyszínen kell megfizetni. Magában foglalja az oltásokat, a mikrochipet, az ivartalanítást és a féregtelenítést is.",
-  "faq_a_3": "#3 Figyelem: A válasz kitalált információkat tartalmaz. A befogadott állatok eleinte nehezen bíznak meg másokban. Kérjük fokozottan figyeljen oda az első interakcióra más kedvencekkel vagy gyermekekkel.",
-  "faq_a_4": "#4 Figyelem: A válasz kitalált információkat tartalmaz. 2 hetes elállási lehetőséget biztosítunk, ha egy cica még 2 hét után se tud beilleszkedni, természetesen keresünk neki új helyet.",
-  "faq_a_5": "#5 Figyelem: A válasz kitalált információkat tartalmaz. Első alkalommal készítsen elő kis adagokat több száraz és nedves eledelből. A macskéknak szükségük van mindkettőre illetve friss vízre.",
+  "faq": {
+    "title": "Gyakran Ismételt Kérdések",
+    "questions": [
+      {
+        "question": "#1 Ez egy valódi örökbefogadó központ?",
+        "answer": "#1 Nem. Ez egy a weblap készítési képességeinket bemutatni hivatott oldal."
+      },
+      {
+        "question": "#2 Mennyibe kerül az örökbefogadás? Mit tartalmaz ez az összeg (oltások, mikrochip, ivartalanítás, féregtelenítés)?",
+        "answer": "#2 Figyelem: A válasz kitalált információkat tartalmaz. Az örökbefogadás díja 40 000 Ft, amit a helyszínen kell megfizetni. Magában foglalja az oltásokat, a mikrochipet, az ivartalanítást és a féregtelenítést is."
+      },
+      {
+        "question": "#3 Ezen állatok alkalmasak gyerek és más kis kedvencekkel együtt élni?",
+        "answer": "#3 Figyelem: A válasz kitalált információkat tartalmaz. A befogadott állatok eleinte nehezen bíznak meg másokban. Kérjük fokozottan figyeljen oda az első interakcióra más kedvencekkel vagy gyermekekkel."
+      },
+      {
+        "question": "#4 Milyen visszavételi lehetőségek vannak?",
+        "answer": "#4 Figyelem: A válasz kitalált információkat tartalmaz. 2 hetes elállási lehetőséget biztosítunk, ha egy cica még 2 hét után se tud beilleszkedni, természetesen keresünk neki új helyet."
+      },
+      {
+        "question": "#5 Hogyan készüljek fel mielőtt hazaviszek egy macskát?",
+        "answer": "#5 Figyelem: A válasz kitalált információkat tartalmaz. Első alkalommal készítsen elő kis adagokat több száraz és nedves eledelből. A macskéknak szükségük van mindkettőre illetve friss vízre."
+      }
+    ]
+  },
   "hero": {
     "title": "Vigyél haza",
     "subtitle": "Minden mancshoz kell egy kéz.",
