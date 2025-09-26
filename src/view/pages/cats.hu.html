@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+        name="description"
+        content="Örökbefogadható cicák listája"
+    />
+    <meta
+        name="keywords"
+        content="állatmenhely, örökbefogadás, cica, macska, állatmentés, ..."
+    />
+    <link rel="alternate" href="https://example.com/hu/cats" hreflang="hu" />
+    <link rel="alternate" href="https://example.com/en/cats" hreflang="en" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/main.css" /> 
+    <link
+        rel="icon"
+        href="/assets/img/icons/favicon-16.ico"
+        type="image/x-icon"
+    />
+    <title>Örökbefogadható Cicák | Bring Me Home</title>
+
+    <link rel="stylesheet" href="assets/css/pages/cats.css" /> 
+</head>
+<body>
+    
+    <div id="navbar"></div>
+
+   <main>
+    <div class="container pt-5">
+        
+        <h1 class="mb-4" data-i18n="catsPage.title">Örökbefogadható cicák</h1>
+        
+        <p class="lead mb-5" data-i18n="catsPage.intro">Ezen az oldalon bemutatjuk örökbefogadható cicáinkat, megismerheted a történetüket és a személyiségüket.</p>
+
+        <section class="cat-story-section py-5">
+            <div class="row align-items-center">
+                
+                <div class="col-md-6 order-md-1">
+                    <h2 class="cat-name mb-3" data-i18n="adopt.cat1.name">Csipesz</h2>
+                    
+                    <p data-i18n="catsPage.story-csipesz">Csipesz egy igazi felfedező, aki a falu szélén, egy elhagyatott kunyhóban élt. Múltja kissé vad, de az emberi szeretetről való tudás felébresztette benne a ragaszkodást.</p>
+
+                    <ul class="list-unstyled cat-details mt-3">
+                        <li data-i18n-prefix="adopt.key-gender" data-i18n-value="adopt.cat1.gender">Neme: Lány</li>
+                        <li data-i18n-prefix="adopt.key-age" data-i18n-value="adopt.cat1.age">Kora: 3 év</li>
+                        <li data-i18n-prefix="adopt.key-breed" data-i18n-value="adopt.cat1.breed">Fajtája: Cirmos házimacska</li>
+                    </ul>
+                    
+                    <a href="#" class="btn btn-primary mt-3" data-i18n="catsPage.detailsCta">Örökbefogadom</a>
+                </div>
+
+                <div class="col-md-6 order-md-2 text-center mb-4 mb-md-0">
+                    <img src="../../assets/img/cat1.jpg" class="img-fluid rounded shadow" alt="Csipesz - A cica képe">
+                </div>
+            </div>
+        </section>
+        
+        <hr> <section class="cat-story-section py-5">
+            <div class="row align-items-center">
+                
+                <div class="col-md-6 order-md-2">
+                    <h2 class="cat-name mb-3" data-i18n="adopt.cat2.name">Karamell</h2>
+                    <p data-i18n="catsPage.story-karamell">Karamell egy szomorú sorsú, de hihetetlenül életvidám kisfiú, akit egy autós találta az esőben, a főút mellett. Imádja a hasvakarást és mindenkit azonnal a szívébe zár.</p>
+
+                    <ul class="list-unstyled cat-details mt-3">
+                        <li data-i18n-prefix="adopt.key-gender" data-i18n-value="adopt.cat2.gender">Neme: Fiú</li>
+                        <li data-i18n-prefix="adopt.key-age" data-i18n-value="adopt.cat2.age">Kora: 2 év</li>
+                        <li data-i18n-prefix="adopt.key-breed" data-i18n-value="adopt.cat2.breed">Fajtája: Calico</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary mt-3" data-i18n="catsPage.detailsCta">Örökbefogadom</a>
+                </div>
+
+                <div class="col-md-6 order-md-1 text-center mb-4 mb-md-0">
+                    <img src="../../assets/img/cat2.jpg" class="img-fluid rounded shadow" alt="Karamell - A cica képe">
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+
+        <div class="text-center py-5">
+             <h2 data-i18n="catsPage.finalCtaTitle">Készen állsz egy ilyen kalandra?</h2>
+             <a href="#" class="btn btn-lg btn-secondary mt-3" data-i18n="catsPage.detailsCta">Örökbefogadom!</a>
+        </div>
+
+
+    </div>
+</main>
+    
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="src/view/main.js"></script>
+    <script type="module" src="src/view/load.js"></script> 
+</body>
+</html>
