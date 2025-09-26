@@ -12,8 +12,97 @@
   "nav-homeSeeker": "Home Seeker",
   "nav-faq": "FAQ",
   "about": "About Us",
-  "adopt": "Adopt Me",
-  "adopters": "Our Adopters",
+  "adopt": {
+        "title": "Adopt a Cat",
+        "key-gender": "Gender:",
+        "key-age": "Age:",
+        "key-breed": "Breed:",
+        "key-character": "Character:",
+        "key-special_features": "Special features:",
+        "cat1": {
+            "name": "Csipesz",
+            "gender": "Female",
+            "age": "3 years",
+            "breed": "Tabby Domestic Cat",
+            "character": "Curious and confident, but reserved in unfamiliar situations. Intelligent and alert.",
+            "special_features": "Bright green eyes and a long, elegant mustache."
+        },
+        "cat2": {
+            "name": "Karamell",
+            "gender": "Male",
+            "age": "2 years",
+            "breed": "Calico",
+            "character": "Friendly and playful, loves to be the center of attention. Adapts quickly to new environments.",
+            "special_features": "Distinctive, tricolored coat (with white, black, and reddish-brown patches), and beautiful, amber-colored eyes."
+        },
+        "cat3": {
+            "name": "Nokedli",
+            "gender": "Male",
+            "age": "3 years",
+            "breed": "White-tabby Domestic Cat",
+            "character": "Calm, friendly, and well-balanced. A reliable and kind companion.",
+            "special_features": "Unique light green eyes and a coat that also hides darker patches, which are also found on his paws."
+        },
+        "cat4": {
+            "name": "Tébláb",
+            "gender": "Male",
+            "age": "1 year",
+            "breed": "Gray-tabby Domestic Cat",
+            "character": "Easy to befriend, loves belly rubs. Enjoys sleeping next to his owner.",
+            "special_features": "Short legs and a long tail."
+        },
+        "cat5": {
+            "name": "Snow",
+            "gender": "Female",
+            "age": "4 years",
+            "breed": "Domestic Cat (Ragdoll-like)",
+            "character": "A bit of a wild child, but very affectionate. Loves being with her owner.",
+            "special_features": "Wonderful, bright blue eyes and soft, cream-colored fur with darker patches on her face and ears."
+        },
+        "cat6": {
+            "name": "Marci",
+            "gender": "Male",
+            "age": "6 years",
+            "breed": "Tabby Domestic Cat",
+            "character": "Calm and confident, a true ruler type. He has a strong and balanced personality and enjoys attention.",
+            "special_features": "A distinctive dark brown tabby coat, muscular build, and amber-colored eyes."
+        },
+        "cat7": {
+            "name": "Démon",
+            "gender": "Male",
+            "age": "3 years",
+            "breed": "Domestic Cat",
+            "character": "Loves being with his owner, loves to cuddle. Very patient.",
+            "special_features": "Jet-black, shiny fur and green eyes that stand out brightly against his dark coat."
+        },
+        "cat8": {
+            "name": "Tódor",
+            "gender": "Male",
+            "age": "5 years",
+            "breed": "Main Coon",
+            "character": "The nickname 'gentle giant' fits him perfectly. Calm, friendly, and extremely affectionate.",
+            "special_features": "Huge, bushy fur, tufts of hair at the tips of his ears, and a majestic stance."
+        },
+        "section-title": "Why adopt from us?",
+        "para1": "These cats came to us with special stories: some are shy and gentle, others are true clowns - but they are all ready for a loving home.",
+        "para2": "Adoption is a long-term commitment, but in return, you get unconditional love. Look around the gallery and find a companion for yourself!",
+        "cta": "See Our Cats"
+    },
+
+  "adopters": {
+    "title": "Our Adopters",
+    "story1": {
+        "title": "The beginning of a great adventure",
+        "text": "The family had always dreamed of a cat, and when they saw Fluffy, they instantly knew he was the perfect choice. The little cat immediately stole their hearts, and since then, every day of the family is filled with play and laughter. Fluffy found a real home, and the family was happy to give him a second chance."
+    },
+    "story2": {
+        "title": "The healing of a lonely heart",
+        "text": "Bella, the calm and quiet cat, lived alone for a while until she found her new owner, an elderly lady. A bond was formed between them instantly. Bella brought peace to the home, and her owner expresses her gratitude for being able to give her a warm home."
+    },
+    "cta-title": "Are you ready for an adventure like this?",
+    "cta-button1": "Meet our adoptable cats!",
+    "cta-button2": "More adopter stories"
+}, 
   "team": "Our Team",
   "homeSeeker": "Home Seeker",
   "thanks": "Thank You",
@@ -39,3 +128,4 @@
     "link-learn-more": "Learn More"
   }
 }
+
