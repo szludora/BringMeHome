@@ -1,7 +1,15 @@
 {
+  "bringMeHome": "BringMeHome",
   "en": "Angol",
   "hu": "Magyar",
-  "toggleLanguage": "English",
+  "websiteInProgress": "Miau! Ez az oldal még készülőben van. Amíg elkészül, visszavezetünk a kezdőlapra.",
+  "back": "Vissza",
+  "btn": {
+    "adopt": "Örökbe fogadok",
+    "learn-more": "Tudj meg többet",
+    "support-us": "Támogass minket",
+    "join-us": "Csatlakozz hozzánk"
+  },
   "test": "Kattints a gombra a nyelv angolra váltásához",
   "underConstruction": "Fejlesztés alatt...",
   "testLanguageChanges": "Most magyar",
@@ -11,8 +19,19 @@
   "nav-team": "Csapat",
   "nav-homeSeeker": "Gazdikereső",
   "nav-faq": "GYIK",
-  "about": "Rólunk",
-  "adopt": { 
+  "about": {
+    "title": "Rólunk",
+    "text1": "A BringMeHome csapata azért jött létre, hogy minden cica megtalálja a szerető otthonát. Nap mint nap azon dolgozunk, hogy a menhelyeken élő cicák biztonságban, gondoskodásban és szeretetben nőhessenek fel. Hiszünk abban, hogy minden cica megérdemli a törődést, a játékos pillanatokat és a nyugodt pihenést.",
+    "text2": "A menhelyünk nem csak átmeneti otthon, hanem egy közösség is, ahol a cicák megismerhetik az emberek szeretetét, és a gazdik megtapasztalhatják a cicák ragaszkodását. Olyan programokat szervezünk, amelyek segítik az örökbefogadást, a cicák szocializációját és a felelős gazdiválasztást.",
+    "text3": "Célunk, hogy minden cica, legyen az cica, kutya vagy más kis kedvenc, boldogan élhessen szerető családban. Hiszünk a közösség erejében, és abban, hogy együtt jobbá tehetjük a menhelyi életet minden cica számára.",
+    "comments": {
+      "title": "Rólunk mondták",
+      "pov1": "Imádom, hogy minden cica ilyen szerető otthonra talál itt.",
+      "pov2": "A csapat hihetetlenül kedves, és a cicák mindig boldogok.",
+      "pov3": "Ez a menhely tényleg otthont ad minden cicának."
+    }
+  },
+  "adopt": {
     "title": "Fogadj örökbe",
     "key-gender": "Neme:",
     "key-age": "Kora:",
@@ -119,12 +138,8 @@
   "hero": {
     "title": "Vigyél haza",
     "subtitle": "Minden mancshoz kell egy kéz.",
-    "bold-name": "BringMeHome",
     "description": "-nál minden cica szerető otthonra vár. Amíg nem találják meg, nálunk boldogan dorombolnak.",
     "founder-name": "Kovács Luca",
-    "founder-role": "Alapító",
-    "button-adopt": "Örökbe fogadok",
-    "link-learn-more": "Tudj meg többet"
+    "founder-role": "Alapító"
   }
 }
-
