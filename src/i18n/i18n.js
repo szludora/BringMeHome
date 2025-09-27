@@ -1,31 +1,58 @@
-import { warn } from "../core/logger.js";
+import { log, warn, error } from "../core/logger.js";
 
+let currentLanguage = localStorage.getItem("lang") || "hu";
 let translations = {};
-let currentLang = "hu";
 
-export async function loadLanguage(lang) {
-  const res = await fetch(`/src/i18n/${lang}.json`);
-  translations = await res.json();
-  currentLang = lang;
+export async function initLanguage() {
+  await loadTranslations(currentLanguage);
   updateTexts();
+  setupLanguageSwitches();
+  log("Languages loaded");
 }
 
-function getNestedTranslation(obj, key) {
-  return key.split(".").reduce((res, k) => (res ? res[k] : undefined), obj);
+async function loadTranslations(lang) {
+  try {
+    const res = await fetch(`/src/i18n/${lang}.json`);
+    translations = await res.json();
+  } catch (err) {
+    error("Failed to load translations", err);
+    translations = {};
+  }
 }
 
-function updateTexts() {
+export function updateTexts() {
   document.querySelectorAll("[data-i18n]").forEach((el) => {
-    const key = el.getAttribute("data-i18n");
-    const translation = getNestedTranslation(translations, key);
-    if (translation !== undefined) {
-      el.textContent = translation;
-    } else {
-      warn(`There is no translation for the key: ${key}`);
-    }
+    const key = el.dataset.i18n;
+    const text = key.split(".").reduce((o, k) => o?.[k], translations);
+    if (text !== undefined) el.textContent = text;
+    else warn(`Missing translation: ${key}`);
   });
 }
 
-export function getCurrentLang() {
-  return currentLang;
+function setupLanguageSwitches() {
+  const switches = [
+    { inputId: "languageSwitch", iconId: "langIcon" },
+    { inputId: "languageSwitchMobile", iconId: "langIconMobile" },
+  ];
+
+  switches.forEach(({ inputId, iconId }) => {
+    const input = document.getElementById(inputId);
+    const icon = document.getElementById(iconId);
+    if (!input) return;
+
+    input.checked = currentLanguage === "en";
+    icon.src = input.checked
+      ? "/assets/img/flags/en.png"
+      : "/assets/img/flags/hu.png";
+
+    input.addEventListener("change", async () => {
+      currentLanguage = input.checked ? "en" : "hu";
+      localStorage.setItem("lang", currentLanguage);
+      icon.src = input.checked
+        ? "/assets/img/flags/en.png"
+        : "/assets/img/flags/hu.png";
+      await loadTranslations(currentLanguage);
+      updateTexts();
+    });
+  });
 }
