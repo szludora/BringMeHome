@@ -1,4 +1,4 @@
-const DEV_MODE = true;
+let DEV_MODE = true;
 
 function getCallerFile() {
   try {
@@ -13,7 +13,11 @@ function getCallerFile() {
 
 export function log(message) {
   if (!DEV_MODE) return;
-  console.log(`[${getCallerFile()}] ${message}`);
+  let file = "unknown";
+  try {
+    file = getCallerFile();
+  } catch {}
+  console.log(`[${file}] ${message}`);
 }
 
 export function warn(message) {
@@ -24,4 +28,9 @@ export function warn(message) {
 export function error(message) {
   if (!DEV_MODE) return;
   console.error(`[${getCallerFile()}] ${message}`);
+}
+
+export function setDevMode(value) {
+  DEV_MODE = value;
+  warn("DEVMODE IS ENABLED");
 }
