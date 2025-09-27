@@ -22,11 +22,11 @@
   border-radius: 50%;
 }
 
-.about .card-track {
+.about .card-track, .cart-track-repeat {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 2rem;
   justify-items: center;
 }
 
