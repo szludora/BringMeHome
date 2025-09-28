@@ -1,0 +1,9 @@
+{
+  "name": "snackbar",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/packeges/snackbar/snackbar.js",
+  "files": [
+    "src/packeges/snackbar"
+  ]
+}
