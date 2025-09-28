@@ -12,6 +12,24 @@
   --color-btn-img-shadow: #104610;
   --color-bg-body: #f8f8f8;
 
+  --color-bg-error: #fcbfbf;
+  --color-text-error: #4f0808;
+  --color-bg-success: #a0f0c4;
+  --color-text-success: #054321;
+  --color-bg-warning: #fdff88;
+  --color-text-warning: #4e4f08;
+  --color-bg-info: #a0e8f0;
+  --color-text-info: #0f575f;
+
+  --snack-color-bg-error: #fcbfbf;
+  --snack-color-text-error: #4f0808;
+  --snack-color-bg-success: #a0f0c4;
+  --snack-color-text-success: #054321;
+  --snack-color-bg-warning: #fdff88;
+  --snack-color-text-warning: #4e4f08;
+  --snack-color-bg-info: #a0e8f0;
+  --snack-color-text-info: #0f575f;
+
   --font-base: 14px;
   --font-h1: 64px;
   --font-h2: 48px;
