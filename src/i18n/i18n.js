@@ -1,4 +1,6 @@
+// TODO: change this route
 import { log, warn, error } from "../core/logger.js";
+import { Snackbar } from "../packages/snackbar/dist/snackbar.min.js";
 
 let currentLanguage = localStorage.getItem("lang") || "hu";
 let translations = {};
@@ -25,7 +27,13 @@ export function updateTexts() {
     const key = el.dataset.i18n;
     const text = key.split(".").reduce((o, k) => o?.[k], translations);
     if (text !== undefined) el.textContent = text;
-    else warn(`Missing translation: ${key}`);
+    else {
+      el.textContent = key;
+      warn(`Missing translation: ${key}`).show({
+        message: "Some translations might not have loaded… sorry about that.",
+        type: Snackbar.TYPE.ERROR,
+      });
+    }
   });
 }
 
