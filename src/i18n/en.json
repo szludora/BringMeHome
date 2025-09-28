@@ -8,7 +8,7 @@
   "nav-about": "About",
   "nav-adopt": "Adopt",
   "nav-adopters": "Adopters",
-  "nav-team": "Team",
+  "nav-journey": "Our Journey",
   "nav-homeSeeker": "Home Seeker",
   "nav-faq": "FAQ",
   "about": "About Us",
@@ -104,7 +104,36 @@
     "cta-button1": "Meet our adoptable cats!",
     "cta-button2": "More adopter stories"
   },
-  "team": "Our Team",
+  "journey": {
+    "title": {
+      "main": "Our Journey so far...",
+      "sub": "Rescues, adoptions, partnerships & more"
+    },
+    "events": [
+      "Autumn fundraiser & bake sale raised €3,250 for medical supplies.",
+      "Holiday adoption drive: 23 cats found homes.",
+      "Partnered with Paws & Claws Vet for weekend spay/neuter clinics.",
+      "New volunteer orientation added 18 active volunteers.",
+      "Launched TNR program; completed 32 surgeries in the first month.",
+      "Emergency warehouse intake: 14 cats rescued and stabilized.",
+      "Opened a quarantine room with 6 new cages and improved ventilation.",
+      "Community microchipping & vaccination clinic served 40 cats.",
+      "Food sponsorship with WhiskerFeast: 300 kg/month of kibble secured.",
+      "“Furever Home Week” led to 28 adoptions.",
+      "Foster medical fund covered 12 treatments for special-needs cats.",
+      "Open Day workshops on cat care drew 80 attendees and 9 new fosters."
+    ],
+    "eventTypes": {
+      "1": "Fundraising",
+      "2": "Partnership",
+      "3": "Adoption",
+      "4": "Volunteers",
+      "5": "Medical",
+      "6": "Rescue",
+      "7": "Update",
+      "8": "Outreach"
+    }
+  },
   "homeSeeker": "Home Seeker",
   "thanks": "Thank You",
   "faq": "FAQ",

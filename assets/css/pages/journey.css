@@ -1,0 +1,38 @@
+/*------------------- Time Line -------------------*/
+
+/* Minimal, Bootstrap-friendly timeline styling */
+.timeline {
+    --tl-line: #a8cda4;
+    --tl-dot: #467242;
+    position: relative;
+    margin-left: .5rem;
+}
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: .25rem;
+    top: 0; bottom: 0;
+    width: 2px;
+    background-color: var(--tl-line);
+    border-radius: 1px;
+}
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 1.1rem;
+    width: .75rem; height: .75rem;
+    background: #fff;
+    border: 3px solid var(--tl-dot);
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #fff;
+}
+.timeline-item:hover { background-color: rgba(0,0,0,.02); border-radius: .5rem; }
+
+.timeline_list_content{
+    color: #0e4309 !important;
+}
+
+.timeline_list_date{
+    color: #a8cda4 !important;
+}

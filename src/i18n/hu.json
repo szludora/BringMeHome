@@ -8,7 +8,7 @@
   "nav-about": "Rólunk",
   "nav-adopt": "Örökbefogadás",
   "nav-adopters": "Örökbefogadóink",
-  "nav-team": "Csapat",
+  "nav-journey": "Utunk",
   "nav-homeSeeker": "Gazdikereső",
   "nav-faq": "GYIK",
   "about": "Rólunk",
@@ -103,7 +103,36 @@
     "cta-button1": "Ismerd meg örökbefogadható cicáinkat!",
     "cta-button2": "További örökbefogadói történetek"
   },
-  "team": "Csapatunk",
+  "journey": {
+    "title": {
+      "main": "Az utunk eddig...",
+      "sub": "Mentések, adoptációk, együttműködések és több"
+    },
+    "events": [
+      "Őszi sütivásár és jótékonysági est során 3 250 €-t gyűjtöttünk orvosi felszerelésekre.",
+      "Karácsonyi örökbefogadó akciónk során 23 cica talált otthonra.",
+      "Partnerséget kötöttünk a Paws &amp; Claws állatorvosi rendelővel hétvégi ivartalanító klinikákhoz.",
+      "Az új önkéntes képzésnek köszönhetően 18 aktív önkéntessel bővültünk.",
+      "Elindítottuk TNR programunkat, az első hónapban 32 ivartalanítást végeztünk.",
+      "Sürgősségi raktármentés: 14 cica került biztonságba és ellátásra.",
+      "Megnyitottuk új karantén helyiségünket 6 ketreccel és jobb szellőzéssel.",
+      "Közösségi mikrochip- és oltási nap keretében 40 cicát láttunk el.",
+      "Eteltámogatási szerződés a WhiskerFeast-tel: havi 300 kg száraztáp biztosítva.",
+      "A „Furever Home Hét” alatt 28 cicát> fogadtak örökbe.",
+      "A nevelőszülői orvosi alap 12 különleges igényű cica kezelését fedezte.",
+      "Nyílt napunkon a macskagondozási workshopokon 80 látogató vett részt, és 9 új nevelőszülőt szereztünk."
+    ],
+    "eventTypes": {
+      "1": "Adománygyűjtés",
+      "2": "Partnerség",
+      "3": "Örökbefogadás",
+      "4": "Önkéntesek",
+      "5": "Orvosi ellátás",
+      "6": "Mentés",
+      "7": "Fejlesztés",
+      "8": "Közösség"
+    }
+  },
   "homeSeeker": "Gazdikereső",
   "thanks": "Köszönet",
   "faq": "GYIK",
