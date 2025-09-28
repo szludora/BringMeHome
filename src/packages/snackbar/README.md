@@ -1,7 +1,7 @@
 # Snackbar 🍫
 
 A lightweight, zero-dependency snackbar/notification utility for your web projects.
-Import the JS, és már működik is. 🎉
+Import the JS, and you're ready to roll. 🎉
 
 ---
 
