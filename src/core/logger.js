@@ -1,3 +1,5 @@
+import { Snackbar } from "../packages/snackbar/snackbar.js";
+
 let DEV_MODE = true;
 
 function getCallerFile() {
@@ -23,6 +25,18 @@ export function log(message) {
 export function warn(message) {
   if (!DEV_MODE) return;
   console.warn(`[${getCallerFile()}] ${message}`);
+
+  return {
+    show({ message, type, position, duration, delay }) {
+      Snackbar.show({
+        message: message,
+        type: type,
+        position: position,
+        duration: duration,
+        delay: delay,
+      });
+    },
+  };
 }
 
 export function error(message) {
