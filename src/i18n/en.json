@@ -1,7 +1,15 @@
 {
   "en": "English",
   "hu": "Hungarian",
-  "toggleLanguage": "Magyar",
+  "bringMeHome": "BringMeHome",
+  "websiteInProgress": "Meow! This page is still under construction. Until it’s ready, let’s take you back to the home page.",
+  "back": "Back",
+  "btn": {
+    "adopt": "Adopt a Cat",
+    "learn-more": "Learn more",
+    "support-us": "Support us",
+    "join-us": "Join us"
+  },
   "test": "Click the button to change language to Hungarian",
   "underConstruction": "Under construction...",
   "testLanguageChanges": "Now it's English",
@@ -11,7 +19,18 @@
   "nav-team": "Team",
   "nav-homeSeeker": "Home Seeker",
   "nav-faq": "FAQ",
-  "about": "About Us",
+  "about": {
+    "title": "About Us",
+    "text1": "The BringMeHome team was founded to help every cat find a loving home. Every day we work to ensure that cats in shelters grow up safe, cared for, and loved. We believe that every cat deserves attention, playful moments, and peaceful rest.",
+    "text2": "Our shelter is not just a temporary home, but a community where cats can experience human affection, and adopters can experience the loyalty and love of their new pets. We organize programs that support adoption, socialization, and responsible pet ownership.",
+    "text3": "Our goal is for every cat, dog, or small companion animal to live happily in a loving family. We believe in the power of community and that together we can make shelter life better for every cat.",
+    "comments": {
+      "title": "Said About Us",
+      "pov1": "I love that every cat finds such a loving home here.",
+      "pov2": "The team is incredibly kind, and the cats are always happy.",
+      "pov3": "This shelter truly gives every cat a home."
+    }
+  },
   "adopt": {
     "title": "Adopt a Cat",
     "key-gender": "Gender:",
@@ -33,8 +52,7 @@
       "age": "2 years",
       "breed": "Calico",
       "character": "Friendly and playful, loves to be the center of attention. Adapts quickly to new environments.",
-      "special_features": "Distinctive, tricolored coat (with white, black, and reddish-brown patches), and beautiful, amber-colored eyes.",
-      "story": "Karamell egy szomorú sorsú, de hihetetlenül életvidám kisfiú, akit egy autós találta az esőben, a főút mellett. Imádja a hasvakarást és mindenkit azonnal a szívébe zár."
+      "special_features": "Distinctive, tricolored coat (with white, black, and reddish-brown patches), and beautiful, amber-colored eyes."
     },
     "cat3": {
       "name": "Nokedli",
@@ -135,11 +153,8 @@
   "hero": {
     "title": "Take Me Home",
     "subtitle": "Every paw needs a hand.",
-    "bold-name": "BringMeHome",
     "description": " - every cat is waiting for a loving home. Until they find it, they happily purr with us.",
     "founder-name": "Luca Kovács",
-    "founder-role": "Founder",
-    "button-adopt": "Adopt Me",
-    "link-learn-more": "Learn More"
+    "founder-role": "Founder"
   }
 }
