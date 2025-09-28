@@ -126,3 +126,21 @@ Snackbar.show({
 - 🧹 Multiple snackbars stack; containers auto-remove when empty
 - ➕ Extendable via `TYPE` and `TYPE_STYLES`
 - Private helpers prevent external modification
+---
+
+## 📝 License
+
+This project is licensed under the **MIT License**.
+
+You are free to:
+
+- Use it in personal or commercial projects
+- Modify it for your own needs
+- Share it with others
+
+Conditions:
+
+Include the original license and copyright notice (© 2025 [SzluDora](https://github.com/szludora/)) in any distributed version.
+
+Full license text can be found in the LICENSE
+file.
