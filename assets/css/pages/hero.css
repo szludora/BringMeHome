@@ -10,6 +10,7 @@
 #heroImage {
   max-height: 80%;
   display: block;
+  object-fit: contain;
 }
 
 #heroTitle {
