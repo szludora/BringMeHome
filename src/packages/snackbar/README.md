@@ -1,44 +1,32 @@
 # Snackbar 🍫
 
 A lightweight, zero-dependency snackbar/notification utility for your web projects.
-Import the JS, and you're ready to roll. 🎉
 
 ---
 
 ## ✨ Features
 
-- 🎨 Simple API with customizable options
+- 🎨 Simple API with runtime style customization
 - ↕️ Top or bottom positioning
-- 💡 Built-in types: `SUCCESS`, `ERROR`, `INFO`, `WARNING` (easy to extend)
+- 💡 Built-in types: `SUCCESS`, `ERROR`, `INFO`, `WARNING`
+- ➕ Add custom types easily
 - ⏱️ Auto-hide with duration + delay
 - 📚 Multiple snackbars stack gracefully
-- 🛡️ Private helpers; public API only exposes `show`
-- 🎨 Fully configurable via CSS variables
-- ➕ Add custom types easily
 
 ---
 
-## ⚙️ Parameters
-
-| Name       | Type     | Default        | Description                     |
-| ---------- | -------- | -------------- | ------------------------------- |
-| `message`  | string   | **required**   | Text shown in the snackbar      |
-| `position` | POSITION | `POSITION.TOP` | Where to display: top or bottom |
-| `type`     | TYPE     | `TYPE.SUCCESS` | Snackbar style                  |
-| `duration` | number   | 5000 (ms)      | How long it stays visible       |
-| `delay`    | number   | 300 (ms)       | Delay before showing            |
-
----
-
-## 📦 Setup
+## ⚡ Usage
 
 ```js
-import { Snackbar, TYPE, POSITION } from "./snackbar.js";
+import { Snackbar } from "snackbar";
+
+// Basic usage
+Snackbar.show({ message: "This snackbar uses default values" });
 
 Snackbar.show({
   message: "Data saved successfully! 🎉",
-  type: TYPE.SUCCESS,
-  position: POSITION.TOP,
+  type: Snackbar.TYPE.SUCCESS,
+  position: Snackbar.POSITION.TOP,
   duration: 4000,
   delay: 200,
 });
@@ -46,21 +34,48 @@ Snackbar.show({
 
 ---
 
-## 🎨 CSS Configuration
+## 🎨 Runtime Customization
 
-Globally override defaults in `:root`:
+```js
+// Change default styles at runtime
+Snackbar.applyStyle({
+  padding: "2rem 3rem",
+  borderRadius: "12px",
+  width: "70%",
+});
+
+// Add a custom type dynamically
+Snackbar.createCustom("PURPLE", {
+  bg: () => "#d6a0f0",
+  text: () => "#2a004f",
+  position: Snackbar.POSITION.TOP,
+});
+
+// Show custom type
+Snackbar.show({
+  message: "Custom purple snack! 💜",
+  type: Snackbar.TYPE.PURPLE,
+});
+```
+
+---
+
+## 🌍 Global CSS Customization
+
+You can override any default style via CSS variables in `:root`:
 
 ```css
 :root {
-  --snack-padding: 1rem 2rem;
-  --snack-borderRadius: 5px;
-  --snack-border: 1px solid #000;
-  --snack-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  --snack-top: 4.5rem;
-  --snack-bottom: 1rem;
-  --snack-width: 95%;
+  --snack-padding: 2rem 3rem;
+  --snack-borderRadius: 12px;
+  --snack-border: 2px solid #222;
+  --snack-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --snack-top: 5rem;
+  --snack-bottom: 2rem;
+  --snack-width: 80%;
   --snack-pointerEvents-auto: auto;
 
+  /* Type colors */
   --snack-bg-success: #a0f0c4;
   --snack-text-success: #054321;
   --snack-bg-error: #fcbfbf;
@@ -71,10 +86,12 @@ Globally override defaults in `:root`:
   --snack-text-info: #0f575f;
 
   /* Custom type example */
-  --snack-bg-custom: #ff0;
-  --snack-text-custom: #000;
+  --snack-bg-purple: #d6a0f0;
+  --snack-text-purple: #2a004f;
 }
 ```
+
+> 💡 Runtime JS `applyStyle` modifies values on-the-fly, while `:root` CSS allows global theming without touching JS.
 
 ---
 
@@ -82,50 +99,24 @@ Globally override defaults in `:root`:
 
 ```js
 export const POSITION = { BOTTOM: "bottom", TOP: "top" };
+
 export const TYPE = {
   SUCCESS: "success",
   ERROR: "error",
   INFO: "info",
   WARNING: "warning",
-  // CUSTOM: "custom"
 };
-```
-
----
-
-## 🧪 Examples
-
-```js
-// Basic
-Snackbar.show({
-  message: "Oops! ⚠️",
-  type: TYPE.ERROR,
-  position: POSITION.BOTTOM,
-});
-
-// Multiple
-Snackbar.show({ message: "First", type: TYPE.INFO });
-Snackbar.show({ message: "Second", type: TYPE.SUCCESS });
-
-// Custom duration & position
-Snackbar.show({
-  message: "Top warning ⚠️",
-  type: TYPE.WARNING,
-  position: POSITION.TOP,
-  duration: 5000,
-  delay: 100,
-});
 ```
 
 ---
 
 ## 📝 Notes
 
-- ⚠️ `message` is mandatory
-- 🛠️ Invalid `position` or `type` logs a warning but doesn’t break the app
-- 🧹 Multiple snackbars stack; containers auto-remove when empty
-- ➕ Extendable via `TYPE` and `TYPE_STYLES`
-- Private helpers prevent external modification
+- ⚠️ `message` is required
+- 🛠️ Unknown `type` or `position` logs a warning but does not break the app
+- 🧹 Containers auto-remove when empty
+- 🏗️ Extendable at runtime via `TYPE` and `createCustom()`
+
 ---
 
 ## 📝 License
@@ -133,7 +124,6 @@ Snackbar.show({
 This project is licensed under the **MIT License**.
 
 You are free to:
-
 - Use it in personal or commercial projects
 - Modify it for your own needs
 - Share it with others

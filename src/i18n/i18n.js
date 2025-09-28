@@ -1,5 +1,6 @@
+// TODO: change this route
 import { log, warn, error } from "../core/logger.js";
-import { TYPE } from "../packages/snackbar/config.js";
+import { Snackbar } from "../packages/snackbar/dist/snackbar.min.js";
 
 let currentLanguage = localStorage.getItem("lang") || "hu";
 let translations = {};
@@ -30,7 +31,7 @@ export function updateTexts() {
       el.textContent = key;
       warn(`Missing translation: ${key}`).show({
         message: "Some translations might not have loaded… sorry about that.",
-        type: TYPE.INFO,
+        type: Snackbar.TYPE.ERROR,
       });
     }
   });
