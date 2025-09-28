@@ -1,21 +1,26 @@
-/*https://getbootstrap.com/docs/5.3/components/accordion/#variables*/
 #faqAccordion {
-    --bs-accordion-active-bg: #a8cda4;
-    --bs-accordion-active-color: #467242;
-
-    --bs-accordion-btn-bg: #f8f9fa;
-    --bs-accordion-btn-color: #467242;
-    --bs-accordion-border-color: #2E4D2C;
-
-    --bs-accordion-btn-focus-border-color: #2E4D2C;
-    --bs-accordion-btn-focus-box-shadow: 0 0 0 .25rem rgba(46,77,44,.25);
     width: 80%;
     margin: auto;
 }
 
-[data-bs-theme="dark"] #faqAccordion{
-    --bs-accordion-active-bg: #1b2838;
-    --bs-accordion-active-color: #cfe2ff;
+#faqAccordion .accordion-button {
+    background-color: #f8f9fa;
+    color: #467242;
+}
+
+#faqAccordion .accordion-button:not(.collapsed) {
+    background-color: #a8cda4;
+    color: #467242;
+}
+
+#faqAccordion .accordion-item {
+    border-color: #2E4D2C;
+}
+
+#faqAccordion .accordion-button:focus {
+    border-color: #2E4D2C;
+    box-shadow: 0 0 0 .25rem rgba(46,77,44,.25);
+    outline: 0;
 }
 
 .accordion-body{
