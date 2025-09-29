@@ -156,5 +156,13 @@
     "description": " - every cat is waiting for a loving home. Until they find it, they happily purr with us.",
     "founder-name": "Luca Kovács",
     "founder-role": "Founder"
+  },
+  "catsPage": {
+    "title": "Adoptable Cats",
+    "intro": "On this page, we introduce our adoptable cats, where you can get to know their stories and personalities.",
+    "detailsCta": "Adopt me",
+    "finalCtaTitle": "Are you ready for such an adventure?",
+    "story-csipesz": "Csipesz is a true explorer who once lived on the edge of the village, in an abandoned hut. His past is a bit wild, but discovering human affection awakened his sense of attachment.",
+    "story-karamell": "Karamell has had a sad fate, but he is an incredibly cheerful little boy. A driver found him in the rain by the roadside. He loves belly rubs and immediately opens his heart to everyone."
   }
 }

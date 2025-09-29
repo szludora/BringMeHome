@@ -1,0 +1,7 @@
+@import "/assets/css/main.css";
+
+section {
+  height: min-content !important;
+  min-height: unset !important;
+  padding-top: unset !important;
+}
