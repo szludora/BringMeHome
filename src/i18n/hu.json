@@ -126,6 +126,14 @@
     "founder-role": "Alapító",
     "button-adopt": "Örökbe fogadok",
     "link-learn-more": "Tudj meg többet"
+  },
+   "catsPage": {
+    "title": "Örökbefogadható cicák",
+    "intro": "Ezen az oldalon bemutatjuk örökbefogadható cicáinkat, megismerheted a történetüket és a személyiségüket.",
+    "detailsCta": "Örökbefogadom",
+    "finalCtaTitle": "Készen állsz egy ilyen kalandra?",
+    "story-csipesz": "Csipesz egy igazi felfedező, aki a falu szélén, egy elhagyatott kunyhóban élt. Múltja kissé vad, de az emberi szeretetről való tudás felébresztette benne a ragaszkodást.",
+    "story-karamell": "Karamell egy szomorú sorsú, de hihetetlenül életvidám kisfiú, akit egy autós találta az esőben, a főút mellett. Imádja a hasvakarást és mindenkit azonnal a szívébe zár."
   }
 }
 
