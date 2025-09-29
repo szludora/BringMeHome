@@ -38,9 +38,9 @@ Currently, the site is under development, but it includes:
 ## How to Run Locally
 1. Clone the repository
 ```bash
-git clone https://github.com/szludora/bringmehomeBringMeHome.git
+git clone https://github.com/szludora/bringmehome.git
 ```
-2. Open `index.hu.html` or `index.en.html` in a web browser.
+2. Run `npm install` and `npm build-snackbar`
 3. Use VS Code with the `Live Server` plugin and click `Go Live` button at the right bottom of the VS Code window.
 
 ## Technologies

@@ -1,7 +1,15 @@
 {
+  "bringMeHome": "BringMeHome",
   "en": "Angol",
   "hu": "Magyar",
-  "toggleLanguage": "English",
+  "websiteInProgress": "Miau! Ez az oldal még készülőben van. Amíg elkészül, visszavezetünk a kezdőlapra.",
+  "back": "Vissza",
+  "btn": {
+    "adopt": "Örökbe fogadok",
+    "learn-more": "Tudj meg többet",
+    "support-us": "Támogass minket",
+    "join-us": "Csatlakozz hozzánk"
+  },
   "test": "Kattints a gombra a nyelv angolra váltásához",
   "underConstruction": "Fejlesztés alatt...",
   "testLanguageChanges": "Most magyar",
@@ -11,8 +19,19 @@
   "nav-team": "Csapat",
   "nav-homeSeeker": "Gazdikereső",
   "nav-faq": "GYIK",
-  "about": "Rólunk",
-  "adopt": { 
+  "about": {
+    "title": "Rólunk",
+    "text1": "A BringMeHome csapata azért jött létre, hogy minden cica megtalálja a szerető otthonát. Nap mint nap azon dolgozunk, hogy a menhelyeken élő cicák biztonságban, gondoskodásban és szeretetben nőhessenek fel. Hiszünk abban, hogy minden cica megérdemli a törődést, a játékos pillanatokat és a nyugodt pihenést.",
+    "text2": "A menhelyünk nem csak átmeneti otthon, hanem egy közösség is, ahol a cicák megismerhetik az emberek szeretetét, és a gazdik megtapasztalhatják a cicák ragaszkodását. Olyan programokat szervezünk, amelyek segítik az örökbefogadást, a cicák szocializációját és a felelős gazdiválasztást.",
+    "text3": "Célunk, hogy minden cica, legyen az cica, kutya vagy más kis kedvenc, boldogan élhessen szerető családban. Hiszünk a közösség erejében, és abban, hogy együtt jobbá tehetjük a menhelyi életet minden cica számára.",
+    "comments": {
+      "title": "Rólunk mondták",
+      "pov1": "Imádom, hogy minden cica ilyen szerető otthonra talál itt.",
+      "pov2": "A csapat hihetetlenül kedves, és a cicák mindig boldogok.",
+      "pov3": "Ez a menhely tényleg otthont ad minden cicának."
+    }
+  },
+  "adopt": {
     "title": "Fogadj örökbe",
     "key-gender": "Neme:",
     "key-age": "Kora:",
@@ -33,8 +52,7 @@
       "age": "2 év",
       "breed": "Calico",
       "character": "Barátságos és játékos, szeret a figyelem középpontjában lenni. Gyorsan alkalmazkodik új környezethez.",
-      "special_features": "Jellegzetes, háromszínű bundája (fehér, fekete és vörösesbarna foltokkal), valamint gyönyörű, borostyánszínű szemei.",
-      "story": "Karamell egy szomorú sorsú, de hihetetlenül életvidám kisfiú, akit egy autós találta az esőben, a főút mellett. Imádja a hasvakarást és mindenkit azonnal a szívébe zár."
+      "special_features": "Jellegzetes, háromszínű bundája (fehér, fekete és vörösesbarna foltokkal), valamint gyönyörű, borostyánszínű szemei."
     },
     "cat3": {
       "name": "Nokedli",
@@ -106,21 +124,34 @@
   "team": "Csapatunk",
   "homeSeeker": "Gazdikereső",
   "thanks": "Köszönet",
-  "faq": "GYIK",
-  "faq_q_1": "#1 Ez egy valódi örökbefogadó központ?",
-  "faq_q_2": "#2 Mennyibe kerül az örökbefogadás? Mit tartalmaz ez az összeg (oltások, mikrochip, ivartalanítás, féregtelenítés)?",
-  "faq_q_3": "#3 Ezen állatok alkalmasak gyerek és más kis kedvencekkel együtt élni?",
-  "faq_q_4": "#4 Milyen visszavételi lehetőségek vannak?",
-  "faq_q_5": "#5 Hogyan készüljek fel mielőtt hazaviszek egy macskát?",
-  "faq_a_1": "#1 Nem. Ez egy a weblap készítési képességeinket bemutatni hivatott oldal.",
-  "faq_a_2": "#2 Figyelem: A válasz kitalált információkat tartalmaz. Az örökbefogadás díja 40 000 Ft, amit a helyszínen kell megfizetni. Magában foglalja az oltásokat, a mikrochipet, az ivartalanítást és a féregtelenítést is.",
-  "faq_a_3": "#3 Figyelem: A válasz kitalált információkat tartalmaz. A befogadott állatok eleinte nehezen bíznak meg másokban. Kérjük fokozottan figyeljen oda az első interakcióra más kedvencekkel vagy gyermekekkel.",
-  "faq_a_4": "#4 Figyelem: A válasz kitalált információkat tartalmaz. 2 hetes elállási lehetőséget biztosítunk, ha egy cica még 2 hét után se tud beilleszkedni, természetesen keresünk neki új helyet.",
-  "faq_a_5": "#5 Figyelem: A válasz kitalált információkat tartalmaz. Első alkalommal készítsen elő kis adagokat több száraz és nedves eledelből. A macskéknak szükségük van mindkettőre illetve friss vízre.",
+  "faq": {
+    "title": "Gyakran Ismételt Kérdések",
+    "questions": [
+      {
+        "question": "#1 Ez egy valódi örökbefogadó központ?",
+        "answer": "#1 Nem. Ez egy a weblap készítési képességeinket bemutatni hivatott oldal."
+      },
+      {
+        "question": "#2 Mennyibe kerül az örökbefogadás? Mit tartalmaz ez az összeg (oltások, mikrochip, ivartalanítás, féregtelenítés)?",
+        "answer": "#2 Figyelem: A válasz kitalált információkat tartalmaz. Az örökbefogadás díja 40 000 Ft, amit a helyszínen kell megfizetni. Magában foglalja az oltásokat, a mikrochipet, az ivartalanítást és a féregtelenítést is."
+      },
+      {
+        "question": "#3 Ezen állatok alkalmasak gyerek és más kis kedvencekkel együtt élni?",
+        "answer": "#3 Figyelem: A válasz kitalált információkat tartalmaz. A befogadott állatok eleinte nehezen bíznak meg másokban. Kérjük fokozottan figyeljen oda az első interakcióra más kedvencekkel vagy gyermekekkel."
+      },
+      {
+        "question": "#4 Milyen visszavételi lehetőségek vannak?",
+        "answer": "#4 Figyelem: A válasz kitalált információkat tartalmaz. 2 hetes elállási lehetőséget biztosítunk, ha egy cica még 2 hét után se tud beilleszkedni, természetesen keresünk neki új helyet."
+      },
+      {
+        "question": "#5 Hogyan készüljek fel mielőtt hazaviszek egy macskát?",
+        "answer": "#5 Figyelem: A válasz kitalált információkat tartalmaz. Első alkalommal készítsen elő kis adagokat több száraz és nedves eledelből. A macskéknak szükségük van mindkettőre illetve friss vízre."
+      }
+    ]
+  },
   "hero": {
     "title": "Vigyél haza",
     "subtitle": "Minden mancshoz kell egy kéz.",
-    "bold-name": "BringMeHome",
     "description": "-nál minden cica szerető otthonra vár. Amíg nem találják meg, nálunk boldogan dorombolnak.",
     "founder-name": "Kovács Luca",
     "founder-role": "Alapító",
@@ -136,4 +167,3 @@
     "story-karamell": "Karamell egy szomorú sorsú, de hihetetlenül életvidám kisfiú, akit egy autós találta az esőben, a főút mellett. Imádja a hasvakarást és mindenkit azonnal a szívébe zár."
   }
 }
-

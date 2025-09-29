@@ -1,0 +1,25 @@
+{
+  "name": "bringmehome",
+  "version": "1.0.0",
+  "description": "**Bring Me Home** is a simple web application (HTML, CSS, JS) created as a university assignment.\r It represents a single animal shelter where users can view animals and potentially adopt them.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-snackbar": "rollup -c ./src/packages/snackbar/rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szludora/BringMeHome.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "issues": {
+    "url": "https://github.com/szludora/BringMeHome/issues"
+  },
+  "homepage": "https://github.com/szludora/BringMeHome#readme",
+  "devDependencies": {
+    "rollup": "^2.79.2",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
