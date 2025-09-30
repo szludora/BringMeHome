@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cica Örökbefogadási Kérelem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9Oer2Nsldj9K9x86cMh+g==" crossorigin="anonymous">
+   
+</head>
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="form-container">
+                    <h2 class="form-header">Cica Örökbefogadási Kérelem</h2>
+                    <p class="text-center mb-4">Kérjük, töltse ki az alábbi űrlapot, ha szeretne örökbe fogadni egy cicát. Köszönjük érdeklődését!</p>
+
+                    <form id="catAdoptionForm">
+                        <div class="mb-3">
+                            <label for="adopterName" class="form-label">Teljes név</label>
+                            <input type="text" class="form-control" id="adopterName" name="Örökbefogadó neve" required aria-describedby="nameHelp">
+                            <div id="nameHelp" class="form-text">Ahogy a személyi igazolványában szerepel.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="adopterEmail" class="form-label">Email cím</label>
+                            <input type="email" class="form-control" id="adopterEmail" name="Email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="adopterPhone" class="form-label">Telefonszám</label>
+                            <input type="tel" class="form-control" id="adopterPhone" name="Telefonszám" required pattern="[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}|[0-9]{9}" placeholder="pl. 06-XX-XXX-XXXX">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="adopterAddress" class="form-label">Lakcím</label>
+                            <textarea class="form-control" id="adopterAddress" name="Cím" rows="3" required></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="housingType" class="form-label">Milyen típusú ingatlanban lakik?</label>
+                            <select class="form-select" id="housingType" name="Lakhatási viszonyok" required>
+                                <option value="">Válasszon...</option>
+                                <option value="Ház">Ház (saját kerttel)</option>
+                                <option value="Lakás">Lakás (erkéllyel)</option>
+                                <option value="Panel">Panel (erkély nélkül)</option>
+                                <option value="Egyéb">Egyéb</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="hasPreviousPets" name="Korábbi tapasztalat" value="Igen, volt kisállatom">
+                            <label class="form-check-label" for="hasPreviousPets">Volt már korábban kisállata?</label>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="additionalNotes" class="form-label">Egyéb megjegyzések / Amit fontosnak tart elmondani</label>
+                            <textarea class="form-control" id="additionalNotes" name="Megjegyzés" rows="4"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 mt-3">Kérelem elküldése</button>
+                        
+                        <div id="formStatus" class="mt-3 text-center">
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // !!! FONTOS: Cseréld le ezt az URL-t a Google Apps Script web app URL-jére!
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwmroOK2qMi4_akZ_254MjS4_f2NupLYItv1Dlgtu5jHJkxCd8iylx8DSGII-OfkFHZ/exec'; 
+            const form = document.getElementById('catAdoptionForm');
+            const statusDiv = document.getElementById('formStatus');
+
+            form.addEventListener('submit', e => {
+                e.preventDefault(); // Megakadályozza a form hagyományos elküldését
+                statusDiv.innerHTML = '<div class="alert alert-info" role="alert">Kérelem küldése...</div>'; // Visszajelzés
+                
+                // Form adatok begyűjtése
+                const formData = new FormData(form);
+
+                fetch(scriptURL, { 
+                    method: 'POST', 
+                    mode: 'no-cors', // Fontos a Google Apps Script miatt
+                    body: formData 
+                })
+                .then(response => {
+                    // Mivel 'no-cors' módot használunk, a 'response' objektum korlátozott.
+                    // A valós hibakezeléshez komplexebb CORS beállítások kellenének a Google Script oldalon.
+                    // Most feltételezzük, hogy a kérés sikeresen eljutott.
+                    statusDiv.innerHTML = '<div class="alert alert-success" role="alert">Sikeresen elküldve! Köszönjük érdeklődését, hamarosan felvesszük Önnel a kapcsolatot.</div>';
+                    form.reset(); // Űrlap törlése
+
+                    // Opcionális: A sikeres üzenet eltűntetése 5 másodperc után
+                    setTimeout(() => {
+                         statusDiv.innerHTML = ''; 
+                    }, 8000); 
+                })
+                .catch(error => {
+                    console.error('Hiba!', error.message);
+                    statusDiv.innerHTML = '<div class="alert alert-danger" role="alert">Hiba történt a kérelem küldése során! Kérjük, próbálja újra később.</div>';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
