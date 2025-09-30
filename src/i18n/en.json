@@ -164,5 +164,140 @@
     "finalCtaTitle": "Are you ready for such an adventure?",
     "story-csipesz": "Csipesz is a true explorer who once lived on the edge of the village, in an abandoned hut. His past is a bit wild, but discovering human affection awakened his sense of attachment.",
     "story-karamell": "Karamell has had a sad fate, but he is an incredibly cheerful little boy. A driver found him in the rain by the roadside. He loves belly rubs and immediately opens his heart to everyone."
-  }
+  },
+  "catsPage": {
+        "title": "Adoptable Cats",
+        "intro": "On this page, you can meet our adoptable cats, learn about their stories and personalities. Give a saved animal a loving home!",
+        "detailsCta": "Adopt Me",
+        "finalCtaTitle": "Ready for this kind of adventure?",
+        "story-csipesz": "Csipesz is a true explorer, who used to live in an abandoned shack on the edge of the village. His past was a little wild, but discovering human affection awakened his deep attachment. He is highly recommended for families with children.",
+        "story-karamell": "Karamell is a boy with a sad history but an incredibly cheerful spirit. He was found by a driver on the main road in the rain. He loves belly rubs and immediately takes everyone to his heart. He gets along well with other cats.",
+        "story-cica3": "Bundás is a calm, aging cat lady who is one of the wisest residents of the shelter. She loves sunbathing and lying on a heated cushion for hours. She is an ideal companion for a quiet household.",
+        "story-cica4": "Mici is an eternally energetic little black devil, always looking for some kind of adventure. She is extremely intelligent and a fast learner. It's important that she is surrounded by plenty of toys and a stimulating environment.",
+        "story-cica5": "Tigris, as his name suggests, was a real fighter on the streets, but at the shelter, he revealed his cuddly side. After a long period of warming up, he opens up and becomes a loyal, affectionate companion.",
+        "story-cica6": "Hópehely is a long-haired, elegant cat who loves being brushed and pampered. She is slightly shy, so she seeks a quiet home without small children.",
+        "story-cica7": "Füles is a friendly red male cat brought in by a local fisherman. He highly needs human attention and petting. He doesn't like being alone; if you are often away, having a cat companion is a good idea.",
+        "story-cica8": "Villám is a young and energetic female cat, whose every muscle is made for playing and running. She would be best in a place with a secure, cat-proof yard.",
+        "story-cica9": "Riska is a gentle, spotted female cat who was left in a box outside the shelter door. Although hesitant at first, she quickly gets used to her new home. She is a great companion for older people.",
+        "story-cica10": "Peti is a true little artist soul who likes to be in high places and observe the world from above. He hardly ever meows, he's quiet and thoughtful.",
+        "story-cica11": "Lola is an extremely cuddly black girl who demands the proximity of her owner every night. A true 'velcro cat' for whom love is the most important thing.",
+        "story-cica12": "Max is a gray-and-white, large male cat who loves his belly and treats. He is a bit lazy, but when he's in the mood, he'll play with a feather wand.",
+        "adopt": {
+            "key-gender": "Gender:",
+            "key-age": "Age:",
+            "key-breed": "Breed:",
+            "key-personality": "Personality:",
+            "key-neutered": "Neutered:",
+            "key-info": "Other Information:",
+
+            "cat1": {
+                "name": "Csipesz",
+                "gender": "Male",
+                "age": "2 years",
+                "breed": "Domestic Cat (Tabby)",
+                "personality": "Explorer, affectionate, good with children",
+                "neutered": "Yes",
+                "info": "Can be kept indoors and outdoors, very smart."
+            },
+            "cat2": {
+                "name": "Karamell",
+                "gender": "Male",
+                "age": "1 year",
+                "breed": "European Shorthair",
+                "personality": "Cheerful, cuddly, sociable",
+                "neutered": "Yes",
+                "info": "Compatible with other cats, unknown with dogs."
+            },
+            "cat3": {
+                "name": "Bundás",
+                "gender": "Female",
+                "age": "6 years",
+                "breed": "Persian Mix",
+                "personality": "Calm, wise, sunbather",
+                "neutered": "Yes",
+                "info": "Indoor only, requires regular coat grooming."
+            },
+            "cat4": {
+                "name": "Mici",
+                "gender": "Female",
+                "age": "8 months",
+                "breed": "Domestic Cat (Black)",
+                "personality": "Energetic, wild, intelligent",
+                "neutered": "Not yet (too young)",
+                "info": "Requires activity and lots of play."
+            },
+            "cat5": {
+                "name": "Tigris",
+                "gender": "Male",
+                "age": "3 years",
+                "breed": "Bengal Mix",
+                "personality": "Reserved, loyal, affectionate",
+                "neutered": "Yes",
+                "info": "Needs patient integration, not recommended with dogs."
+            },
+            "cat6": {
+                "name": "Hópehely",
+                "gender": "Female",
+                "age": "4 years",
+                "breed": "Maine Coon Mix",
+                "personality": "Elegant, shy, loves pampering",
+                "neutered": "Yes",
+                "info": "Seeks a quiet home, not suitable for small children."
+            },
+            "cat7": {
+                "name": "Füles",
+                "gender": "Male",
+                "age": "1.5 years",
+                "breed": "Mix (Red/Ginger)",
+                "personality": "Friendly, cuddly, needs attention",
+                "neutered": "Yes",
+                "info": "Does not like being alone, ideal as a companion cat."
+            },
+            "cat8": {
+                "name": "Villám",
+                "gender": "Female",
+                "age": "10 months",
+                "breed": "Domestic Cat (Tuxedo)",
+                "personality": "Super energetic, runner, playful",
+                "neutered": "Yes",
+                "info": "Loves being outside, safe yard owners preferred."
+            },
+            "cat9": {
+                "name": "Riska",
+                "gender": "Female",
+                "age": "5 years",
+                "breed": "Domestic Cat (Spotted)",
+                "personality": "Gentle, quiet, initially uncertain but affectionate",
+                "neutered": "Yes",
+                "info": "Gets along well with older people, prefers a quiet lifestyle."
+            },
+            "cat10": {
+                "name": "Peti",
+                "gender": "Male",
+                "age": "3 years",
+                "breed": "Russian Blue Mix",
+                "personality": "Quiet, observant, likes height",
+                "neutered": "Yes",
+                "info": "Can live with several other cats, not territorial."
+            },
+            "cat11": {
+                "name": "Lola",
+                "gender": "Female",
+                "age": "2 years",
+                "breed": "Bombay Mix",
+                "personality": "Cuddly, 'velcro cat', loving",
+                "neutered": "Yes",
+                "info": "Needs proximity, a true 'hugging cat'."
+            },
+            "cat12": {
+                "name": "Max",
+                "gender": "Male",
+                "age": "7 years",
+                "breed": "British Shorthair Mix",
+                "personality": "Lazy, food-lover, calm",
+                "neutered": "Yes",
+                "info": "Gains weight easily, diet needs attention."
+            }
+        }
+    }
 }

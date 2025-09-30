@@ -159,11 +159,139 @@
     "link-learn-more": "Tudj meg többet"
   },
   "catsPage": {
-    "title": "Örökbefogadható cicák",
-    "intro": "Ezen az oldalon bemutatjuk örökbefogadható cicáinkat, megismerheted a történetüket és a személyiségüket.",
-    "detailsCta": "Örökbefogadom",
-    "finalCtaTitle": "Készen állsz egy ilyen kalandra?",
-    "story-csipesz": "Csipesz egy igazi felfedező, aki a falu szélén, egy elhagyatott kunyhóban élt. Múltja kissé vad, de az emberi szeretetről való tudás felébresztette benne a ragaszkodást.",
-    "story-karamell": "Karamell egy szomorú sorsú, de hihetetlenül életvidám kisfiú, akit egy autós találta az esőben, a főút mellett. Imádja a hasvakarást és mindenkit azonnal a szívébe zár."
-  }
+        "title": "Örökbefogadható cicák",
+        "intro": "Ezen az oldalon bemutatjuk örökbefogadható cicáinkat, megismerheted a történetüket és a személyiségüket. Adj egy otthont egy mentett állatnak!",
+        "detailsCta": "Örökbefogadom",
+        "finalCtaTitle": "Készen állsz egy ilyen kalandra?",
+         "finalCtaButton": "Örökbefogadói történetek", 
+        "story-csipesz": "Csipesz egy igazi felfedező, aki a falu szélén, egy elhagyatott kunyhóban élt. Múltja kissé vad, de az emberi szeretetről való tudás felébresztette benne a ragaszkodást. Kifejezetten gyerekek mellé ajánljuk.",
+        "story-karamell": "Karamell egy szomorú sorsú, de hihetetlenül életvidám kisfiú, akit egy autós találta az esőben, a főút mellett. Imádja a hasvakarást és mindenkit azonnal a szívébe zár. Más cicákkal is jól kijön.",
+        "story-cica3": "Bundás egy nyugodt, idősödő cicalány, aki a menhely egyik legbölcsebb lakója. Imád napozni és hosszú órákon át a fűtött párnán feküdni. Ideális társ egy nyugodt háztartásba.",
+        "story-cica4": "Mici egy örökmozgó kis fekete ördög, aki minden percben valamilyen kalandot keres. Rendkívül intelligens és gyorsan tanul. Fontos, hogy sok játékkal és ingergazdag környezettel legyen körülvéve.",
+        "story-cica5": "Tigris, ahogy a neve is mutatja, igazi harcos volt az utcán, de a menhelyen megmutatta bújós oldalát. Hosszú barátkozás után kinyílik, és hűséges, ragaszkodó társ lesz.",
+        "story-cica6": "Hópehely egy hosszú szőrű, elegáns cica, aki imádja a fésülést és a kényeztetést. Enyhén félénk, ezért csendes, kisgyerek nélküli otthont keres.",
+        "story-cica7": "Füles egy kedves vörös kandúr, akit a helyi horgász hozott be. Nagyon igényli az emberi figyelmet és a cirógatást. Nem szeret egyedül lenni, ha sokat távol vagy, jó, ha van cicatárs.",
+        "story-cica8": "Villám egy fiatal és energikus cica, akinek minden izma a játékra és futásra van kitalálva. Legjobb lenne egy biztonságos, cicabiztos udvarral rendelkező helyen.",
+        "story-cica9": "Riska egy szelíd, foltos cicalány, akit dobozban hagytak a menhely ajtaja előtt. Bár eleinte bizonytalan, hamar megszokja az új otthonát. Nagyszerű társ idősebb embereknek.",
+        "story-cica10": "Peti egy igazi kis művész lélek, aki szeret a magasban lenni és onnan figyelni a világot. Szinte sosem nyávog, csendes és megfontolt.",
+        "story-cica11": "Lola egy rendkívül bújós, fekete kislány, aki minden éjszaka igényli a gazdija közelségét. Egy igazi 'tapadós' cica, akinek a szerelem a legfontosabb.",
+        "story-cica12": "Max egy szürke-fehér, nagytestű kandúr, aki imádja a hasát és a finom falatokat. Kissé lusta, de ha kedve van, játszik a tollasbotra.",
+        "adopt": {
+            "key-gender": "Ivar:",
+            "key-age": "Kor:",
+            "key-breed": "Fajta:",
+            "key-personality": "Jellemzők:",
+            "key-neutered": "Ivartalanítva:",
+            "key-info": "Egyéb információk:",
+
+            "cat1": {
+                "name": "Csipesz",
+                "gender": "Kandúr",
+                "age": "2 év",
+                "breed": "Házi cica (Közönséges)",
+                "personality": "Felfedező, ragaszkodó, jól kijön a gyerekekkel",
+                "neutered": "Igen",
+                "info": "Lakásban és kint is tartható, nagyon okos."
+            },
+            "cat2": {
+                "name": "Karamell",
+                "gender": "Kandúr",
+                "age": "1 év",
+                "breed": "Európai rövidszőrű",
+                "personality": "Életvidám, bújós, társaságkedvelő",
+                "neutered": "Igen",
+                "info": "Más cicákkal kompatibilis, kutyát nem ismeri."
+            },
+            "cat3": {
+                "name": "Bundás",
+                "gender": "Nőstény",
+                "age": "6 év",
+                "breed": "Perzsa keverék",
+                "personality": "Nyugodt, bölcs, napozó",
+                "neutered": "Igen",
+                "info": "Csak lakásba, rendszeres szőrápolást igényel."
+            },
+            "cat4": {
+                "name": "Mici",
+                "gender": "Nőstény",
+                "age": "8 hónap",
+                "breed": "Házi cica (Fekete)",
+                "personality": "Energikus, vad, intelligens",
+                "neutered": "Még nem (túl fiatal)",
+                "info": "Aktivitást és sok játékot igényel."
+            },
+            "cat5": {
+                "name": "Tigris",
+                "gender": "Kandúr",
+                "age": "3 év",
+                "breed": "Bengáli keverék",
+                "personality": "Visszafogott, hűséges, ragaszkodó",
+                "neutered": "Igen",
+                "info": "Türelmes beillesztést igényel, kutyákkal nem javasolt."
+            },
+            "cat6": {
+                "name": "Hópehely",
+                "gender": "Nőstény",
+                "age": "4 év",
+                "breed": "Maine Coon keverék",
+                "personality": "Elegáns, félénk, kényeztetést szerető",
+                "neutered": "Igen",
+                "info": "Csendes otthont keres, kisgyermekek mellé nem."
+            },
+            "cat7": {
+                "name": "Füles",
+                "gender": "Kandúr",
+                "age": "1.5 év",
+                "breed": "Keverék (Vörös)",
+                "personality": "Barátságos, bújós, igényli a figyelmet",
+                "neutered": "Igen",
+                "info": "Nem szereti az egyedüllétet, ideális cicatársnak."
+            },
+            "cat8": {
+                "name": "Villám",
+                "gender": "Nőstény",
+                "age": "10 hónap",
+                "breed": "Házi cica (Tacskószínű)",
+                "personality": "Szuper energikus, futó, játékos",
+                "neutered": "Igen",
+                "info": "Imád kint lenni, biztonságos udvarral rendelkezők előnyben."
+            },
+            "cat9": {
+                "name": "Riska",
+                "gender": "Nőstény",
+                "age": "5 év",
+                "breed": "Házi cica (Foltos)",
+                "personality": "Szelíd, halk, bizonytalan de ragaszkodó",
+                "neutered": "Igen",
+                "info": "Jól kijön idősekkel, csendes életmódot kedvel."
+            },
+            "cat10": {
+                "name": "Peti",
+                "gender": "Kandúr",
+                "age": "3 év",
+                "breed": "Orosz kék keverék",
+                "personality": "Csendes, megfigyelő, magasságot kedvelő",
+                "neutered": "Igen",
+                "info": "Több más cicával is együtt élhet, nem territoriális."
+            },
+            "cat11": {
+                "name": "Lola",
+                "gender": "Nőstény",
+                "age": "2 év",
+                "breed": "Bombay keverék",
+                "personality": "Bújós, 'tapadós', szerelmes",
+                "neutered": "Igen",
+                "info": "Igényli a közelséget, igazi 'ölelő cica'."
+            },
+            "cat12": {
+                "name": "Max",
+                "gender": "Kandúr",
+                "age": "7 év",
+                "breed": "Brit rövidszőrű keverék",
+                "personality": "Lusta, haspók, nyugodt",
+                "neutered": "Igen",
+                "info": "Könnyen hízik, figyelni kell az étrendjére."
+            }
+        }
+    }
 }
