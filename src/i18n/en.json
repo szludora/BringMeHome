@@ -110,18 +110,54 @@
       "sub": "Rescues, adoptions, partnerships & more"
     },
     "events": [
-      "Autumn fundraiser & bake sale raised €3,250 for medical supplies.",
-      "Holiday adoption drive: 23 cats found homes.",
-      "Partnered with Paws & Claws Vet for weekend spay/neuter clinics.",
-      "New volunteer orientation added 18 active volunteers.",
-      "Launched TNR program; completed 32 surgeries in the first month.",
-      "Emergency warehouse intake: 14 cats rescued and stabilized.",
-      "Opened a quarantine room with 6 new cages and improved ventilation.",
-      "Community microchipping & vaccination clinic served 40 cats.",
-      "Food sponsorship with WhiskerFeast: 300 kg/month of kibble secured.",
-      "“Furever Home Week” led to 28 adoptions.",
-      "Foster medical fund covered 12 treatments for special-needs cats.",
-      "Open Day workshops on cat care drew 80 attendees and 9 new fosters."
+      {
+        "short": "Autumn fundraiser & bake sale raised €3,250 for medical supplies.",
+        "long": "This fundraising event was designed to bring the community together in support of our rescued cats. Volunteers prepared a variety of creative activities that encouraged participation. The atmosphere was warm and welcoming, allowing people to learn more about our mission. Many attendees were inspired to contribute, even in small ways. The event demonstrated how collective effort can create meaningful change."
+      },
+      {
+        "short": "Holiday adoption drive: 23 cats found homes.",
+        "long": "Adoption events always carry a special atmosphere of joy and hope. Families came to meet the cats, learn about their stories, and find a new companion. Our volunteers guided the process with care and attention. The event highlighted the importance of responsible pet ownership. Each adoption marked a new beginning for both animal and family."
+      },
+      {
+        "short": "Partnered with Paws & Claws Vet for weekend spay/neuter clinics.",
+        "long": "Forming partnerships is an important part of ensuring long-term sustainability. This collaboration opened the door for new opportunities and resources. It also strengthened our credibility within the wider community. By working together, both sides gained valuable insights and support. Such partnerships lay the foundation for more effective rescue work in the future."
+      },
+      {
+        "short": "New volunteer orientation added 18 active volunteers.",
+        "long": "Welcoming new volunteers is always a positive milestone. Each person brought unique skills and enthusiasm to the team. Training sessions ensured they felt confident in their roles. Their involvement lightened the workload and expanded our capacity. This growth strengthened the sense of community within the organization."
+      },
+      {
+        "short": "Launched TNR program; completed 32 surgeries in the first month.",
+        "long": "The medical program marked a crucial step toward healthier cat populations. A focus on preventive care reduced future risks. The process required coordination between staff, volunteers, and external experts. Many animals received treatment that significantly improved their wellbeing. The initiative proved how vital medical support is to rescue operations."
+      },
+      {
+        "short": "Emergency warehouse intake: 14 cats rescued and stabilized.",
+        "long": "This rescue was an urgent response to a challenging situation. The team worked quickly to ensure the animals’ safety. Volunteers coordinated transport and initial assessments. Despite the difficulties, the rescue was carried out smoothly. It reminded everyone why timely action is so important in saving lives."
+      },
+      {
+        "short": "Opened a quarantine room with 6 new cages and improved ventilation.",
+        "long": "Facility improvements are essential for long-term care. This update provided a safer and more comfortable environment. The changes reflected feedback from staff and volunteers. Better conditions also eased the stress on the animals. It was a reminder that small improvements add up to big impacts over time."
+      },
+      {
+        "short": "Community microchipping & vaccination clinic served 40 cats.",
+        "long": "Community events help raise awareness about responsible pet ownership. People had the chance to engage directly with our mission. The day provided education alongside practical services. Families left feeling more confident about caring for animals. Such outreach builds long-lasting connections between rescues and the public."
+      },
+      {
+        "short": "Food sponsorship with WhiskerFeast: 300 kg/month of kibble secured.",
+        "long": "This agreement ensured a steady supply of essential resources. It took time and trust to build the relationship. The partnership will reduce uncertainty and provide stability. Both sides benefit from the exchange of support. It represents a step toward greater resilience in rescue operations."
+      },
+      {
+        "short": "“Furever Home Week” led to 28 adoptions.",
+        "long": "The adoption week created a festive and uplifting environment. Families had time to meet several cats and choose the right match. The process emphasized careful consideration and commitment. Each successful adoption brought joy to everyone involved. It reminded us how adoption is the heart of rescue work."
+      },
+      {
+        "short": "Foster medical fund covered 12 treatments for special-needs cats.",
+        "long": "Special medical support gave vulnerable cats a second chance. Many of the treatments required close monitoring. Volunteers ensured the animals felt safe throughout recovery. These efforts highlighted the value of foster families. The initiative made a clear difference in the lives of fragile cats."
+      },
+      {
+        "short": "Open Day workshops on cat care drew 80 attendees and 9 new fosters.",
+        "long": "The open day gave the public a behind-the-scenes look at our work. Workshops provided practical advice on everyday cat care. Guests met volunteers and heard about their experiences. The event inspired some attendees to become fosters themselves. It strengthened trust and connection between the shelter and the community."
+      }
     ],
     "eventTypes": {
       "1": "Fundraising",

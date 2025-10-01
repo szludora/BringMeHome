@@ -2,7 +2,7 @@ import { loadHero, loadLayout } from "./load.js";
 import { initLanguage } from "../i18n/i18n.js";
 import { setupNavbarLinks } from "./setupNavbarLinks.js";
 import { handleInitialHashScroll } from "./handleInitialHashScroll.js";
-import {createTimeline} from "../alt/logic/journey.js";
+import {createTimeline} from "./sub/journey.js";
 
 export async function initEvents() {
   const isIndex =

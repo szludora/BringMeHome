@@ -29,10 +29,62 @@
 }
 .timeline-item:hover { background-color: rgba(0,0,0,.02); border-radius: .5rem; }
 
-.timeline_list_content{
+.timeline_list_strong{
     color: #0e4309 !important;
 }
 
-.timeline_list_date{
+.timeline_list_soft{
     color: #a8cda4 !important;
+}
+
+.hidden-content-image{
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Counter chip & nav buttons --- */
+.gallery .gallery-counter {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    color: #fff;
+    background: rgba(0, 0, 0, .55);     /* readable on any image */
+    backdrop-filter: saturate(120%) blur(2px);
+    /*box-shadow: var(--bs-box-shadow-sm);*/
+}
+
+.gallery .gallery-nav {
+    width: 2.25rem;
+    height: 2.25rem;
+    line-height: 1;
+    padding: 0;
+    border-radius: 50%;
+    opacity: .9;
+}
+.gallery .gallery-nav:focus-visible {
+    /*outline: 2px solid var(--bs-primary);*/
+    outline-offset: 2px;
+}
+
+/* Optional: put the counter on the right instead */
+.gallery .gallery-counter.end {
+    left: auto;
+    right: .5rem;
+}
+
+.hidden-content-image{
+    width: 100%;
 }
