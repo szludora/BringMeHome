@@ -1,6 +1,5 @@
 /*------------------- Time Line -------------------*/
 
-/* Minimal, Bootstrap-friendly timeline styling */
 .timeline {
     --tl-line: #a8cda4;
     --tl-dot: #467242;
@@ -41,29 +40,14 @@
     margin: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* --- Counter chip & nav buttons --- */
 .gallery .gallery-counter {
     position: absolute;
     top: .5rem;
     left: .5rem;
     color: #fff;
-    background: rgba(0, 0, 0, .55);     /* readable on any image */
+    background: rgba(0, 0, 0, .55);
     backdrop-filter: saturate(120%) blur(2px);
-    /*box-shadow: var(--bs-box-shadow-sm);*/
 }
 
 .gallery .gallery-nav {
@@ -75,7 +59,6 @@
     opacity: .9;
 }
 .gallery .gallery-nav:focus-visible {
-    /*outline: 2px solid var(--bs-primary);*/
     outline-offset: 2px;
 }
 
