@@ -28,8 +28,7 @@ const TYPE_BADGE = {
     "8": "text-bg-primary",
 };
 
-// const monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-const monthNames = ["month-names.","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const pad2 = n => String(n).padStart(2, "0");
 
 function renderTimeline(items, { sort = "asc", groupByYear = true } = {}) {
