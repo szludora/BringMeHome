@@ -12,11 +12,11 @@ export async function initEvents() {
   if (isIndex) {
     await loadHero();
     setupNavbarLinks(true);
+    createTimeline();
   } else {
     await loadLayout();
     setupNavbarLinks(false);
   }
-  createTimeline();
   initLanguage();
   handleInitialHashScroll();
 }
