@@ -1,3 +1,5 @@
+const { Collapse } = window.bootstrap;
+
 /* ---------- Sample Made-Up Data ---------- */
 /* Under normal conditions this object would come from a server. Creating a sample object for now for demo. */
 const data = [
@@ -79,10 +81,12 @@ function renderTimeline(items, { sort = "asc", groupByYear = true } = {}) {
             for(let hiddenEl of document.querySelectorAll("[data-hidden-index]")){
                 const contentIndex = hiddenEl.getAttribute("data-hidden-index");
                 if(contentIndex === triggeredIndex){
-                    hiddenEl.classList.toggle("collapse");
+                    const c = new Collapse(hiddenEl, { toggle: false });
+                    c.toggle();
                 }else{
-                    if(!hiddenEl.classList.contains("collapse")){
-                        hiddenEl.classList.toggle("collapse");
+                    if(hiddenEl.classList.contains("show")){
+                        const c = new Collapse(hiddenEl, { toggle: false });
+                        c.toggle();
                     }
                 }
             }
