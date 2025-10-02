@@ -3,8 +3,7 @@ node_modules/
 build/
 
 .DS_Store
-Thumbs.db
 *.log
 .vscode/
 
-# package-lock.json
+package-lock.json

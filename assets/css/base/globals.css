@@ -3,12 +3,32 @@
   --color-primary-light: #2f8a28;
   --color-primary-secondary: #5d7c5b;
   --color-primary-light: #0a4b0a91;
-  --color-btn-shadow: #8e8e8e;
+  --color-shadow: #8e8e8e;
+  --color-shadow-light: #dedede;
+  --color-shadow-inset: #e9e9e9;
   --color-btn-shadow-inset1: #a8cda4;
   --color-btn-shadow-inset2: #467242;
   --color-btn-text-shadow: #213f1f;
   --color-btn-img-shadow: #104610;
   --color-bg-body: #f8f8f8;
+
+  --color-bg-error: #fcbfbf;
+  --color-text-error: #4f0808;
+  --color-bg-success: #a0f0c4;
+  --color-text-success: #054321;
+  --color-bg-warning: #fdff88;
+  --color-text-warning: #4e4f08;
+  --color-bg-info: #a0e8f0;
+  --color-text-info: #0f575f;
+
+  --snack-color-bg-error: #fcbfbf;
+  --snack-color-text-error: #4f0808;
+  --snack-color-bg-success: #a0f0c4;
+  --snack-color-text-success: #054321;
+  --snack-color-bg-warning: #fdff88;
+  --snack-color-text-warning: #4e4f08;
+  --snack-color-bg-info: #a0e8f0;
+  --snack-color-text-info: #0f575f;
 
   --font-base: 14px;
   --font-h1: 64px;
@@ -23,6 +43,7 @@
   font-size: var(--font-base);
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: justify;
 }
 
 body {
@@ -36,6 +57,14 @@ section {
   padding-top: 5rem;
 }
 
+.hero {
+  height: 100dvh;
+}
+
+.container {
+  padding: auto 0;
+}
+
 h1,
 h2 {
   text-transform: uppercase;
@@ -43,7 +72,14 @@ h2 {
 
 img {
   display: block;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.circle {
+  border-radius: 50%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
 }
 
 @media (min-width: 992px) {
