@@ -106,6 +106,7 @@ function renderTimeline(items, { sort = "asc", groupByYear = true } = {}) {
             galleryCounter.innerText = 1 + "/" + it.images.length;
             for(let navigationButton of navigationButtons){
                 navigationButton.addEventListener("click",(event) => {
+                    event.stopPropagation();
                     try{
                         const contentImg = contentNode.querySelector(".hidden-content-image");
                         const galleryAction = event.target.getAttribute("data-gallery-action");
