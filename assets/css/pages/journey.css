@@ -50,6 +50,11 @@
 
 .hidden-content-image{
     margin: auto;
+    width: 100%;
+}
+
+.hidden-content{
+    cursor: auto;
 }
 
 /* --- Counter chip & nav buttons --- */
@@ -78,8 +83,4 @@
 .gallery .gallery-counter.end {
     left: auto;
     right: .5rem;
-}
-
-.hidden-content-image{
-    width: 100%;
 }

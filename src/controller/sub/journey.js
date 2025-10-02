@@ -149,6 +149,9 @@ function addDetailedDescription(hiddenContentTemplate, hiddenContainer, index){
     const contentNode = hiddenContentTemplate.content.firstElementChild.cloneNode(true);
     const contentHolder = contentNode.querySelector(".hidden-content");
     contentHolder.setAttribute("data-i18n","journey.events." + index + ".long");
+    contentHolder.addEventListener("click", (event) => {
+        event.stopPropagation();
+    });
     hiddenContainer.appendChild(contentNode);
     return contentNode;
 }
