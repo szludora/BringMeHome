@@ -58,6 +58,10 @@
     cursor: auto;
 }
 
+.hide-this{
+    display: none;
+}
+
 /* --- Counter chip & nav buttons --- */
 .gallery .gallery-counter {
     position: absolute;
