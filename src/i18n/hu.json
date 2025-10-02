@@ -166,16 +166,16 @@
          "finalCtaButton": "Örökbefogadói történetek", 
         "story-csipesz": "Csipesz egy igazi felfedező, aki a falu szélén, egy elhagyatott kunyhóban élt. Múltja kissé vad, de az emberi szeretetről való tudás felébresztette benne a ragaszkodást. Kifejezetten gyerekek mellé ajánljuk.",
         "story-karamell": "Karamell egy szomorú sorsú, de hihetetlenül életvidám kisfiú, akit egy autós találta az esőben, a főút mellett. Imádja a hasvakarást és mindenkit azonnal a szívébe zár. Más cicákkal is jól kijön.",
-        "story-cica3": "Bundás egy nyugodt, idősödő cicalány, aki a menhely egyik legbölcsebb lakója. Imád napozni és hosszú órákon át a fűtött párnán feküdni. Ideális társ egy nyugodt háztartásba.",
-        "story-cica4": "Mici egy örökmozgó kis fekete ördög, aki minden percben valamilyen kalandot keres. Rendkívül intelligens és gyorsan tanul. Fontos, hogy sok játékkal és ingergazdag környezettel legyen körülvéve.",
-        "story-cica5": "Tigris, ahogy a neve is mutatja, igazi harcos volt az utcán, de a menhelyen megmutatta bújós oldalát. Hosszú barátkozás után kinyílik, és hűséges, ragaszkodó társ lesz.",
-        "story-cica6": "Hópehely egy hosszú szőrű, elegáns cica, aki imádja a fésülést és a kényeztetést. Enyhén félénk, ezért csendes, kisgyerek nélküli otthont keres.",
-        "story-cica7": "Füles egy kedves vörös kandúr, akit a helyi horgász hozott be. Nagyon igényli az emberi figyelmet és a cirógatást. Nem szeret egyedül lenni, ha sokat távol vagy, jó, ha van cicatárs.",
-        "story-cica8": "Villám egy fiatal és energikus cica, akinek minden izma a játékra és futásra van kitalálva. Legjobb lenne egy biztonságos, cicabiztos udvarral rendelkező helyen.",
-        "story-cica9": "Riska egy szelíd, foltos cicalány, akit dobozban hagytak a menhely ajtaja előtt. Bár eleinte bizonytalan, hamar megszokja az új otthonát. Nagyszerű társ idősebb embereknek.",
-        "story-cica10": "Peti egy igazi kis művész lélek, aki szeret a magasban lenni és onnan figyelni a világot. Szinte sosem nyávog, csendes és megfontolt.",
-        "story-cica11": "Lola egy rendkívül bújós, fekete kislány, aki minden éjszaka igényli a gazdija közelségét. Egy igazi 'tapadós' cica, akinek a szerelem a legfontosabb.",
-        "story-cica12": "Max egy szürke-fehér, nagytestű kandúr, aki imádja a hasát és a finom falatokat. Kissé lusta, de ha kedve van, játszik a tollasbotra.",
+        "story-cica3": "Nokedli egy nyugodt, idősödő úr, aki korábban egy idős hölgy társa volt. A hölgy sajnos elhunyt, így Nokedli hozzánk került. Méltóságteljes és kiegyensúlyozott társ.",
+        "story-cica4": "Tébláb születése óta nálunk van, testvérei hamar gazdára találtak, de őt még senki sem vitte el. Igazi bohóc, mindig valamilyen galibában töri a lábát, innen a neve is.",
+        "story-cica5": "Snow egy igazi ritkaság, valószínűleg Ragdoll macska és házimacska keveréke. Az erdő szélén találtuk, azóta szobatiszta, de a vadóc múltja még néha előjön.",
+        "story-cica6": "Marci egy igazi túlélő, akit egy másik menhelyről hoztunk el, ahol már sok évet töltött. Hatalmas szíve van, és pontosan tudja, mit jelent a második esély.",
+        "story-cica7": "Démon nem a nevétől félelmetes. Egy gyártelepen élt, rettegett az emberektől. Bújni imád, de idő kell neki, hogy megbízzon az új gazdiban.",
+        "story-cica8": "Tódor a környék legnagyobb Main Coonja volt, amíg a gazdája el nem költözött. Kicsit bánatos, de a hatalmas testében hatalmas szeretet lapul.",
+        "story-cica9": "Riska egy dobozban árválkodott a menhely kapujában, valószínűleg egy nem kívánt alom tagjaként. Apró termete és hatalmas, ártatlan kék szemei azonnal meglágyították a szívünket. Bár félénken indult, hamar kiderült, hogy egy kíváncsi, bújós kislány, aki minden szeretettel megajándékozott percet viszonoz.",
+        "story-cica10": "Peti egy közlekedési baleset után került hozzánk, de a szerencsétlenség nem vette el az életkedvét! Miután felépült, kiderült, hogy egy igazi 'szóvivő', aki hangosan és vidáman kommentálja a nap eseményeit. Ő egy energia bomba és bohóc, aki a sárga kendőjével együtt keresi a gazdit, aki sokat 'beszélget' vele.",
+        "story-cica11": "Lola gazdája külföldre költözött, és sajnos nem vihette magával. Bár az elhagyatottság megviselte, a benne lakozó díva hamar előbújt. Ez a lógófülű szépség rendkívül méltóságteljes és higgadt, de csak akkor bújós, ha ő kezdeményezi. Egy igazi 'cool cat', aki nyugodt, felnőtt háztartásba ideális.",
+        "story-cica12": "Maxot korábbi gazdája adta le, mivel 'túl lustának' találta. Mi azonban imádjuk a lassú tempóját és a fenséges mogorva tekintetét! Ő egy nyugodt, de rendkívül intelligens 'zsémbes főnök', akit csak a legfinomabb falatokkal lehet előcsalogatni. Ideális társ azoknak, akik értékelik a csendes, kiegyensúlyozott macskabarátot.",
         "cats": {
             "key-gender": "Ivar:",
             "key-age": "Kor:",
@@ -186,111 +186,111 @@
 
             "cat1": {
                 "name": "Csipesz",
-                "gender": "Kandúr",
-                "age": "2 év",
-                "breed": "Házi cica (Közönséges)",
-                "personality": "Felfedező, ragaszkodó, jól kijön a gyerekekkel",
+                "gender": "Nőstény",
+                "age": "3 év",
+                "breed": "Cirmos házimacska",
+                "personality": "Kíváncsi és magabiztos, de a számára idegen helyzetekben tartózkodó. Intelligens és éber.",
                 "neutered": "Igen",
-                "info": "Lakásban és kint is tartható, nagyon okos."
+                "info": "ide még írni kell valamit"
             },
             "cat2": {
                 "name": "Karamell",
                 "gender": "Kandúr",
-                "age": "1 év",
-                "breed": "Európai rövidszőrű",
-                "personality": "Életvidám, bújós, társaságkedvelő",
+                "age": "2 év",
+                "breed": "Calico",
+                "personality": "Barátságos és játékos, szeret a figyelem középpontjában lenni. Gyorsan alkalmazkodik új környezethez.",
                 "neutered": "Igen",
-                "info": "Más cicákkal kompatibilis, kutyát nem ismeri."
+                "info": "Más cicákkal kompatibilis, de a kutyákat nem szereti."
             },
             "cat3": {
-                "name": "Bundás",
-                "gender": "Nőstény",
-                "age": "6 év",
-                "breed": "Perzsa keverék",
-                "personality": "Nyugodt, bölcs, napozó",
+                "name": "Nokedli",
+                "gender": "Kandúr",
+                "age": "3 év",
+                "breed": "Fehér-cirmos házimacska",
+                "personality": "Nyugodt, barátságos és kiegyensúlyozott. Megbízható és kedves társ.",
                 "neutered": "Igen",
                 "info": "Csak lakásba, rendszeres szőrápolást igényel."
             },
             "cat4": {
-                "name": "Mici",
-                "gender": "Nőstény",
-                "age": "8 hónap",
-                "breed": "Házi cica (Fekete)",
-                "personality": "Energikus, vad, intelligens",
-                "neutered": "Még nem (túl fiatal)",
+                "name": "Tébláb",
+                "gender": "Kandúr",
+                "age": "1 év",
+                "breed": "Szürke-cirmos házimacska",
+                "personality": "Könnyen barátkozó, imádja a hasvakarást. Szívesen alszik a gazdija mellett.",
+                "neutered": "Még nem, de örökbefogadás előtt ivartalanítva lesz.",
                 "info": "Aktivitást és sok játékot igényel."
             },
             "cat5": {
-                "name": "Tigris",
-                "gender": "Kandúr",
-                "age": "3 év",
-                "breed": "Bengáli keverék",
-                "personality": "Visszafogott, hűséges, ragaszkodó",
+                "name": "Snow",
+                "gender": "Nőstény",
+                "age": "4 év",
+                "breed": "Házimacska (ragdoll jellegű)",
+                "personality": "Kicsit vadóc, de nagyon ragaszkodó. Imád emberek között lenni, ideális kisgyermekes családokba.",
                 "neutered": "Igen",
                 "info": "Türelmes beillesztést igényel, kutyákkal nem javasolt."
             },
             "cat6": {
-                "name": "Hópehely",
-                "gender": "Nőstény",
-                "age": "4 év",
-                "breed": "Maine Coon keverék",
-                "personality": "Elegáns, félénk, kényeztetést szerető",
+                "name": "Marci",
+                "gender": "Kandúr",
+                "age": "6 év",
+                "breed": "Cirmos házimacska",
+                "personality":  "Nyugodt és magabiztos, igazi uralkodó típus. Erős és kiegyensúlyozott személyiség, aki élvezi a figyelmet.",
                 "neutered": "Igen",
-                "info": "Csendes otthont keres, kisgyermekek mellé nem."
+                "info": "Korából adódóan nyugodt környezetet igényel. De ő a menhelyünk legnyugodtabb cicája. Fogai miatt speciális étrendet és rendszeres orvosi ellenőrzést igényel."
             },
             "cat7": {
-                "name": "Füles",
+                "name": "Démon",
                 "gender": "Kandúr",
-                "age": "1.5 év",
-                "breed": "Keverék (Vörös)",
-                "personality": "Barátságos, bújós, igényli a figyelmet",
+                "age": "3 év",
+                "breed": "Fekete házimacska",
+                "personality": "Imád a gazdájával lenni, nagyon szeret bújni. Nagyon türelmes.",
                 "neutered": "Igen",
-                "info": "Nem szereti az egyedüllétet, ideális cicatársnak."
+                "info": "Imád kint lenni, biztonságos-macskahálóval felszerelt udvarral rendelkezők előnyben."
             },
             "cat8": {
-                "name": "Villám",
-                "gender": "Nőstény",
-                "age": "10 hónap",
-                "breed": "Házi cica (Tacskószínű)",
-                "personality": "Szuper energikus, futó, játékos",
+                "name": "Tódor",
+                "gender": "Kandúr",
+                "age": "5 év",
+                "breed":  "Main Coon",
+                "personality": "A \"szelíd óriás\" becenév tökéletesen illik rá. Nyugodt, barátságos és rendkívül ragaszkodó.",
                 "neutered": "Igen",
-                "info": "Imád kint lenni, biztonságos udvarral rendelkezők előnyben."
+                "info": "Szőre rendszeres vágást és ápolást igényel. Tökéletes választás gyermekek mellé."
             },
             "cat9": {
                 "name": "Riska",
                 "gender": "Nőstény",
-                "age": "5 év",
-                "breed": "Házi cica (Foltos)",
+                "age": "Fél év",
+                "breed": "Fehér házimacska",
                 "personality": "Szelíd, halk, bizonytalan de ragaszkodó",
-                "neutered": "Igen",
-                "info": "Jól kijön idősekkel, csendes életmódot kedvel."
+                "neutered": "Még nem, de örökbefogadás előtt ivartalanítva lesz.",
+                "info": "A menhelyünk lefiatalabb lakója, nagyon aktív és felfedező típus."
             },
             "cat10": {
                 "name": "Peti",
                 "gender": "Kandúr",
                 "age": "3 év",
-                "breed": "Orosz kék keverék",
-                "personality": "Csendes, megfigyelő, magasságot kedvelő",
+                "breed": "Foltos keverék házimacska",
+                "personality": "Imádja a saját hangját, megfigyelő, magasságot kedvelő",
                 "neutered": "Igen",
-                "info": "Több más cicával is együtt élhet, nem territoriális."
+                "info": "Igényli a társaságot, ezért olyan gazdit keresünk neki, aki sokat van otthon. Emellett tudna vállalni más cicákat is, hogy Peti soha ne legyen egyedül."
             },
             "cat11": {
                 "name": "Lola",
                 "gender": "Nőstény",
                 "age": "2 év",
-                "breed": "Bombay keverék",
+                "breed": "Skót lógófülű keverék",
                 "personality": "Bújós, 'tapadós', szerelmes",
                 "neutered": "Igen",
-                "info": "Igényli a közelséget, igazi 'ölelő cica'."
+                "info": "Jól kijön más háziállatokkal, akár kutya mellé is ajánljuk. Genetikai sajátosságai miatt érdemes figyelni az izületi problémákra."
             },
             "cat12": {
                 "name": "Max",
                 "gender": "Kandúr",
-                "age": "7 év",
+                "age": "4 év",
                 "breed": "Brit rövidszőrű keverék",
-                "personality": "Lusta, haspók, nyugodt",
+                "personality": "Lusta, haspók, de nagyon intelligens",
                 "neutered": "Igen",
-                "info": "Könnyen hízik, figyelni kell az étrendjére."
+                "info": "Nem tolakodó természet, kifejezetten csendes. Harmóniában él más állatokkal és gyerekekkel is. Gyorsan alkalmazkodik a változásokhoz."
             }
         }
     }
