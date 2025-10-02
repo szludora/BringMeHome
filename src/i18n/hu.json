@@ -3,6 +3,8 @@
   "hu": "Magyar",
   "toggleLanguage": "English",
   "test": "Kattints a gombra a nyelv angolra váltásához",
+  "read-more": "Több...",
+  "read-less": "Kevesebb...",
   "underConstruction": "Fejlesztés alatt...",
   "testLanguageChanges": "Most magyar",
   "nav-about": "Rólunk",
@@ -191,6 +193,20 @@
     "founder-role": "Alapító",
     "button-adopt": "Örökbe fogadok",
     "link-learn-more": "Tudj meg többet"
+  },
+  "month-names": {
+    "Jan":{"short": "Jan", "long": "Január"},
+    "Feb":{"short": "Feb", "long": "Február"},
+    "Mar":{"short": "Már", "long": "Március"},
+    "Apr":{"short": "Ápr", "long": "Április"},
+    "May":{"short": "Máj", "long": "Május"},
+    "Jun":{"short": "Jún", "long": "Június"},
+    "Jul":{"short": "Júl", "long": "Július"},
+    "Aug":{"short": "Aug", "long": "Augusztus"},
+    "Sep":{"short": "Szep", "long": "Szeptember"},
+    "Oct":{"short": "Okt", "long": "Október"},
+    "Nov":{"short": "Nov", "long": "November"},
+    "Dec":{"short": "Dec", "long": "December"}
   }
 }
 

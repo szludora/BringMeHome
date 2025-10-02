@@ -26,7 +26,8 @@ const TYPE_BADGE = {
     "8": "text-bg-primary",
 };
 
-const monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+// const monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const monthNames = ["month-names.","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const pad2 = n => String(n).padStart(2, "0");
 
 function renderTimeline(items, { sort = "asc", groupByYear = true } = {}) {
@@ -55,7 +56,8 @@ function renderTimeline(items, { sort = "asc", groupByYear = true } = {}) {
 
         const timeEl = node.querySelector("time");
         timeEl.dateTime = `${it.year}-${pad2(it.month)}`;
-        timeEl.textContent = `${monthNames[it.month - 1]} ${it.year}`;
+        timeEl.innerHTML = `<span data-i18n="month-names.${monthNames[it.month - 1]}.short"></span> ${it.year}`;
+        // timeEl.textContent = `${monthNames[it.month - 1]} ${it.year}`;
 
         const p = node.querySelector("p");
         p.setAttribute("data-i18n", "journey.events." + index + ".short");
@@ -70,13 +72,18 @@ function renderTimeline(items, { sort = "asc", groupByYear = true } = {}) {
         const hiddenContainer = node.querySelector("[data-hidden-index]");
         hiddenContainer.setAttribute("data-hidden-index","content-" + index);
         const ref = node.querySelector("a");
-        ref.setAttribute("data-event-index","content-" + index);
-        ref.addEventListener("click",(event) => {
+        ref.setAttribute("data-i18n","read-more");
+        node.setAttribute("data-event-index","content-" + index);
+        node.addEventListener("click",(event) => {
             const triggeredIndex = event.target.getAttribute("data-event-index");
             for(let hiddenEl of document.querySelectorAll("[data-hidden-index]")){
                 const contentIndex = hiddenEl.getAttribute("data-hidden-index");
                 if(contentIndex === triggeredIndex){
                     hiddenEl.classList.toggle("collapse");
+                }else{
+                    if(!hiddenEl.classList.contains("collapse")){
+                        hiddenEl.classList.toggle("collapse");
+                    }
                 }
             }
         });

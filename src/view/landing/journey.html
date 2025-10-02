@@ -13,46 +13,46 @@
 
   <template id="timeline-item">
     <li class="timeline-item d-flex position-relative ps-4 py-3">
-      <div class="flex-grow-1">
-        <time class="d-block fw-semibold text-body-emphasis small timeline_list_soft"></time>
-        <p class="mb-0 text-body-secondary small timeline_list_strong"></p>
-        <a class="mb-0 text-body-secondary small timeline_list_soft">Read more...</a>
-        <div class="collapse mt-2 timeline_list_strong" data-hidden-index="-1">
+      <div class="flex-grow-1 ignore-hit">
+        <time class="d-block fw-semibold text-body-emphasis small timeline_list_soft ignore-hit"></time>
+        <p class="mb-0 text-body-secondary small timeline_list_strong ignore-hit"></p>
+        <a class="mb-0 text-body-secondary small timeline_list_soft ignore-hit">Read more...</a>
+        <div class="collapse mt-2 timeline_list_strong clickable" data-hidden-index="-1">
         </div>
       </div>
-      <span class="badge align-self-start ms-3"></span>
+      <span class="badge align-self-start ms-3 ignore-hit"></span>
     </li>
   </template>
 
   <template id="hidden-content-no-image">
     <div>
-      <div class="hidden-content"></div>
+      <div class="hidden-content clickable"></div>
     </div>
   </template>
 
   <template id="hidden-content-one-image">
     <div>
-      <div class="container my-4">
-        <img alt="..." src="" class="img-fluid rounded-3 border shadow-sm hidden-content-image"/>
+      <div class="container my-4 clickable">
+        <img alt="..." src="" class="img-fluid rounded-3 border shadow-sm hidden-content-image clickable"/>
       </div>
 
-      <div class="hidden-content"></div>
+      <div class="hidden-content clickable"></div>
     </div>
   </template>
 
   <template id="hidden-content-multi-image">
     <div>
-      <div class="gallery container my-4">
-        <div class="position-relative">
+      <div class="gallery container my-4 clickable">
+        <div class="position-relative clickable">
 
-          <img alt="..." src="" class="img-fluid rounded-3 border shadow-sm hidden-content-image"/>
+          <img alt="..." src="" class="img-fluid rounded-3 border shadow-sm hidden-content-image clickable"/>
 
-          <div class="gallery-counter small rounded-pill px-2 py-1">
+          <div class="gallery-counter small rounded-pill px-2 py-1 clickable">
             <span id="gallery-counter">1 / 8</span>
           </div>
 
-          <button type="button" class="btn btn-light position-absolute top-50 start-0 translate-middle-y shadow-sm gallery-nav" data-gallery-action="prev" aria-label="Previous image">‹</button>
-          <button type="button" class="btn btn-light position-absolute top-50 end-0 translate-middle-y shadow-sm gallery-nav" data-gallery-action="next" aria-label="Next image">›</button>
+          <button type="button" class="btn btn-light position-absolute top-50 start-0 translate-middle-y shadow-sm gallery-nav clickable" data-gallery-action="prev" aria-label="Previous image">‹</button>
+          <button type="button" class="btn btn-light position-absolute top-50 end-0 translate-middle-y shadow-sm gallery-nav clickable" data-gallery-action="next" aria-label="Next image">›</button>
 
         </div>
       </div>

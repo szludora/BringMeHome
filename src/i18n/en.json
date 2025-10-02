@@ -3,6 +3,8 @@
   "hu": "Hungarian",
   "toggleLanguage": "Magyar",
   "test": "Click the button to change language to Hungarian",
+  "read-more": "Read more...",
+  "read-less": "Less...",
   "underConstruction": "Under construction...",
   "testLanguageChanges": "Now it's English",
   "nav-about": "About",
@@ -192,5 +194,19 @@
     "founder-role": "Founder",
     "button-adopt": "Adopt Me",
     "link-learn-more": "Learn More"
-  }
+  },
+  "month-names": {
+    "Jan":{"short": "Jan", "long": "January"},
+    "Feb":{"short": "Feb", "long": "February"},
+    "Mar":{"short": "Mar", "long": "March"},
+    "Apr":{"short": "Apr", "long": "April"},
+    "May":{"short": "May", "long": "May"},
+    "Jun":{"short": "Jun", "long": "June"},
+    "Jul":{"short": "Jul", "long": "July"},
+    "Aug":{"short": "Aug", "long": "August"},
+    "Sep":{"short": "Sep", "long": "September"},
+    "Oct":{"short": "Oct", "long": "October"},
+    "Nov":{"short": "Nov", "long": "November"},
+    "Dec":{"short": "Dec", "long": "December"}
+    }
 }
