@@ -123,6 +123,7 @@
     "cta-button1": "Ismerd meg örökbefogadható cicáinkat!",
     "cta-button2": "További örökbefogadói történetek"
   },
+
   "journey": {
     "title": {
       "main": "Az utunk eddig...",
@@ -236,5 +237,21 @@
     "Oct":{"short": "Okt", "long": "Október"},
     "Nov":{"short": "Nov", "long": "November"},
     "Dec":{"short": "Dec", "long": "December"}
+  },
+  "storiesPage": {
+  "title": "Örökbefogadói történetek",
+  "prev": "Előző történet",
+  "next": "Következő történet",
+  "story1": {
+    "title": "Egy nagyszerű kaland kezdete",
+    "subtitle": "Fluffy új otthonra talál",
+    "text": "A család mindig is egy cicáról álmodott, és amikor meglátták Fluffyt, rögtön tudták, hogy ő a tökéletes választás. A kis macska azonnal belopta magát a szívükbe, és azóta a család minden napja tele van játékkal és nevetéssel. Fluffy igazi otthonra talált, és a család boldogan adta neki a második esélyt."
+  },
+  "story2": {
+    "title": "Egy magányos szív gyógyulása",
+    "subtitle": "Bella és gazdája története",
+    "text": "Bella, a nyugodt és csendes cica, egyedül élt egy ideig, amíg rá nem talált az új gazdája, egy idősebb hölgy. Kettejük között azonnal kialakult a kötelék. Bella nyugalmat hozott az otthonba, és a gazdija háláját fejezi ki, amiért meleg otthont adhatott neki."
   }
+}
+
 }

@@ -237,5 +237,21 @@
     "Oct":{"short": "Oct", "long": "October"},
     "Nov":{"short": "Nov", "long": "November"},
     "Dec":{"short": "Dec", "long": "December"}
-    }
+    },
+    "storiesPage": {
+  "title": "Adoption Stories",
+  "prev": "Previous story",
+  "next": "Next story",
+  "story1": {
+    "title": "The Beginning of a Great Adventure",
+    "subtitle": "Fluffy Finds a New Home",
+    "text": "The family had always dreamed of having a cat, and when they first saw Fluffy, they knew instantly she was the perfect choice. The little cat quickly won their hearts, and since then every day has been filled with play and laughter. Fluffy has truly found her forever home, and the family is grateful to have given her a second chance."
+  },
+  "story2": {
+    "title": "The Healing of a Lonely Heart",
+    "subtitle": "The Story of Bella and Her Owner",
+    "text": "Bella, a calm and quiet cat, had lived alone for a while until she found her new owner, an elderly lady. A bond formed between them instantly. Bella brought peace and comfort into the home, and her owner is deeply thankful for the joy and warmth she has brought into her life."
+  }
+}
+
 }
