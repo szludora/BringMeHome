@@ -240,14 +240,6 @@
     },
   "catsPage": {
     "title": "Adoptable Cats",
-    "intro": "On this page, we introduce our adoptable cats, where you can get to know their stories and personalities.",
-    "detailsCta": "Adopt me",
-    "finalCtaTitle": "Are you ready for such an adventure?",
-    "story-csipesz": "Csipesz is a true explorer who once lived on the edge of the village, in an abandoned hut. His past is a bit wild, but discovering human affection awakened his sense of attachment.",
-    "story-karamell": "Karamell has had a sad fate, but he is an incredibly cheerful little boy. A driver found him in the rain by the roadside. He loves belly rubs and immediately opens his heart to everyone."
-  },
-  "catsPage": {
-    "title": "Adoptable Cats",
     "intro": "On this page, we'd like to introduce you to the special cats who are waiting for a new, loving home. Each of them has a unique story behind them, full of lessons and hope: you can learn how they came to us and what makes their personality so distinct. Please take the time to look through their profiles, because your true companion might be waiting for you right here! Remember: by adopting, you are not just giving one cat a chance; you are also freeing up space for another animal in need of rescue. Give a rescued life a chance!",
     "detailsCta": "Adopt Me",
     "finalCtaTitle": "Ready for an adventure like this?",
@@ -381,5 +373,72 @@
             "info": "Not a pushy nature, especially quiet. Lives in harmony with other animals and children. Adapts quickly to changes."
         }
     }
+},
+"adopterForm": {
+    "title": "Adoption Application Form",
+    "subtitle": "Please complete the form below so we can learn more about you and your ideas regarding the cat. Your data will be treated confidentially and used only during the adoption process.",
+    "form": {
+      "adopterName": {
+        "label": "Full Name",
+        "help": "As it appears on your ID card."
+      },
+      "adopterEmail": "Email Address",
+      "adopterPhone": {
+        "label": "Phone Number",
+        "help": "Please include the country code (e.g., +36 for Hungary).",
+        "placeholder": "e.g. +36-XX-XXX-XXXX"
+      },
+      "adopterCity": "City",
+      "housingType": {
+        "label": "What type of property do you live in?",
+        "options": {
+          "default": "Select...",
+          "house": "House (with own garden)",
+          "flat": "Apartment/Flat (with balcony)",
+          "panel": "Panel Apartment/Flat (without balcony)",
+          "other": "Other"
+        }
+      },
+      "safetyNetCommitment": "If I wish to adopt a cat with indoor-outdoor keeping, I commit to purchasing and installing a secure cat safety net.",
+      "hasPreviousPets": {
+        "label": "Have you owned a pet before?",
+        "yes": "Yes",
+        "no": "No"
+      },
+      "currentPets": {
+        "label": "Do you currently have other animals in your household?",
+        "options": {
+          "none": "None",
+          "cat": "Cat",
+          "dog": "Dog",
+          "parrot": "Parrot",
+          "hamster": "Hamster",
+          "other": "Other"
+        }
+      },
+      "chooseCat": "Which cat would you like to adopt?",
+      "additionalNotes": "Other notes / Anything you consider important to mention",
+      "submit": "Submit Application",
+      "status": {
+        "sending": "Sending application...",
+        "success": "Successfully submitted! Thank you for your interest, we will contact you soon.",
+        "error": "An error occurred while sending the application! Please try again later."
+      }
+    },
+    "catsList": {
+      "cat1": "Csipesz",
+      "cat2": "Karamell",
+      "cat3": "Nokedli",
+      "cat4": "Tébláb",
+      "cat5": "Snow",
+      "cat6": "Marci",
+      "cat7": "Démon",
+      "cat8": "Tódor",
+      "cat9": "Riska",
+      "cat10": "Peti",
+      "cat11": "Lola",
+      "cat12": "Max"
+    }
+  }
 }
-}
+
