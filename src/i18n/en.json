@@ -11,12 +11,14 @@
     "join-us": "Join us"
   },
   "test": "Click the button to change language to Hungarian",
+  "read-more": "Read more...",
+  "read-less": "Less...",
   "underConstruction": "Under construction...",
   "testLanguageChanges": "Now it's English",
   "nav-about": "About",
   "nav-adopt": "Adopt",
   "nav-adopters": "Adopters",
-  "nav-team": "Team",
+  "nav-journey": "Our Journey",
   "nav-homeSeeker": "Home Seeker",
   "nav-faq": "FAQ",
   "about": {
@@ -122,7 +124,72 @@
     "cta-button1": "Meet our adoptable cats!",
     "cta-button2": "More adopter stories"
   },
-  "team": "Our Team",
+  "journey": {
+    "title": {
+      "main": "Our Journey so far...",
+      "sub": "Rescues, adoptions, partnerships & more"
+    },
+    "events": [
+      {
+        "short": "Autumn fundraiser & bake sale raised €3,250 for medical supplies.",
+        "long": "This fundraising event was designed to bring the community together in support of our rescued cats. Volunteers prepared a variety of creative activities that encouraged participation. The atmosphere was warm and welcoming, allowing people to learn more about our mission. Many attendees were inspired to contribute, even in small ways. The event demonstrated how collective effort can create meaningful change."
+      },
+      {
+        "short": "Holiday adoption drive: 23 cats found homes.",
+        "long": "Adoption events always carry a special atmosphere of joy and hope. Families came to meet the cats, learn about their stories, and find a new companion. Our volunteers guided the process with care and attention. The event highlighted the importance of responsible pet ownership. Each adoption marked a new beginning for both animal and family."
+      },
+      {
+        "short": "Partnered with Paws & Claws Vet for weekend spay/neuter clinics.",
+        "long": "Forming partnerships is an important part of ensuring long-term sustainability. This collaboration opened the door for new opportunities and resources. It also strengthened our credibility within the wider community. By working together, both sides gained valuable insights and support. Such partnerships lay the foundation for more effective rescue work in the future."
+      },
+      {
+        "short": "New volunteer orientation added 18 active volunteers.",
+        "long": "Welcoming new volunteers is always a positive milestone. Each person brought unique skills and enthusiasm to the team. Training sessions ensured they felt confident in their roles. Their involvement lightened the workload and expanded our capacity. This growth strengthened the sense of community within the organization."
+      },
+      {
+        "short": "Launched TNR program; completed 32 surgeries in the first month.",
+        "long": "The medical program marked a crucial step toward healthier cat populations. A focus on preventive care reduced future risks. The process required coordination between staff, volunteers, and external experts. Many animals received treatment that significantly improved their wellbeing. The initiative proved how vital medical support is to rescue operations."
+      },
+      {
+        "short": "Emergency warehouse intake: 14 cats rescued and stabilized.",
+        "long": "This rescue was an urgent response to a challenging situation. The team worked quickly to ensure the animals’ safety. Volunteers coordinated transport and initial assessments. Despite the difficulties, the rescue was carried out smoothly. It reminded everyone why timely action is so important in saving lives."
+      },
+      {
+        "short": "Opened a quarantine room with 6 new cages and improved ventilation.",
+        "long": "Facility improvements are essential for long-term care. This update provided a safer and more comfortable environment. The changes reflected feedback from staff and volunteers. Better conditions also eased the stress on the animals. It was a reminder that small improvements add up to big impacts over time."
+      },
+      {
+        "short": "Community microchipping & vaccination clinic served 40 cats.",
+        "long": "Community events help raise awareness about responsible pet ownership. People had the chance to engage directly with our mission. The day provided education alongside practical services. Families left feeling more confident about caring for animals. Such outreach builds long-lasting connections between rescues and the public."
+      },
+      {
+        "short": "Food sponsorship with WhiskerFeast: 300 kg/month of kibble secured.",
+        "long": "This agreement ensured a steady supply of essential resources. It took time and trust to build the relationship. The partnership will reduce uncertainty and provide stability. Both sides benefit from the exchange of support. It represents a step toward greater resilience in rescue operations."
+      },
+      {
+        "short": "“Furever Home Week” led to 28 adoptions.",
+        "long": "The adoption week created a festive and uplifting environment. Families had time to meet several cats and choose the right match. The process emphasized careful consideration and commitment. Each successful adoption brought joy to everyone involved. It reminded us how adoption is the heart of rescue work."
+      },
+      {
+        "short": "Foster medical fund covered 12 treatments for special-needs cats.",
+        "long": "Special medical support gave vulnerable cats a second chance. Many of the treatments required close monitoring. Volunteers ensured the animals felt safe throughout recovery. These efforts highlighted the value of foster families. The initiative made a clear difference in the lives of fragile cats."
+      },
+      {
+        "short": "Open Day workshops on cat care drew 80 attendees and 9 new fosters.",
+        "long": "The open day gave the public a behind-the-scenes look at our work. Workshops provided practical advice on everyday cat care. Guests met volunteers and heard about their experiences. The event inspired some attendees to become fosters themselves. It strengthened trust and connection between the shelter and the community."
+      }
+    ],
+    "eventTypes": {
+      "1": "Fundraising",
+      "2": "Partnership",
+      "3": "Adoption",
+      "4": "Volunteers",
+      "5": "Medical",
+      "6": "Rescue",
+      "7": "Update",
+      "8": "Outreach"
+    }
+  },
   "homeSeeker": "Home Seeker",
   "thanks": "Thank You",
   "faq": {
@@ -156,5 +223,163 @@
     "description": " - every cat is waiting for a loving home. Until they find it, they happily purr with us.",
     "founder-name": "Luca Kovács",
     "founder-role": "Founder"
-  }
+  },
+  "month-names": {
+    "Jan":{"short": "Jan", "long": "January"},
+    "Feb":{"short": "Feb", "long": "February"},
+    "Mar":{"short": "Mar", "long": "March"},
+    "Apr":{"short": "Apr", "long": "April"},
+    "May":{"short": "May", "long": "May"},
+    "Jun":{"short": "Jun", "long": "June"},
+    "Jul":{"short": "Jul", "long": "July"},
+    "Aug":{"short": "Aug", "long": "August"},
+    "Sep":{"short": "Sep", "long": "September"},
+    "Oct":{"short": "Oct", "long": "October"},
+    "Nov":{"short": "Nov", "long": "November"},
+    "Dec":{"short": "Dec", "long": "December"}
+    },
+  "catsPage": {
+    "title": "Adoptable Cats",
+    "intro": "On this page, we introduce our adoptable cats, where you can get to know their stories and personalities.",
+    "detailsCta": "Adopt me",
+    "finalCtaTitle": "Are you ready for such an adventure?",
+    "story-csipesz": "Csipesz is a true explorer who once lived on the edge of the village, in an abandoned hut. His past is a bit wild, but discovering human affection awakened his sense of attachment.",
+    "story-karamell": "Karamell has had a sad fate, but he is an incredibly cheerful little boy. A driver found him in the rain by the roadside. He loves belly rubs and immediately opens his heart to everyone."
+  },
+  "catsPage": {
+    "title": "Adoptable Cats",
+    "intro": "On this page, we'd like to introduce you to the special cats who are waiting for a new, loving home. Each of them has a unique story behind them, full of lessons and hope: you can learn how they came to us and what makes their personality so distinct. Please take the time to look through their profiles, because your true companion might be waiting for you right here! Remember: by adopting, you are not just giving one cat a chance; you are also freeing up space for another animal in need of rescue. Give a rescued life a chance!",
+    "detailsCta": "Adopt Me",
+    "finalCtaTitle": "Ready for an adventure like this?",
+    "finalCtaButton": "Adoption Stories",
+    "story-csipesz": "Csipesz is a true explorer who lived in an abandoned hut on the edge of the village. Her past is a little wild, but discovering human affection has awakened a deep attachment in her. She is highly recommended for families with children.",
+    "story-karamell": "Karamell is a boy with a sad history but an incredibly cheerful spirit. He was found by a driver on the main road in the rain. He loves belly rubs and immediately embraces everyone. He gets along well with other cats.",
+    "story-cica3": "Nokedli is a calm, senior gentleman who was previously the companion of an elderly lady. Sadly, the lady passed away, and Nokedli came to us. He is a dignified and balanced companion.",
+    "story-cica4": "Tébláb has been with us since birth; his siblings were adopted quickly, but he's still waiting. He's a real clown, always getting into some kind of mischief (hence his name, which means 'stumblefoot').",
+    "story-cica5": "Snow is a true rarity, likely a mix of Ragdoll and domestic cat. We found her on the edge of the forest. She is now litter-trained, but her wild past sometimes resurfaces.",
+    "story-cica6": "Marci is a true survivor, whom we brought from another shelter where he had spent many years. He has a huge heart and knows exactly what a second chance means.",
+    "story-cica7": "Démon (Demon) isn't scary because of his name. He lived on a factory site, terrified of people. He loves to cuddle, but he needs time to trust a new owner.",
+    "story-cica8": "Tódor was the biggest Maine Coon in the neighborhood until his owner moved away. He is a little sad, but a huge love is hidden within his massive body.",
+    "story-cica9": "Riska was found orphaned in a box at the shelter gate, likely a member of an unwanted litter. Her tiny size and huge, innocent blue eyes immediately melted our hearts. Although she started out shy, it quickly became clear that she is a curious, cuddly little girl who reciprocates every moment of affection given to her.",
+    "story-cica10": "Peti came to us after a traffic accident, but the misfortune hasn't dampened his spirits! After he recovered, he proved to be a real 'spokescat' who loudly and cheerfully comments on the day's events. He's an energy bomb and a clown, who, along with his yellow bandana, is looking for an owner who will 'talk' with him a lot.",
+    "story-cica11": "Lola's owner moved abroad and unfortunately couldn't take her along. Although the abandonment took its toll, the diva residing within her soon emerged. This Fold beauty is extremely dignified and calm, but only cuddly if she initiates it. A true 'cool cat' who is ideal for a calm, adult household.",
+    "story-cica12": "Max was surrendered by his previous owner because they found him 'too lazy'. But we absolutely love his slow pace and his majestically grumpy gaze! He is a calm, but extremely intelligent 'grumpy boss' who can only be lured out with the finest treats. He's an ideal companion for those who appreciate a quiet, balanced cat friend.",
+    "cats": {
+        "key-gender": "Gender:",
+        "key-age": "Age:",
+        "key-breed": "Breed:",
+        "key-personality": "Personality:",
+        "key-neutered": "Neutered:",
+        "key-info": "Other Information:",
+
+        "cat1": {
+            "name": "Csipesz",
+            "gender": "Female",
+            "age": "3 years",
+            "breed": "Tabby Domestic Shorthair",
+            "personality": "Curious and confident, but reserved in unfamiliar situations. Intelligent and alert.",
+            "neutered": "Yes",
+            "info": "something needs to be written here"
+        },
+        "cat2": {
+            "name": "Karamell",
+            "gender": "Male",
+            "age": "2 years",
+            "breed": "Calico (Note: Calico is female only, translating based on Hungarian 'Kandúr')",
+            "personality": "Friendly and playful, loves being the center of attention. Adapts quickly to new environments.",
+            "neutered": "Yes",
+            "info": "Compatible with other cats, but does not like dogs."
+        },
+        "cat3": {
+            "name": "Nokedli",
+            "gender": "Male",
+            "age": "3 years",
+            "breed": "White and Tabby Domestic Shorthair",
+            "personality": "Calm, friendly, and balanced. A reliable and kind companion.",
+            "neutered": "Yes",
+            "info": "Indoor only, requires regular coat grooming."
+        },
+        "cat4": {
+            "name": "Tébláb",
+            "gender": "Male",
+            "age": "1 year",
+            "breed": "Gray Tabby Domestic Shorthair",
+            "personality": "Easily makes friends, loves belly rubs. Enjoys sleeping next to his owner.",
+            "neutered": "Not yet, but will be spayed/neutered before adoption.",
+            "info": "Requires activity and plenty of playtime."
+        },
+        "cat5": {
+            "name": "Snow",
+            "gender": "Female",
+            "age": "4 years",
+            "breed": "Domestic Shorthair (Ragdoll-like)",
+            "personality": "A bit wild, but very affectionate. Loves being around people, ideal for families with small children.",
+            "neutered": "Yes",
+            "info": "Requires patient settling in, not recommended with dogs."
+        },
+        "cat6": {
+            "name": "Marci",
+            "gender": "Male",
+            "age": "6 years",
+            "breed": "Tabby Domestic Shorthair",
+            "personality": "Calm and confident, a true regal type. Strong and balanced personality who enjoys attention.",
+            "neutered": "Yes",
+            "info": "Due to his age, he requires a calm environment. He is our calmest shelter cat. Needs a special diet and regular veterinary checks due to his teeth."
+        },
+        "cat7": {
+            "name": "Démon",
+            "gender": "Male",
+            "age": "3 years",
+            "breed": "Black Domestic Shorthair",
+            "personality": "Loves being with his owner, enjoys cuddling very much. Very patient.",
+            "neutered": "Yes",
+            "info": "Loves being outdoors; those with a safe, cat-netted yard are preferred."
+        },
+        "cat8": {
+            "name": "Tódor",
+            "gender": "Male",
+            "age": "5 years",
+            "breed": "Maine Coon",
+            "personality": "The nickname \"gentle giant\" fits him perfectly. He is calm, friendly, and extremely affectionate.",
+            "neutered": "Yes",
+            "info": "His fur requires regular trimming and grooming. Perfect choice for children."
+        },
+        "cat9": {
+            "name": "Riska",
+            "gender": "Female",
+            "age": "Six months",
+            "breed": "White Domestic Shorthair",
+            "personality": "Gentle, quiet, uncertain but affectionate",
+            "neutered": "Not yet, but will be spayed/neutered before adoption.",
+            "info": "Our youngest shelter resident, very active and an explorer type."
+        },
+        "cat10": {
+            "name": "Peti",
+            "gender": "Male",
+            "age": "3 years",
+            "breed": "Spotted Mixed Domestic Shorthair",
+            "personality": "Loves his own voice, observant, prefers high places",
+            "neutered": "Yes",
+            "info": "He requires companionship, so we are looking for an owner who is often at home. They should also be willing to adopt other cats so Peti is never alone."
+        },
+        "cat11": {
+            "name": "Lola",
+            "gender": "Female",
+            "age": "2 years",
+            "breed": "Scottish Fold Mix",
+            "personality": "Cuddly, 'velcro cat', loving",
+            "neutered": "Yes",
+            "info": "Gets along well with other pets, even recommended for a home with a dog. Due to her genetic characteristics, joint problems should be monitored."
+        },
+        "cat12": {
+            "name": "Max",
+            "gender": "Male",
+            "age": "4 years",
+            "breed": "British Shorthair Mix",
+            "personality": "Lazy, food-loving, but very intelligent",
+            "neutered": "Yes",
+            "info": "Not a pushy nature, especially quiet. Lives in harmony with other animals and children. Adapts quickly to changes."
+        }
+    }
+}
 }
