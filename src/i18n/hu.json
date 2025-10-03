@@ -11,12 +11,14 @@
     "join-us": "Csatlakozz hozzánk"
   },
   "test": "Kattints a gombra a nyelv angolra váltásához",
+  "read-more": "Több...",
+  "read-less": "Kevesebb...",
   "underConstruction": "Fejlesztés alatt...",
   "testLanguageChanges": "Most magyar",
   "nav-about": "Rólunk",
   "nav-adopt": "Örökbefogadás",
   "nav-adopters": "Örökbefogadóink",
-  "nav-team": "Csapat",
+  "nav-journey": "Utunk",
   "nav-homeSeeker": "Gazdikereső",
   "nav-faq": "GYIK",
   "about": {
@@ -121,7 +123,72 @@
     "cta-button1": "Ismerd meg örökbefogadható cicáinkat!",
     "cta-button2": "További örökbefogadói történetek"
   },
-  "team": "Csapatunk",
+  "journey": {
+    "title": {
+      "main": "Az utunk eddig...",
+      "sub": "Mentések, adoptációk, együttműködések és több"
+    },
+    "events": [
+      {
+        "short": "Őszi sütivásár és jótékonysági est során 3 250 €-t gyűjtöttünk orvosi felszerelésekre.",
+        "long": "Ez az adománygyűjtő esemény a közösség összefogását célozta meg a megmentett cicák támogatásáért. Önkénteseink különféle kreatív programokkal készültek, amelyekbe bárki bekapcsolódhatott. A hangulat barátságos és nyitott volt, így sokan jobban megismerhették a küldetésünket. Számos résztvevőt megérintett az ügy, és kisebb-nagyobb felajánlásokkal segítettek. Az esemény megmutatta, milyen erőt képviselhet a közös összefogás."
+      },
+      {
+        "short": "Karácsonyi örökbefogadó akciónk során 23 cica talált otthonra.",
+        "long": "Az örökbefogadó rendezvények mindig különleges, örömteli és reményteli hangulatot árasztanak. A családok megismerkedhettek a cicákkal, történeteikkel és megtalálhatták új társukat. Önkénteseink figyelmesen segítették a folyamatot. Az esemény ráirányította a figyelmet a felelős állattartás fontosságára. Minden örökbefogadás egy új kezdetet jelentett mind az állat, mind a gazda számára."
+      },
+      {
+        "short": "Partnerséget kötöttünk a Paws &amp; Claws állatorvosi rendelővel hétvégi ivartalanító klinikákhoz.",
+        "long": "A partnerségek kialakítása kulcsfontosságú a hosszú távú fenntarthatóság érdekében. Ez az együttműködés új lehetőségeket és forrásokat teremtett számunkra. Egyben növelte hitelességünket a tágabb közösség szemében is. A közös munka során mindkét fél értékes tapasztalatokat és támogatást nyert. Az ilyen partnerségek alapot adnak a jövőben még hatékonyabb mentési munkához."
+      },
+      {
+        "short": "Az új önkéntes képzésnek köszönhetően 18 aktív önkéntessel bővültünk.",
+        "long": "Az új önkéntesek érkezése mindig mérföldkő számunkra. Mindenki egyedi készségekkel és lelkesedéssel csatlakozott a csapathoz. A betanítási alkalmak segítettek abban, hogy magabiztosan végezhessék feladataikat. Részvételük megkönnyítette a munkát és bővítette lehetőségeinket. Ez a fejlődés tovább erősítette a közösség összetartozását."
+      },
+      {
+        "short": "Elindítottuk TNR programunkat, az első hónapban 32 ivartalanítást végeztünk.",
+        "long": "Az orvosi program fontos lépést jelentett az egészségesebb macskaközösségek felé. A megelőző ellátás kiemelt figyelmet kapott, ezzel csökkentve a jövőbeli kockázatokat. A folyamat összehangolt munkát igényelt a dolgozók, önkéntesek és külső szakemberek között. Számos állat kapott olyan kezelést, amely jelentősen javította közérzetét. Az akció bebizonyította, milyen létfontosságú az orvosi háttér a mentési munkában."
+      },
+      {
+        "short": "Sürgősségi raktármentés: 14 cica került biztonságba és ellátásra.",
+        "long": "Ez a mentés sürgős beavatkozást igényelt egy nehéz helyzetben. A csapat gyorsan dolgozott az állatok biztonságának érdekében. Az önkéntesek megszervezték a szállítást és az elsődleges vizsgálatokat. A nehézségek ellenére a mentés zökkenőmentesen zajlott. Mindenkit emlékeztetett arra, milyen fontos az időben történő cselekvés az életek megmentéséhez."
+      },
+      {
+        "short": "Megnyitottuk új karantén helyiségünket 6 ketreccel és jobb szellőzéssel.",
+        "long": "Az intézmény fejlesztései elengedhetetlenek a hosszú távú gondozáshoz. Ez a bővítés biztonságosabb és kényelmesebb környezetet teremtett. A változtatások az önkéntesek és dolgozók visszajelzéseit tükrözték. A jobb körülmények az állatok számára is csökkentették a stresszt. Ez emlékeztetett arra, hogy a kisebb fejlesztések hosszú távon nagy eredményeket hoznak."
+      },
+      {
+        "short": "Közösségi mikrochip- és oltási nap keretében 40 cicát láttunk el.",
+        "long": "A közösségi események segítenek felhívni a figyelmet a felelős állattartásra. Az érdeklődők közvetlenül kapcsolódhattak a küldetésünkhöz. A nap során az ismeretterjesztés gyakorlati szolgáltatásokkal párosult. A családok magabiztosabban tértek haza az állatok gondozásával kapcsolatban. Az ilyen rendezvények tartós kapcsolatokat építenek a menhely és a közösség között."
+      },
+      {
+        "short": "Eteltámogatási szerződés a WhiskerFeast-tel: havi 300 kg száraztáp biztosítva.",
+        "long": "Ez a megállapodás biztosította az alapvető források folyamatos ellátását. A kapcsolat kialakítása időt és bizalmat igényelt. A partnerség csökkenti a bizonytalanságot és nagyobb stabilitást ad. Mindkét fél kölcsönösen támogatást nyert. Ez a lépés a mentési munkák ellenállóbbá válását segíti elő."
+      },
+      {
+        "short": "A „Furever Home Hét” alatt 28 cicát> fogadtak örökbe.",
+        "long": "Az örökbefogadó hét ünnepi és felemelő hangulatot teremtett. A családoknak volt idejük több cicával is megismerkedni, hogy megtalálják a számukra megfelelőt. A folyamat a megfontolt döntést és az elköteleződést hangsúlyozta. Minden sikeres örökbefogadás örömöt hozott mindenkinek, aki részt vett benne. Ez emlékeztetett arra, hogy az örökbefogadás a mentési munka szíve."
+      },
+      {
+        "short": "A nevelőszülői orvosi alap 12 különleges igényű cica kezelését fedezte.",
+        "long": "A különleges orvosi ellátás második esélyt adott a sérülékeny cicáknak. Sok kezelés folyamatos megfigyelést igényelt. Az önkéntesek gondoskodtak arról, hogy az állatok biztonságban érezzék magukat a gyógyulás alatt. Ezek az erőfeszítések rávilágítottak a nevelőszülők szerepének fontosságára. Az akció kézzelfogható változást hozott a legkiszolgáltatottabb cicák életében."
+      },
+      {
+        "short": "Nyílt napunkon a macskagondozási workshopokon 80 látogató vett részt, és 9 új nevelőszülőt szereztünk.",
+        "long": "A nyílt nap lehetőséget adott a közönségnek, hogy bepillantson a munkánk kulisszái mögé. A workshopok gyakorlati tanácsokat nyújtottak a mindennapi macskagondozásról. A látogatók megismerkedhettek önkénteseinkkel és meghallgathatták tapasztalataikat. Az esemény néhány résztvevőt arra ösztönzött, hogy maga is nevelőszülő legyen. Ez erősítette a bizalmat és a kapcsolatot a menhely és a közösség között."
+      }
+    ],
+    "eventTypes": {
+      "1": "Adománygyűjtés",
+      "2": "Partnerség",
+      "3": "Örökbefogadás",
+      "4": "Önkéntesek",
+      "5": "Orvosi ellátás",
+      "6": "Mentés",
+      "7": "Fejlesztés",
+      "8": "Közösség"
+    }
+  },
   "homeSeeker": "Gazdikereső",
   "thanks": "Köszönet",
   "faq": {
@@ -293,5 +360,19 @@
                 "info": "Nem tolakodó természet, kifejezetten csendes. Harmóniában él más állatokkal és gyerekekkel is. Gyorsan alkalmazkodik a változásokhoz."
             }
         }
+  },
+  "month-names": {
+    "Jan":{"short": "Jan", "long": "Január"},
+    "Feb":{"short": "Feb", "long": "Február"},
+    "Mar":{"short": "Már", "long": "Március"},
+    "Apr":{"short": "Ápr", "long": "Április"},
+    "May":{"short": "Máj", "long": "Május"},
+    "Jun":{"short": "Jún", "long": "Június"},
+    "Jul":{"short": "Júl", "long": "Július"},
+    "Aug":{"short": "Aug", "long": "Augusztus"},
+    "Sep":{"short": "Szep", "long": "Szeptember"},
+    "Oct":{"short": "Okt", "long": "Október"},
+    "Nov":{"short": "Nov", "long": "November"},
+    "Dec":{"short": "Dec", "long": "December"}
     }
 }
