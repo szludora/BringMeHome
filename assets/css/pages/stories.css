@@ -1,25 +1,19 @@
 @import "/assets/css/main.css";
 
-
-.story-card {
-    
+.story-card {  
     width: 100%;
 }
-
 
 .carousel-control-prev,
 .carousel-control-next {
     width: 600px; 
     height: 80%; 
-    opacity: 0.2;
-    
+    opacity: 0.2;   
 }
-
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
     opacity: 1;
 }
-
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
