@@ -8,7 +8,10 @@
     "adopt": "Adopt a Cat",
     "learn-more": "Learn more",
     "support-us": "Support us",
-    "join-us": "Join us"
+    "join-us": "Join us",
+    "again": "Again",
+    "submit": "Beküldés",
+    "next": "Következő"
   },
   "test": "Click the button to change language to Hungarian",
   "read-more": "Read more...",
@@ -21,6 +24,7 @@
   "nav-journey": "Our Journey",
   "nav-homeSeeker": "Home Seeker",
   "nav-faq": "FAQ",
+  "nav-matchmaker": "Melyik cica illik hozzám?",
   "about": {
     "title": "About Us",
     "text1": "The BringMeHome team was founded to help every cat find a loving home. Every day we work to ensure that cats in shelters grow up safe, cared for, and loved. We believe that every cat deserves attention, playful moments, and peaceful rest.",
@@ -103,6 +107,38 @@
       "breed": "Main Coon",
       "character": "The nickname 'gentle giant' fits him perfectly. Calm, friendly, and extremely affectionate.",
       "special_features": "Huge, bushy fur, tufts of hair at the tips of his ears, and a majestic stance."
+    },
+    "cat9": {
+        "name": "Riska",
+        "gender": "Nőstény",
+        "age": "Fél év",
+        "breed": "Fehér házimacska",
+        "character": "Szelíd, halk, bizonytalan de ragaszkodó",
+        "special_features": "A menhelyünk lefiatalabb lakója, nagyon aktív és felfedező típus."
+    },
+    "cat10": {
+        "name": "Peti",
+        "gender": "Kandúr",
+        "age": "3 év",
+        "breed": "Foltos keverék házimacska",
+        "character": "Imádja a saját hangját, megfigyelő, magasságot kedvelő",
+        "special_features": "Igényli a társaságot, ezért olyan gazdit keresünk neki, aki sokat van otthon. Emellett tudna vállalni más cicákat is, hogy Peti soha ne legyen egyedül."
+    },
+    "cat11": {
+        "name": "Lola",
+        "gender": "Nőstény",
+        "age": "2 év",
+        "breed": "Skót lógófülű keverék",
+        "character": "Bújós, 'tapadós', szerelmes",
+        "special_features": "Jól kijön más háziállatokkal, akár kutya mellé is ajánljuk. Genetikai sajátosságai miatt érdemes figyelni az izületi problémákra."
+    },
+    "cat12": {
+        "name": "Max",
+        "gender": "Kandúr",
+        "age": "4 év",
+        "breed": "Brit rövidszőrű keverék",
+        "character": "Lusta, haspók, de nagyon intelligens",
+        "special_features": "Nem tolakodó természet, kifejezetten csendes. Harmóniában él más állatokkal és gyerekekkel is. Gyorsan alkalmazkodik a változásokhoz."
     },
     "section-title": "Why adopt from us?",
     "para1": "These cats came to us with special stories: some are shy and gentle, others are true clowns - but they are all ready for a loving home.",
@@ -238,14 +274,6 @@
     "Nov":{"short": "Nov", "long": "November"},
     "Dec":{"short": "Dec", "long": "December"}
     },
-  "catsPage": {
-    "title": "Adoptable Cats",
-    "intro": "On this page, we introduce our adoptable cats, where you can get to know their stories and personalities.",
-    "detailsCta": "Adopt me",
-    "finalCtaTitle": "Are you ready for such an adventure?",
-    "story-csipesz": "Csipesz is a true explorer who once lived on the edge of the village, in an abandoned hut. His past is a bit wild, but discovering human affection awakened his sense of attachment.",
-    "story-karamell": "Karamell has had a sad fate, but he is an incredibly cheerful little boy. A driver found him in the rain by the roadside. He loves belly rubs and immediately opens his heart to everyone."
-  },
   "catsPage": {
     "title": "Adoptable Cats",
     "intro": "On this page, we'd like to introduce you to the special cats who are waiting for a new, loving home. Each of them has a unique story behind them, full of lessons and hope: you can learn how they came to us and what makes their personality so distinct. Please take the time to look through their profiles, because your true companion might be waiting for you right here! Remember: by adopting, you are not just giving one cat a chance; you are also freeing up space for another animal in need of rescue. Give a rescued life a chance!",

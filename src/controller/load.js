@@ -1,5 +1,6 @@
 import { log, error } from "../core/logger.js";
 import { heroPages as pages } from "../main.js";
+import { handleForm } from "/src/controller/sub/matchmakerController.js";
 
 let container =
   document.getElementById("singlePage") ?? document.getElementById("app");
@@ -50,8 +51,10 @@ async function loadLandPage() {
       container.appendChild(section);
     }
     section.innerHTML = html;
+    if (page === "matchmaker") {
+      handleForm();
+    }
   }
-
   log("LandPages loaded");
 }
 

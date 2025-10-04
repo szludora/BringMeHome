@@ -9,6 +9,7 @@ export const heroPages = {
   about: "/src/view/landing/about.html",
   adopt: "/src/view/landing/adopt.html",
   adopters: "/src/view/landing/adopters.html",
+  matchmaker: "src/view/components/matchmaker/matchmaker.html",
   journey: "/src/view/landing/journey.html",
   homeSeeker: "/src/view/landing/homeSeeker.html",
   thanks: "/src/view/landing/thanks.html",
