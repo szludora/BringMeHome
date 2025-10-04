@@ -7,8 +7,8 @@
 }
 
 
-.carousel-control-prev,
-.carousel-control-next {
+.stories .carousel-control-prev,
+.stories .carousel-control-next {
     width: 20px; 
     height: 50%; 
     opacity: 0.2; 
@@ -17,13 +17,13 @@
     transform: translateY(-50%); 
 }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
+.stories .carousel-control-prev:hover,
+.stories .carousel-control-next:hover {
     opacity: 1;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+.stories .carousel-control-prev-icon,
+.stories .carousel-control-next-icon {
     filter: invert(100%); 
 }
 
