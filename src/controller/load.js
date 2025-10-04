@@ -1,6 +1,10 @@
 import { log, error } from "../core/logger.js";
 import { heroPages as pages } from "../main.js";
-import { handleForm } from "/src/controller/sub/matchmakerController.js";
+import {
+  showTab,
+  nextPrev,
+  setOriginalForm,
+} from "../controller/sub/matchmakerController.js";
 
 let container =
   document.getElementById("singlePage") ?? document.getElementById("app");
@@ -51,8 +55,13 @@ async function loadLandPage() {
       container.appendChild(section);
     }
     section.innerHTML = html;
+
     if (page === "matchmaker") {
-      handleForm();
+      matchmakerForm = document.getElementById("matchmakerForm");
+      if (!matchmakerForm) return;
+
+      setOriginalForm(getOriginalForm());
+      initMatchmaker();
     }
   }
   log("LandPages loaded");
@@ -60,4 +69,26 @@ async function loadLandPage() {
 
 function toggleVisibility(show = true) {
   container.classList.toggle("d-none", !show);
+}
+
+function getOriginalForm() {
+  let matchmakerForm = document.getElementById("matchmakerForm");
+  if (!matchmakerForm) return;
+  let originalFormClone = matchmakerForm.cloneNode(true);
+  return originalFormClone;
+}
+
+export function addEventListenerToForms() {
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+
+  if (prevBtn && nextBtn) {
+    prevBtn.addEventListener("click", () => nextPrev(-1));
+    nextBtn.addEventListener("click", () => nextPrev(1));
+  }
+}
+
+function initMatchmaker() {
+  showTab(0);
+  addEventListenerToForms();
 }
