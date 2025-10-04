@@ -6,25 +6,23 @@ function showTab(n) {
 
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
+  const submitBtn = document.getElementById("submitBtn");
   const restartBtn = document.getElementById("restartBtn");
 
-  // first tab
-  prevBtn.classList.toggle("d-none", n === 0);
-  nextBtn.innerHTML = "Next";
+  const lastTab = tabs.length;
+  const beforeLastTab = tabs.length - 1;
 
-  if (n === tabs.length - 1) {
-    nextBtn.innerHTML = "Submit";
-  }
+  // Prev: hide on first and last tab
+  prevBtn.classList.toggle("d-none", n === 0 || n === lastTab);
 
-  // after submit
-  if (n === tabs.length) {
-    nextBtn.classList.add("d-none");
-    prevBtn.classList.add("d-none");
-    restartBtn.classList.remove("d-none");
-  } else {
-    nextBtn.classList.remove("d-none");
-    restartBtn.classList.add("d-none");
-  }
+  // Next: hide on last and before-last tab
+  nextBtn.classList.toggle("d-none", n === beforeLastTab || n === lastTab);
+
+  // Submit: only visible on before-last tab
+  submitBtn.classList.toggle("d-none", n !== beforeLastTab);
+
+  // Restart: only visible on last tab
+  restartBtn.classList.toggle("d-none", n !== lastTab);
 
   fixStepIndicator(n);
 }
@@ -32,7 +30,7 @@ function showTab(n) {
 function nextPrev(n) {
   const tabs = document.getElementsByClassName("tab");
 
-  if (n === 1 && !validateForm()) return false;
+  if (n === 1 && !validateForm()) return;
 
   if (tabs[currentTab]) tabs[currentTab].classList.add("d-none");
 
@@ -44,8 +42,7 @@ function nextPrev(n) {
 
   // after submit
   if (currentTab === tabs.length) {
-    showResult();
-    return false;
+    return;
   }
 }
 
@@ -72,13 +69,6 @@ function fixStepIndicator(n) {
     steps[i].className = steps[i].className.replace(" active", "");
   }
   if (steps[n]) steps[n].className += " active";
-}
-
-function showResult() {
-  const container = document.getElementById("matchmakerResult");
-  const resultContainer = document.getElementById("result");
-  container.classList.remove("d-none");
-  resultContainer.innerHTML += "Ez a te személyre szabott eredményed 🎉";
 }
 
 let originalForm;

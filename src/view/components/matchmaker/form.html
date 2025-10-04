@@ -24,9 +24,10 @@
 
     <div style="overflow: auto">
       <div style="float: right">
-        <button onclick="nextPrev(-1)" type="button" id="prevBtn">Previous</button>
-        <button onclick="nextPrev(1)" type="button" id="nextBtn">Next</button>
-        <button onclick="resetForm()" type="button" id="restartBtn" class="d-none">Újra</button>
+        <button id="prevBtn" onclick="nextPrev(-1)" type="button" class="d-none" >Previous</button>
+        <button id="nextBtn" onclick="nextPrev(1)" type="button" >Next</button>
+        <button id="submitBtn" onclick="nextPrev(1), onSubmit()" type="button"  class="d-none">Submit</button>
+        <button id="restartBtn" onclick="resetForm()" type="button"  class="d-none">Újra</button>
       </div>
     </div>
     <div id="matchmakerResult" class="d-none">
@@ -45,3 +46,4 @@
   </form>
 </section>
 <script src="/src/view/components/matchmaker/controller.js"></script>
+<script src="/src/view/components/matchmaker/form.js"></script>
