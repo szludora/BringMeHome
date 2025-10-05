@@ -32,8 +32,6 @@ const monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct",
 const pad2 = n => String(n).padStart(2, "0");
 
 function renderTimeline(items, { sort = "asc", groupByYear = true } = {}) {
-    const list = document.getElementById("timeline");
-    const tpl = document.getElementById("timeline-item");
 
     const sorted = [...items].sort((a,b)=>{
         const aKey = a.year*100 + a.month;
@@ -41,111 +39,112 @@ function renderTimeline(items, { sort = "asc", groupByYear = true } = {}) {
         return sort === "desc" ? bKey - aKey : aKey - bKey;
     });
 
-    list.innerHTML = "";
-    let lastYear = null;
+    const parentList = document.getElementById("timeline");
+    const mainTemplate = document.getElementById("timeline-item");
+
+    parentList.innerHTML = "";
     let index = 0;
     sorted.forEach(it => {
-        if (groupByYear && it.year !== lastYear) {
-            const h = document.createElement("h6");
-            h.className = "text-uppercase text-body-secondary mt-4 mb-2";
-            h.textContent = it.year;
-            list.appendChild(h);
-            lastYear = it.year;
-        }
-
-        const node = tpl.content.firstElementChild.cloneNode(true);
-
-        const timeEl = node.querySelector("time");
-        timeEl.dateTime = `${it.year}-${pad2(it.month)}`;
-        timeEl.innerHTML = `<span data-i18n="month-names.${monthNames[it.month - 1]}.short"></span> ${it.year}`;
-        // timeEl.textContent = `${monthNames[it.month - 1]} ${it.year}`;
-
-        const p = node.querySelector("p");
-        p.setAttribute("data-i18n", "journey.events." + index + ".short");
-
-        const cat = TYPE_BADGE[it.type];
-        const badge = node.querySelector(".badge");
-        badge.className = `badge ${cat} align-self-start ms-3`;
-
-        badge.setAttribute("data-i18n", "journey.eventTypes." + it.type);
-
-
-        const hiddenContainer = node.querySelector("[data-hidden-index]");
-        hiddenContainer.setAttribute("data-hidden-index","content-" + index);
-        const ref = node.querySelector("a");
-        ref.setAttribute("data-i18n","read-more");
-        node.setAttribute("data-event-index","content-" + index);
-        node.addEventListener("click",(event) => {
-            const triggeredIndex = event.target.getAttribute("data-event-index");
-            for(let hiddenEl of document.querySelectorAll("[data-hidden-index]")){
-                const contentIndex = hiddenEl.getAttribute("data-hidden-index");
-                if(contentIndex === triggeredIndex){
-                    const c = new Collapse(hiddenEl, { toggle: false });
-                    c.toggle();
-                }else{
-                    if(hiddenEl.classList.contains("show")){
-                        const c = new Collapse(hiddenEl, { toggle: false });
-                        c.toggle();
-                    }
-                }
-            }
-        });
-        if(!it.images || it.images.length === 0){
-            const hiddenContentTemplate = document.getElementById("hidden-content-no-image");
-            addDetailedDescription(hiddenContentTemplate, hiddenContainer, index);
-        }else if(it.images && it.images.length === 1){
-            const hiddenContentTemplate = document.getElementById("hidden-content-one-image");
-            const contentNode = addDetailedDescription(hiddenContentTemplate, hiddenContainer, index);
-            const contentImg = contentNode.querySelector(".hidden-content-image");
-            contentImg.setAttribute("src",it.images[0]);
-        }else{
-            const hiddenContentTemplate = document.getElementById("hidden-content-multi-image");
-            const contentNode = addDetailedDescription(hiddenContentTemplate, hiddenContainer,index);
-            const contentImg = contentNode.querySelector(".hidden-content-image");
-            contentImg.setAttribute("src",it.images[0]);
-            contentImg.setAttribute("data-image-index","0");
-            const navigationButtons = contentNode.querySelectorAll("button");
-            const galleryCounter = contentNode.querySelector("#gallery-counter");
-            galleryCounter.innerText = 1 + "/" + it.images.length;
-            for(let navigationButton of navigationButtons){
-                navigationButton.addEventListener("click",(event) => {
-                    event.stopPropagation();
-                    try{
-                        const contentImg = contentNode.querySelector(".hidden-content-image");
-                        const galleryAction = event.target.getAttribute("data-gallery-action");
-                        let imageIndex = Number(contentImg.getAttribute("data-image-index"));
-                        if(galleryAction === "prev"){
-                            if(imageIndex === 0){
-                                imageIndex = it.images.length - 1;
-                            }else{
-                                imageIndex--;
-                            }
-
-                        }else if(galleryAction === "next"){
-                            if(imageIndex === it.images.length - 1){
-                                imageIndex = 0;
-                            }else{
-                                imageIndex++;
-                            }
-                        }
-                        const galleryCounter = contentNode.querySelector("#gallery-counter");
-                        galleryCounter.innerText = (imageIndex + 1) + "/" + it.images.length;
-                        contentImg.setAttribute("data-image-index", imageIndex);
-                        contentImg.setAttribute("src",it.images[imageIndex]);
-                    }catch (error){
-                        console.warn("Something went wrong when updating the image.");
-                    }
-
-                });
-            }
-        }
-
-        list.appendChild(node);
+        resolveEvent(it,parentList,mainTemplate,index);
         index++;
     });
 }
 
-function addDetailedDescription(hiddenContentTemplate, hiddenContainer, index){
+// This function resolves an element of the data list.
+function resolveEvent(event,parentList,mainTemplate, index){
+    const node = mainTemplate.content.firstElementChild.cloneNode(true);
+    resolveDateDisplay(node, event);
+    resolveShortDescription(node, index);
+    resolveBadge(node, event);
+    const hiddenContainer = resolveInteractArea(node, index);
+    resolveLongDescription(node, hiddenContainer, event, index);
+
+
+    parentList.appendChild(node);
+}
+
+// This function update the date displayed for the given event.
+function resolveDateDisplay(node, event){
+    const timeEl = node.querySelector("time");
+    timeEl.dateTime = `${event.year}-${pad2(event.month)}`;
+    timeEl.innerHTML = `<span data-i18n="month-names.${monthNames[event.month - 1]}.short"></span> ${event.year}`;
+}
+
+// This function updates the short description for the given event.
+function resolveShortDescription(node,index){
+    const p = node.querySelector("p");
+    p.setAttribute("data-i18n", "journey.events." + index + ".short");
+}
+
+// This function updates the badge positioned on the right side of the list for the given event.
+function resolveBadge(node,event){
+    const cat = TYPE_BADGE[event.type];
+    const badge = node.querySelector(".badge");
+    badge.className = `badge ${cat} align-self-start ms-3`;
+
+    badge.setAttribute("data-i18n", "journey.eventTypes." + event.type);
+}
+
+// This function adds the dynamic behavior to show/hide the long description, when event is clicked.
+function resolveInteractArea(node,index){
+    const hiddenContainer = node.querySelector("[data-hidden-index]");
+
+    // Mark the "To-Be-Clicked" (event.target) and the "To-Be-Revealed" item with the same marker based on index.
+    hiddenContainer.setAttribute("data-hidden-index","content-" + index);
+    node.setAttribute("data-event-index","content-" + index);
+
+    node.addEventListener("click",(e) => {
+        revealLongDescription(e);
+    });
+
+    return hiddenContainer;
+}
+
+// This function defines the exact behavior how long description is opening/closing.
+// It also ensures that only one event is opened at a given time.
+function revealLongDescription(event){
+    // 1. Get the index based marking of the clicked object.
+    const triggeredIndex = event.target.getAttribute("data-event-index");
+    // 2. Iterate the "To-Be-Revealed" candidates.
+    for(let hiddenEl of document.querySelectorAll("[data-hidden-index]")){
+        // 3. Get the index based marking of the candidate.
+        const contentIndex = hiddenEl.getAttribute("data-hidden-index");
+        // If markings match -> open
+        if(contentIndex === triggeredIndex){
+            const c = new Collapse(hiddenEl, { toggle: false });
+            c.toggle();
+        }
+        // If markings do not match, but is open -> close
+        else if(hiddenEl.classList.contains("show")){
+            const c = new Collapse(hiddenEl, { toggle: false });
+            c.toggle();
+        }
+    }
+}
+
+// This function updates the long description content.
+// Add the text, and only if need add image(s), and hide redundant elements based on the amount of provided images.
+function resolveLongDescription(node, hiddenContainer, event, index){
+    const hiddenContentTemplate = document.getElementById("hidden-content-multi-image");
+    const contentNode = resolveDefaultDetails(hiddenContentTemplate, hiddenContainer,index);
+    if(event.images.length > 0){
+        const contentImg = contentNode.querySelector(".hidden-content-image");
+        contentImg.setAttribute("src",event.images[0]);
+        contentImg.setAttribute("data-image-index","0");
+
+        if(event.images.length > 1){
+            resolveGalleryCounter(contentNode,event,1);
+            resolveNavigationButtons(contentNode, event);
+        }else{
+            removeMultiImageRelatedElements(contentNode);
+        }
+    }else{
+        removeAllImageRelatedElements(contentNode);
+    }
+}
+
+// This function adds the long description and append the content to the DOM.
+function resolveDefaultDetails(hiddenContentTemplate, hiddenContainer, index){
     const contentNode = hiddenContentTemplate.content.firstElementChild.cloneNode(true);
     const contentHolder = contentNode.querySelector(".hidden-content");
     contentHolder.setAttribute("data-i18n","journey.events." + index + ".long");
@@ -154,6 +153,63 @@ function addDetailedDescription(hiddenContentTemplate, hiddenContainer, index){
     });
     hiddenContainer.appendChild(contentNode);
     return contentNode;
+}
+
+// Hides the navigation buttons and the gallery counter elements.
+function removeMultiImageRelatedElements(contentNode){
+    for(let btn of contentNode.querySelectorAll("button")){
+        btn.classList.toggle("hide-this");
+    }
+    contentNode.querySelector(".gallery-counter").classList.toggle("hide-this");
+}
+
+// Hides the whole image related element.
+function removeAllImageRelatedElements(contentNode){
+    contentNode.querySelector(".position-relative").classList.toggle("hide-this");
+}
+
+// This function updates the Gallery Counter element with correct value
+function resolveGalleryCounter(contentNode,event, index){
+    const galleryCounter = contentNode.querySelector("#gallery-counter");
+    galleryCounter.innerText = index + "/" + event.images.length;
+}
+
+// This function defines what should happen when an gallery navigation button is pressed.
+function resolveNavigationButtons(contentNode, event){
+    const navigationButtons = contentNode.querySelectorAll("button");
+    for(let navigationButton of navigationButtons){
+        navigationButton.addEventListener("click",(e) => {
+            e.stopPropagation();
+            navigateImage(contentNode, event, e);
+        });
+    }
+}
+
+// This function defines the exact logic how images are updated and update counters.
+function navigateImage(contentNode, event, e){
+    try{
+        const contentImg = contentNode.querySelector(".hidden-content-image");
+        const direction = e.target.getAttribute("data-gallery-action") === "next";
+        let imageIndex = Number(contentImg.getAttribute("data-image-index"));
+        if(direction){
+            if(imageIndex === event.images.length - 1){
+                imageIndex = 0;
+            }else{
+                imageIndex++;
+            }
+        }else{
+            if(imageIndex === 0){
+                imageIndex = event.images.length - 1;
+            }else{
+                imageIndex--;
+            }
+        }
+        resolveGalleryCounter(contentNode,event,imageIndex + 1);
+        contentImg.setAttribute("data-image-index", imageIndex);
+        contentImg.setAttribute("src",event.images[imageIndex]);
+    }catch (error){
+        console.warn("Something went wrong when updating the image. " + error);
+    }
 }
 
 export function createTimeline(){
