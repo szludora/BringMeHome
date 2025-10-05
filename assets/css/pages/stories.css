@@ -6,11 +6,10 @@
 .stories .carousel-control-prev,
 .stories .carousel-control-next {
     width: 20px; 
-    height: 50%; 
+ 
     opacity: 0.2; 
    
-    top: 50%; 
-    transform: translateY(-50%); 
+   
 }
 
 .stories .carousel-control-prev:hover,
