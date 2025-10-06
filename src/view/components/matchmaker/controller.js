@@ -1,4 +1,6 @@
 var currentTab = 0;
+showTab(currentTab);
+
 function showTab(n) {
   const tabs = document.getElementsByClassName("tab");
   for (let i = 0; i < tabs.length; i++) tabs[i].classList.add("d-none");
@@ -9,57 +11,78 @@ function showTab(n) {
   const submitBtn = document.getElementById("submitBtn");
   const restartBtn = document.getElementById("restartBtn");
 
-  const lastTab = tabs.length;
-  const beforeLastTab = tabs.length - 1;
+  // Prev button
+  if (n === 0) prevBtn.classList.add("d-none");
+  else prevBtn.classList.remove("d-none");
 
-  // Prev: hide on first and last tab
-  prevBtn.classList.toggle("d-none", n === 0 || n === lastTab);
+  // Next button
+  if (n === tabs.length - 1) nextBtn.classList.add("d-none");
+  else nextBtn.classList.remove("d-none");
 
-  // Next: hide on last and before-last tab
-  nextBtn.classList.toggle("d-none", n === beforeLastTab || n === lastTab);
+  // Submit button
+  if (n === tabs.length - 1) submitBtn.classList.remove("d-none");
+  else submitBtn.classList.add("d-none");
 
-  // Submit: only visible on before-last tab
-  submitBtn.classList.toggle("d-none", n !== beforeLastTab);
-
-  // Restart: only visible on last tab
-  restartBtn.classList.toggle("d-none", n !== lastTab);
+  // Restart hidden
+  restartBtn.classList.add("d-none");
 
   fixStepIndicator(n);
 }
 
 function nextPrev(n) {
   const tabs = document.getElementsByClassName("tab");
-
   if (n === 1 && !validateForm()) return;
 
-  if (tabs[currentTab]) tabs[currentTab].classList.add("d-none");
-
+  tabs[currentTab].classList.add("d-none");
   currentTab += n;
-
-  if (currentTab > tabs.length) currentTab = tabs.length;
+  if (currentTab >= tabs.length) currentTab = tabs.length - 1;
 
   showTab(currentTab);
+}
 
-  // after submit
-  if (currentTab === tabs.length) {
-    return;
-  }
+function submitForm() {
+  if (!validateForm()) return;
+
+  document.getElementById("questions").classList.add("d-none");
+  document.getElementById("matchmakerResult").classList.remove("d-none");
+  submitBtn.classList.add("d-none");
+  restartBtn.classList.remove("d-none");
 }
 
 function validateForm() {
-  var x = document.getElementsByClassName("tab");
-  if (currentTab >= x.length) return true;
-  var y = x[currentTab].getElementsByTagName("input");
-  var valid = true;
-  for (let i = 0; i < y.length; i++) {
-    if (y[i].value === "") {
-      y[i].className += " invalid";
-      valid = false;
+  const tabs = document.getElementsByClassName("tab");
+  if (currentTab >= tabs.length) return true;
+
+  const inputs = tabs[currentTab].getElementsByTagName("input");
+  let valid = true;
+
+  for (let input of inputs) {
+    if (input.type === "radio") {
+      const radios = tabs[currentTab].querySelectorAll(
+        `input[name="${input.name}"]`
+      );
+      const anyChecked = Array.from(radios).some((r) => r.checked);
+      if (!anyChecked) valid = false;
+
+      radios.forEach((r) => {
+        const lbl = tabs[currentTab].querySelector(`label[for="${r.id}"]`);
+        if (lbl)
+          anyChecked
+            ? lbl.classList.remove("invalid")
+            : lbl.classList.add("invalid");
+      });
+    } else if (input.type === "range" || input.type === "text") {
+      if (input.value === "") {
+        valid = false;
+        input.classList.add("invalid");
+      } else input.classList.remove("invalid");
     }
   }
+
   if (valid) {
     document.getElementsByClassName("step")[currentTab].classList.add("finish");
   }
+
   return valid;
 }
 
@@ -78,7 +101,33 @@ function setOriginalForm(value) {
 
 function resetForm() {
   currentTab = 0;
+
+  document.getElementById("questions").classList.remove("d-none");
   document.getElementById("matchmakerResult").classList.add("d-none");
   document.getElementById("result").innerHTML = "";
+
+  const steps = document.getElementsByClassName("step");
+  for (let s of steps) s.classList.remove("finish", "active");
+
+  resetInputValues();
   showTab(0);
+}
+
+function resetInputValues(){
+const tabs = document.getElementsByClassName("tab");
+  for (let tab of tabs) {
+    const inputs = tab.getElementsByTagName("input");
+    for (let input of inputs) {
+      if (input.type === "radio" || input.type === "checkbox") {
+        input.checked = false;
+      } else if (input.type === "range") {
+        input.value = input.defaultValue;
+      } else if (input.type === "text") {
+        input.value = "";
+      }
+
+      input.classList.remove("invalid");
+    }
+  }
+
 }

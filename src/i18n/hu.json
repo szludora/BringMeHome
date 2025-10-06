@@ -266,7 +266,8 @@
                 "attention_seeking": 5,
                 "playfulness": 8,
                 "calmness": 4,
-                "temperament": ["Curious", "Independent", "Playful"]
+                "temperament": ["Curious", "Independent", "Playful"],
+                "img": "/assets/img/cica1.jpg"
             },
             "cat2": {
                 "name": "Karamell",
@@ -279,7 +280,8 @@
                 "attention_seeking": 9,
                 "playfulness": 9,
                 "calmness": 3,
-                "temperament": ["Playful", "Energetic", "Affectionate"]
+                "temperament": ["Playful", "Energetic", "Affectionate"],
+                "img": "/assets/img/cica2.jpg"
             },
             "cat3": {
                 "name": "Nokedli",
@@ -292,7 +294,8 @@
                 "attention_seeking": 4,
                 "playfulness": 5,
                 "calmness": 8,
-                "temperament": ["Calm", "Patient", "Loyal"]
+                "temperament": ["Calm", "Patient", "Loyal"],
+                "img": "/assets/img/cica3.jpg"
             },
             "cat4": {
                 "name": "Tébláb",
@@ -305,7 +308,8 @@
                 "attention_seeking": 6,
                 "playfulness": 7,
                 "calmness": 5,
-                "temperament": ["Affectionate", "Playful", "Curious"]
+                "temperament": ["Affectionate", "Playful", "Curious"],
+                "img": "/assets/img/cica4.jpg"
             },
             "cat5": {
                 "name": "Snow",
@@ -318,7 +322,8 @@
                 "attention_seeking": 8,
                 "playfulness": 6,
                 "calmness": 7,
-                "temperament": ["Calm", "Playful", "Affectionate"]
+                "temperament": ["Calm", "Playful", "Affectionate"],
+                "img": "/assets/img/cica5.jpg"
             },
             "cat6": {
                 "name": "Marci",
@@ -331,7 +336,8 @@
                 "attention_seeking": 5,
                 "playfulness": 4,
                 "calmness": 9,
-                "temperament": ["Reserved", "Independent", "Calm"]
+                "temperament": ["Reserved", "Independent", "Calm"],
+                "img": "/assets/img/cica6.jpg"
             },
             "cat7": {
                 "name": "Démon",
@@ -344,7 +350,8 @@
                 "attention_seeking": 9,
                 "playfulness": 8,
                 "calmness": 4,
-                "temperament": ["Affectionate", "Playful", "Loyal"]
+                "temperament": ["Affectionate", "Playful", "Loyal"],
+                "img": "/assets/img/cica7.jpg"
             },
             "cat8": {
                 "name": "Tódor",
@@ -357,7 +364,8 @@
                 "attention_seeking": 6,
                 "playfulness": 5,
                 "calmness": 8,
-                "temperament": ["Gentle", "Calm", "Patient"]
+                "temperament": ["Gentle", "Calm", "Patient"],
+                "img": "/assets/img/cica8.jpg"
             },
             "cat9": {
                 "name": "Riska",
@@ -370,7 +378,8 @@
                 "attention_seeking": 5,
                 "playfulness": 8,
                 "calmness": 3,
-                "temperament": ["Curious", "Playful", "Shy"]
+                "temperament": ["Curious", "Playful", "Shy"],
+                "img": "/assets/img/cica9.jpg"
             },
             "cat10": {
                 "name": "Peti",
@@ -383,7 +392,8 @@
                 "attention_seeking": 7,
                 "playfulness": 5,
                 "calmness": 6,
-                "temperament": ["Independent", "Observant", "Social"]
+                "temperament": ["Independent", "Observant", "Social"],
+                "img": "/assets/img/cica0.jpg"
             },
             "cat11": {
                 "name": "Lola",
@@ -396,7 +406,8 @@
                 "attention_seeking": 9,
                 "playfulness": 7,
                 "calmness": 5,
-                "temperament": ["Affectionate", "Loyal", "Playful"]
+                "temperament": ["Affectionate", "Loyal", "Playful"],
+                "img": "/assets/img/cica1.jpg"
             },
             "cat12": {
                 "name": "Max",
@@ -409,7 +420,8 @@
                 "attention_seeking": 3,
                 "playfulness": 4,
                 "calmness": 9,
-                "temperament": ["Calm", "Patient", "Intelligent"]
+                "temperament": ["Calm", "Patient", "Intelligent"],
+                "img": "/assets/img/cica2.jpg"
             }
         }
   },
