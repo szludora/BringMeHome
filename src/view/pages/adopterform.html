@@ -45,8 +45,7 @@
 
               <div class="mb-3">
                 <label for="adopterPhone" class="form-label" data-i18n="adopterForm.form.adopterPhone.label"></label>
-                <input type="tel" inputmode="tel" class="form-control" id="adopterPhone" name="Telefonszám" required 
-                  pattern="(\+36[ -]?)?(\d{1,2})[ -]?(\d{3})[ -]?(\d{4})"
+                <input type="tel" inputmode="tel" class="form-control" id="adopterPhone" name="Telefonszám" 
                   aria-required="true" autocomplete="tel" data-i18n-placeholder="adopterForm.form.adopterPhone.placeholder">
                 <div class="form-text" data-i18n="adopterForm.form.adopterPhone.help"></div>
               </div>
@@ -212,56 +211,96 @@
       </div>
     </div>
   </main>
-
   <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwIvmd2eLtw-eLul-WmUEVFLsue9U-cnHnWya1Xd_adEzycrterQugaK1BcozoaorSW_w/exec'; // ide másold a Web App URL-t
-  const form = document.getElementById('catAdoptionForm');
-  const statusDiv = document.getElementById('formStatus');
-  const submitButton = form.querySelector('button[type="submit"]');
 
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    // Honeypot check
-    const honeypot = form.querySelector('input[name="website"]');
-    if (honeypot && honeypot.value) {
-      // Likely a bot - silently fail or show gentle message
-      statusDiv.innerHTML = '<div class="alert alert-danger" role="alert">Hiba történt: érvénytelen beküldés.</div>';
-      return;
+window.addEventListener("unhandledrejection", (event) => {
+  try {
+    const reason = event.reason;
+    const message = reason && reason.message ? String(reason.message) : String(reason);
+    if (
+      message.includes("A listener indicated an asynchronous response by returning true") ||
+      message.includes("message channel closed before a response was received")
+    ) {
+      
+      event.preventDefault();
+      
+      if (window.location && window.location.hostname === 'localhost') {
+        console.debug('Suppressed extension-origin unhandled rejection:', message);
+      }
     }
-    statusDiv.innerHTML = '<div class="alert alert-info" role="alert">Küldés folyamatban...</div>';
-    if (submitButton) submitButton.disabled = true;
+  } catch (err) {
+    
+    console.debug('unhandledrejection filter error', err);
+  }
+});
 
-    // FormData-t URL-enkódolt formába alakítjuk
-    const formData = new URLSearchParams(new FormData(form)).toString();
+document.addEventListener('DOMContentLoaded', () => {
+    // EZT CSERÉLD KI A SAJÁT, FRISSEN TELEPÍTETT WEB APP URL-EDRE!
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxvNEBT2tmBw-XYI8CrESfT5Bkunc8s7AHy0y4fRbdEEExrLbI1QT7M5p0hSsrJB9UW/exec'; 
+    
+    const form = document.getElementById('catAdoptionForm');
+    const statusDiv = document.getElementById('formStatus');
+    const submitButton = form.querySelector('button[type="submit"]');
 
-    fetch(scriptURL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: formData
-    })
-    .then(async response => {
-      // Try to parse JSON, but fall back to text
-      let data;
-      try {
-        data = await response.json();
-      } catch (err) {
-        data = { result: response.ok ? 'success' : 'error', raw: await response.text() };
-      }
-      if (data && data.result === 'success') {
-        statusDiv.innerHTML = '<div class="alert alert-success" role="alert">Sikeres beküldés!</div>';
-        form.reset();
-      } else {
-        const msg = (data && data.raw) ? data.raw : 'Hiba történt!';
-        statusDiv.innerHTML = `<div class="alert alert-danger" role="alert">${msg}</div>`;
-      }
-    })
-    .catch(error => {
-      console.error('Hiba!', error);
-      statusDiv.innerHTML = '<div class="alert alert-danger" role="alert">Hiba történt!</div>';
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        
+        // Honeypot check
+        const honeypot = form.querySelector('input[name="website"]');
+        if (honeypot && honeypot.value) {
+            statusDiv.innerHTML = '<div class="alert alert-danger" role="alert">Hiba történt: érvénytelen beküldés.</div>';
+            return;
+        }
+        
+       
+        statusDiv.innerHTML = '<div class="alert alert-info" role="alert">Küldés folyamatban...</div>';
+        if (submitButton) submitButton.disabled = true;
+
+        const formData = new URLSearchParams(new FormData(form)).toString();
+
+        fetch(scriptURL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: formData
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP hiba! Státusz: ${response.status}`);
+            }
+          
+            return response.text(); 
+        })
+        .then(responseText => {
+            
+            let data;
+            try {
+                data = JSON.parse(responseText);
+            } catch (err) {
+                
+                if (responseText.includes('success') || responseText.includes('végrehajtva')) {
+                    data = { result: 'success' };
+                } else {
+                    throw new Error(`Ismeretlen válasz a szervertől: ${responseText}`);
+                }
+            }
+
+            if (data && data.result === 'success') {
+                statusDiv.innerHTML = '<div class="alert alert-success" role="alert">Sikeres beküldés! Köszönjük!</div>';
+                form.reset();
+            } else {
+                const msg = (data && data.message) ? data.message : 'Ismeretlen hiba történt a szerver oldalon.';
+                statusDiv.innerHTML = `<div class="alert alert-danger" role="alert">Hiba: ${msg}</div>`;
+            }
+        })
+        .catch(error => {
+            console.error('Hiba!', error);
+            statusDiv.innerHTML = `<div class="alert alert-danger" role="alert">Hiba történt: ${error.message}</div>`;
+        })
+        .finally(() => {
+            
+            if (submitButton) submitButton.disabled = false;
+        });
     });
-    if (submitButton) submitButton.disabled = false;
-  });
 });
 </script>
 
