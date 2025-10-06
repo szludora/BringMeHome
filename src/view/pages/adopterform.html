@@ -95,7 +95,35 @@
                   <option value="Egyéb" data-i18n="adopterForm.form.currentPets.options.other"></option>
                 </select>
               </div>
+<div class="mb-3 form-check">
+  <input 
+    type="checkbox" 
+    class="form-check-input" 
+    id="dataConsent" 
+    name="Adatkezelés" 
+    required
+  >
+  <label 
+    class="form-check-label" 
+    for="dataConsent" 
+    data-i18n="adopterForm.form.dataConsent"
+  ></label>
+</div>
 
+<div class="mb-3 form-check">
+  <input 
+    type="checkbox" 
+    class="form-check-input" 
+    id="visitConsent" 
+    name="Utóellenőrzés engedély" 
+    value="Igen"
+  >
+  <label 
+    class="form-check-label" 
+    for="visitConsent" 
+    data-i18n="adopterForm.form.visitConsent"
+  ></label>
+</div>
               <div class="mb-3">
                 <fieldset>
                   <legend class="form-label mb-2" data-i18n="adopterForm.form.chooseCat"></legend>

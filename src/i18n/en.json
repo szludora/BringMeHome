@@ -418,6 +418,8 @@
       },
       "chooseCat": "Which cat would you like to adopt?",
       "additionalNotes": "Other notes / Anything you consider important to mention",
+      "dataConsent": "I consent to the processing of my personal data for the adoption process.",
+      "visitConsent": "I agree that the shelter may check the cat's living conditions after adoption.",
       "submit": "Submit Application",
       "status": {
         "sending": "Sending application...",

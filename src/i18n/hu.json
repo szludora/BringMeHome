@@ -419,6 +419,8 @@
       },
       "chooseCat": "Melyik cicát szeretné örökbefogadni?",
       "additionalNotes": "Egyéb megjegyzések / Amit fontosnak tart elmondani",
+      "dataConsent": "Hozzájárulok az adataim kezeléséhez az örökbefogadási folyamat során.",
+      "visitConsent": "Beleegyezem, hogy az örökbefogadás után a menhely ellenőrizheti a cica körülményeit.",
       "submit": "Kérelem elküldése",
       "status": {
         "sending": "Kérelem küldése...",
