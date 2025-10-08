@@ -1,7 +1,8 @@
 <!-- Ensure global site CSS is available for this partial. Ideally this link belongs in the <head> of the main layout. -->
 <section class="homeSeeker">
   <div class="container">
-    <link rel="stylesheet" href="../../../assets/css/base/globals.css">
+  <link rel="stylesheet" href="../../../assets/css/base/globals.css">
+  <link rel="stylesheet" href="../../../assets/css/components/homeSeeker.css">
     <div class="homeSeeker__inner">
       <div class="homeSeeker__content">
         <h2 data-i18n="homeSeekerSection.title"></h2>
@@ -15,19 +16,20 @@
           <li data-i18n="homeSeekerSection.steps.4"></li>
         </ol>
 
-        <p class="homeSeeker__note"><strong data-i18n="homeSeekerSection.importantLabel"></strong> <span data-i18n="homeSeekerSection.importantText"></span></p>
+  <p class="homeSeeker__note homeSeeker__note--large"><strong data-i18n="homeSeekerSection.importantLabel"></strong> <span data-i18n="homeSeekerSection.importantText"></span></p>
 
         <div class="homeSeeker__cta">
-          <a class="btn btn-primary" href="mailto:info@bringmehome.local?subject=Tal%C3%A1ltam%20kiscic%C3%A1t" data-i18n="homeSeekerSection.cta.email"></a>
           <a class="btn btn-outline" href="tel:+36123456789"><span data-i18n="homeSeekerSection.cta.phoneLabel"></span> <span data-i18n="homeSeekerSection.cta.phoneNumber"></span></a>
         </div>
 
         <p class="homeSeeker__surrender" data-i18n="homeSeekerSection.surrender"></p>
+
+        <div class="homeSeeker__cta--surrender">
+          <a class="btn btn-primary" href="mailto:info@bringmehome.local?subject=Macska%20atadas" data-i18n="homeSeekerSection.cta.email"></a>
+        </div>
       </div>
 
-      <div class="homeSeeker__media">
-        <img src="../../../img/sadCat.png" alt="" data-i18n="homeSeekerSection.imageAlt" />
-      </div>
+      
     </div>
   </div>
 </section>
