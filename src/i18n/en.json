@@ -191,6 +191,26 @@
     }
   },
   "homeSeeker": "Home Seeker",
+  "homeSeekerSection": {
+    "title": "Found a kitten or need help?",
+    "lead": "If you find an orphaned kitten or can’t care for your cat due to changed circumstances, please contact us — we’ll help with temporary care, medical assistance or finding a new home.",
+    "howTitle": "What to do first?",
+    "steps": {
+      "1": "Ensure the kitten is safe: keep it warm and in a quiet place.",
+      "2": "Take a few photos (full body and close-up are helpful).",
+      "3": "If possible, note the exact location (GPS coordinates or address) and time.",
+      "4": "Contact us using the details below — the more information you provide, the faster we can help."
+    },
+    "importantLabel": "Important:",
+    "importantText": "If the kitten appears injured or in need of immediate medical care, please take it to the nearest veterinarian or call emergency services.",
+    "cta": {
+      "email": "Write us an email",
+      "phoneLabel": "Call us:",
+      "phoneNumber": "+36 1 234 5678"
+    },
+    "surrender": "If you’re contacting us about surrendering your cat: briefly tell us why you can’t keep it, when and where handover is possible, and we’ll help arrange a safe transfer and find a new home.",
+    "imageAlt": "Kitten needing help"
+  },
   "thanks": "Thank You",
   "faq": {
     "title": "Frequently Asked Questions",

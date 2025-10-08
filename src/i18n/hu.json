@@ -191,6 +191,26 @@
     }
   },
   "homeSeeker": "Gazdikereső",
+  "homeSeekerSection": {
+    "title": "Találtál kiscicát vagy segítségre van szükséged?",
+    "lead": "Ha bárhol árva kiscicát találsz, vagy megváltozott élethelyzet miatt nem tudod tovább vállalni a macskádat, kérjük, vedd fel velünk a kapcsolatot — együtt megtaláljuk a legjobb megoldást: ideiglenes ellátás, orvosi segítség vagy új otthon keresése.",
+    "howTitle": "Mit tegyél először?",
+    "steps": {
+      "1": "Biztosíts biztonságot a kiscica számára: tartsd melegen és egy nyugodt helyen.",
+      "2": "Készíts néhány fényképet (jobb, ha van egész alakos és közeli kép is).",
+      "3": "Ha lehet, jegyezd fel a pontos helyet (gps-koordináta vagy cím) és az időpontot.",
+      "4": "Keress meg minket az alábbi elérhetőségek egyikén — minél több információt adsz, annál gyorsabban tudunk segíteni."
+    },
+    "importantLabel": "Fontos:",
+    "importantText": "Ha a kiscica sérült vagy úgy tűnik, hogy azonnali orvosi ellátásra szorul, kérjük, vidd el a legközelebbi állatorvoshoz vagy hívd a sürgősségi elérhetőséget.",
+    "cta": {
+      "email": "Írj nekünk e-mailt",
+      "phoneLabel": "Hívj minket:",
+      "phoneNumber": "+36 1 234 5678"
+    },
+    "surrender": "Ha a macskád átadása miatt keresel minket: töltsd ki röviden, miért nem tudod tovább vállalni, mikor és hol adható át, és mi segítünk a biztonságos átadásban és új otthon keresésében.",
+    "imageAlt": "Segítségre szoruló cica"
+  },
   "thanks": "Köszönet",
   "faq": {
     "title": "Gyakran Ismételt Kérdések",
