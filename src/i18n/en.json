@@ -196,13 +196,14 @@
     "lead": "If you find an orphaned kitten or can’t care for your cat due to changed circumstances, please contact us — we’ll help with temporary care, medical assistance or finding a new home.",
     "howTitle": "What to do first?",
     "steps": {
+      "0": "Important: If you find a kitten, first check from a distance whether the mother has actually abandoned it. She may just be out for food.",
       "1": "Ensure the kitten is safe: keep it warm and in a quiet place.",
       "2": "Take a few photos (full body and close-up are helpful).",
-      "3": "If possible, note the exact location (GPS coordinates or address) and time.",
+      "3": "If possible, note the exact location and the time.",
       "4": "Contact us using the details below — the more information you provide, the faster we can help."
     },
     "importantLabel": "Important:",
-    "importantText": "If the kitten appears injured or in need of immediate medical care, please take it to the nearest veterinarian or call emergency services.",
+  "importantText": "If the kitten is injured or very lethargic, take it immediately to the nearest veterinarian! You can ask for a free microchip scan there, which may help reunite it with its owner. Never give cow's milk to a young kitten!",
     "cta": {
       "email": "Write us an email",
       "phoneLabel": "Call us:",

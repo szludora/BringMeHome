@@ -196,13 +196,14 @@
     "lead": "Ha bárhol árva kiscicát találsz, vagy megváltozott élethelyzet miatt nem tudod tovább vállalni a macskádat, kérjük, vedd fel velünk a kapcsolatot — együtt megtaláljuk a legjobb megoldást: ideiglenes ellátás, orvosi segítség vagy új otthon keresése.",
     "howTitle": "Mit tegyél először?",
     "steps": {
-      "1": "Biztosíts biztonságot a kiscica számára: tartsd melegen és egy nyugodt helyen.",
+      "0": "Figyelj! Ha kiscicát találsz, először távolról győződj meg róla, hogy az anyja valóban elhagyta-e. Lehet, hogy csak élelemért ment.",
+      "1": "Biztosíts biztonságot a cica számára: tartsd melegen és egy nyugodt helyen.",
       "2": "Készíts néhány fényképet (jobb, ha van egész alakos és közeli kép is).",
-      "3": "Ha lehet, jegyezd fel a pontos helyet (gps-koordináta vagy cím) és az időpontot.",
+      "3": "Ha lehet, jegyezd fel a pontos helyet és az időpontot.",
       "4": "Keress meg minket az alábbi elérhetőségek egyikén — minél több információt adsz, annál gyorsabban tudunk segíteni."
     },
     "importantLabel": "Fontos:",
-    "importantText": "Ha a kiscica sérült vagy úgy tűnik, hogy azonnali orvosi ellátásra szorul, kérjük, vidd el a legközelebbi állatorvoshoz vagy hívd a sürgősségi elérhetőséget.",
+  "importantText": "Ha a kiscica sérült vagy nagyon levert, azonnal vidd a legközelebbi állatorvoshoz! Itt kérhetsz egy ingyenes chip-leolvasást is, ami segíthet hazajuttatni. Fiatal kiscicának soha ne adj tehéntejet!",
     "cta": {
       "email": "Írj nekünk e-mailt",
       "phoneLabel": "Hívj minket:",
