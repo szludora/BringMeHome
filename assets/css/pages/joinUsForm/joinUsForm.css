@@ -1,0 +1,120 @@
+:root{
+    --form_container_indentation: 0;
+    --form_container_dimension: 90%;
+    --form_container_margin_left_right: 25px;
+    --form_container_margin_top_bottom: 5%;
+
+    --form_container_z_index: 2147483646;
+
+    --global_form_bg_color: rgba(0,0,0,.75);
+    --global_form_dimension: 100%;
+    --global_form_margin_left_right: auto;
+    --global_form_margin_top_bottom: auto;
+
+
+
+    --fab-size: 64px;
+    --fab-radius: 999px;
+    --fab-bg: #2563eb;
+    --fab-bg-open: #ef4444;
+    --fab-line: #fff;
+    --fab-line-thickness: 3px;
+}
+
+
+.sample_form_container{
+    position: fixed;
+    top: var(--form_container_indentation);
+    left: var(--form_container_indentation);
+    width: var(--form_container_dimension);
+    height: var(--form_container_dimension);
+
+    margin: var(--form_container_margin_left_right) var(--form_container_margin_top_bottom);
+    z-index: var(--form_container_z_index);
+    pointer-events: none;
+}
+
+.sample_form{
+    background-color: var(--global_form_bg_color);
+    width: var(--global_form_dimension);
+    height: var(--global_form_dimension);
+    margin: var(--global_form_margin_left_right) var(--global_form_margin_top_bottom);
+    border-radius: 0.75rem;
+    pointer-events: none;
+    display: none;
+}
+
+.sample_form_active{
+    pointer-events: auto;
+    display: block;
+}
+
+.floating_action_btn {
+    position: fixed;
+    right: calc(20px + env(safe-area-inset-right));
+    bottom: calc(20px + env(safe-area-inset-bottom));
+    width: var(--fab-size);
+    height: var(--fab-size);
+    border: 0;
+    border-radius: var(--fab-radius);
+    background: var(--fab-bg);
+    color: #fff;
+    cursor: pointer;
+    z-index: 2147483646;
+    display: grid;
+    place-items: center;
+    transition:
+            background .25s ease,
+            box-shadow .25s ease,
+            transform .15s ease;
+    pointer-events: auto;
+}
+
+/*.floating_action_btn:active { transform: translateY(1px) scale(.98); }*/
+/*.floating_action_btn:focus-visible {*/
+/*    outline: 3px solid rgba(59,130,246,.6);*/
+/*    outline-offset: 3px;*/
+/*}*/
+
+.floating_action_btn_icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    transition: transform .25s ease;
+}
+.floating_action_btn_icon::before,
+.floating_action_btn_icon::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: var(--fab-line-thickness);
+    background: var(--fab-line);
+    border-radius: 2px;
+    transform: translate(-50%, -50%);
+}
+.floating_action_btn_icon::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.floating_action_btn.is-open { background: var(--fab-bg-open); }
+.floating_action_btn.is-open .floating_action_btn_icon { transform: rotate(45deg); }
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --fab-bg: #3b82f6;
+        --fab-bg-open: #f43f5e;
+    }
+}
+
+@media (prefers-reduced-motion: reduce){
+    .floating_action_btn, .floating_action_btn_icon { transition: none; }
+}
+
+.floating_action_btn_icon,
+.floating_action_btn_icon::before,
+.floating_action_btn_icon::after {
+    pointer-events: none;
+}
+

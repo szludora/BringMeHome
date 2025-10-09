@@ -1,5 +1,8 @@
-import { log, warn } from "../core/logger.js";
-import { heroPages as pages, layout } from "../main.js";
+import {log, warn} from "../core/logger.js";
+import {heroPages as pages, layout} from "../main.js";
+
+const onLoadKey = "onLoad";
+const unLoadKey = "unLoad";
 
 const template = `
   <div id="navbar"></div>
@@ -55,9 +58,48 @@ async function loadSection(id) {
     container.appendChild(section);
   }
 
-  const html = await (await fetch(file)).text();
-  section.innerHTML = html;
+  section.innerHTML = await (await fetch(file)).text();
   reloadScripts(section);
+}
+
+export async function loadDynamicContent(file,container) {
+  if (!file || !container) return;
+
+  const html = await loadFragment(file);
+  const node = html.cloneNode(true);
+  container.appendChild(node);
+  reloadScripts(container);
+}
+
+async function loadFragment(path) {
+  const html = await (await fetch(path)).text();
+  const tpl = document.createElement('template');
+  tpl.innerHTML = html.trim();
+  return tpl.content;
+}
+
+export async function destroyDynamicContent(container){
+  if(!container) return;
+
+  await unLoadScripts(container);
+  container.replaceChildren();
+}
+
+// Only works with module type script tags
+async function unLoadScripts(container){
+  container.querySelectorAll("script").forEach((script) => {
+    if(script.src){
+      if(script.type === "module"){
+        import(script.src).then((it) => {
+          for (let key in it) {
+            if(key === unLoadKey && typeof it[key] === 'function'){
+              it[key]();
+            }
+          }
+        });
+      }
+    }
+  });
 }
 
 function toggleVisibility(show = true) {
@@ -74,12 +116,25 @@ function reloadScripts(section) {
       newScript.src = script.src;
       newScript.type = script.type || "text/javascript";
       newScript.onload = () => {
-        for (let key in window) {
-          if (
-            (key == "onLoad" && typeof window[key] === "function") ||
-            (key == "onload" && typeof window[key] === "function")
-          ) {
-            window[key]();
+        if(script.type === "module"){
+          import(script.src).then((it) => {
+            for (let key in it) {
+              if(typeof it[key] === 'function'){
+                if(key === onLoadKey){
+                  newScript.onload = () => {it[key]();};
+                }else{
+                  globalThis[key] = it[key];
+                }
+              }
+            }
+          });
+        }else{
+          for (let key in window) {
+            if (
+                (key === onLoadKey && typeof window[key] === "function") // TODO onload is already used by system, we should stick to onLoad
+            ) {
+              window[key]();
+            }
           }
         }
       };
