@@ -1,12 +1,12 @@
 @import "/assets/css/main.css";
 
 
-.cat-options {
+.adopterform .cat-options {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
-.cat-card {
+.adopterform .cat-card {
   border: 2px solid transparent;
   border-radius: 10px;
   padding: 0.5rem;
@@ -15,7 +15,7 @@
   transition: border 0.2s ease;
   width: 140px;
 }
-.cat-card img {
+.adopterform .cat-card img {
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -23,13 +23,13 @@
   margin-bottom: 0.5rem;
   transition: border 0.2s ease;
 }
-.cat-card input[type="radio"] {
+.adopterform .cat-card input[type="radio"] {
   display: none;
 }
-.cat-card:hover {
+.adopterform .cat-card:hover {
   border-color: #ccc;
 }
-.cat-card input[type="radio"]:checked + img {
+.adopterform .cat-card input[type="radio"]:checked + img {
   border: 3px solid #0d582f;
 }
 
