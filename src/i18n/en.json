@@ -191,6 +191,27 @@
     }
   },
   "homeSeeker": "Home Seeker",
+  "homeSeekerSection": {
+    "title": "Found a kitten or need help?",
+    "lead": "If you find an orphaned kitten or can’t care for your cat due to changed circumstances, please contact us — we’ll help with temporary care, medical assistance or finding a new home.",
+    "howTitle": "What to do first?",
+    "steps": {
+      "0": "Important: If you find a kitten, first check from a distance whether the mother has actually abandoned it. She may just be out for food.",
+      "1": "Ensure the kitten is safe: keep it warm and in a quiet place.",
+      "2": "Take a few photos (full body and close-up are helpful).",
+      "3": "If possible, note the exact location and the time.",
+      "4": "Contact us using the details below — the more information you provide, the faster we can help."
+    },
+    "importantLabel": "Important:",
+  "importantText": "If the kitten is injured or very lethargic, take it immediately to the nearest veterinarian! You can ask for a free microchip scan there, which may help reunite it with its owner. Never give cow's milk to a young kitten!",
+    "cta": {
+      "email": "Write us an email",
+      "phoneLabel": "Call us:",
+      "phoneNumber": "+36 1 234 5678"
+    },
+  "surrender": "If you’re contacting us about surrendering your cat: please write us a detailed email explaining why you can’t keep it, when and where handover is possible, and we’ll help arrange a safe transfer and find a new home. Also please share any information about its health status, vaccinations received, age, and other relevant details.",
+    "imageAlt": "Kitten needing help"
+  },
   "thanks": "Thank You",
   "faq": {
     "title": "Frequently Asked Questions",
