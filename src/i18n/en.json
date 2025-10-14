@@ -191,6 +191,27 @@
     }
   },
   "homeSeeker": "Home Seeker",
+  "homeSeekerSection": {
+    "title": "Found a kitten or need help?",
+    "lead": "If you find an orphaned kitten or can’t care for your cat due to changed circumstances, please contact us — we’ll help with temporary care, medical assistance or finding a new home.",
+    "howTitle": "What to do first?",
+    "steps": {
+      "0": "Important: If you find a kitten, first check from a distance whether the mother has actually abandoned it. She may just be out for food.",
+      "1": "Ensure the kitten is safe: keep it warm and in a quiet place.",
+      "2": "Take a few photos (full body and close-up are helpful).",
+      "3": "If possible, note the exact location and the time.",
+      "4": "Contact us using the details below — the more information you provide, the faster we can help."
+    },
+    "importantLabel": "Important:",
+  "importantText": "If the kitten is injured or very lethargic, take it immediately to the nearest veterinarian! You can ask for a free microchip scan there, which may help reunite it with its owner. Never give cow's milk to a young kitten!",
+    "cta": {
+      "email": "Write us an email",
+      "phoneLabel": "Call us:",
+      "phoneNumber": "+36 1 234 5678"
+    },
+  "surrender": "If you’re contacting us about surrendering your cat: please write us a detailed email explaining why you can’t keep it, when and where handover is possible, and we’ll help arrange a safe transfer and find a new home. Also please share any information about its health status, vaccinations received, age, and other relevant details.",
+    "imageAlt": "Kitten needing help"
+  },
   "thanks": "Thank You",
   "faq": {
     "title": "Frequently Asked Questions",
@@ -225,19 +246,62 @@
     "founder-role": "Founder"
   },
   "month-names": {
-    "Jan":{"short": "Jan", "long": "January"},
-    "Feb":{"short": "Feb", "long": "February"},
-    "Mar":{"short": "Mar", "long": "March"},
-    "Apr":{"short": "Apr", "long": "April"},
-    "May":{"short": "May", "long": "May"},
-    "Jun":{"short": "Jun", "long": "June"},
-    "Jul":{"short": "Jul", "long": "July"},
-    "Aug":{"short": "Aug", "long": "August"},
-    "Sep":{"short": "Sep", "long": "September"},
-    "Oct":{"short": "Oct", "long": "October"},
-    "Nov":{"short": "Nov", "long": "November"},
-    "Dec":{"short": "Dec", "long": "December"}
+    "Jan": { "short": "Jan", "long": "January" },
+    "Feb": { "short": "Feb", "long": "February" },
+    "Mar": { "short": "Mar", "long": "March" },
+    "Apr": { "short": "Apr", "long": "April" },
+    "May": { "short": "May", "long": "May" },
+    "Jun": { "short": "Jun", "long": "June" },
+    "Jul": { "short": "Jul", "long": "July" },
+    "Aug": { "short": "Aug", "long": "August" },
+    "Sep": { "short": "Sep", "long": "September" },
+    "Oct": { "short": "Oct", "long": "October" },
+    "Nov": { "short": "Nov", "long": "November" },
+    "Dec": { "short": "Dec", "long": "December" }
+  },
+  "storiesPage": {
+    "title": "Adoption Stories",
+    "prev": "Previous story",
+    "next": "Next story",
+    "story1": {
+      "title": "The Beginning of a Great Adventure",
+      "subtitle": "Fluffy Finds a New Home",
+      "text": "The family had always dreamed of having a cat, and when they first saw Fluffy, they knew instantly she was the perfect choice. The little cat quickly won their hearts, and since then every day has been filled with play and laughter. Fluffy has truly found her forever home, and the family is grateful to have given her a second chance."
     },
+    "story2": {
+      "title": "The Healing of a Lonely Heart",
+      "subtitle": "The Story of Bella and Her Owner",
+      "text": "Bella, a calm and quiet cat, had lived alone for a while until she found her new owner, an elderly lady. A bond formed between them instantly. Bella brought peace and comfort into the home, and her owner is deeply thankful for the joy and warmth she has brought into her life."
+    },
+    "story3": {
+      "title": "The Healing Power of an Unexpected Hug",
+      "subtitle": "Grumpy and the Understanding Companion",
+      "text": "When Máté first saw Morci (Grumpy) at the shelter, the cat was sitting gloomily in the corner of his cage. He knew this lonely soul needed a lot of love. True to his name, Morci was initially distant, only avoiding his owner and was reluctant to let anyone near. However, Máté was patient; he sat quietly, letting the cat decide when to approach. On a rainy afternoon, while Máté was standing in the kitchen, Morci suddenly jumped into his arms, snuggled up close, and thanked him for the trust with a single, deep purr. Since then, Morci hasn't been grumpy for a long time, and Máté knows that the deepest bonds are born from the longest wait."
+    },
+    "story4": {
+      "title": "The Miracle of Moving",
+      "subtitle": "Shaggy and the Promise of a New Home",
+      "text": "Shaggy, a small cat who had always longed for a loving home, finally found the real deal. When Anna saw him at the shelter, she immediately knew Shaggy would be her new companion. Shaggy quickly adapted to his new home and experienced new adventures with Anna every day. The little cat proved that even the smallest creatures are capable of bringing the biggest changes to a life."
+    },
+    "story5": {
+      "title": "The First Best Friend",
+      "subtitle": "Fülöp (Philip) and the Quiet Comfort",
+      "text": "When Sári first met Fülöp, the brown cat with folded-down ears, she instantly knew they belonged together. The cat had a very calm and peaceful nature, as if he was created just to curl up next to Sári to rest. The little girl was often quiet and withdrawn, but she immediately opened up in Fülöp's presence. The cat patiently endured tight hugs while sitting on the sofa, and Sári confided her daily secrets to him. Fülöp is not just a pet; he has become Sári's soulmate, providing unconditional love. The family knows that this friendship is the most beautiful gift they could have given their daughter."
+    },
+    "story6": {
+      "title": "The Shared Teatime",
+      "subtitle": "Fluff and the Gentle Companion",
+      "text": "Erzsébet's (Elizabeth's) life was peaceful, but the days sometimes felt long. When she saw the majestic, long-haired Pamacs (Fluff) at the shelter, she immediately felt that the cat could be the gentle companion she needed. Pamacs is not the cuddly type, but he is a loyal companion. Every morning, he sits exactly on the armrest of the armchair, watching Erzsébet prepare her morning tea. Their dearest moment is when the owner gives him a small treat from her hand. This shared, silent ritual signifies security and love for both of them. Pamacs ensures that loneliness never moves into the house."
+    },
+    "story7": {
+      "title": "The Bond of Mutual Respect",
+      "subtitle": "Master and the Peaceful Evenings",
+      "text": "Petra works a lot, and for her, peace and recharging are the most important things when she gets home. When she adopted Mester (Master), she chose an intelligent but somewhat reserved tomcat. Mester is not the type to always be on her lap, but his presence makes up for everything. Whenever Petra sits down on the sofa to read, Mester always takes his spot on the cushion next to her. They quietly keep an eye on each other, as if carrying on a silent conversation over the book. They know the other is there, watching over them, and this friendship based on mutual respect gives Petra's evenings their true value."
+    },
+    "ctaTitle": "Would you like to be part of a happy story like this?",
+    "ctaText": "As these adoption stories show, a little ball of fur can bring endless love and joy. If you feel inspired, we have many cats waiting to finally find their forever family. Whether you’re looking for a playful kitten or a calm, mature cat, you’re sure to find the one who fits you best. Take a look, get to know them, and maybe the next happy story will be yours!",
+    "ctaButton": "Meet the adoptable cats"
+  },
   "catsPage": {
     "title": "Adoptable Cats",
     "intro": "On this page, we'd like to introduce you to the special cats who are waiting for a new, loving home. Each of them has a unique story behind them, full of lessons and hope: you can learn how they came to us and what makes their personality so distinct. Please take the time to look through their profiles, because your true companion might be waiting for you right here! Remember: by adopting, you are not just giving one cat a chance; you are also freeing up space for another animal in need of rescue. Give a rescued life a chance!",
@@ -257,121 +321,121 @@
     "story-cica11": "Lola's owner moved abroad and unfortunately couldn't take her along. Although the abandonment took its toll, the diva residing within her soon emerged. This Fold beauty is extremely dignified and calm, but only cuddly if she initiates it. A true 'cool cat' who is ideal for a calm, adult household.",
     "story-cica12": "Max was surrendered by his previous owner because they found him 'too lazy'. But we absolutely love his slow pace and his majestically grumpy gaze! He is a calm, but extremely intelligent 'grumpy boss' who can only be lured out with the finest treats. He's an ideal companion for those who appreciate a quiet, balanced cat friend.",
     "cats": {
-        "key-gender": "Gender:",
-        "key-age": "Age:",
-        "key-breed": "Breed:",
-        "key-personality": "Personality:",
-        "key-neutered": "Neutered:",
-        "key-info": "Other Information:",
+      "key-gender": "Gender:",
+      "key-age": "Age:",
+      "key-breed": "Breed:",
+      "key-personality": "Personality:",
+      "key-neutered": "Neutered:",
+      "key-info": "Other Information:",
 
-        "cat1": {
-            "name": "Csipesz",
-            "gender": "Female",
-            "age": "3 years",
-            "breed": "Tabby Domestic Shorthair",
-            "personality": "Curious and confident, but reserved in unfamiliar situations. Intelligent and alert.",
-            "neutered": "Yes",
-            "info": "something needs to be written here"
-        },
-        "cat2": {
-            "name": "Karamell",
-            "gender": "Male",
-            "age": "2 years",
-            "breed": "Calico (Note: Calico is female only, translating based on Hungarian 'Kandúr')",
-            "personality": "Friendly and playful, loves being the center of attention. Adapts quickly to new environments.",
-            "neutered": "Yes",
-            "info": "Compatible with other cats, but does not like dogs."
-        },
-        "cat3": {
-            "name": "Nokedli",
-            "gender": "Male",
-            "age": "3 years",
-            "breed": "White and Tabby Domestic Shorthair",
-            "personality": "Calm, friendly, and balanced. A reliable and kind companion.",
-            "neutered": "Yes",
-            "info": "Indoor only, requires regular coat grooming."
-        },
-        "cat4": {
-            "name": "Tébláb",
-            "gender": "Male",
-            "age": "1 year",
-            "breed": "Gray Tabby Domestic Shorthair",
-            "personality": "Easily makes friends, loves belly rubs. Enjoys sleeping next to his owner.",
-            "neutered": "Not yet, but will be spayed/neutered before adoption.",
-            "info": "Requires activity and plenty of playtime."
-        },
-        "cat5": {
-            "name": "Snow",
-            "gender": "Female",
-            "age": "4 years",
-            "breed": "Domestic Shorthair (Ragdoll-like)",
-            "personality": "A bit wild, but very affectionate. Loves being around people, ideal for families with small children.",
-            "neutered": "Yes",
-            "info": "Requires patient settling in, not recommended with dogs."
-        },
-        "cat6": {
-            "name": "Marci",
-            "gender": "Male",
-            "age": "6 years",
-            "breed": "Tabby Domestic Shorthair",
-            "personality": "Calm and confident, a true regal type. Strong and balanced personality who enjoys attention.",
-            "neutered": "Yes",
-            "info": "Due to his age, he requires a calm environment. He is our calmest shelter cat. Needs a special diet and regular veterinary checks due to his teeth."
-        },
-        "cat7": {
-            "name": "Démon",
-            "gender": "Male",
-            "age": "3 years",
-            "breed": "Black Domestic Shorthair",
-            "personality": "Loves being with his owner, enjoys cuddling very much. Very patient.",
-            "neutered": "Yes",
-            "info": "Loves being outdoors; those with a safe, cat-netted yard are preferred."
-        },
-        "cat8": {
-            "name": "Tódor",
-            "gender": "Male",
-            "age": "5 years",
-            "breed": "Maine Coon",
-            "personality": "The nickname \"gentle giant\" fits him perfectly. He is calm, friendly, and extremely affectionate.",
-            "neutered": "Yes",
-            "info": "His fur requires regular trimming and grooming. Perfect choice for children."
-        },
-        "cat9": {
-            "name": "Riska",
-            "gender": "Female",
-            "age": "Six months",
-            "breed": "White Domestic Shorthair",
-            "personality": "Gentle, quiet, uncertain but affectionate",
-            "neutered": "Not yet, but will be spayed/neutered before adoption.",
-            "info": "Our youngest shelter resident, very active and an explorer type."
-        },
-        "cat10": {
-            "name": "Peti",
-            "gender": "Male",
-            "age": "3 years",
-            "breed": "Spotted Mixed Domestic Shorthair",
-            "personality": "Loves his own voice, observant, prefers high places",
-            "neutered": "Yes",
-            "info": "He requires companionship, so we are looking for an owner who is often at home. They should also be willing to adopt other cats so Peti is never alone."
-        },
-        "cat11": {
-            "name": "Lola",
-            "gender": "Female",
-            "age": "2 years",
-            "breed": "Scottish Fold Mix",
-            "personality": "Cuddly, 'velcro cat', loving",
-            "neutered": "Yes",
-            "info": "Gets along well with other pets, even recommended for a home with a dog. Due to her genetic characteristics, joint problems should be monitored."
-        },
-        "cat12": {
-            "name": "Max",
-            "gender": "Male",
-            "age": "4 years",
-            "breed": "British Shorthair Mix",
-            "personality": "Lazy, food-loving, but very intelligent",
-            "neutered": "Yes",
-            "info": "Not a pushy nature, especially quiet. Lives in harmony with other animals and children. Adapts quickly to changes."
-        }
+      "cat1": {
+        "name": "Csipesz",
+        "gender": "Female",
+        "age": "3 years",
+        "breed": "Tabby Domestic Shorthair",
+        "personality": "Curious and confident, but reserved in unfamiliar situations. Intelligent and alert.",
+        "neutered": "Yes",
+        "info": "something needs to be written here"
+      },
+      "cat2": {
+        "name": "Karamell",
+        "gender": "Male",
+        "age": "2 years",
+        "breed": "Calico (Note: Calico is female only, translating based on Hungarian 'Kandúr')",
+        "personality": "Friendly and playful, loves being the center of attention. Adapts quickly to new environments.",
+        "neutered": "Yes",
+        "info": "Compatible with other cats, but does not like dogs."
+      },
+      "cat3": {
+        "name": "Nokedli",
+        "gender": "Male",
+        "age": "3 years",
+        "breed": "White and Tabby Domestic Shorthair",
+        "personality": "Calm, friendly, and balanced. A reliable and kind companion.",
+        "neutered": "Yes",
+        "info": "Indoor only, requires regular coat grooming."
+      },
+      "cat4": {
+        "name": "Tébláb",
+        "gender": "Male",
+        "age": "1 year",
+        "breed": "Gray Tabby Domestic Shorthair",
+        "personality": "Easily makes friends, loves belly rubs. Enjoys sleeping next to his owner.",
+        "neutered": "Not yet, but will be spayed/neutered before adoption.",
+        "info": "Requires activity and plenty of playtime."
+      },
+      "cat5": {
+        "name": "Snow",
+        "gender": "Female",
+        "age": "4 years",
+        "breed": "Domestic Shorthair (Ragdoll-like)",
+        "personality": "A bit wild, but very affectionate. Loves being around people, ideal for families with small children.",
+        "neutered": "Yes",
+        "info": "Requires patient settling in, not recommended with dogs."
+      },
+      "cat6": {
+        "name": "Marci",
+        "gender": "Male",
+        "age": "6 years",
+        "breed": "Tabby Domestic Shorthair",
+        "personality": "Calm and confident, a true regal type. Strong and balanced personality who enjoys attention.",
+        "neutered": "Yes",
+        "info": "Due to his age, he requires a calm environment. He is our calmest shelter cat. Needs a special diet and regular veterinary checks due to his teeth."
+      },
+      "cat7": {
+        "name": "Démon",
+        "gender": "Male",
+        "age": "3 years",
+        "breed": "Black Domestic Shorthair",
+        "personality": "Loves being with his owner, enjoys cuddling very much. Very patient.",
+        "neutered": "Yes",
+        "info": "Loves being outdoors; those with a safe, cat-netted yard are preferred."
+      },
+      "cat8": {
+        "name": "Tódor",
+        "gender": "Male",
+        "age": "5 years",
+        "breed": "Maine Coon",
+        "personality": "The nickname \"gentle giant\" fits him perfectly. He is calm, friendly, and extremely affectionate.",
+        "neutered": "Yes",
+        "info": "His fur requires regular trimming and grooming. Perfect choice for children."
+      },
+      "cat9": {
+        "name": "Riska",
+        "gender": "Female",
+        "age": "Six months",
+        "breed": "White Domestic Shorthair",
+        "personality": "Gentle, quiet, uncertain but affectionate",
+        "neutered": "Not yet, but will be spayed/neutered before adoption.",
+        "info": "Our youngest shelter resident, very active and an explorer type."
+      },
+      "cat10": {
+        "name": "Peti",
+        "gender": "Male",
+        "age": "3 years",
+        "breed": "Spotted Mixed Domestic Shorthair",
+        "personality": "Loves his own voice, observant, prefers high places",
+        "neutered": "Yes",
+        "info": "He requires companionship, so we are looking for an owner who is often at home. They should also be willing to adopt other cats so Peti is never alone."
+      },
+      "cat11": {
+        "name": "Lola",
+        "gender": "Female",
+        "age": "2 years",
+        "breed": "Scottish Fold Mix",
+        "personality": "Cuddly, 'velcro cat', loving",
+        "neutered": "Yes",
+        "info": "Gets along well with other pets, even recommended for a home with a dog. Due to her genetic characteristics, joint problems should be monitored."
+      },
+      "cat12": {
+        "name": "Max",
+        "gender": "Male",
+        "age": "4 years",
+        "breed": "British Shorthair Mix",
+        "personality": "Lazy, food-loving, but very intelligent",
+        "neutered": "Yes",
+        "info": "Not a pushy nature, especially quiet. Lives in harmony with other animals and children. Adapts quickly to changes."
+      }
     }
 },
 "adopterForm": {

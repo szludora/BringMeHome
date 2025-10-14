@@ -1,5 +1,5 @@
 import { initEvents } from "./controller/initEvents.js";
-import { setDevMode, log } from "./core/logger.js";
+import { setDevMode } from "./core/logger.js";
 
 setDevMode(true);
 
@@ -15,5 +15,7 @@ export const heroPages = {
   faq: "/src/view/landing/faq.html",
   footer: "/src/view/layout/footer.html",
 };
+
+export const layout = ["navbar", "footer"];
 
 await initEvents();

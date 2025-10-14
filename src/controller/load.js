@@ -1,9 +1,8 @@
-import { log, error } from "../core/logger.js";
-import { heroPages as pages } from "../main.js";
+import { log, warn } from "../core/logger.js";
+import { heroPages as pages, layout } from "../main.js";
 
-let container =
-  document.getElementById("singlePage") ?? document.getElementById("app");
 const template = `
+  <div id="navbar"></div>
   <div id="hero"></div>
   <div id="about"></div>
   <div id="adopt"></div>
@@ -12,49 +11,82 @@ const template = `
   <div id="homeSeeker"></div>
   <div id="thanks"></div>
   <div id="faq"></div>
+  <div id="footer"></div>
 `;
 
-export async function loadHero() {
+function getContainer() {
+  let c =
+    document.getElementById("singlePage") ?? document.getElementById("app");
+  if (!c) {
+    c = document.createElement("div");
+    c.id = "singlePage";
+    document.body.appendChild(c);
+    warn("Container not found, created a new 'singlePage' div dynamically.");
+  }
+  return c;
+}
+
+export async function loadContent(isIndex = false) {
+  const container = getContainer();
   toggleVisibility(false);
-  await loadLayout();
-  await loadLandPage();
+
+  if (isIndex && !container.innerHTML.trim()) container.innerHTML = template;
+
+  await Promise.all(layout.map((page) => loadSection(page)));
+
+  if (isIndex) {
+    const landPages = Object.keys(pages).filter((p) => !layout.includes(p));
+    await Promise.all(landPages.map((page) => loadSection(page)));
+  }
+
+  log("pages loaded");
   toggleVisibility(true);
 }
 
-export async function loadLayout() {
-  if (pages.navbar) {
-    const res = await fetch(pages.navbar);
-    document.getElementById("navbar").innerHTML = await res.text();
-  }
-  if (pages.footer) {
-    const res = await fetch(pages.footer);
-    document.getElementById("footer").innerHTML = await res.text();
-  }
-  log("Layout loaded");
-}
+async function loadSection(id) {
+  const container = getContainer();
+  const file = pages[id];
+  if (!file || !container) return;
 
-async function loadLandPage() {
-  if (!container.innerHTML.trim()) container.innerHTML = template;
-
-  for (const page of Object.keys(pages)) {
-    const file = pages[page];
-    if (!file) continue;
-
-    const res = await fetch(file);
-    const html = await res.text();
-
-    let section = document.getElementById(page);
-    if (!section) {
-      section = document.createElement("section");
-      section.id = page;
-      container.appendChild(section);
-    }
-    section.innerHTML = html;
+  let section = document.getElementById(id);
+  if (!section) {
+    section = document.createElement("section");
+    section.id = id;
+    container.appendChild(section);
   }
 
-  log("LandPages loaded");
+  const html = await (await fetch(file)).text();
+  section.innerHTML = html;
+  reloadScripts(section);
 }
 
 function toggleVisibility(show = true) {
+  const container = getContainer();
+  if (!container) return;
   container.classList.toggle("d-none", !show);
+}
+
+function reloadScripts(section) {
+  // reload all scripts that are attached to the html file
+  section.querySelectorAll("script").forEach((script) => {
+    const newScript = document.createElement("script");
+    if (script.src) {
+      newScript.src = script.src;
+      newScript.type = script.type || "text/javascript";
+      newScript.onload = () => {
+        for (let key in window) {
+          if (
+            (key == "onLoad" && typeof window[key] === "function") ||
+            (key == "onload" && typeof window[key] === "function")
+          ) {
+            window[key]();
+          }
+        }
+      };
+    } else {
+      newScript.textContent = script.textContent;
+      newScript.onload = () => makeGlobals(newScript);
+    }
+    script.replaceWith(newScript);
+  });
 }

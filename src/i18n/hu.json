@@ -123,6 +123,7 @@
     "cta-button1": "Ismerd meg örökbefogadható cicáinkat!",
     "cta-button2": "További örökbefogadói történetek"
   },
+
   "journey": {
     "title": {
       "main": "Az utunk eddig...",
@@ -190,6 +191,27 @@
     }
   },
   "homeSeeker": "Gazdikereső",
+  "homeSeekerSection": {
+    "title": "Találtál kiscicát vagy segítségre van szükséged?",
+    "lead": "Ha bárhol árva kiscicát találsz, vagy megváltozott élethelyzet miatt nem tudod tovább vállalni a macskádat, kérjük, vedd fel velünk a kapcsolatot — együtt megtaláljuk a legjobb megoldást: ideiglenes ellátás, orvosi segítség vagy új otthon keresése.",
+    "howTitle": "Mit tegyél először?",
+    "steps": {
+      "0": "Figyelj! Ha kiscicát találsz, először távolról győződj meg róla, hogy az anyja valóban elhagyta-e. Lehet, hogy csak élelemért ment.",
+      "1": "Biztosíts biztonságot a cica számára: tartsd melegen és egy nyugodt helyen.",
+      "2": "Készíts néhány fényképet (jobb, ha van egész alakos és közeli kép is).",
+      "3": "Ha lehet, jegyezd fel a pontos helyet és az időpontot.",
+      "4": "Keress meg minket az alábbi elérhetőségek egyikén — minél több információt adsz, annál gyorsabban tudunk segíteni."
+    },
+    "importantLabel": "Fontos:",
+  "importantText": "Ha a kiscica sérült vagy nagyon levert, azonnal vidd a legközelebbi állatorvoshoz! Itt kérhetsz egy ingyenes chip-leolvasást is, ami segíthet hazajuttatni. Fiatal kiscicának soha ne adj tehéntejet!",
+    "cta": {
+      "email": "Írj nekünk e-mailt",
+      "phoneLabel": "Hívj minket:",
+      "phoneNumber": "+36 1 234 5678"
+    },
+  "surrender": "Ha a macskád átadása miatt keresel minket: Kérlek írj nekünk egy részletes emailt, hogy miért nem tudod tovább vállalni, mikor és hol adható át, és mi segítünk a biztonságos átadásban és új otthon keresésében. Emellett ossz meg velünk kérlek minden információt az egészségügyi állapotáról, a megkapott oltásokról, koráról, egyebekről.",
+    "imageAlt": "Segítségre szoruló cica"
+  },
   "thanks": "Köszönet",
   "faq": {
     "title": "Gyakran Ismételt Kérdések",
@@ -225,31 +247,88 @@
     "button-adopt": "Örökbe fogadok",
     "link-learn-more": "Tudj meg többet"
   },
+  "month-names": {
+    "Jan": { "short": "Jan", "long": "Január" },
+    "Feb": { "short": "Feb", "long": "Február" },
+    "Mar": { "short": "Már", "long": "Március" },
+    "Apr": { "short": "Ápr", "long": "Április" },
+    "May": { "short": "Máj", "long": "Május" },
+    "Jun": { "short": "Jún", "long": "Június" },
+    "Jul": { "short": "Júl", "long": "Július" },
+    "Aug": { "short": "Aug", "long": "Augusztus" },
+    "Sep": { "short": "Szep", "long": "Szeptember" },
+    "Oct": { "short": "Okt", "long": "Október" },
+    "Nov": { "short": "Nov", "long": "November" },
+    "Dec": { "short": "Dec", "long": "December" }
+  },
+  "storiesPage": {
+    "title": "Örökbefogadói történetek",
+    "prev": "Előző történet",
+    "next": "Következő történet",
+    "story1": {
+      "title": "Egy nagyszerű kaland kezdete",
+      "subtitle": "Fluffy új otthonra talál",
+      "text": "A család mindig is egy cicáról álmodott, és amikor meglátták Fluffyt, rögtön tudták, hogy ő a tökéletes választás. A kis macska azonnal belopta magát a szívükbe, és azóta a család minden napja tele van játékkal és nevetéssel. Fluffy igazi otthonra talált, és a család boldogan adta neki a második esélyt."
+    },
+    "story2": {
+      "title": "Egy magányos szív gyógyulása",
+      "subtitle": "Bella és gazdája története",
+      "text": "Bella, a nyugodt és csendes cica, egyedül élt egy ideig, amíg rá nem talált az új gazdája, egy idősebb hölgy. Kettejük között azonnal kialakult a kötelék. Bella nyugalmat hozott az otthonba, és a gazdija háláját fejezi ki, amiért meleg otthont adhatott neki."
+    },
+    "story3": {
+      "title": "A váratlan ölelés gyógyító ereje",
+      "subtitle": "Morci és a megértő társ",
+      "text": "Amikor Máté meglátta Morcit a menhelyen, a cica éppen a boksz sarkában ült, búskomoran. Tudta, hogy ez a magányos lélek sok szeretetet igényel. Morci, nevéhez híven, eleinte távolságtartó volt, csak kerülgette a gazdit, és nehezen engedett magához bárkit. Máté azonban türelmes volt; csendben ült, hagyta, hogy a cica maga döntse el, mikor közeledik. Egy esős délutánon, miközben Máté a konyhában állt, Morci váratlanul felugrott a karjába, szorosan hozzábújt, és egyetlen hatalmas, mély dörrenéssel köszönte meg a bizalmat. Azóta Morci már rég nem morci, Máté pedig tudja, hogy a legmélyebb kötelékek születnek a legnagyobb várakozásból."
+    },
+    "story4": {
+      "title": "A költözés csodája",
+      "subtitle": "Kócos és az új otthon ígérete",
+      "text": "Kócos, a kis cica, aki mindig is vágyott egy szerető otthonra, végre megtalálta az igazit. Amikor Anna meglátta őt a menhelyen, azonnal tudta, hogy Kócos lesz az új társa. Kócos gyorsan alkalmazkodott új otthonához, és minden nap újabb kalandokat élt át Annával. A kis cica bebizonyította, hogy a legkisebb lények is képesek a legnagyobb változásokat hozni egy életben."
+    },
+    "story5": {
+      "title": "Az első legjobb barát",
+      "subtitle": "Fülöp és a csendes vigasz",
+      "text": "Amikor Sári először találkozott Fülöppel, a lefelé kunkorodó fülű, barna macskával, azonnal tudta, hogy ők összetartoznak. A macska nagyon nyugodt és békés természetű volt, mintha arra teremtették volna, hogy Sári mellé bújva pihenjen. A kislány gyakran volt csendes és visszahúzódó, de Fülöp jelenlétében azonnal megnyílt. A cica a kanapén ülve türelmesen viselte a szoros öleléseket, Sári pedig elmesélte neki a napi titkait. Fülöp nem csupán egy kisállat; ő Sári lelki társa lett, aki feltétel nélküli szeretetet nyújt. A család tudja, hogy ez a barátság a legszebb ajándék, amit adhattak a kislánynak.  "
+    },
+    "story6": {
+      "title": "A közös teaidő",
+      "subtitle": "Pamacs és a szelíd kísérő",
+      "text": "Erzsébet asszony élete nyugodtan telt, ám a napok néha hosszúnak tűntek. Amikor a menhelyen meglátta a fenséges megjelenésű, hosszú szőrű Pamacsot, azonnal érezte, hogy a cica lehet az a szelíd kísérő, akire szüksége van. Pamacs nem egy bújós típus, de annál hűségesebb társ. Minden reggel pontosan a fotel karfáján ül, és figyeli, ahogy Erzsébet asszony elkészíti a reggeli teáját. A legkedvesebb pillanatuk, amikor a gazdi egy kis falatot ad neki a kezéből. Ez a közös, csendes rituálé mindkettőjük számára a biztonságot és a szeretetet jelenti. Pamacs nem hagyja, hogy a magány beköltözzön a házba.  "
+    },
+    "story7": {
+      "title": "A kölcsönös tisztelet köteléke",
+      "subtitle": "Mester és a békés esték",
+      "text": "Petra sokat dolgozik, és hazaérve a legfontosabb számára a nyugalom és a feltöltődés. Amikor Mestert örökbefogadta, egy intelligens, de kissé távolságtartó kandúrt választott. Mester nem az a típus, aki állandóan az ölben lenne, de a jelenléte mindenért kárpótol. Amikor Petra leül a kanapéra olvasni, Mester mindig elfoglalja a helyét a mellette lévő párnán. Csendben, szemmel tartják egymást, mintha egy néma beszélgetést folytatnának a könyv felett. Tudják, hogy a másik ott van, vigyáz rá, és ez a kölcsönös tiszteleten alapuló barátság adja Petra estéinek az igazi értékét.  "
+    },
+    "ctaTitle": "Te is szeretnél részese lenni egy ilyen boldog történetnek?",
+    "ctaText": "Az örökbefogadói élményekből is látszik, mennyi szeretetet és örömet adhat egy kis szőrgombóc. Ha kedvet kaptál hozzá, nálunk számos cica várja, hogy végre rátaláljon az álomcsaládjára. Legyen szó játékos kölyökről vagy nyugodtabb felnőtt cicáról, nálunk biztosan megtalálod a hozzád illőt. Nézz körül, ismerd meg őket, és lehet, hogy a következő boldog történet már a tiéd lesz!",
+    "ctaButton": "Ismerd meg az örökbefogadható cicákat"
+  },
   "catsPage": {
-        "title": "Örökbefogadható cicák",
-        "intro": "Ezen az oldalon szeretnénk bemutatni azokat a különleges cicákat, akik új, szerető otthonra várnak. Mindegyikük mögött egy egyedi történet áll, tele tanulságokkal és reménnyel: megismerheted, hogyan kerültek hozzánk, és mi az, ami egyedivé teszi a személyiségüket. Kérjük, szánj időt a profiljaik áttekintésére, mert lehet, hogy éppen itt vár rád az igazi társ! Ne feledd: egy örökbefogadással nem csak egy cicának adsz esélyt, hanem egy helyet szabadítasz fel egy újabb mentésre szoruló állatnak. Adj esélyt egy mentett életnek!",
-        "detailsCta": "Örökbefogadom",
-        "finalCtaTitle": "Készen állsz egy ilyen kalandra?",
-         "finalCtaButton": "Örökbefogadói történetek", 
-        "story-csipesz": "Csipesz egy igazi felfedező, aki a falu szélén, egy elhagyatott kunyhóban élt. Múltja kissé vad, de az emberi szeretetről való tudás felébresztette benne a ragaszkodást. Kifejezetten gyerekek mellé ajánljuk.",
-        "story-karamell": "Karamell egy szomorú sorsú, de hihetetlenül életvidám kisfiú, akit egy autós találta az esőben, a főút mellett. Imádja a hasvakarást és mindenkit azonnal a szívébe zár. Más cicákkal is jól kijön.",
-        "story-cica3": "Nokedli egy nyugodt, idősödő úr, aki korábban egy idős hölgy társa volt. A hölgy sajnos elhunyt, így Nokedli hozzánk került. Méltóságteljes és kiegyensúlyozott társ.",
-        "story-cica4": "Tébláb születése óta nálunk van, testvérei hamar gazdára találtak, de őt még senki sem vitte el. Igazi bohóc, mindig valamilyen galibában töri a lábát, innen a neve is.",
-        "story-cica5": "Snow egy igazi ritkaság, valószínűleg Ragdoll macska és házimacska keveréke. Az erdő szélén találtuk, azóta szobatiszta, de a vadóc múltja még néha előjön.",
-        "story-cica6": "Marci egy igazi túlélő, akit egy másik menhelyről hoztunk el, ahol már sok évet töltött. Hatalmas szíve van, és pontosan tudja, mit jelent a második esély.",
-        "story-cica7": "Démon nem a nevétől félelmetes. Egy gyártelepen élt, rettegett az emberektől. Bújni imád, de idő kell neki, hogy megbízzon az új gazdiban.",
-        "story-cica8": "Tódor a környék legnagyobb Main Coonja volt, amíg a gazdája el nem költözött. Kicsit bánatos, de a hatalmas testében hatalmas szeretet lapul.",
-        "story-cica9": "Riska egy dobozban árválkodott a menhely kapujában, valószínűleg egy nem kívánt alom tagjaként. Apró termete és hatalmas, ártatlan kék szemei azonnal meglágyították a szívünket. Bár félénken indult, hamar kiderült, hogy egy kíváncsi, bújós kislány, aki minden szeretettel megajándékozott percet viszonoz.",
-        "story-cica10": "Peti egy közlekedési baleset után került hozzánk, de a szerencsétlenség nem vette el az életkedvét! Miután felépült, kiderült, hogy egy igazi 'szóvivő', aki hangosan és vidáman kommentálja a nap eseményeit. Ő egy energia bomba és bohóc, aki a sárga kendőjével együtt keresi a gazdit, aki sokat 'beszélget' vele.",
-        "story-cica11": "Lola gazdája külföldre költözött, és sajnos nem vihette magával. Bár az elhagyatottság megviselte, a benne lakozó díva hamar előbújt. Ez a lógófülű szépség rendkívül méltóságteljes és higgadt, de csak akkor bújós, ha ő kezdeményezi. Egy igazi 'cool cat', aki nyugodt, felnőtt háztartásba ideális.",
-        "story-cica12": "Maxot korábbi gazdája adta le, mivel 'túl lustának' találta. Mi azonban imádjuk a lassú tempóját és a fenséges mogorva tekintetét! Ő egy nyugodt, de rendkívül intelligens 'zsémbes főnök', akit csak a legfinomabb falatokkal lehet előcsalogatni. Ideális társ azoknak, akik értékelik a csendes, kiegyensúlyozott macskabarátot.",
-        "cats": {
-            "key-gender": "Ivar:",
-            "key-age": "Kor:",
-            "key-breed": "Fajta:",
-            "key-personality": "Jellemzők:",
-            "key-neutered": "Ivartalanítva:",
-            "key-info": "Egyéb információk:",
+    "title": "Örökbefogadható cicák",
+    "intro": "Ezen az oldalon szeretnénk bemutatni azokat a különleges cicákat, akik új, szerető otthonra várnak. Mindegyikük mögött egy egyedi történet áll, tele tanulságokkal és reménnyel: megismerheted, hogyan kerültek hozzánk, és mi az, ami egyedivé teszi a személyiségüket. Kérjük, szánj időt a profiljaik áttekintésére, mert lehet, hogy éppen itt vár rád az igazi társ! Ne feledd: egy örökbefogadással nem csak egy cicának adsz esélyt, hanem egy helyet szabadítasz fel egy újabb mentésre szoruló állatnak. Adj esélyt egy mentett életnek!",
+    "detailsCta": "Örökbefogadom",
+    "finalCtaTitle": "Készen állsz egy ilyen kalandra?",
+    "finalCtaButton": "Örökbefogadói történetek",
+    "story-csipesz": "Csipesz egy igazi felfedező, aki a falu szélén, egy elhagyatott kunyhóban élt. Múltja kissé vad, de az emberi szeretetről való tudás felébresztette benne a ragaszkodást. Kifejezetten gyerekek mellé ajánljuk.",
+    "story-karamell": "Karamell egy szomorú sorsú, de hihetetlenül életvidám kisfiú, akit egy autós találta az esőben, a főút mellett. Imádja a hasvakarást és mindenkit azonnal a szívébe zár. Más cicákkal is jól kijön.",
+    "story-cica3": "Nokedli egy nyugodt, idősödő úr, aki korábban egy idős hölgy társa volt. A hölgy sajnos elhunyt, így Nokedli hozzánk került. Méltóságteljes és kiegyensúlyozott társ.",
+    "story-cica4": "Tébláb születése óta nálunk van, testvérei hamar gazdára találtak, de őt még senki sem vitte el. Igazi bohóc, mindig valamilyen galibában töri a lábát, innen a neve is.",
+    "story-cica5": "Snow egy igazi ritkaság, valószínűleg Ragdoll macska és házimacska keveréke. Az erdő szélén találtuk, azóta szobatiszta, de a vadóc múltja még néha előjön.",
+    "story-cica6": "Marci egy igazi túlélő, akit egy másik menhelyről hoztunk el, ahol már sok évet töltött. Hatalmas szíve van, és pontosan tudja, mit jelent a második esély.",
+    "story-cica7": "Démon nem a nevétől félelmetes. Egy gyártelepen élt, rettegett az emberektől. Bújni imád, de idő kell neki, hogy megbízzon az új gazdiban.",
+    "story-cica8": "Tódor a környék legnagyobb Main Coonja volt, amíg a gazdája el nem költözött. Kicsit bánatos, de a hatalmas testében hatalmas szeretet lapul.",
+    "story-cica9": "Riska egy dobozban árválkodott a menhely kapujában, valószínűleg egy nem kívánt alom tagjaként. Apró termete és hatalmas, ártatlan kék szemei azonnal meglágyították a szívünket. Bár félénken indult, hamar kiderült, hogy egy kíváncsi, bújós kislány, aki minden szeretettel megajándékozott percet viszonoz.",
+    "story-cica10": "Peti egy közlekedési baleset után került hozzánk, de a szerencsétlenség nem vette el az életkedvét! Miután felépült, kiderült, hogy egy igazi 'szóvivő', aki hangosan és vidáman kommentálja a nap eseményeit. Ő egy energia bomba és bohóc, aki a sárga kendőjével együtt keresi a gazdit, aki sokat 'beszélget' vele.",
+    "story-cica11": "Lola gazdája külföldre költözött, és sajnos nem vihette magával. Bár az elhagyatottság megviselte, a benne lakozó díva hamar előbújt. Ez a lógófülű szépség rendkívül méltóságteljes és higgadt, de csak akkor bújós, ha ő kezdeményezi. Egy igazi 'cool cat', aki nyugodt, felnőtt háztartásba ideális.",
+    "story-cica12": "Maxot korábbi gazdája adta le, mivel 'túl lustának' találta. Mi azonban imádjuk a lassú tempóját és a fenséges mogorva tekintetét! Ő egy nyugodt, de rendkívül intelligens 'zsémbes főnök', akit csak a legfinomabb falatokkal lehet előcsalogatni. Ideális társ azoknak, akik értékelik a csendes, kiegyensúlyozott macskabarátot.",
+    "cats": {
+      "key-gender": "Ivar:",
+      "key-age": "Kor:",
+      "key-breed": "Fajta:",
+      "key-personality": "Jellemzők:",
+      "key-neutered": "Ivartalanítva:",
+      "key-info": "Egyéb információk:",
 
             "cat1": {
                 "name": "Csipesz",
