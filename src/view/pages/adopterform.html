@@ -24,8 +24,8 @@
   <main class="pt-5">
     <div class="container py-5">
       <header class="mb-5 text-center">
-        <h1 class="mb-3" data-i18n="adopterForm.title"></h1>
-        <p class="lead" data-i18n="adopterForm.subtitle"></p>
+  <h1 class="mb-3" data-i18n="adopterForm.title" aria-label="i18n:adopterForm.title"></h1>
+  <p class="lead" data-i18n="adopterForm.subtitle" aria-label="i18n:adopterForm.subtitle"></p>
       </header>
 
       <div class="row justify-content-center">
@@ -34,30 +34,30 @@
 
             <form id="catAdoptionForm">
               <div class="mb-3">
-                <label for="adopterName" class="form-label" data-i18n="adopterForm.form.adopterName.label"></label>
+                <label for="adopterName" class="form-label" data-i18n="adopterForm.form.adopterName.label" aria-label="i18n:adopterForm.form.adopterName.label"></label>
                 <input type="text" class="form-control" id="adopterName" name="Örökbefogadó neve" required aria-describedby="nameHelp" aria-required="true" autocomplete="name">
                 <div id="nameHelp" class="form-text" data-i18n="adopterForm.form.adopterName.help"></div>
               </div>
 
               <div class="mb-3">
-                <label for="adopterEmail" class="form-label" data-i18n="adopterForm.form.adopterEmail"></label>
+                <label for="adopterEmail" class="form-label" data-i18n="adopterForm.form.adopterEmail" aria-label="i18n:adopterForm.form.adopterEmail"></label>
                 <input type="email" class="form-control" id="adopterEmail" name="Email" required aria-required="true" autocomplete="email">
               </div>
 
               <div class="mb-3">
-                <label for="adopterPhone" class="form-label" data-i18n="adopterForm.form.adopterPhone.label"></label>
+                <label for="adopterPhone" class="form-label" data-i18n="adopterForm.form.adopterPhone.label" aria-label="i18n:adopterForm.form.adopterPhone.label"></label>
                 <input type="tel" inputmode="tel" class="form-control" id="adopterPhone" name="Telefonszám" 
                   aria-required="true" autocomplete="tel">
                 <div class="form-text" data-i18n="adopterForm.form.adopterPhone.help"></div>
               </div>
 
               <div class="mb-3">
-                <label for="adopterCity" class="form-label" data-i18n="adopterForm.form.adopterCity"></label>
+                <label for="adopterCity" class="form-label" data-i18n="adopterForm.form.adopterCity" aria-label="i18n:adopterForm.form.adopterCity"></label>
                 <input type="text" class="form-control" id="adopterCity" name="Város" required aria-required="true" autocomplete="address-level2">
               </div>
 
               <div class="mb-3">
-                <label for="housingType" class="form-label" data-i18n="adopterForm.form.housingType.label"></label>
+                <label for="housingType" class="form-label" data-i18n="adopterForm.form.housingType.label" aria-label="i18n:adopterForm.form.housingType.label"></label>
                 <select class="form-select" id="housingType" name="Lakhatási viszonyok" required aria-required="true">
                   <option value="" data-i18n="adopterForm.form.housingType.options.default"></option>
                   <option value="Ház" data-i18n="adopterForm.form.housingType.options.house"></option>
@@ -69,23 +69,23 @@
 
               <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="safetyNetCommitment" name="Biztonsági háló vállalása" value="Vállalom">
-                <label class="form-check-label" for="safetyNetCommitment" data-i18n="adopterForm.form.safetyNetCommitment"></label>
+                <label class="form-check-label" for="safetyNetCommitment" data-i18n="adopterForm.form.safetyNetCommitment" aria-label="i18n:adopterForm.form.safetyNetCommitment"></label>
               </div>
 
               <div class="mb-3">
-                <label class="form-label d-block" data-i18n="adopterForm.form.hasPreviousPets.label"></label>
+                <label class="form-label d-block" data-i18n="adopterForm.form.hasPreviousPets.label" aria-label="i18n:adopterForm.form.hasPreviousPets.label"></label>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="Korábbi tapasztalat" id="hasPreviousPetsYes" value="Igen" required>
-                  <label class="form-check-label" for="hasPreviousPetsYes" data-i18n="adopterForm.form.hasPreviousPets.yes"></label>
+                  <label class="form-check-label" for="hasPreviousPetsYes" data-i18n="adopterForm.form.hasPreviousPets.yes" aria-label="i18n:adopterForm.form.hasPreviousPets.yes"></label>
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="Korábbi tapasztalat" id="hasPreviousPetsNo" value="Nem" required>
-                  <label class="form-check-label" for="hasPreviousPetsNo" data-i18n="adopterForm.form.hasPreviousPets.no"></label>
+                  <label class="form-check-label" for="hasPreviousPetsNo" data-i18n="adopterForm.form.hasPreviousPets.no" aria-label="i18n:adopterForm.form.hasPreviousPets.no"></label>
                 </div>
               </div>
 
               <div class="mb-3">
-                <label for="currentPets" class="form-label" data-i18n="adopterForm.form.currentPets.label"></label>
+                <label for="currentPets" class="form-label" data-i18n="adopterForm.form.currentPets.label" aria-label="i18n:adopterForm.form.currentPets.label"></label>
                 <select class="form-select" id="currentPets" name="Jelenlegi állatok">
                   <option value="Nincs" data-i18n="adopterForm.form.currentPets.options.none"></option>
                   <option value="Macska" data-i18n="adopterForm.form.currentPets.options.cat"></option>
@@ -106,7 +106,7 @@
   <label 
     class="form-check-label" 
     for="dataConsent" 
-    data-i18n="adopterForm.form.dataConsent"
+    data-i18n="adopterForm.form.dataConsent" aria-label="i18n:adopterForm.form.dataConsent"
   ></label>
 </div>
 
@@ -121,83 +121,83 @@
   <label 
     class="form-check-label" 
     for="visitConsent" 
-    data-i18n="adopterForm.form.visitConsent"
+    data-i18n="adopterForm.form.visitConsent" aria-label="i18n:adopterForm.form.visitConsent"
   ></label>
 </div>
               <div class="mb-3">
                 <fieldset>
-                  <legend class="form-label mb-2" data-i18n="adopterForm.form.chooseCat"></legend>
+                  <legend id="chooseCatLabel" class="form-label mb-2" data-i18n="adopterForm.form.chooseCat" aria-label="i18n:adopterForm.form.chooseCat"></legend>
                   <div class="cat-options" role="radiogroup" aria-labelledby="chooseCatLabel">
-                    <label class="cat-card">
-                      <input type="radio" name="Kiválasztott cica" value="Csipesz" required>
+                    <label class="cat-card" for="cat1">
+                      <input id="cat1" type="radio" name="Kiválasztott cica" value="Csipesz" required aria-label="i18n:adopterForm.catsList.cat1">
                       <img src="/assets/img/cica1.jpg" alt="Csipesz">
-                      <div data-i18n="adopterForm.catsList.cat1"></div>
+                      <span data-i18n="adopterForm.catsList.cat1" aria-hidden="true"></span>
                     </label>
-                    <label class="cat-card">
-                      <input type="radio" name="Kiválasztott cica" value="Karamell">
+                    <label class="cat-card" for="cat2">
+                      <input id="cat2" type="radio" name="Kiválasztott cica" value="Karamell" aria-label="i18n:adopterForm.catsList.cat2">
                       <img src="/assets/img/cica2.jpg" alt="Karamell">
-                      <div data-i18n="adopterForm.catsList.cat2"></div>
+                      <span data-i18n="adopterForm.catsList.cat2" aria-hidden="true"></span>
                     </label>
-                    <label class="cat-card">
-                      <input type="radio" name="Kiválasztott cica" value="Cica 3">
+                    <label class="cat-card" for="cat3">
+                      <input id="cat3" type="radio" name="Kiválasztott cica" value="Cica 3" aria-label="i18n:adopterForm.catsList.cat3">
                       <img src="/assets/img/cica3.jpg" alt="Cica 3">
-                      <div data-i18n="adopterForm.catsList.cat3"></div>
+                      <span data-i18n="adopterForm.catsList.cat3" aria-hidden="true"></span>
                     </label>
-                    <label class="cat-card">
-                      <input type="radio" name="Kiválasztott cica" value="Cica 4">
+                    <label class="cat-card" for="cat4">
+                      <input id="cat4" type="radio" name="Kiválasztott cica" value="Cica 4" aria-label="i18n:adopterForm.catsList.cat4">
                       <img src="/assets/img/cica4.jpg" alt="Cica 4">
-                      <div data-i18n="adopterForm.catsList.cat4"></div>
+                      <span data-i18n="adopterForm.catsList.cat4" aria-hidden="true"></span>
                     </label>
-                    <label class="cat-card">
-                      <input type="radio" name="Kiválasztott cica" value="Cica 5">
+                    <label class="cat-card" for="cat5">
+                      <input id="cat5" type="radio" name="Kiválasztott cica" value="Cica 5" aria-label="i18n:adopterForm.catsList.cat5">
                       <img src="/assets/img/cica5.jpg" alt="Cica 5">
-                      <div data-i18n="adopterForm.catsList.cat5"></div>
+                      <span data-i18n="adopterForm.catsList.cat5" aria-hidden="true"></span>
                     </label>
-                    <label class="cat-card">
-                      <input type="radio" name="Kiválasztott cica" value="Cica 6">
+                    <label class="cat-card" for="cat6">
+                      <input id="cat6" type="radio" name="Kiválasztott cica" value="Cica 6" aria-label="i18n:adopterForm.catsList.cat6">
                       <img src="/assets/img/cica6.jpg" alt="Cica 6">
-                      <div data-i18n="adopterForm.catsList.cat6"></div>
+                      <span data-i18n="adopterForm.catsList.cat6" aria-hidden="true"></span>
                     </label>
-                    <label class="cat-card">
-                      <input type="radio" name="Kiválasztott cica" value="Cica 7">
+                    <label class="cat-card" for="cat7">
+                      <input id="cat7" type="radio" name="Kiválasztott cica" value="Cica 7" aria-label="i18n:adopterForm.catsList.cat7">
                       <img src="/assets/img/cica7.jpg" alt="Cica 7">
-                      <div data-i18n="adopterForm.catsList.cat7"></div>
+                      <span data-i18n="adopterForm.catsList.cat7" aria-hidden="true"></span>
                     </label>
-                    <label class="cat-card">
-                      <input type="radio" name="Kiválasztott cica" value="Cica 8">
+                    <label class="cat-card" for="cat8">
+                      <input id="cat8" type="radio" name="Kiválasztott cica" value="Cica 8" aria-label="i18n:adopterForm.catsList.cat8">
                       <img src="/assets/img/cica8.jpg" alt="Cica 8">
-                      <div data-i18n="adopterForm.catsList.cat8"></div>
+                      <span data-i18n="adopterForm.catsList.cat8" aria-hidden="true"></span>
                     </label>
-                    <label class="cat-card">
-                      <input type="radio" name="Kiválasztott cica" value="Cica 9">
+                    <label class="cat-card" for="cat9">
+                      <input id="cat9" type="radio" name="Kiválasztott cica" value="Cica 9" aria-label="i18n:adopterForm.catsList.cat9">
                       <img src="/assets/img/cica9.jpg" alt="Cica 9">
-                      <div data-i18n="adopterForm.catsList.cat9"></div>
+                      <span data-i18n="adopterForm.catsList.cat9" aria-hidden="true"></span>
                     </label>
-                    <label class="cat-card">
-                      <input type="radio" name="Kiválasztott cica" value="Cica 10">
+                    <label class="cat-card" for="cat10">
+                      <input id="cat10" type="radio" name="Kiválasztott cica" value="Cica 10" aria-label="i18n:adopterForm.catsList.cat10">
                       <img src="/assets/img/cica10.jpg" alt="Cica 10">
-                      <div data-i18n="adopterForm.catsList.cat10"></div>
+                      <span data-i18n="adopterForm.catsList.cat10" aria-hidden="true"></span>
                     </label>
-                    <label class="cat-card">
-                      <input type="radio" name="Kiválasztott cica" value="Cica 11">
+                    <label class="cat-card" for="cat11">
+                      <input id="cat11" type="radio" name="Kiválasztott cica" value="Cica 11" aria-label="i18n:adopterForm.catsList.cat11">
                       <img src="/assets/img/cica11.jpg" alt="Cica 11">
-                      <div data-i18n="adopterForm.catsList.cat11"></div>
+                      <span data-i18n="adopterForm.catsList.cat11" aria-hidden="true"></span>
                     </label>
-                    <label class="cat-card">
-                      <input type="radio" name="Kiválasztott cica" value="Cica 12">
+                    <label class="cat-card" for="cat12">
+                      <input id="cat12" type="radio" name="Kiválasztott cica" value="Cica 12" aria-label="i18n:adopterForm.catsList.cat12">
                       <img src="/assets/img/cica12.jpg" alt="Cica 12">
-                      <div data-i18n="adopterForm.catsList.cat12"></div>
+                      <span data-i18n="adopterForm.catsList.cat12" aria-hidden="true"></span>
                     </label>
                   </div>
                 </fieldset>
               </div>
 
               <div class="mb-3">
-                <label for="additionalNotes" class="form-label" data-i18n="adopterForm.form.additionalNotes"></label>
+                <label for="additionalNotes" class="form-label" data-i18n="adopterForm.form.additionalNotes" aria-label="i18n:adopterForm.form.additionalNotes"></label>
                 <textarea class="form-control" id="additionalNotes" name="Megjegyzés" rows="4"></textarea>
               </div>
 
-              <button type="submit" class="btn btn-primary w-100 mt-3" data-i18n="adopterForm.form.submit"></button>
+              <button type="submit" class="btn btn-primary w-100 mt-3" data-i18n="adopterForm.form.submit" aria-label="i18n:adopterForm.form.submit"></button>
 
               <!-- ARIA live region for status messages -->
               <div id="formStatus" class="mt-3 text-center" role="status" aria-live="polite"></div>
