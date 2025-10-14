@@ -16,7 +16,7 @@
   <link rel="icon" href="/assets/img/icons/favicon-16.ico" type="image/x-icon" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <script type="module" src="/src/main.js"></script>
-  <title data-i18n="adopterForm.title"></title>
+  <title data-i18n="adopterForm.title">&#8203;</title>
 </head>
 
 <body>
@@ -46,9 +46,12 @@
 
               <div class="mb-3">
                 <label for="adopterPhone" class="form-label" data-i18n="adopterForm.form.adopterPhone.label" aria-label="i18n:adopterForm.form.adopterPhone.label"></label>
-                <input type="tel" inputmode="tel" class="form-control" id="adopterPhone" name="Telefonszám" 
-                  aria-required="true" autocomplete="tel">
-                <div class="form-text" data-i18n="adopterForm.form.adopterPhone.help"></div>
+               
+                <input type="tel" inputmode="tel" class="form-control" id="adopterPhone" name="Telefonszám"
+                  aria-required="true" autocomplete="tel" placeholder="+36 30 123 4567"
+                  pattern="^[+]?[0-9\s\-()]{7,20}$" aria-describedby="phoneHelp phoneError">
+                <div id="phoneHelp" class="form-text" data-i18n="adopterForm.form.adopterPhone.help"></div>
+                <div id="phoneError" class="form-text text-danger" aria-live="polite"></div>
               </div>
 
               <div class="mb-3">
@@ -59,11 +62,11 @@
               <div class="mb-3">
                 <label for="housingType" class="form-label" data-i18n="adopterForm.form.housingType.label" aria-label="i18n:adopterForm.form.housingType.label"></label>
                 <select class="form-select" id="housingType" name="Lakhatási viszonyok" required aria-required="true">
-                  <option value="" data-i18n="adopterForm.form.housingType.options.default"></option>
-                  <option value="Ház" data-i18n="adopterForm.form.housingType.options.house"></option>
-                  <option value="Lakás" data-i18n="adopterForm.form.housingType.options.flat"></option>
-                  <option value="Panel" data-i18n="adopterForm.form.housingType.options.panel"></option>
-                  <option value="Egyéb" data-i18n="adopterForm.form.housingType.options.other"></option>
+                  <option value="" data-i18n="adopterForm.form.housingType.options.default">&#8203;</option>
+                  <option value="Ház" data-i18n="adopterForm.form.housingType.options.house">&#8203;</option>
+                  <option value="Lakás" data-i18n="adopterForm.form.housingType.options.flat">&#8203;</option>
+                  <option value="Panel" data-i18n="adopterForm.form.housingType.options.panel">&#8203;</option>
+                  <option value="Egyéb" data-i18n="adopterForm.form.housingType.options.other">&#8203;</option>
                 </select>
               </div>
 
@@ -87,12 +90,12 @@
               <div class="mb-3">
                 <label for="currentPets" class="form-label" data-i18n="adopterForm.form.currentPets.label" aria-label="i18n:adopterForm.form.currentPets.label"></label>
                 <select class="form-select" id="currentPets" name="Jelenlegi állatok">
-                  <option value="Nincs" data-i18n="adopterForm.form.currentPets.options.none"></option>
-                  <option value="Macska" data-i18n="adopterForm.form.currentPets.options.cat"></option>
-                  <option value="Kutya" data-i18n="adopterForm.form.currentPets.options.dog"></option>
-                  <option value="Papagáj" data-i18n="adopterForm.form.currentPets.options.parrot"></option>
-                  <option value="Hörcsög" data-i18n="adopterForm.form.currentPets.options.hamster"></option>
-                  <option value="Egyéb" data-i18n="adopterForm.form.currentPets.options.other"></option>
+                  <option value="Nincs" data-i18n="adopterForm.form.currentPets.options.none">&#8203;</option>
+                  <option value="Macska" data-i18n="adopterForm.form.currentPets.options.cat">&#8203;</option>
+                  <option value="Kutya" data-i18n="adopterForm.form.currentPets.options.dog">&#8203;</option>
+                  <option value="Papagáj" data-i18n="adopterForm.form.currentPets.options.parrot">&#8203;</option>
+                  <option value="Hörcsög" data-i18n="adopterForm.form.currentPets.options.hamster">&#8203;</option>
+                  <option value="Egyéb" data-i18n="adopterForm.form.currentPets.options.other">&#8203;</option>
                 </select>
               </div>
 <div class="mb-3 form-check">
@@ -242,9 +245,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('catAdoptionForm');
     const statusDiv = document.getElementById('formStatus');
     const submitButton = form.querySelector('button[type="submit"]');
+  const phoneInput = document.getElementById('adopterPhone');
+  const phoneError = document.getElementById('phoneError');
 
-    form.addEventListener('submit', e => {
+  form.addEventListener('submit', e => {
         e.preventDefault();
+    // Validate phone before proceeding
+    if (phoneInput) {
+      const val = phoneInput.value || '';
+      const normalized = val.replace(/[\s\-()]/g, '');
+      const isValid = validatePhone(normalized);
+      if (!isValid) {
+        phoneError.textContent = 'Kérjük, érvényes telefonszámot adjon meg (pl. +36 30 123 4567).';
+        phoneInput.focus();
+        return;
+      } else {
+        phoneError.textContent = '';
+      }
+    }
         
         // Honeypot check
         const honeypot = form.querySelector('input[name="website"]');
@@ -302,6 +320,56 @@ document.addEventListener('DOMContentLoaded', () => {
             if (submitButton) submitButton.disabled = false;
         });
     });
+  // Real-time feedback for phone input
+  if (phoneInput) {
+    phoneInput.addEventListener('input', () => {
+      const val = phoneInput.value || '';
+      const normalized = val.replace(/[\s\-()]/g, '');
+      if (!normalized) {
+        phoneError.textContent = '';
+        phoneInput.setCustomValidity('');
+        return;
+      }
+      const ok = validatePhone(normalized);
+      if (!ok) {
+        phoneError.textContent = 'Érvénytelen telefonszám formátum.';
+        phoneInput.setCustomValidity('Érvénytelen telefonszám');
+      } else {
+        phoneError.textContent = '';
+        phoneInput.setCustomValidity('');
+      }
+    });
+  }
+
+  // Phone validation helper: accepts Hungarian numbers and reasonable international numbers
+  function validatePhone(normalizedDigits) {
+    // allow leading + in original, but here normalizedDigits should be digits or start with +
+    const s = String(normalizedDigits || '');
+    // If starts with +, remove it for length checks
+    const clean = s.startsWith('+') ? s.slice(1) : s;
+
+    // Only digits now
+    if (!/^\d+$/.test(clean)) return false;
+
+    // Hungarian numbers usually: country 36 + 9 or 10 local digits (e.g., 36301234567 -> 11-12 digits incl country)
+    // Accept patterns: +36 20 123 4567 => clean length 11 (36 + 9) or mobile codes like 30/20/70
+    if (clean.startsWith('36')) {
+      const rest = clean.slice(2);
+      // rest should be 8-9 digits typically: accept 8..10 to be lenient
+      if (rest.length >= 8 && rest.length <= 10) return true;
+    }
+
+    // Local Hungarian without country code: e.g., 06 30 123 4567 -> starts with 06, then 8-9 digits
+    if (clean.startsWith('06')) {
+      const rest = clean.slice(2);
+      if (rest.length >= 8 && rest.length <= 10) return true;
+    }
+
+    // Generic international: accept if total digits between 7 and 15
+    if (clean.length >= 7 && clean.length <= 15) return true;
+
+    return false;
+  }
 });
 </script>
 
