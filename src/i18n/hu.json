@@ -450,20 +450,7 @@
         "success": "Sikeresen elküldve! Köszönjük érdeklődését, hamarosan felvesszük Önnel a kapcsolatot.",
         "error": "Hiba történt a kérelem küldése során! Kérjük, próbálja újra később."
       }
-    },
-    "catsList": {
-      "cat1": "Csipesz",
-      "cat2": "Karamell",
-      "cat3": "Nokedli",
-      "cat4": "Tébláb",
-      "cat5": "Snow",
-      "cat6": "Marci",
-      "cat7": "Démon",
-      "cat8": "Tódor",
-      "cat9": "Riska",
-      "cat10": "Peti",
-      "cat11": "Lola",
-      "cat12": "Max"
     }
+    
   }
 }

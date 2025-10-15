@@ -438,20 +438,6 @@
         "success": "Successfully submitted! Thank you for your interest, we will contact you soon.",
         "error": "An error occurred while sending the application! Please try again later."
       }
-    },
-    "catsList": {
-      "cat1": "Csipesz",
-      "cat2": "Karamell",
-      "cat3": "Nokedli",
-      "cat4": "Tébláb",
-      "cat5": "Snow",
-      "cat6": "Marci",
-      "cat7": "Démon",
-      "cat8": "Tódor",
-      "cat9": "Riska",
-      "cat10": "Peti",
-      "cat11": "Lola",
-      "cat12": "Max"
     }
   }
 }
