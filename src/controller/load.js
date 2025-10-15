@@ -122,6 +122,7 @@ function reloadScripts(section) {
               if(typeof it[key] === 'function'){
                 if(key === onLoadKey){
                   newScript.onload = () => {it[key]();};
+                  it[key]();
                 }else{
                   globalThis[key] = it[key];
                 }

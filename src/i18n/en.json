@@ -416,5 +416,52 @@
         "info": "Not a pushy nature, especially quiet. Lives in harmony with other animals and children. Adapts quickly to changes."
       }
     }
+  },
+  "Days": {
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday"
+  },
+  "joinUsForm": {
+    "join-us-title": "Join Us",
+    "full-name-label": "Full Name",
+    "email-label": "Email",
+    "phone-label": "Phone Number",
+    "preferred-contact-method-label": "How can we contact You:",
+    "preferred-contact-method-options": {
+      "contactChoice1": "Email",
+      "contactChoice2": "Phone",
+      "contactChoice3": "SMS"
+    },
+    "preferred-role-label": "Choosen Role",
+    "preferred-role-options": {
+      "fundraising": "Fundraising",
+      "fostering": "Fostering",
+      "events": "Events",
+      "transport": "Transport",
+      "cleaning": "Cleaning",
+      "admin": "Admin",
+      "photography": "Photography",
+      "socialization": "Social Media"
+    },
+    "earliest-start-date-label": "Earliest Start Date",
+    "experience-label": "Experience",
+    "source-label": "How did you hear about us?",
+    "source-options": {
+      "friend": "Friend",
+      "social_media": "Social Media",
+      "university": "University",
+      "event": "Event",
+      "other": "Other"
+    },
+    "attachment-label": "Upload Attachment",
+    "portfolio-label": "Your Portfolio",
+    "agreement-label": "I agree to the privacy policy.",
+    "cancel-form": "Close",
+    "submit-form": "Submit"
   }
 }
