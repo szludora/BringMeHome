@@ -1,5 +1,7 @@
 var currentTab = 0;
+
 showTab(currentTab);
+animateRangeInput();
 
 function showTab(n) {
   const tabs = document.getElementsByClassName("tab");
@@ -130,4 +132,40 @@ const tabs = document.getElementsByClassName("tab");
     }
   }
 
+}
+
+
+function animateRangeInput() {
+  const sliders = document.querySelectorAll('.sliderMM');
+  
+  sliders.forEach((slider) => {
+    const rangeGroup = slider.closest('.range-group');
+    if (!rangeGroup) return;
+    const imgLeft = rangeGroup.querySelector('.img-left');
+    const imgRight = rangeGroup.querySelector('.img-right');
+
+    slider.addEventListener('input', function () {
+      const value = Number(slider.value);
+      const min = Number(slider.min);
+      const max = Number(slider.max);
+      const mid = (max + min) / 2;
+      let leftScale = 1;
+      let rightScale = 1;
+      
+      if (value < mid) {
+        leftScale = 1 + (mid - value) / mid * 0.5;
+        rightScale = 1 - (mid - value) / mid * 0.5;
+      } else if (value > mid) {
+        rightScale = 1 + (value - mid) / (max - mid) * 0.5;
+        leftScale = 1 - (value - mid) / (max - mid) * 0.5;
+      }
+      
+      leftScale = Math.max(0.5, Math.min(1.5, leftScale));
+      rightScale = Math.max(0.5, Math.min(1.5, rightScale));
+      
+      if (imgLeft) imgLeft.style.transform = `scale(${leftScale})`;
+      if (imgRight) imgRight.style.transform = `scale(${rightScale})`;
+    });
+    slider.dispatchEvent(new Event('input'));
+  });
 }

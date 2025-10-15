@@ -106,11 +106,6 @@
   margin-top: 4rem;
   width: 5rem;
   height: auto;
-  transition: transform 0.3s ease;
-}
-
-.range-img.active {
-  transform: scale(1.2);
 }
 
 label.invalid {
