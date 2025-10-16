@@ -35,75 +35,6 @@
   },
   "adopt": {
     "title": "Fogadj örökbe",
-    "key-gender": "Neme:",
-    "key-age": "Kora:",
-    "key-breed": "Fajtája:",
-    "key-character": "Jellem:",
-    "key-special_features": "Különleges jegyek:",
-    "cat1": {
-      "name": "Csipesz",
-      "gender": "Lány",
-      "age": "3 év",
-      "breed": "Cirmos házimacska",
-      "character": "Kíváncsi és magabiztos, de a számára idegen helyzetekben tartózkodó. Intelligens és éber.",
-      "special_features": "Élénk zöld szemek és hosszú, elegáns bajusz."
-    },
-    "cat2": {
-      "name": "Karamell",
-      "gender": "Fiú",
-      "age": "2 év",
-      "breed": "Calico",
-      "character": "Barátságos és játékos, szeret a figyelem középpontjában lenni. Gyorsan alkalmazkodik új környezethez.",
-      "special_features": "Jellegzetes, háromszínű bundája (fehér, fekete és vörösesbarna foltokkal), valamint gyönyörű, borostyánszínű szemei."
-    },
-    "cat3": {
-      "name": "Nokedli",
-      "gender": "Fiú",
-      "age": "3 év",
-      "breed": "Fehér-cirmos házimacska",
-      "character": "Nyugodt, barátságos és kiegyensúlyozott. Megbízható és kedves társ.",
-      "special_features": "Különleges, világoszöld szemei és a sötétebb foltokat is rejtő bundája, amely a mancson is fellelhető."
-    },
-    "cat4": {
-      "name": "Tébláb",
-      "gender": "Fiú",
-      "age": "1 év",
-      "breed": "Szürke-cirmos házimacska",
-      "character": "Könnyen barátkozó, imádja a hasvakarást. Szívesen alszik a gazdija mellett.",
-      "special_features": "Rövid lábai és hosszú farka."
-    },
-    "cat5": {
-      "name": "Snow",
-      "gender": "Lány",
-      "age": "4 év",
-      "breed": "Házimacska (ragdoll jellegű)",
-      "character": "Kicsit vadóc, de nagyon ragaszkodó. Imád a gazdájával lenni.",
-      "special_features": "Csodálatos, élénk kék szemei és puha, krémszínű bundája, sötétebb foltokkal a pofáján és a fülein."
-    },
-    "cat6": {
-      "name": "Marci",
-      "gender": "Fiú",
-      "age": "6 év",
-      "breed": "Cirmos házimacska",
-      "character": "Nyugodt és magabiztos, igazi uralkodó típus. Erős és kiegyensúlyozott személyiség, aki élvezi a figyelmet.",
-      "special_features": "Jellegzetes, sötét barna cirmos bundája, izmos testalkata és a borostyánszínű szemei."
-    },
-    "cat7": {
-      "name": "Démon",
-      "gender": "Fiú",
-      "age": "3 év",
-      "breed": "Házimacska",
-      "character": "Imád a gazdájával lenni, nagyon szeret bújni. Nagyon türelmes.",
-      "special_features": "Koromfekete, fényes bundája és a zöld szeme, amely élénken kiemelkedik a sötét szőre alól."
-    },
-    "cat8": {
-      "name": "Tódor",
-      "gender": "Fiú",
-      "age": "5 év",
-      "breed": "Main Coon",
-      "character": "A \"szelíd óriás\" becenév tökéletesen illik rá. Nyugodt, barátságos és rendkívül ragaszkodó.",
-      "special_features": "Hatalmas, bozontos bundája, a fülei végén lévő szőrpamacsok és a fenséges kiállása."
-    },
     "section-title": "Miért fogadj örökbe?",
     "para1": "Ezek a cicák különleges történetekkel érkeztek hozzánk: van, aki félénk kezes, van, aki igazi bohóc - de mindannyian készen állnak szerető otthonra.",
     "para2": "Az örökbe fogadás egy hosszú távú elköteleződés, de cserébe feltétel nélküli szeretetet kapsz. Nézz körül a galériában, és találd meg a neked való társat!",
@@ -329,6 +260,7 @@
       "key-personality": "Jellemzők:",
       "key-neutered": "Ivartalanítva:",
       "key-info": "Egyéb információk:",
+      "key-special_features": "Különleges jegyek:",
 
             "cat1": {
                 "name": "Csipesz",
@@ -337,7 +269,8 @@
                 "breed": "Cirmos házimacska",
                 "personality": "Kíváncsi és magabiztos, de a számára idegen helyzetekben tartózkodó. Intelligens és éber.",
                 "neutered": "Igen",
-                "info": "ide még írni kell valamit"
+                "info": "ide még írni kell valamit",
+                "special_features": "Élénk zöld szemek és hosszú, elegáns bajusz."
             },
             "cat2": {
                 "name": "Karamell",
@@ -346,7 +279,8 @@
                 "breed": "Calico",
                 "personality": "Barátságos és játékos, szeret a figyelem középpontjában lenni. Gyorsan alkalmazkodik új környezethez.",
                 "neutered": "Igen",
-                "info": "Más cicákkal kompatibilis, de a kutyákat nem szereti."
+                "info": "Más cicákkal kompatibilis, de a kutyákat nem szereti.",
+                "special_features": "Jellegzetes, háromszínű bundája (fehér, fekete és vörösesbarna foltokkal), valamint gyönyörű, borostyánszínű szemei."
             },
             "cat3": {
                 "name": "Nokedli",
@@ -355,7 +289,8 @@
                 "breed": "Fehér-cirmos házimacska",
                 "personality": "Nyugodt, barátságos és kiegyensúlyozott. Megbízható és kedves társ.",
                 "neutered": "Igen",
-                "info": "Csak lakásba, rendszeres szőrápolást igényel."
+                "info": "Csak lakásba, rendszeres szőrápolást igényel.",
+                "special_features": "Különleges, világoszöld szemei és a sötétebb foltokat is rejtő bundája, amely a mancson is fellelhető."
             },
             "cat4": {
                 "name": "Tébláb",
@@ -364,7 +299,9 @@
                 "breed": "Szürke-cirmos házimacska",
                 "personality": "Könnyen barátkozó, imádja a hasvakarást. Szívesen alszik a gazdija mellett.",
                 "neutered": "Még nem, de örökbefogadás előtt ivartalanítva lesz.",
-                "info": "Aktivitást és sok játékot igényel."
+                "info": "Aktivitást és sok játékot igényel.",
+                "special_features": "Rövid lábai és hosszú farka."
+
             },
             "cat5": {
                 "name": "Snow",
@@ -373,7 +310,9 @@
                 "breed": "Házimacska (ragdoll jellegű)",
                 "personality": "Kicsit vadóc, de nagyon ragaszkodó. Imád emberek között lenni, ideális kisgyermekes családokba.",
                 "neutered": "Igen",
-                "info": "Türelmes beillesztést igényel, kutyákkal nem javasolt."
+                "info": "Türelmes beillesztést igényel, kutyákkal nem javasolt.",
+                "special_features": "Csodálatos, élénk kék szemei és puha, krémszínű bundája, sötétebb foltokkal a pofáján és a fülein."
+ 
             },
             "cat6": {
                 "name": "Marci",
@@ -382,7 +321,9 @@
                 "breed": "Cirmos házimacska",
                 "personality":  "Nyugodt és magabiztos, igazi uralkodó típus. Erős és kiegyensúlyozott személyiség, aki élvezi a figyelmet.",
                 "neutered": "Igen",
-                "info": "Korából adódóan nyugodt környezetet igényel. De ő a menhelyünk legnyugodtabb cicája. Fogai miatt speciális étrendet és rendszeres orvosi ellenőrzést igényel."
+                "info": "Korából adódóan nyugodt környezetet igényel. De ő a menhelyünk legnyugodtabb cicája. Fogai miatt speciális étrendet és rendszeres orvosi ellenőrzést igényel.",
+                "special_features": "Jellegzetes, sötét barna cirmos bundája, izmos testalkata és a borostyánszínű szemei."
+
             },
             "cat7": {
                 "name": "Démon",
@@ -391,7 +332,8 @@
                 "breed": "Fekete házimacska",
                 "personality": "Imád a gazdájával lenni, nagyon szeret bújni. Nagyon türelmes.",
                 "neutered": "Igen",
-                "info": "Imád kint lenni, biztonságos-macskahálóval felszerelt udvarral rendelkezők előnyben."
+                "info": "Imád kint lenni, biztonságos-macskahálóval felszerelt udvarral rendelkezők előnyben.",
+                "special_features": "Koromfekete, fényes bundája és a zöld szeme, amely élénken kiemelkedik a sötét szőre alól."
             },
             "cat8": {
                 "name": "Tódor",
@@ -400,7 +342,9 @@
                 "breed":  "Main Coon",
                 "personality": "A \"szelíd óriás\" becenév tökéletesen illik rá. Nyugodt, barátságos és rendkívül ragaszkodó.",
                 "neutered": "Igen",
-                "info": "Szőre rendszeres vágást és ápolást igényel. Tökéletes választás gyermekek mellé."
+                "info": "Szőre rendszeres vágást és ápolást igényel. Tökéletes választás gyermekek mellé.",
+                "special_features": "Hatalmas, bozontos bundája, a fülei végén lévő szőrpamacsok és a fenséges kiállása."
+
             },
             "cat9": {
                 "name": "Riska",
@@ -506,20 +450,7 @@
         "success": "Sikeresen elküldve! Köszönjük érdeklődését, hamarosan felvesszük Önnel a kapcsolatot.",
         "error": "Hiba történt a kérelem küldése során! Kérjük, próbálja újra később."
       }
-    },
-    "catsList": {
-      "cat1": "Csipesz",
-      "cat2": "Karamell",
-      "cat3": "Nokedli",
-      "cat4": "Tébláb",
-      "cat5": "Snow",
-      "cat6": "Marci",
-      "cat7": "Démon",
-      "cat8": "Tódor",
-      "cat9": "Riska",
-      "cat10": "Peti",
-      "cat11": "Lola",
-      "cat12": "Max"
     }
+    
   }
 }
