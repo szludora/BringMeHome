@@ -1,0 +1,32 @@
+.adopterform .cat-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.adopterform .cat-card {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border 0.2s ease;
+  width: 140px;
+}
+.adopterform .cat-card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  transition: border 0.2s ease;
+}
+.adopterform .cat-card input[type="radio"] {
+  display: none;
+}
+.adopterform .cat-card:hover {
+  border-color: #ccc;
+}
+.adopterform .cat-card input[type="radio"]:checked + img {
+  border: 3px solid #0d582f;
+}
+

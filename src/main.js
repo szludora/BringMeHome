@@ -15,7 +15,6 @@ export const heroPages = {
   thanks: "/src/view/landing/thanks.html",
   faq: "/src/view/landing/faq.html",
   footer: "/src/view/layout/footer.html",
-  test: "/src/view/pages/dynamicScriptDemo/test.html",
 };
 
 export const layout = ["navbar", "footer"];
