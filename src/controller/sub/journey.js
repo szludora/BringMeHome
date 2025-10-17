@@ -3,18 +3,18 @@ const { Collapse } = window.bootstrap;
 /* ---------- Sample Made-Up Data ---------- */
 /* Under normal conditions this object would come from a server. Creating a sample object for now for demo. */
 const data = [
-    { year: 2024, month: 11, type: '1', images: ["/assets/img/events/event_12_1.png"] },
-    { year: 2024, month: 12, type: '3', images: ["/assets/img/events/event_11_1.png", "/assets/img/events/event_11_2.png", "/assets/img/events/event_11_3.png"] },
-    { year: 2025, month: 1, type: '2', images: ["/assets/img/events/event_10_1.png"] },
-    { year: 2025, month: 2, type: '4', images: ["/assets/img/events/event_9_1.png"] },
+    { year: 2024, month: 11, type: '1', images: ["./assets/img/events/event_12_1.png"] },
+    { year: 2024, month: 12, type: '3', images: ["./assets/img/events/event_11_1.png", "./assets/img/events/event_11_2.png", "./assets/img/events/event_11_3.png"] },
+    { year: 2025, month: 1, type: '2', images: ["./assets/img/events/event_10_1.png"] },
+    { year: 2025, month: 2, type: '4', images: ["./assets/img/events/event_9_1.png"] },
     { year: 2025, month: 3, type: '5', images: [] },
-    { year: 2025, month: 4, type: '6', images: ["/assets/img/events/event_7_1.png"] },
-    { year: 2025, month: 5, type: '7', images: ["/assets/img/events/event_6_1.png"] },
+    { year: 2025, month: 4, type: '6', images: ["./assets/img/events/event_7_1.png"] },
+    { year: 2025, month: 5, type: '7', images: ["./assets/img/events/event_6_1.png"] },
     { year: 2025, month: 6, type: '8', images: [] },
-    { year: 2025, month: 7, type: '2', images: ["/assets/img/events/event_4_1.png"] },
-    { year: 2025, month: 8, type: '3', images: ["/assets/img/events/event_3_1.png", "/assets/img/events/event_3_2.png"] },
-    { year: 2025, month: 9, type: '5', images: ["/assets/img/events/event_2_1.png"] },
-    { year: 2025, month: 10, type: '8', images: ["/assets/img/events/event_1_1.png", "/assets/img/events/event_1_2.png"] },
+    { year: 2025, month: 7, type: '2', images: ["./assets/img/events/event_4_1.png"] },
+    { year: 2025, month: 8, type: '3', images: ["./assets/img/events/event_3_1.png", "./assets/img/events/event_3_2.png"] },
+    { year: 2025, month: 9, type: '5', images: ["./assets/img/events/event_2_1.png"] },
+    { year: 2025, month: 10, type: '8', images: ["./assets/img/events/event_1_1.png", "./assets/img/events/event_1_2.png"] },
 ];
 
 const TYPE_BADGE = {
