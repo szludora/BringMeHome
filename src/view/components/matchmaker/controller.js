@@ -8,10 +8,12 @@ function showTab(n) {
   for (let i = 0; i < tabs.length; i++) tabs[i].classList.add("d-none");
   if (tabs[n]) tabs[n].classList.remove("d-none");
 
+
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
   const submitBtn = document.getElementById("submitBtn");
   const restartBtn = document.getElementById("restartBtn");
+  const hiddenBtn = document.getElementById("hiddenBtn");
 
   // Prev button
   if (n === 0) prevBtn.classList.add("d-none");
@@ -27,6 +29,14 @@ function showTab(n) {
 
   // Restart hidden
   restartBtn.classList.add("d-none");
+
+  // Hidden button
+  if (n === 0 || n === tabs.length) {
+    hiddenBtn.classList.remove("d-none");
+    hiddenBtn.classList.add("hidden");
+  } else {
+    hiddenBtn.classList.add("d-none");
+  }
 
   fixStepIndicator(n);
 }
@@ -47,8 +57,15 @@ function submitForm() {
 
   document.getElementById("questions").classList.add("d-none");
   document.getElementById("matchmakerResult").classList.remove("d-none");
-  submitBtn.classList.add("d-none");
-  restartBtn.classList.remove("d-none");
+  const submitBtn = document.getElementById("submitBtn");
+  const restartBtn = document.getElementById("restartBtn");
+  const prevBtn = document.getElementById("prevBtn");
+  const hiddenBtn = document.getElementById("hiddenBtn");
+
+  if (submitBtn) submitBtn.classList.add("d-none");
+  if (restartBtn) restartBtn.classList.remove("d-none");
+  if (prevBtn) prevBtn.classList.add("d-none");
+  if (hiddenBtn) hiddenBtn.classList.remove("d-none");
 }
 
 function validateForm() {
@@ -106,7 +123,9 @@ function resetForm() {
 
   document.getElementById("questions").classList.remove("d-none");
   document.getElementById("matchmakerResult").classList.add("d-none");
-  document.getElementById("result").innerHTML = "";
+  try {
+    if (typeof showResults === "function") showResults([]);
+  } catch (e) {}
 
   const steps = document.getElementsByClassName("step");
   for (let s of steps) s.classList.remove("finish", "active");
@@ -115,57 +134,66 @@ function resetForm() {
   showTab(0);
 }
 
-function resetInputValues(){
-const tabs = document.getElementsByClassName("tab");
+function resetInputValues() {
+  const tabs = document.getElementsByClassName("tab");
   for (let tab of tabs) {
     const inputs = tab.getElementsByTagName("input");
     for (let input of inputs) {
       if (input.type === "radio" || input.type === "checkbox") {
-        input.checked = false;
+        if (input.hasAttribute("default")) {
+          input.checked = true;
+        } else {
+          input.checked = false;
+        }
       } else if (input.type === "range") {
         input.value = input.defaultValue;
+        const rangeGroup = input.closest(".range-group");
+        if (rangeGroup) {
+          const imgLeft = rangeGroup.querySelector(".img-left");
+          const imgRight = rangeGroup.querySelector(".img-right");
+          if (imgLeft) imgLeft.style.transform = "scale(1)";
+          if (imgRight) imgRight.style.transform = "scale(1)";
+        }
+        input.dispatchEvent(new Event("input"));
       } else if (input.type === "text") {
         input.value = "";
       }
-
       input.classList.remove("invalid");
     }
   }
-
 }
 
-
 function animateRangeInput() {
-  const sliders = document.querySelectorAll('.sliderMM');
-  
-  sliders.forEach((slider) => {
-    const rangeGroup = slider.closest('.range-group');
-    if (!rangeGroup) return;
-    const imgLeft = rangeGroup.querySelector('.img-left');
-    const imgRight = rangeGroup.querySelector('.img-right');
+  const sliders = document.querySelectorAll(".sliderMM");
 
-    slider.addEventListener('input', function () {
+  sliders.forEach((slider) => {
+    const rangeGroup = slider.closest(".range-group");
+    if (!rangeGroup) return;
+    const imgLeft = rangeGroup.querySelector(".img-left");
+    const imgRight = rangeGroup.querySelector(".img-right");
+
+    slider.addEventListener("input", function () {
       const value = Number(slider.value);
       const min = Number(slider.min);
       const max = Number(slider.max);
       const mid = (max + min) / 2;
       let leftScale = 1;
       let rightScale = 1;
-      
+
       if (value < mid) {
-        leftScale = 1 + (mid - value) / mid * 0.5;
-        rightScale = 1 - (mid - value) / mid * 0.5;
+        leftScale = 1 + ((mid - value) / mid) * 0.5;
+        rightScale = 1 - ((mid - value) / mid) * 0.5;
       } else if (value > mid) {
-        rightScale = 1 + (value - mid) / (max - mid) * 0.5;
-        leftScale = 1 - (value - mid) / (max - mid) * 0.5;
+        rightScale = 1 + ((value - mid) / (max - mid)) * 0.5;
+        leftScale = 1 - ((value - mid) / (max - mid)) * 0.5;
       }
-      
+
       leftScale = Math.max(0.5, Math.min(1.5, leftScale));
       rightScale = Math.max(0.5, Math.min(1.5, rightScale));
-      
+
       if (imgLeft) imgLeft.style.transform = `scale(${leftScale})`;
       if (imgRight) imgRight.style.transform = `scale(${rightScale})`;
     });
-    slider.dispatchEvent(new Event('input'));
+    slider.dispatchEvent(new Event("input"));
   });
 }

@@ -9,9 +9,10 @@
     "learn-more": "Learn more",
     "support-us": "Support us",
     "join-us": "Join us",
-    "again": "Again",
-    "submit": "Beküldés",
-    "next": "Következő"
+    "retry": "Again",
+    "submit": "Submit",
+    "next": "Next",
+    "previous": "Previous"
   },
   "test": "Click the button to change language to Hungarian",
   "read-more": "Read more...",
@@ -24,8 +25,7 @@
   "nav-journey": "Our Journey",
   "nav-homeSeeker": "Home Seeker",
   "nav-faq": "FAQ",
-  "nav-matchmaker": "Which cat fits you?",
-  "matches-for-you": "best matches for you",
+  "nav-findMyMatch": "Find My Cat Match",
   "about": {
     "title": "About Us",
     "text1": "The BringMeHome team was founded to help every cat find a loving home. Every day we work to ensure that cats in shelters grow up safe, cared for, and loved. We believe that every cat deserves attention, playful moments, and peaceful rest.",
@@ -434,5 +434,17 @@
         "error": "An error occurred while sending the application! Please try again later."
       }
     }
+  },
+  "matchmaker": {
+    "matches-for-you": "best matches for you",
+    "match-percentage": "Match:",
+    "questions": {
+      "home_type": "What type of home do you live in?",
+      "housemates": "How many people live with you?",
+      "sociability": "How much do you seek company from others?",
+      "activity": "Which description fits you better?",
+      "pet_compatibility": "Do you currently have a pet?"
+    },
+    "findMyMatch": "Find my cat match"
   }
 }
