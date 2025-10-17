@@ -1,5 +1,5 @@
 #matchmakerForm {
-  margin: 0 auto;
+  margin: auto;
   width: 70%;
   height: 30rem;
   min-width: 300px;
@@ -28,11 +28,13 @@
   background-color: #04aa6d;
 }
 
-.matchmaker .btn{
-width: 7rem !important;
+.matchmaker .btn {
+  width: 7rem !important;
+  margin: 0 3rem;
 }
 
-.matchmaker h2, .matchmaker h2 span {
+.matchmaker h2,
+.matchmaker h2 span {
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -49,7 +51,6 @@ width: 7rem !important;
 .matchmaker .selectableOptions {
   gap: 0.8rem;
 }
-
 
 .matchmaker .btn-secondary {
   transition: unset;
@@ -106,6 +107,7 @@ width: 7rem !important;
 
 /* ------ result ---------------------------------------------------- */
 
-.resultCard p, .resultCard h3 {
-text-align: center;
+.resultCard p,
+.resultCard h3 {
+  text-align: center;
 }
