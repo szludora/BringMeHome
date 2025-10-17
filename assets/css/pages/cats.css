@@ -1,19 +1,10 @@
-@import "/assets/css/main.css";
-
-
-
-
 .container {
-    padding-top: 5rem; 
+  padding-top: 5rem;
 }
-
 
 header.mb-5 {
-    
-    margin-top: 3rem; 
+  margin-top: 3rem;
 }
-
-
 
 section {
   height: min-content !important;
@@ -22,29 +13,27 @@ section {
 }
 
 .cat-details {
-    list-style: none; 
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 .cat-details li {
-    margin-bottom: 0.5rem; 
-    font-size: 1rem; 
-    line-height: 1.5;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 .cat-details li:before {
- 
-    font-weight: 700; 
-    color: #495057; 
-    content: attr(data-i18n-prefix);
-    margin-right: 0.3rem; 
+  font-weight: 700;
+  color: #495057;
+  content: attr(data-i18n-prefix);
+  margin-right: 0.3rem;
 }
 
 .cat-details li {
-    font-weight: 400; 
+  font-weight: 400;
 }
 .cat-details li[data-i18n-prefix]::before {
-   
-    content: attr(data-i18n-prefix); 
-    font-weight: bold;
-    margin-right: 5px;
+  content: attr(data-i18n-prefix);
+  font-weight: bold;
+  margin-right: 5px;
 }

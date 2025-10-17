@@ -1,21 +1,30 @@
 import { initEvents } from "./controller/initEvents.js";
 import { setDevMode } from "./core/logger.js";
+import { getBasePath } from "./controller/pathFixer.js";
 
 setDevMode(true);
 
+function getLayoutPath() {
+  const basePath = getBasePath();
+  return `${basePath}src/view/layout/`;
+}
+
 export const heroPages = {
-  navbar: "/src/view/layout/navbar.html",
-  hero: "/src/view/landing/hero.html",
-  about: "/src/view/landing/about.html",
-  adopt: "/src/view/landing/adopt.html",
-  adopters: "/src/view/landing/adopters.html",
-  journey: "/src/view/landing/journey.html",
-  homeSeeker: "/src/view/landing/homeSeeker.html",
-  thanks: "/src/view/landing/thanks.html",
-  faq: "/src/view/landing/faq.html",
-  footer: "/src/view/layout/footer.html",
+  navbar: `${getLayoutPath()}navbar.html`,
+  hero: `${getBasePath()}src/view/landing/hero.html`,
+  about: `${getBasePath()}src/view/landing/about.html`,
+  adopt: `${getBasePath()}src/view/landing/adopt.html`,
+  adopters: `${getBasePath()}src/view/landing/adopters.html`,
+  journey: `${getBasePath()}src/view/landing/journey.html`,
+  homeSeeker: `${getBasePath()}src/view/landing/homeSeeker.html`,
+  thanks: `${getBasePath()}src/view/landing/thanks.html`,
+  faq: `${getBasePath()}src/view/landing/faq.html`,
+  footer: `${getLayoutPath()}footer.html`,
 };
 
-export const layout = ["navbar", "footer"];
+export const layoutForIndividualPages = {
+  navbar: `${getLayoutPath()}navbar.html`,
+  footer: `${getLayoutPath()}footer.html`,
+};
 
 await initEvents();

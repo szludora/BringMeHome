@@ -1,8 +1,9 @@
 # Bring Me Home - University Project
-
 ## Project Description
-**Bring Me Home** is a simple web application (HTML, CSS, JS) created as a university assignment.
+**[Bring Me Home](https://szludora.github.io/BringMeHome/)** is a simple web application (HTML, CSS, JS) created as a university assignment.
 It represents a single animal shelter where users can view animals and potentially adopt them.
+
+Click [here](https://szludora.github.io/BringMeHome/) to check the page.
 
 
 ## Collaborators

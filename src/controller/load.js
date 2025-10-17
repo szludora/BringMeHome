@@ -1,5 +1,5 @@
 import { log, warn } from "../core/logger.js";
-import { heroPages as pages, layout } from "../main.js";
+import { heroPages as pages, layoutForIndividualPages } from "../main.js";
 
 const template = `
   <div id="navbar"></div>
@@ -32,20 +32,24 @@ export async function loadContent(isIndex = false) {
 
   if (isIndex && !container.innerHTML.trim()) container.innerHTML = template;
 
-  await Promise.all(layout.map((page) => loadSection(page)));
+  if (!isIndex) {
+    await Promise.all(
+      Object.keys(layoutForIndividualPages).map((page) => loadSection(page, false))
+    );
+  }
 
   if (isIndex) {
-    const landPages = Object.keys(pages).filter((p) => !layout.includes(p));
-    await Promise.all(landPages.map((page) => loadSection(page)));
+    const landPages = Object.keys(pages);
+    await Promise.all(landPages.map((page) => loadSection(page, true)));
   }
 
   log("pages loaded");
   toggleVisibility(true);
 }
 
-async function loadSection(id) {
+async function loadSection(id, isHeroPage = true) {
   const container = getContainer();
-  const file = pages[id];
+  const file = isHeroPage ? pages[id] : layoutForIndividualPages[id];
   if (!file || !container) return;
 
   let section = document.getElementById(id);
