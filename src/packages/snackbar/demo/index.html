@@ -1,15 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Snackbar Demo</title>
   </head>
+
   <body>
     <button id="show-snack">Show Snackbar</button>
 
     <!-- Instantiate JS module -->
     <script type="module">
-      import { Snackbar, TYPE, POSITION } from "../node_modules/snackbar/dist/snackbar.min.js";
+      import {
+        Snackbar,
+        TYPE,
+        POSITION,
+      } from "../node_modules/snackbar/dist/snackbar.min.js";
 
       // Runtime example
       Snackbar.show({ message: "Hello! This snackbar uses default values." });

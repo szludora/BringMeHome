@@ -39,7 +39,7 @@ export const Snackbar = (() => {
 
   function getCssVar(name, fallback) {
     const val = getComputedStyle(document.documentElement).getPropertyValue(
-      name
+      name,
     );
     return val ? val.trim() : fallback;
   }
@@ -210,7 +210,7 @@ export const Snackbar = (() => {
         isShowing = false;
         _showNext();
       },
-      { once: true }
+      { once: true },
     );
   }
 

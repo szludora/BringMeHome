@@ -29,4 +29,3 @@
 .adopterform .cat-card input[type="radio"]:checked + img {
   border: 3px solid var(--color-primary);
 }
-
