@@ -24,9 +24,9 @@
   display: none;
 }
 .adopterform .cat-card:hover {
-  border-color: #ccc;
+  border-color: var(--color-shadow-light);
 }
 .adopterform .cat-card input[type="radio"]:checked + img {
-  border: 3px solid #0d582f;
+  border: 3px solid var(--color-primary);
 }
 
