@@ -22,7 +22,8 @@
   border-radius: 50%;
 }
 
-.about .card-track, .cart-track-repeat {
+.about .card-track,
+.cart-track-repeat {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr;

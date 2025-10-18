@@ -24,7 +24,6 @@ section {
 }
 .cat-details li:before {
   font-weight: 700;
-  color: #495057;
   content: attr(data-i18n-prefix);
   margin-right: 0.3rem;
 }

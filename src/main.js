@@ -1,6 +1,11 @@
 import { initEvents } from "./controller/initEvents.js";
 import { setDevMode } from "./core/logger.js";
 import { getBasePath } from "./controller/pathFixer.js";
+import { Snackbar } from "./packages/snackbar/dist/snackbar.min.js";
+
+window.Snackbar = Snackbar;
+window.TYPE = Snackbar.TYPE;
+window.POSITION = Snackbar.POSITION;
 
 setDevMode(true);
 

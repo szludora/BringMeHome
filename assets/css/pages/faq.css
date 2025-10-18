@@ -1,52 +1,57 @@
 #faqAccordion {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 #faqAccordion .accordion-button {
-    background-color: #f8f9fa;
-    color: #467242;
+  background-color: var(--color-shadow-lightest);
+  color: var(--color-green-light);
 }
 
 #faqAccordion .accordion-button:not(.collapsed) {
-    background-color: #a8cda4;
-    color: #467242;
+  background-color: var(--color-green-lightest);
+  color: var(--color-green);
 }
 
 #faqAccordion .accordion-item {
-    border-color: #2E4D2C;
+  border-color: var(--color-shadow);
 }
 
 #faqAccordion .accordion-button:focus {
-    border-color: #2E4D2C;
-    box-shadow: 0 0 0 .25rem rgba(46,77,44,.25);
-    outline: 0;
+  border-color: var(--color-bt-lightest);
+  box-shadow: 0 0 0 0.25rem var(--color-primary-light);
+  outline: 0;
 }
 
-.accordion-body{
-    color: #467242;
+.accordion-body {
+  color: var(--color-primary);
 }
 
-.rule-title{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:1rem;
-    margin:3rem auto;
-    text-align:center;
-    font:700 2rem/1.2 system-ui, -apple-system, Segoe UI, Roboto, Arial;
-    color:#467242;
+.rule-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem auto;
+  text-align: center;
+  font:
+    700 2rem/1.2 system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial;
+  color: var(--color-green-light);
 }
 
 .rule-title::before,
-.rule-title::after{
-    content:"";
-    flex:1 1 120px;
-    border-top:2px solid currentColor;
-    opacity:.6;
-    color: #a8cda4;
+.rule-title::after {
+  content: "";
+  flex: 1 1 120px;
+  border-top: 2px solid currentColor;
+  opacity: 0.6;
+  color: var(--color-green-lightest);
 }
 
-.rule-title > span{
-    white-space:nowrap;
+.rule-title > span {
+  white-space: nowrap;
 }

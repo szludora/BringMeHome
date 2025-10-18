@@ -8,7 +8,7 @@ function getBasePath() {
 
 function fixRelativePath(relativePath) {
   const basePath = getBasePath();
-  
+
   log(`Fixing path: ${relativePath}, basePath: ${basePath}`);
 
   if (basePath === "/") {
@@ -186,7 +186,9 @@ export function setupPathObserver() {
 
 function fixElementPaths(element) {
   // Képek
-  const imageList = element.querySelectorAll ? element.querySelectorAll("img[src]") : [];
+  const imageList = element.querySelectorAll
+    ? element.querySelectorAll("img[src]")
+    : [];
   const images = Array.from(imageList);
   if (element.tagName === "IMG" && element.src) {
     images.push(element);
@@ -203,7 +205,9 @@ function fixElementPaths(element) {
   });
 
   // Scripts
-  const scriptList = element.querySelectorAll ? element.querySelectorAll("script[src]") : [];
+  const scriptList = element.querySelectorAll
+    ? element.querySelectorAll("script[src]")
+    : [];
   const scripts = Array.from(scriptList);
   if (element.tagName === "SCRIPT" && element.src) {
     scripts.push(element);
@@ -220,7 +224,9 @@ function fixElementPaths(element) {
   });
 
   // Anchor linkek
-  const anchorList = element.querySelectorAll ? element.querySelectorAll("a[href]") : [];
+  const anchorList = element.querySelectorAll
+    ? element.querySelectorAll("a[href]")
+    : [];
   const anchors = Array.from(anchorList);
   if (element.tagName === "A" && element.href) {
     anchors.push(element);

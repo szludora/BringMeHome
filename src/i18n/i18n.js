@@ -1,6 +1,5 @@
 import { log, warn, error } from "../core/logger.js";
 // TODO: change this route
-import { Snackbar } from "../packages/snackbar/dist/snackbar.min.js";
 import { getBasePath } from "../controller/pathFixer.js";
 
 let currentLanguage = localStorage.getItem("lang") || "hu";
@@ -61,18 +60,14 @@ function setupLanguageSwitches() {
     if (!input || !icon) return;
 
     input.checked = currentLanguage === "en";
-    
+
     const flagPath = getFlagPath();
-    icon.src = input.checked
-      ? `${flagPath}en.png`
-      : `${flagPath}hu.png`;
+    icon.src = input.checked ? `${flagPath}en.png` : `${flagPath}hu.png`;
 
     input.addEventListener("change", async () => {
       currentLanguage = input.checked ? "en" : "hu";
       localStorage.setItem("lang", currentLanguage);
-      icon.src = input.checked
-        ? `${flagPath}en.png`
-        : `${flagPath}hu.png`;
+      icon.src = input.checked ? `${flagPath}en.png` : `${flagPath}hu.png`;
       await loadTranslations(currentLanguage);
       updateTexts();
     });
