@@ -1,6 +1,7 @@
-// TODO: change this route
 import { log, warn, error } from "../core/logger.js";
+// TODO: change this route
 import { Snackbar } from "../packages/snackbar/dist/snackbar.min.js";
+import { getBasePath } from "../controller/pathFixer.js";
 
 let currentLanguage = localStorage.getItem("lang") || "hu";
 let translations = {};
@@ -12,9 +13,20 @@ export async function initLanguage() {
   log("Languages loaded");
 }
 
+function getI18nPath() {
+  const basePath = getBasePath();
+  return `${basePath}src/i18n/`;
+}
+
+function getFlagPath() {
+  const basePath = getBasePath();
+  return `${basePath}assets/img/flags/`;
+}
+
 async function loadTranslations(lang) {
   try {
-    const res = await fetch(`/src/i18n/${lang}.json`);
+    const i18nPath = getI18nPath();
+    const res = await fetch(`${i18nPath}${lang}.json`);
     translations = await res.json();
   } catch (err) {
     error("Failed to load translations", err);
@@ -46,19 +58,21 @@ function setupLanguageSwitches() {
   switches.forEach(({ inputId, iconId }) => {
     const input = document.getElementById(inputId);
     const icon = document.getElementById(iconId);
-    if (!input) return;
+    if (!input || !icon) return;
 
     input.checked = currentLanguage === "en";
+    
+    const flagPath = getFlagPath();
     icon.src = input.checked
-      ? "/assets/img/flags/en.png"
-      : "/assets/img/flags/hu.png";
+      ? `${flagPath}en.png`
+      : `${flagPath}hu.png`;
 
     input.addEventListener("change", async () => {
       currentLanguage = input.checked ? "en" : "hu";
       localStorage.setItem("lang", currentLanguage);
       icon.src = input.checked
-        ? "/assets/img/flags/en.png"
-        : "/assets/img/flags/hu.png";
+        ? `${flagPath}en.png`
+        : `${flagPath}hu.png`;
       await loadTranslations(currentLanguage);
       updateTexts();
     });

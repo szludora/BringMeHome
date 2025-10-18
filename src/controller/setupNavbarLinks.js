@@ -1,3 +1,5 @@
+import { getBasePath } from "./pathFixer.js";
+
 export function setupNavbarLinks(isIndexPage) {
   document.querySelectorAll(".nav-link:not(.navbar-brand)").forEach((link) => {
     const target = link.getAttribute("href");
@@ -12,7 +14,19 @@ export function setupNavbarLinks(isIndexPage) {
         document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
       });
     } else {
-      newLink.href = `/${target}`;
+      const basePath = getBasePath();
+      if (target.startsWith("#")) {
+        newLink.href = `${basePath}${target}`;
+      } else {
+        newLink.href = `${basePath}${target}`;
+      }
+    }
+  });
+
+  document.querySelectorAll(".navbar-brand").forEach((brand) => {
+    if (!isIndexPage) {
+      const basePath = getBasePath();
+      brand.href = basePath === "/" ? "/" : basePath;
     }
   });
 }
