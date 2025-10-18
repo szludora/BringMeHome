@@ -82,6 +82,11 @@ img {
   object-fit: cover;
 }
 
+.bg-primary {
+  background-color: var(--color-primary-light) !important;
+  color: white;
+}
+
 @media (min-width: 992px) {
   .ms-lg-neg {
     margin-left: -3rem;

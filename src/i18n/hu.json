@@ -21,6 +21,7 @@
   "nav-journey": "Utunk",
   "nav-homeSeeker": "Gazdikereső",
   "nav-faq": "GYIK",
+  "nav-footer": "Elérhetőség",
   "about": {
     "title": "Rólunk",
     "text1": "A BringMeHome csapata azért jött létre, hogy minden cica megtalálja a szerető otthonát. Nap mint nap azon dolgozunk, hogy a menhelyeken élő cicák biztonságban, gondoskodásban és szeretetben nőhessenek fel. Hiszünk abban, hogy minden cica megérdemli a törődést, a játékos pillanatokat és a nyugodt pihenést.",
@@ -134,13 +135,13 @@
       "4": "Keress meg minket az alábbi elérhetőségek egyikén — minél több információt adsz, annál gyorsabban tudunk segíteni."
     },
     "importantLabel": "Fontos:",
-  "importantText": "Ha a kiscica sérült vagy nagyon levert, azonnal vidd a legközelebbi állatorvoshoz! Itt kérhetsz egy ingyenes chip-leolvasást is, ami segíthet hazajuttatni. Fiatal kiscicának soha ne adj tehéntejet!",
+    "importantText": "Ha a kiscica sérült vagy nagyon levert, azonnal vidd a legközelebbi állatorvoshoz! Itt kérhetsz egy ingyenes chip-leolvasást is, ami segíthet hazajuttatni. Fiatal kiscicának soha ne adj tehéntejet!",
     "cta": {
       "email": "Írj nekünk e-mailt",
       "phoneLabel": "Hívj minket:",
       "phoneNumber": "+36 1 234 5678"
     },
-  "surrender": "Ha a macskád átadása miatt keresel minket: Kérlek írj nekünk egy részletes emailt, hogy miért nem tudod tovább vállalni, mikor és hol adható át, és mi segítünk a biztonságos átadásban és új otthon keresésében. Emellett ossz meg velünk kérlek minden információt az egészségügyi állapotáról, a megkapott oltásokról, koráról, egyebekről.",
+    "surrender": "Ha a macskád átadása miatt keresel minket: Kérlek írj nekünk egy részletes emailt, hogy miért nem tudod tovább vállalni, mikor és hol adható át, és mi segítünk a biztonságos átadásban és új otthon keresésében. Emellett ossz meg velünk kérlek minden információt az egészségügyi állapotáról, a megkapott oltásokról, koráról, egyebekről.",
     "imageAlt": "Segítségre szoruló cica"
   },
   "thanks": "Köszönet",
@@ -177,6 +178,34 @@
     "founder-role": "Alapító",
     "button-adopt": "Örökbe fogadok",
     "link-learn-more": "Tudj meg többet"
+  },
+  "privacy": {
+    "title": "Adatvédelmi tájékoztató",
+    "updatedLabel": "Frissítve:",
+    "updatedDate": "2025. október 18.",
+    "introTitle": "Bevezetés",
+    "introText": "Ez az oldal egy egyetemi projekt része. A BringMeHome weboldal jelenlegi verziója nem gyűjt személyes adatokat a látogatókról.",
+    "whatDataTitle": "Milyen adatokat kezelünk?",
+    "whatDataText": "Jelenleg az oldal nem tárol vagy dolgoz fel személyes adatokat. Minden funkció helyben fut a böngészőben.",
+    "thirdPartiesTitle": "Harmadik felek",
+    "thirdPartiesText": "Nem használunk harmadik féltől származó követő- vagy analitikai szolgáltatásokat a projekt jelen állapotában.",
+    "securityTitle": "Biztonság",
+    "securityText": "Bár nem gyűjtünk személyes adatokat, a weboldal általános biztonsági alapelvek szerint készült.",
+    "contactTitle": "Kapcsolat",
+    "contactText": "Ha kérdésed merülne fel az adatkezeléssel kapcsolatban, írj ide:"
+  },
+  "cookie": {
+    "title": "Cookie szabályzat",
+    "updatedLabel": "Frissítve:",
+    "updatedDate": "2025. október 18.",
+    "whatTitle": "Mi az a cookie?",
+    "whatText": "A cookie egy kis szöveges fájl, amelyet a weboldal elhelyezhet a böngésződben.",
+    "whichTitle": "Milyen cookie-kat használunk?",
+    "whichText": "Ez az egyetemi projekt nem használ semmilyen nem-esszenciális cookie-t.",
+    "essentialTitle": "Esszenciális cookie-k",
+    "essentialText": "Funkcionális cookie-k később kerülhetnek bevezetésre a munkamenet vagy beállítások megőrzésére.",
+    "contactTitle": "Kapcsolat",
+    "contactText": "Ha kérdésed van, írj:"
   },
   "month-names": {
     "Jan": { "short": "Jan", "long": "Január" },
@@ -262,143 +291,125 @@
       "key-info": "Egyéb információk:",
       "key-special_features": "Különleges jegyek:",
 
-            "cat1": {
-                "name": "Csipesz",
-                "gender": "Nőstény",
-                "age": "3 év",
-                "breed": "Cirmos házimacska",
-                "personality": "Kíváncsi és magabiztos, de a számára idegen helyzetekben tartózkodó. Intelligens és éber.",
-                "neutered": "Igen",
-                "info": "ide még írni kell valamit",
-                "special_features": "Élénk zöld szemek és hosszú, elegáns bajusz."
-            },
-            "cat2": {
-                "name": "Karamell",
-                "gender": "Kandúr",
-                "age": "2 év",
-                "breed": "Calico",
-                "personality": "Barátságos és játékos, szeret a figyelem középpontjában lenni. Gyorsan alkalmazkodik új környezethez.",
-                "neutered": "Igen",
-                "info": "Más cicákkal kompatibilis, de a kutyákat nem szereti.",
-                "special_features": "Jellegzetes, háromszínű bundája (fehér, fekete és vörösesbarna foltokkal), valamint gyönyörű, borostyánszínű szemei."
-            },
-            "cat3": {
-                "name": "Nokedli",
-                "gender": "Kandúr",
-                "age": "3 év",
-                "breed": "Fehér-cirmos házimacska",
-                "personality": "Nyugodt, barátságos és kiegyensúlyozott. Megbízható és kedves társ.",
-                "neutered": "Igen",
-                "info": "Csak lakásba, rendszeres szőrápolást igényel.",
-                "special_features": "Különleges, világoszöld szemei és a sötétebb foltokat is rejtő bundája, amely a mancson is fellelhető."
-            },
-            "cat4": {
-                "name": "Tébláb",
-                "gender": "Kandúr",
-                "age": "1 év",
-                "breed": "Szürke-cirmos házimacska",
-                "personality": "Könnyen barátkozó, imádja a hasvakarást. Szívesen alszik a gazdija mellett.",
-                "neutered": "Még nem, de örökbefogadás előtt ivartalanítva lesz.",
-                "info": "Aktivitást és sok játékot igényel.",
-                "special_features": "Rövid lábai és hosszú farka."
-
-            },
-            "cat5": {
-                "name": "Snow",
-                "gender": "Nőstény",
-                "age": "4 év",
-                "breed": "Házimacska (ragdoll jellegű)",
-                "personality": "Kicsit vadóc, de nagyon ragaszkodó. Imád emberek között lenni, ideális kisgyermekes családokba.",
-                "neutered": "Igen",
-                "info": "Türelmes beillesztést igényel, kutyákkal nem javasolt.",
-                "special_features": "Csodálatos, élénk kék szemei és puha, krémszínű bundája, sötétebb foltokkal a pofáján és a fülein."
- 
-            },
-            "cat6": {
-                "name": "Marci",
-                "gender": "Kandúr",
-                "age": "6 év",
-                "breed": "Cirmos házimacska",
-                "personality":  "Nyugodt és magabiztos, igazi uralkodó típus. Erős és kiegyensúlyozott személyiség, aki élvezi a figyelmet.",
-                "neutered": "Igen",
-                "info": "Korából adódóan nyugodt környezetet igényel. De ő a menhelyünk legnyugodtabb cicája. Fogai miatt speciális étrendet és rendszeres orvosi ellenőrzést igényel.",
-                "special_features": "Jellegzetes, sötét barna cirmos bundája, izmos testalkata és a borostyánszínű szemei."
-
-            },
-            "cat7": {
-                "name": "Démon",
-                "gender": "Kandúr",
-                "age": "3 év",
-                "breed": "Fekete házimacska",
-                "personality": "Imád a gazdájával lenni, nagyon szeret bújni. Nagyon türelmes.",
-                "neutered": "Igen",
-                "info": "Imád kint lenni, biztonságos-macskahálóval felszerelt udvarral rendelkezők előnyben.",
-                "special_features": "Koromfekete, fényes bundája és a zöld szeme, amely élénken kiemelkedik a sötét szőre alól."
-            },
-            "cat8": {
-                "name": "Tódor",
-                "gender": "Kandúr",
-                "age": "5 év",
-                "breed":  "Main Coon",
-                "personality": "A \"szelíd óriás\" becenév tökéletesen illik rá. Nyugodt, barátságos és rendkívül ragaszkodó.",
-                "neutered": "Igen",
-                "info": "Szőre rendszeres vágást és ápolást igényel. Tökéletes választás gyermekek mellé.",
-                "special_features": "Hatalmas, bozontos bundája, a fülei végén lévő szőrpamacsok és a fenséges kiállása."
-
-            },
-            "cat9": {
-                "name": "Riska",
-                "gender": "Nőstény",
-                "age": "Fél év",
-                "breed": "Fehér házimacska",
-                "personality": "Szelíd, halk, bizonytalan de ragaszkodó",
-                "neutered": "Még nem, de örökbefogadás előtt ivartalanítva lesz.",
-                "info": "A menhelyünk lefiatalabb lakója, nagyon aktív és felfedező típus."
-            },
-            "cat10": {
-                "name": "Peti",
-                "gender": "Kandúr",
-                "age": "3 év",
-                "breed": "Foltos keverék házimacska",
-                "personality": "Imádja a saját hangját, megfigyelő, magasságot kedvelő",
-                "neutered": "Igen",
-                "info": "Igényli a társaságot, ezért olyan gazdit keresünk neki, aki sokat van otthon. Emellett tudna vállalni más cicákat is, hogy Peti soha ne legyen egyedül."
-            },
-            "cat11": {
-                "name": "Lola",
-                "gender": "Nőstény",
-                "age": "2 év",
-                "breed": "Skót lógófülű keverék",
-                "personality": "Bújós, 'tapadós', szerelmes",
-                "neutered": "Igen",
-                "info": "Jól kijön más háziállatokkal, akár kutya mellé is ajánljuk. Genetikai sajátosságai miatt érdemes figyelni az izületi problémákra."
-            },
-            "cat12": {
-                "name": "Max",
-                "gender": "Kandúr",
-                "age": "4 év",
-                "breed": "Brit rövidszőrű keverék",
-                "personality": "Lusta, haspók, de nagyon intelligens",
-                "neutered": "Igen",
-                "info": "Nem tolakodó természet, kifejezetten csendes. Harmóniában él más állatokkal és gyerekekkel is. Gyorsan alkalmazkodik a változásokhoz."
-            }
-        }
+      "cat1": {
+        "name": "Csipesz",
+        "gender": "Nőstény",
+        "age": "3 év",
+        "breed": "Cirmos házimacska",
+        "personality": "Kíváncsi és magabiztos, de a számára idegen helyzetekben tartózkodó. Intelligens és éber.",
+        "neutered": "Igen",
+        "info": "ide még írni kell valamit",
+        "special_features": "Élénk zöld szemek és hosszú, elegáns bajusz."
+      },
+      "cat2": {
+        "name": "Karamell",
+        "gender": "Kandúr",
+        "age": "2 év",
+        "breed": "Calico",
+        "personality": "Barátságos és játékos, szeret a figyelem középpontjában lenni. Gyorsan alkalmazkodik új környezethez.",
+        "neutered": "Igen",
+        "info": "Más cicákkal kompatibilis, de a kutyákat nem szereti.",
+        "special_features": "Jellegzetes, háromszínű bundája (fehér, fekete és vörösesbarna foltokkal), valamint gyönyörű, borostyánszínű szemei."
+      },
+      "cat3": {
+        "name": "Nokedli",
+        "gender": "Kandúr",
+        "age": "3 év",
+        "breed": "Fehér-cirmos házimacska",
+        "personality": "Nyugodt, barátságos és kiegyensúlyozott. Megbízható és kedves társ.",
+        "neutered": "Igen",
+        "info": "Csak lakásba, rendszeres szőrápolást igényel.",
+        "special_features": "Különleges, világoszöld szemei és a sötétebb foltokat is rejtő bundája, amely a mancson is fellelhető."
+      },
+      "cat4": {
+        "name": "Tébláb",
+        "gender": "Kandúr",
+        "age": "1 év",
+        "breed": "Szürke-cirmos házimacska",
+        "personality": "Könnyen barátkozó, imádja a hasvakarást. Szívesen alszik a gazdija mellett.",
+        "neutered": "Még nem, de örökbefogadás előtt ivartalanítva lesz.",
+        "info": "Aktivitást és sok játékot igényel.",
+        "special_features": "Rövid lábai és hosszú farka."
+      },
+      "cat5": {
+        "name": "Snow",
+        "gender": "Nőstény",
+        "age": "4 év",
+        "breed": "Házimacska (ragdoll jellegű)",
+        "personality": "Kicsit vadóc, de nagyon ragaszkodó. Imád emberek között lenni, ideális kisgyermekes családokba.",
+        "neutered": "Igen",
+        "info": "Türelmes beillesztést igényel, kutyákkal nem javasolt.",
+        "special_features": "Csodálatos, élénk kék szemei és puha, krémszínű bundája, sötétebb foltokkal a pofáján és a fülein."
+      },
+      "cat6": {
+        "name": "Marci",
+        "gender": "Kandúr",
+        "age": "6 év",
+        "breed": "Cirmos házimacska",
+        "personality": "Nyugodt és magabiztos, igazi uralkodó típus. Erős és kiegyensúlyozott személyiség, aki élvezi a figyelmet.",
+        "neutered": "Igen",
+        "info": "Korából adódóan nyugodt környezetet igényel. De ő a menhelyünk legnyugodtabb cicája. Fogai miatt speciális étrendet és rendszeres orvosi ellenőrzést igényel.",
+        "special_features": "Jellegzetes, sötét barna cirmos bundája, izmos testalkata és a borostyánszínű szemei."
+      },
+      "cat7": {
+        "name": "Démon",
+        "gender": "Kandúr",
+        "age": "3 év",
+        "breed": "Fekete házimacska",
+        "personality": "Imád a gazdájával lenni, nagyon szeret bújni. Nagyon türelmes.",
+        "neutered": "Igen",
+        "info": "Imád kint lenni, biztonságos-macskahálóval felszerelt udvarral rendelkezők előnyben.",
+        "special_features": "Koromfekete, fényes bundája és a zöld szeme, amely élénken kiemelkedik a sötét szőre alól."
+      },
+      "cat8": {
+        "name": "Tódor",
+        "gender": "Kandúr",
+        "age": "5 év",
+        "breed": "Main Coon",
+        "personality": "A \"szelíd óriás\" becenév tökéletesen illik rá. Nyugodt, barátságos és rendkívül ragaszkodó.",
+        "neutered": "Igen",
+        "info": "Szőre rendszeres vágást és ápolást igényel. Tökéletes választás gyermekek mellé.",
+        "special_features": "Hatalmas, bozontos bundája, a fülei végén lévő szőrpamacsok és a fenséges kiállása."
+      },
+      "cat9": {
+        "name": "Riska",
+        "gender": "Nőstény",
+        "age": "Fél év",
+        "breed": "Fehér házimacska",
+        "personality": "Szelíd, halk, bizonytalan de ragaszkodó",
+        "neutered": "Még nem, de örökbefogadás előtt ivartalanítva lesz.",
+        "info": "A menhelyünk lefiatalabb lakója, nagyon aktív és felfedező típus."
+      },
+      "cat10": {
+        "name": "Peti",
+        "gender": "Kandúr",
+        "age": "3 év",
+        "breed": "Foltos keverék házimacska",
+        "personality": "Imádja a saját hangját, megfigyelő, magasságot kedvelő",
+        "neutered": "Igen",
+        "info": "Igényli a társaságot, ezért olyan gazdit keresünk neki, aki sokat van otthon. Emellett tudna vállalni más cicákat is, hogy Peti soha ne legyen egyedül."
+      },
+      "cat11": {
+        "name": "Lola",
+        "gender": "Nőstény",
+        "age": "2 év",
+        "breed": "Skót lógófülű keverék",
+        "personality": "Bújós, 'tapadós', szerelmes",
+        "neutered": "Igen",
+        "info": "Jól kijön más háziállatokkal, akár kutya mellé is ajánljuk. Genetikai sajátosságai miatt érdemes figyelni az izületi problémákra."
+      },
+      "cat12": {
+        "name": "Max",
+        "gender": "Kandúr",
+        "age": "4 év",
+        "breed": "Brit rövidszőrű keverék",
+        "personality": "Lusta, haspók, de nagyon intelligens",
+        "neutered": "Igen",
+        "info": "Nem tolakodó természet, kifejezetten csendes. Harmóniában él más állatokkal és gyerekekkel is. Gyorsan alkalmazkodik a változásokhoz."
+      }
+    }
   },
-  "month-names": {
-    "Jan":{"short": "Jan", "long": "Január"},
-    "Feb":{"short": "Feb", "long": "Február"},
-    "Mar":{"short": "Már", "long": "Március"},
-    "Apr":{"short": "Ápr", "long": "Április"},
-    "May":{"short": "Máj", "long": "Május"},
-    "Jun":{"short": "Jún", "long": "Június"},
-    "Jul":{"short": "Júl", "long": "Július"},
-    "Aug":{"short": "Aug", "long": "Augusztus"},
-    "Sep":{"short": "Szep", "long": "Szeptember"},
-    "Oct":{"short": "Okt", "long": "Október"},
-    "Nov":{"short": "Nov", "long": "November"},
-    "Dec":{"short": "Dec", "long": "December"}
-    },
-"adopterForm": {
+  "adopterForm": {
     "title": "Örökbefogadó Kérelem",
     "subtitle": "Kérjük, töltsd ki az alábbi űrlapot, hogy megismerhessük téged és a cicával kapcsolatos elképzeléseidet. Az adataidat bizalmasan kezeljük, és csak az örökbefogadási folyamat során használjuk fel.",
     "form": {
@@ -451,6 +462,5 @@
         "error": "Hiba történt a kérelem küldése során! Kérjük, próbálja újra később."
       }
     }
-    
   }
 }
