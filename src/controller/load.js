@@ -34,7 +34,9 @@ export async function loadContent(isIndex = false) {
 
   if (!isIndex) {
     await Promise.all(
-      Object.keys(layoutForIndividualPages).map((page) => loadSection(page, false))
+      Object.keys(layoutForIndividualPages).map((page) =>
+        loadSection(page, false),
+      ),
     );
   }
 
