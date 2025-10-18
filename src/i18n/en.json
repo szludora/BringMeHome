@@ -35,7 +35,7 @@
   },
   "adopt": {
     "title": "Adopt a Cat",
-  
+
     "section-title": "Why adopt from us?",
     "para1": "These cats came to us with special stories: some are shy and gentle, others are true clowns - but they are all ready for a loving home.",
     "para2": "Adoption is a long-term commitment, but in return, you get unconditional love. Look around the gallery and find a companion for yourself!",
@@ -135,13 +135,13 @@
       "4": "Contact us using the details below — the more information you provide, the faster we can help."
     },
     "importantLabel": "Important:",
-  "importantText": "If the kitten is injured or very lethargic, take it immediately to the nearest veterinarian! You can ask for a free microchip scan there, which may help reunite it with its owner. Never give cow's milk to a young kitten!",
+    "importantText": "If the kitten is injured or very lethargic, take it immediately to the nearest veterinarian! You can ask for a free microchip scan there, which may help reunite it with its owner. Never give cow's milk to a young kitten!",
     "cta": {
       "email": "Write us an email",
       "phoneLabel": "Call us:",
       "phoneNumber": "+36 1 234 5678"
     },
-  "surrender": "If you’re contacting us about surrendering your cat: please write us a detailed email explaining why you can’t keep it, when and where handover is possible, and we’ll help arrange a safe transfer and find a new home. Also please share any information about its health status, vaccinations received, age, and other relevant details.",
+    "surrender": "If you’re contacting us about surrendering your cat: please write us a detailed email explaining why you can’t keep it, when and where handover is possible, and we’ll help arrange a safe transfer and find a new home. Also please share any information about its health status, vaccinations received, age, and other relevant details.",
     "imageAlt": "Kitten needing help"
   },
   "thanks": "Thank You",
@@ -280,7 +280,6 @@
         "neutered": "Yes",
         "info": "Compatible with other cats, but does not like dogs.",
         "special_features": "Distinctive, tricolored coat (with white, black, and reddish-brown patches), and beautiful, amber-colored eyes."
-
       },
       "cat3": {
         "name": "Nokedli",
@@ -291,7 +290,6 @@
         "neutered": "Yes",
         "info": "Indoor only, requires regular coat grooming.",
         "special_features": "Unique light green eyes and a coat that also hides darker patches, which are also found on his paws."
-
       },
       "cat4": {
         "name": "Tébláb",
@@ -302,7 +300,6 @@
         "neutered": "Not yet, but will be spayed/neutered before adoption.",
         "info": "Requires activity and plenty of playtime.",
         "special_features": "Short legs and a long tail."
-
       },
       "cat5": {
         "name": "Snow",
@@ -313,7 +310,6 @@
         "neutered": "Yes",
         "info": "Requires patient settling in, not recommended with dogs.",
         "special_features": "Wonderful, bright blue eyes and soft, cream-colored fur with darker patches on her face and ears."
-
       },
       "cat6": {
         "name": "Marci",
@@ -324,7 +320,6 @@
         "neutered": "Yes",
         "info": "Due to his age, he requires a calm environment. He is our calmest shelter cat. Needs a special diet and regular veterinary checks due to his teeth.",
         "special_features": "A distinctive dark brown tabby coat, muscular build, and amber-colored eyes."
-
       },
       "cat7": {
         "name": "Démon",
@@ -335,7 +330,6 @@
         "neutered": "Yes",
         "info": "Loves being outdoors; those with a safe, cat-netted yard are preferred.",
         "special_features": "Jet-black, shiny fur and green eyes that stand out brightly against his dark coat."
-
       },
       "cat8": {
         "name": "Tódor",
@@ -346,7 +340,6 @@
         "neutered": "Yes",
         "info": "His fur requires regular trimming and grooming. Perfect choice for children.",
         "special_features": "Huge, bushy fur, tufts of hair at the tips of his ears, and a majestic stance."
-
       },
       "cat9": {
         "name": "Riska",
@@ -385,8 +378,8 @@
         "info": "Not a pushy nature, especially quiet. Lives in harmony with other animals and children. Adapts quickly to changes."
       }
     }
-},
-"adopterForm": {
+  },
+  "adopterForm": {
     "title": "Adoption Application Form",
     "subtitle": "Please complete the form below so we can learn more about you and your ideas regarding the cat. Your data will be treated confidentially and used only during the adoption process.",
     "form": {
@@ -441,4 +434,3 @@
     }
   }
 }
-

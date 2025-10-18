@@ -61,18 +61,14 @@ function setupLanguageSwitches() {
     if (!input || !icon) return;
 
     input.checked = currentLanguage === "en";
-    
+
     const flagPath = getFlagPath();
-    icon.src = input.checked
-      ? `${flagPath}en.png`
-      : `${flagPath}hu.png`;
+    icon.src = input.checked ? `${flagPath}en.png` : `${flagPath}hu.png`;
 
     input.addEventListener("change", async () => {
       currentLanguage = input.checked ? "en" : "hu";
       localStorage.setItem("lang", currentLanguage);
-      icon.src = input.checked
-        ? `${flagPath}en.png`
-        : `${flagPath}hu.png`;
+      icon.src = input.checked ? `${flagPath}en.png` : `${flagPath}hu.png`;
       await loadTranslations(currentLanguage);
       updateTexts();
     });
