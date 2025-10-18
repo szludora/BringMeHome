@@ -1,6 +1,5 @@
 import { log, warn, error } from "../core/logger.js";
 // TODO: change this route
-import { Snackbar } from "../packages/snackbar/dist/snackbar.min.js";
 import { getBasePath } from "../controller/pathFixer.js";
 
 let currentLanguage = localStorage.getItem("lang") || "hu";
