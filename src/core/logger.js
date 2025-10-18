@@ -1,6 +1,4 @@
 // TODO: change this route
-import { Snackbar } from "../packages/snackbar/dist/snackbar.min.js";
-
 let DEV_MODE = true;
 
 function getCallerFile() {
