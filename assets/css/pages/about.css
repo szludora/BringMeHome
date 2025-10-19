@@ -2,9 +2,9 @@
   overflow-x: hidden;
 }
 
-#ourTeamImage{
-aspect-ratio: 1/1;
-width: clamp(6rem, 100%, 30rem) !important;
+#ourTeamImage {
+  aspect-ratio: 1/1;
+  width: clamp(6rem, 100%, 30rem) !important;
 }
 
 .about .card {

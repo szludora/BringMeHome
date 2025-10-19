@@ -25,12 +25,12 @@ export function initAboutMarquee(options = {}) {
   if (isDuplicated(track)) {
     originalNodes = Array.from(track.children).slice(
       0,
-      track.children.length / 2
+      track.children.length / 2,
     );
   }
 
   const imgs = Array.from(originalNodes).flatMap((n) =>
-    Array.from(n.querySelectorAll("img"))
+    Array.from(n.querySelectorAll("img")),
   );
   const waitForImages = () => {
     if (imgs.length === 0) return Promise.resolve();
@@ -41,14 +41,14 @@ export function initAboutMarquee(options = {}) {
           img.addEventListener("load", res);
           img.addEventListener("error", res);
         });
-      })
+      }),
     );
   };
 
   let singleWidth = 0;
   const computeSingleWidth = () => {
     const styles = window.getComputedStyle(
-      originalNodes[0]?.parentElement || track
+      originalNodes[0]?.parentElement || track,
     );
     let sum = 0;
     for (const node of originalNodes) {

@@ -98,7 +98,7 @@ function showResults(topCats) {
   if (!resultContainer) return;
 
   const placeholders = Array.from(
-    resultContainer.querySelectorAll(".resultCard")
+    resultContainer.querySelectorAll(".resultCard"),
   );
 
   for (let i = 0; i < placeholders.length; i++) {
@@ -118,14 +118,16 @@ function showResults(topCats) {
     if (nameEl) nameEl.textContent = match.cat.name || "";
     if (percentEl) {
       let pctSpan = percentEl.querySelector(".percentage");
-      const pctValue = (" " +match.percent || 0) + "%";
+      const pctValue = (" " + match.percent || 0) + "%";
       if (pctSpan) {
         pctSpan.textContent = pctValue;
       } else {
         const newSpan = document.createElement("span");
         newSpan.className = "percentage";
         newSpan.textContent = pctValue;
-        const strong = percentEl.querySelector('[data-i18n="match-percentage"]');
+        const strong = percentEl.querySelector(
+          '[data-i18n="match-percentage"]',
+        );
         if (strong && strong.parentNode === percentEl) {
           strong.insertAdjacentElement("afterend", newSpan);
         } else {
