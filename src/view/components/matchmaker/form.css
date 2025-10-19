@@ -1,0 +1,113 @@
+#matchmakerForm {
+  margin: auto;
+  width: 70%;
+  height: 30rem;
+  min-width: 300px;
+  border-radius: 0.8rem;
+  background-color: var(--color-bg-body);
+  box-shadow: 0 3px 4px var(--color-shadow),
+    0 -2px 4px var(--color-shadow-light);
+}
+
+.matchmaker .step {
+  height: 1.3rem;
+  width: 1.3rem;
+  margin: 0.3rem;
+  background-color: #bbbbbb;
+  border-radius: 50%;
+  border: none;
+  display: inline-block;
+  opacity: 0.4;
+}
+
+.matchmaker .step.active {
+  opacity: 1;
+}
+
+.matchmaker .step.finish {
+  background-color: #04aa6d;
+}
+
+.matchmaker .btn {
+  width: 7rem !important;
+  margin: 0 3rem;
+}
+
+.matchmaker h2,
+.matchmaker h2 span {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+/* ------ even sizes --------------------------------------------- */
+
+.matchmaker .tab,
+.matchmaker #result {
+  height: 21rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.matchmaker .selectableOptions {
+  gap: 0.8rem;
+}
+
+.matchmaker .btn-secondary {
+  transition: unset;
+}
+
+/* ------ selects ---------------------------------------------------- */
+.matchmaker .selectableOptions label {
+  display: flex;
+  justify-content: center;
+}
+
+.matchmaker .singleOptions {
+  display: none;
+}
+
+.result-img {
+  width: clamp(6rem, 100%, 10rem);
+  aspect-ratio: 1/1;
+}
+
+.matchmaker .selectableOptions img {
+  width: 100%;
+  width: clamp(6rem, 100%, 10rem);
+  height: clamp(6rem, 100%, 10rem);
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  transition: transform 0.1s ease-in, background-color 0.1s ease-in,
+    border 0.1s ease-in;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.matchmaker .selectableOptions img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: #82e18224;
+}
+
+.matchmaker .singleOptions:checked + img {
+  background-color: #6fc56f6e;
+  transform: scale(1.05);
+}
+
+.range-img {
+  margin-top: 1rem;
+  width: 5rem;
+  height: auto;
+}
+
+/* ------ result ---------------------------------------------------- */
+
+.resultCard p,
+.resultCard h3 {
+  text-align: center;
+}
