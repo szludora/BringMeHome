@@ -43,9 +43,9 @@
   --snack-color-text-info: #0f575f;
 
   --font-base: 14px;
-  --font-h1: 64px;
-  --font-h2: 48px;
-  --font-h3: 32px;
+  --font-h1: 48px;
+  --font-h2: 32px;
+  --font-h3: 26px;
 }
 
 .text-bg-primary {

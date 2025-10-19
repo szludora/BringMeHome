@@ -13,3 +13,5 @@
 @import "./pages/journey.css";
 @import "./pages/about.css";
 @import "./pages/faq.css";
+
+@import"../../src/view/components/matchmaker/form.css";

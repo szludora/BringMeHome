@@ -19,6 +19,10 @@
   transition: all 0.3s ease;
 }
 
+.btn-primary:active {
+  background-color: var(--color-primary) !important;
+}
+
 .btn-primary:hover {
   background-color: var(--color-primary-lightest);
   transform: translateY(-2px);

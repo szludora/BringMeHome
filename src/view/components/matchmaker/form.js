@@ -18,7 +18,7 @@ const scoreKeys = [
 ];
 
 async function getCatsScores() {
-  const data = await fetch("/src/cats.json")
+  const data = await fetch("./src/cats.json")
     .then((res) => res.json())
     .catch((error) => console.log(error));
 
@@ -54,7 +54,7 @@ async function collectFormData() {
 }
 
 async function score(userAnswers) {
-  const catsData = await fetch("/src/cats.json").then((res) => res.json());
+  const catsData = await fetch("./src/cats.json").then((res) => res.json());
 
   // Calculate max possible score for normalization
   // For each attribute, use the max possible difference (range 1-10 for ranges, penalty values for mismatches)
