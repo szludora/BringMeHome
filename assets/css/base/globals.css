@@ -31,9 +31,9 @@
   --snack-color-text-info: #0f575f;
 
   --font-base: 14px;
-  --font-h1: 64px;
-  --font-h2: 48px;
-  --font-h3: 32px;
+  --font-h1: 48px;
+  --font-h2: 26px;
+  --font-h3: 20px;
 }
 
 * {
@@ -58,7 +58,7 @@ section {
 }
 
 .hero {
-  height: 100dvh;
+  min-height: 100dvh;
 }
 
 .container {
@@ -66,8 +66,13 @@ section {
 }
 
 h1,
-h2 {
+h2, h2 span {
   text-transform: uppercase;
+  font-size: var(--font-h2);
+}
+
+h3{
+    font-size: var(--font-h3);
 }
 
 img {
@@ -85,6 +90,10 @@ img {
 .bg-primary {
   background-color: var(--color-primary-light) !important;
   color: white;
+}
+
+.hidden{
+    visibility: hidden;
 }
 
 @media (min-width: 992px) {

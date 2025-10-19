@@ -8,7 +8,11 @@
     "adopt": "Adopt a Cat",
     "learn-more": "Learn more",
     "support-us": "Support us",
-    "join-us": "Join us"
+    "join-us": "Join us",
+    "retry": "Again",
+    "submit": "Submit",
+    "next": "Next",
+    "previous": "Previous"
   },
   "test": "Click the button to change language to Hungarian",
   "read-more": "Read more...",
@@ -22,6 +26,7 @@
   "nav-homeSeeker": "Home Seeker",
   "nav-faq": "FAQ",
   "nav-footer": "Contact",
+  "nav-findMyMatch": "Find My Cat Match",
   "about": {
     "title": "About Us",
     "text1": "The BringMeHome team was founded to help every cat find a loving home. Every day we work to ensure that cats in shelters grow up safe, cared for, and loved. We believe that every cat deserves attention, playful moments, and peaceful rest.",
@@ -36,13 +41,11 @@
   },
   "adopt": {
     "title": "Adopt a Cat",
-
     "section-title": "Why adopt from us?",
     "para1": "These cats came to us with special stories: some are shy and gentle, others are true clowns - but they are all ready for a loving home.",
     "para2": "Adoption is a long-term commitment, but in return, you get unconditional love. Look around the gallery and find a companion for yourself!",
     "cta": "See Our Cats"
   },
-
   "adopters": {
     "title": "Our Adopters",
     "story1": {
@@ -136,13 +139,13 @@
       "4": "Contact us using the details below — the more information you provide, the faster we can help."
     },
     "importantLabel": "Important:",
-    "importantText": "If the kitten is injured or very lethargic, take it immediately to the nearest veterinarian! You can ask for a free microchip scan there, which may help reunite it with its owner. Never give cow's milk to a young kitten!",
+  "importantText": "If the kitten is injured or very lethargic, take it immediately to the nearest veterinarian! You can ask for a free microchip scan there, which may help reunite it with its owner. Never give cow's milk to a young kitten!",
     "cta": {
       "email": "Write us an email",
       "phoneLabel": "Call us:",
       "phoneNumber": "+36 1 234 5678"
     },
-    "surrender": "If you’re contacting us about surrendering your cat: please write us a detailed email explaining why you can’t keep it, when and where handover is possible, and we’ll help arrange a safe transfer and find a new home. Also please share any information about its health status, vaccinations received, age, and other relevant details.",
+  "surrender": "If you’re contacting us about surrendering your cat: please write us a detailed email explaining why you can’t keep it, when and where handover is possible, and we’ll help arrange a safe transfer and find a new home. Also please share any information about its health status, vaccinations received, age, and other relevant details.",
     "imageAlt": "Kitten needing help"
   },
   "thanks": "Thank You",
@@ -289,7 +292,6 @@
       "key-neutered": "Neutered:",
       "key-info": "Other Information:",
       "key-special_features": "Special features:",
-
       "cat1": {
         "name": "Csipesz",
         "gender": "Female",
@@ -461,5 +463,17 @@
         "error": "An error occurred while sending the application! Please try again later."
       }
     }
+  },
+  "matchmaker": {
+    "matches-for-you": "best matches for you",
+    "match-percentage": "Match:",
+    "questions": {
+      "home_type": "What type of home do you live in?",
+      "housemates": "How many people live with you?",
+      "sociability": "How much do you seek company from others?",
+      "activity": "Which description fits you better?",
+      "pet_compatibility": "Do you currently have a pet?"
+    },
+    "findMyMatch": "Find my cat match"
   }
 }

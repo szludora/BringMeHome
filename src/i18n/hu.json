@@ -8,7 +8,11 @@
     "adopt": "Örökbe fogadok",
     "learn-more": "Tudj meg többet",
     "support-us": "Támogass minket",
-    "join-us": "Csatlakozz hozzánk"
+    "join-us": "Csatlakozz hozzánk",
+    "retry": "Újra",
+    "submit": "Beküldés",
+    "next": "Következő",
+    "previous": "Előző"
   },
   "test": "Kattints a gombra a nyelv angolra váltásához",
   "read-more": "Több...",
@@ -22,6 +26,7 @@
   "nav-homeSeeker": "Gazdikereső",
   "nav-faq": "GYIK",
   "nav-footer": "Elérhetőség",
+  "nav-findMyMatch": "Melyik cica illik hozzám?",
   "about": {
     "title": "Rólunk",
     "text1": "A BringMeHome csapata azért jött létre, hogy minden cica megtalálja a szerető otthonát. Nap mint nap azon dolgozunk, hogy a menhelyeken élő cicák biztonságban, gondoskodásban és szeretetben nőhessenek fel. Hiszünk abban, hogy minden cica megérdemli a törődést, a játékos pillanatokat és a nyugodt pihenést.",
@@ -55,7 +60,6 @@
     "cta-button1": "Ismerd meg örökbefogadható cicáinkat!",
     "cta-button2": "További örökbefogadói történetek"
   },
-
   "journey": {
     "title": {
       "main": "Az utunk eddig...",
@@ -462,5 +466,17 @@
         "error": "Hiba történt a kérelem küldése során! Kérjük, próbálja újra később."
       }
     }
+  },
+  "matchmaker": {
+    "matches-for-you": "legjobb párosítás számodra",
+    "match-percentage": "Egyezés:",
+    "questions": {
+      "home_type": "Milyen típusú otthonod van?",
+      "housemates": "Hányan éltek együtt?",
+      "sociability": "Mennyire keresed mások társaságát?",
+      "activity": "Melyik jellemző inkább rád?",
+      "pet_compatibility": "Van jelenleg háziállatod?"
+    },
+    "findMyMatch": "Találd meg a hozzád illő cicát"
   }
 }
