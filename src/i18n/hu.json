@@ -25,6 +25,7 @@
   "nav-journey": "Utunk",
   "nav-homeSeeker": "Gazdikereső",
   "nav-faq": "GYIK",
+  "nav-footer": "Elérhetőség",
   "nav-findMyMatch": "Melyik cica illik hozzám?",
   "about": {
     "title": "Rólunk",
@@ -182,6 +183,34 @@
     "button-adopt": "Örökbe fogadok",
     "link-learn-more": "Tudj meg többet"
   },
+  "privacy": {
+    "title": "Adatvédelmi tájékoztató",
+    "updatedLabel": "Frissítve:",
+    "updatedDate": "2025. október 18.",
+    "introTitle": "Bevezetés",
+    "introText": "Ez az oldal egy egyetemi projekt része. A BringMeHome weboldal jelenlegi verziója nem gyűjt személyes adatokat a látogatókról.",
+    "whatDataTitle": "Milyen adatokat kezelünk?",
+    "whatDataText": "Jelenleg az oldal nem tárol vagy dolgoz fel személyes adatokat. Minden funkció helyben fut a böngészőben.",
+    "thirdPartiesTitle": "Harmadik felek",
+    "thirdPartiesText": "Nem használunk harmadik féltől származó követő- vagy analitikai szolgáltatásokat a projekt jelen állapotában.",
+    "securityTitle": "Biztonság",
+    "securityText": "Bár nem gyűjtünk személyes adatokat, a weboldal általános biztonsági alapelvek szerint készült.",
+    "contactTitle": "Kapcsolat",
+    "contactText": "Ha kérdésed merülne fel az adatkezeléssel kapcsolatban, írj ide:"
+  },
+  "cookie": {
+    "title": "Cookie szabályzat",
+    "updatedLabel": "Frissítve:",
+    "updatedDate": "2025. október 18.",
+    "whatTitle": "Mi az a cookie?",
+    "whatText": "A cookie egy kis szöveges fájl, amelyet a weboldal elhelyezhet a böngésződben.",
+    "whichTitle": "Milyen cookie-kat használunk?",
+    "whichText": "Ez az egyetemi projekt nem használ semmilyen nem-esszenciális cookie-t.",
+    "essentialTitle": "Esszenciális cookie-k",
+    "essentialText": "Funkcionális cookie-k később kerülhetnek bevezetésre a munkamenet vagy beállítások megőrzésére.",
+    "contactTitle": "Kapcsolat",
+    "contactText": "Ha kérdésed van, írj:"
+  },
   "month-names": {
     "Jan": { "short": "Jan", "long": "Január" },
     "Feb": { "short": "Feb", "long": "Február" },
@@ -265,6 +294,7 @@
       "key-neutered": "Ivartalanítva:",
       "key-info": "Egyéb információk:",
       "key-special_features": "Különleges jegyek:",
+
       "cat1": {
         "name": "Csipesz",
         "gender": "Nőstény",

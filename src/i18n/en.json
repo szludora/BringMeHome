@@ -25,6 +25,7 @@
   "nav-journey": "Our Journey",
   "nav-homeSeeker": "Home Seeker",
   "nav-faq": "FAQ",
+  "nav-footer": "Contact",
   "nav-findMyMatch": "Find My Cat Match",
   "about": {
     "title": "About Us",
@@ -138,13 +139,13 @@
       "4": "Contact us using the details below — the more information you provide, the faster we can help."
     },
     "importantLabel": "Important:",
-    "importantText": "If the kitten is injured or very lethargic, take it immediately to the nearest veterinarian! You can ask for a free microchip scan there, which may help reunite it with its owner. Never give cow's milk to a young kitten!",
+  "importantText": "If the kitten is injured or very lethargic, take it immediately to the nearest veterinarian! You can ask for a free microchip scan there, which may help reunite it with its owner. Never give cow's milk to a young kitten!",
     "cta": {
       "email": "Write us an email",
       "phoneLabel": "Call us:",
       "phoneNumber": "+36 1 234 5678"
     },
-    "surrender": "If you’re contacting us about surrendering your cat: please write us a detailed email explaining why you can’t keep it, when and where handover is possible, and we’ll help arrange a safe transfer and find a new home. Also please share any information about its health status, vaccinations received, age, and other relevant details.",
+  "surrender": "If you’re contacting us about surrendering your cat: please write us a detailed email explaining why you can’t keep it, when and where handover is possible, and we’ll help arrange a safe transfer and find a new home. Also please share any information about its health status, vaccinations received, age, and other relevant details.",
     "imageAlt": "Kitten needing help"
   },
   "thanks": "Thank You",
@@ -179,6 +180,34 @@
     "description": " - every cat is waiting for a loving home. Until they find it, they happily purr with us.",
     "founder-name": "Luca Kovács",
     "founder-role": "Founder"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "updatedLabel": "Updated:",
+    "updatedDate": "18 October 2025",
+    "introTitle": "Introduction",
+    "introText": "This site is part of a university project. The current version of BringMeHome does not collect personal data from visitors.",
+    "whatDataTitle": "What data do we process?",
+    "whatDataText": "At present the site does not store or process personal data. All functionality runs locally in the browser.",
+    "thirdPartiesTitle": "Third parties",
+    "thirdPartiesText": "We do not use third-party tracking or analytics services in the current project state.",
+    "securityTitle": "Security",
+    "securityText": "Although we do not collect personal data, the site follows basic security principles. For production use, additional measures are recommended.",
+    "contactTitle": "Contact",
+    "contactText": "If you have questions about data processing, contact us at"
+  },
+  "cookie": {
+    "title": "Cookie Policy",
+    "updatedLabel": "Updated:",
+    "updatedDate": "18 October 2025",
+    "whatTitle": "What is a cookie?",
+    "whatText": "A cookie is a small text file stored by the website in your browser to remember settings or information.",
+    "whichTitle": "Which cookies do we use?",
+    "whichText": "This university project does not use any non-essential cookies. We do not place analytics or advertising cookies.",
+    "essentialTitle": "Essential cookies",
+    "essentialText": "If the site adds features later (login, forms), functional cookies may be used to preserve session or settings.",
+    "contactTitle": "Contact",
+    "contactText": "If you have questions, contact"
   },
   "month-names": {
     "Jan": { "short": "Jan", "long": "January" },
