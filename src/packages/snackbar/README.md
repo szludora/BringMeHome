@@ -124,7 +124,6 @@ export const TYPE = {
 This project is licensed under the **MIT License**.
 
 You are free to:
-
 - Use it in personal or commercial projects
 - Modify it for your own needs
 - Share it with others

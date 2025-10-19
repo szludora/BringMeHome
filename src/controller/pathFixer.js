@@ -8,7 +8,6 @@ function getBasePath() {
 
 function fixRelativePath(relativePath) {
   const basePath = getBasePath();
-
   log(`Fixing path: ${relativePath}, basePath: ${basePath}`);
 
   if (basePath === "/") {
