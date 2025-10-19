@@ -2,9 +2,9 @@
   overflow-x: hidden;
 }
 
-#ourTeamImage{
-aspect-ratio: 1/1;
-width: clamp(6rem, 100%, 30rem) !important;
+#ourTeamImage {
+  aspect-ratio: 1/1;
+  width: clamp(6rem, 100%, 30rem) !important;
 }
 
 .about .card {
@@ -27,8 +27,13 @@ width: clamp(6rem, 100%, 30rem) !important;
   border-radius: 50%;
 }
 
-:root {
-  --about-card-gap: 2rem;
+.about .card-track,
+.cart-track-repeat {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-items: center;
 }
 
 @keyframes scrollCards {

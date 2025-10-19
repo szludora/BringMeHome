@@ -39,7 +39,11 @@ export async function loadContent(isIndex = false) {
     if (container.classList.contains("noFooter")) {
       await loadSection("navbar", false);
     } else {
-      await Promise.all(Object.keys(layoutForIndividualPages).map((page) => loadSection(page, false)));
+      await Promise.all(
+        Object.keys(layoutForIndividualPages).map((page) =>
+          loadSection(page, false),
+        ),
+      );
     }
   }
 

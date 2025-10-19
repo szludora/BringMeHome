@@ -2,23 +2,21 @@
 <html lang="hu">
 
 <head>
-  <meta charset="UTF-8" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <meta name="description" content="Örökbefogadható cicák listája" >
-  <meta name="keywords" content="állatmenhely, örökbefogadás, cica, macska, állatmentés" >
-  <link rel="preconnect" href="https://fonts.googleapis.com" >
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Örökbefogadható cicák listája">
+  <meta name="keywords" content="állatmenhely, örökbefogadás, cica, macska, állatmentés">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet" >
-  <link rel="stylesheet" href="../../../assets/css/main.css" >
-  <link rel="stylesheet" href="../../../assets/css/pages/adopterform.css" >
-  <link rel="icon" href="../../../assets/img/icons/favicon-16.ico" type="image/x-icon" >
-  <link rel="stylesheet" href="../../../assets/css/main.css" >
-  <link rel="stylesheet" href="../../../assets/css/pages/adopterform.css" >
-  <link rel="icon" href="../../../assets/img/icons/favicon-16.ico" type="image/x-icon" >
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  <script type="module" src="../../../src/main.js"></script>
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+  <link rel="stylesheet" href="../../../assets/css/pages/adopterform.css">
+  <link rel="icon" href="../../../assets/img/icons/favicon-16.ico" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
   <script type="module" src="../../../src/main.js"></script>
   <title data-i18n="adopterForm.title">&#8203;</title>
 </head>
@@ -28,29 +26,34 @@
   <main class="pt-5">
     <div class="container py-5">
       <header class="mb-5 text-center">
-  <h1 class="mb-3" data-i18n="adopterForm.title"></h1>
-  <p class="lead" data-i18n="adopterForm.subtitle"></p>
+        <h1 class="mb-3" data-i18n="adopterForm.title"></h1>
+        <p class="lead" data-i18n="adopterForm.subtitle"></p>
       </header>
 
       <div class="row justify-content-center">
         <div class="col-md-8 col-lg-6">
-          <div class="form-container adopterform text-start"> 
+          <div class="form-container adopterform text-start">
 
             <form id="catAdoptionForm">
               <div class="mb-3">
-                <label for="adopterName" class="form-label" data-i18n="adopterForm.form.adopterName.label" aria-label="i18n:adopterForm.form.adopterName.label"></label>
-                <input type="text" class="form-control" id="adopterName" name="Örökbefogadó neve" required aria-describedby="nameHelp" aria-required="true" autocomplete="name">
+                <label for="adopterName" class="form-label" data-i18n="adopterForm.form.adopterName.label"
+                  aria-label="i18n:adopterForm.form.adopterName.label"></label>
+                <input type="text" class="form-control" id="adopterName" name="Örökbefogadó neve" required
+                  aria-describedby="nameHelp" aria-required="true" autocomplete="name">
                 <div id="nameHelp" class="form-text" data-i18n="adopterForm.form.adopterName.help"></div>
               </div>
 
               <div class="mb-3">
-                <label for="adopterEmail" class="form-label" data-i18n="adopterForm.form.adopterEmail" aria-label="i18n:adopterForm.form.adopterEmail"></label>
-                <input type="email" class="form-control" id="adopterEmail" name="Email" required aria-required="true" autocomplete="email">
+                <label for="adopterEmail" class="form-label" data-i18n="adopterForm.form.adopterEmail"
+                  aria-label="i18n:adopterForm.form.adopterEmail"></label>
+                <input type="email" class="form-control" id="adopterEmail" name="Email" required aria-required="true"
+                  autocomplete="email">
               </div>
 
               <div class="mb-3">
-                <label for="adopterPhone" class="form-label" data-i18n="adopterForm.form.adopterPhone.label" aria-label="i18n:adopterForm.form.adopterPhone.label"></label>
-               
+                <label for="adopterPhone" class="form-label" data-i18n="adopterForm.form.adopterPhone.label"
+                  aria-label="i18n:adopterForm.form.adopterPhone.label"></label>
+
                 <input type="tel" inputmode="tel" class="form-control" id="adopterPhone" name="Telefonszám"
                   aria-required="true" autocomplete="tel" placeholder="+36 30 123 4567"
                   pattern="^[+]?[0-9\s\-()]{7,20}$" aria-describedby="phoneHelp phoneError">
@@ -59,12 +62,15 @@
               </div>
 
               <div class="mb-3">
-                <label for="adopterCity" class="form-label" data-i18n="adopterForm.form.adopterCity" aria-label="i18n:adopterForm.form.adopterCity"></label>
-                <input type="text" class="form-control" id="adopterCity" name="Város" required aria-required="true" autocomplete="address-level2">
+                <label for="adopterCity" class="form-label" data-i18n="adopterForm.form.adopterCity"
+                  aria-label="i18n:adopterForm.form.adopterCity"></label>
+                <input type="text" class="form-control" id="adopterCity" name="Város" required aria-required="true"
+                  autocomplete="address-level2">
               </div>
 
               <div class="mb-3">
-                <label for="housingType" class="form-label" data-i18n="adopterForm.form.housingType.label" aria-label="i18n:adopterForm.form.housingType.label"></label>
+                <label for="housingType" class="form-label" data-i18n="adopterForm.form.housingType.label"
+                  aria-label="i18n:adopterForm.form.housingType.label"></label>
                 <select class="form-select" id="housingType" name="Lakhatási viszonyok" required aria-required="true">
                   <option value="" data-i18n="adopterForm.form.housingType.options.default">&#8203;</option>
                   <option value="Ház" data-i18n="adopterForm.form.housingType.options.house">&#8203;</option>
@@ -75,24 +81,35 @@
               </div>
 
               <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="safetyNetCommitment" name="Biztonsági háló vállalása" value="Vállalom">
-                <label class="form-check-label" for="safetyNetCommitment" data-i18n="adopterForm.form.safetyNetCommitment" aria-label="i18n:adopterForm.form.safetyNetCommitment"></label>
+                <input type="checkbox" class="form-check-input" id="safetyNetCommitment"
+                  name="Biztonsági háló vállalása" value="Vállalom">
+                <label class="form-check-label" for="safetyNetCommitment"
+                  data-i18n="adopterForm.form.safetyNetCommitment"
+                  aria-label="i18n:adopterForm.form.safetyNetCommitment"></label>
               </div>
 
               <div class="mb-3">
-                <label class="form-label d-block" data-i18n="adopterForm.form.hasPreviousPets.label" aria-label="i18n:adopterForm.form.hasPreviousPets.label"></label>
+                <label class="form-label d-block" data-i18n="adopterForm.form.hasPreviousPets.label"
+                  aria-label="i18n:adopterForm.form.hasPreviousPets.label"></label>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="Korábbi tapasztalat" id="hasPreviousPetsYes" value="Igen" required>
-                  <label class="form-check-label" for="hasPreviousPetsYes" data-i18n="adopterForm.form.hasPreviousPets.yes" aria-label="i18n:adopterForm.form.hasPreviousPets.yes"></label>
+                  <input class="form-check-input" type="radio" name="Korábbi tapasztalat" id="hasPreviousPetsYes"
+                    value="Igen" required>
+                  <label class="form-check-label" for="hasPreviousPetsYes"
+                    data-i18n="adopterForm.form.hasPreviousPets.yes"
+                    aria-label="i18n:adopterForm.form.hasPreviousPets.yes"></label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="Korábbi tapasztalat" id="hasPreviousPetsNo" value="Nem" required>
-                  <label class="form-check-label" for="hasPreviousPetsNo" data-i18n="adopterForm.form.hasPreviousPets.no" aria-label="i18n:adopterForm.form.hasPreviousPets.no"></label>
+                  <input class="form-check-input" type="radio" name="Korábbi tapasztalat" id="hasPreviousPetsNo"
+                    value="Nem" required>
+                  <label class="form-check-label" for="hasPreviousPetsNo"
+                    data-i18n="adopterForm.form.hasPreviousPets.no"
+                    aria-label="i18n:adopterForm.form.hasPreviousPets.no"></label>
                 </div>
               </div>
 
               <div class="mb-3">
-                <label for="currentPets" class="form-label" data-i18n="adopterForm.form.currentPets.label" aria-label="i18n:adopterForm.form.currentPets.label"></label>
+                <label for="currentPets" class="form-label" data-i18n="adopterForm.form.currentPets.label"
+                  aria-label="i18n:adopterForm.form.currentPets.label"></label>
                 <select class="form-select" id="currentPets" name="Jelenlegi állatok">
                   <option value="Nincs" data-i18n="adopterForm.form.currentPets.options.none">&#8203;</option>
                   <option value="Macska" data-i18n="adopterForm.form.currentPets.options.cat">&#8203;</option>
@@ -102,102 +119,91 @@
                   <option value="Egyéb" data-i18n="adopterForm.form.currentPets.options.other">&#8203;</option>
                 </select>
               </div>
-<div class="mb-3 form-check">
-  <input 
-    type="checkbox" 
-    class="form-check-input" 
-    id="dataConsent" 
-    name="Adatkezelés" 
-    required
-  >
-  <label 
-    class="form-check-label" 
-    for="dataConsent" 
-    data-i18n="adopterForm.form.dataConsent" aria-label="i18n:adopterForm.form.dataConsent"
-  ></label>
-</div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="dataConsent" name="Adatkezelés" required>
+                <label class="form-check-label" for="dataConsent" data-i18n="adopterForm.form.dataConsent"
+                  aria-label="i18n:adopterForm.form.dataConsent"></label>
+              </div>
 
-<div class="mb-3 form-check">
-  <input 
-    type="checkbox" 
-    class="form-check-input" 
-    id="visitConsent" 
-    name="Utóellenőrzés engedély" 
-    value="Igen"
-  >
-  <label 
-    class="form-check-label" 
-    for="visitConsent" 
-    data-i18n="adopterForm.form.visitConsent" aria-label="i18n:adopterForm.form.visitConsent"
-  ></label>
-</div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="visitConsent" name="Utóellenőrzés engedély"
+                  value="Igen">
+                <label class="form-check-label" for="visitConsent" data-i18n="adopterForm.form.visitConsent"
+                  aria-label="i18n:adopterForm.form.visitConsent"></label>
+              </div>
               <div class="mb-3">
                 <fieldset>
                   <legend id="chooseCatLabel" class="form-label mb-2" data-i18n="adopterForm.form.chooseCat"></legend>
                   <div class="cat-options" role="radiogroup" aria-labelledby="chooseCatLabel">
                     <label class="cat-card" for="cat1">
-                      <input id="cat1" type="radio" name="Kiválasztott cica" value="Csipesz" required aria-label="i18n:catsPage.cats.cat1.name">
+                      <input id="cat1" type="radio" name="Kiválasztott cica" value="Csipesz" required
+                        aria-label="i18n:catsPage.cats.cat1.name">
                       <img src="../../../assets/img/cats/csipesz.jpg" alt="Csipesz">
                       <span data-i18n="catsPage.cats.cat1.name" aria-hidden="true"></span>
                     </label>
                     <label class="cat-card" for="cat2">
-                      <input id="cat2" type="radio" name="Kiválasztott cica" value="Karamell" aria-label="i18n:catsPage.cats.cat2.name">
+                      <input id="cat2" type="radio" name="Kiválasztott cica" value="Karamell"
+                        aria-label="i18n:catsPage.cats.cat2.name">
                       <img src="../../../assets/img/cats/karamell.jpg" alt="Karamell">
                       <span data-i18n="catsPage.cats.cat2.name" aria-hidden="true"></span>
                     </label>
                     <label class="cat-card" for="cat3">
-                      <input id="cat3" type="radio" name="Kiválasztott cica" value="Nokedli" aria-label="i18n:catsPage.cats.cat3.name">
+                      <input id="cat3" type="radio" name="Kiválasztott cica" value="Nokedli"
+                        aria-label="i18n:catsPage.cats.cat3.name">
                       <img src="../../../assets/img/cats/nokedli.jpg" alt="Nokedli">
                       <span data-i18n="catsPage.cats.cat3.name" aria-hidden="true"></span>
                     </label>
                     <label class="cat-card" for="cat4">
-                      <input id="cat4" type="radio" name="Kiválasztott cica" value="Tébláb" aria-label="i18n:catsPage.cats.cat4.name">
+                      <input id="cat4" type="radio" name="Kiválasztott cica" value="Tébláb"
+                        aria-label="i18n:catsPage.cats.cat4.name">
                       <img src="../../../assets/img/cats/teblab.jpg" alt="Tébláb">
                       <span data-i18n="catsPage.cats.cat4.name" aria-hidden="true"></span>
                     </label>
                     <label class="cat-card" for="cat5">
-                      <input id="cat5" type="radio" name="Kiválasztott cica" value="Snow" aria-label="i18n:catsPage.cats.cat5.name">
-                      <img src="../../../assets/img/cats/snow.jpg" alt="Snow">
+                      <input id="cat5" type="radio" name="Kiválasztott cica" value="Snow"
+                        aria-label="i18n:catsPage.cats.cat5.name">
                       <img src="../../../assets/img/cats/snow.jpg" alt="Snow">
                       <span data-i18n="catsPage.cats.cat5.name" aria-hidden="true"></span>
                     </label>
                     <label class="cat-card" for="cat6">
-                      <input id="cat6" type="radio" name="Kiválasztott cica" value="Marci" aria-label="i18n:catsPage.cats.cat6.name">
-                      <img src="../../../assets/img/cats/marci.jpg" alt="Marci">
+                      <input id="cat6" type="radio" name="Kiválasztott cica" value="Marci"
+                        aria-label="i18n:catsPage.cats.cat6.name">
                       <img src="../../../assets/img/cats/marci.jpg" alt="Marci">
                       <span data-i18n="catsPage.cats.cat6.name" aria-hidden="true"></span>
                     </label>
                     <label class="cat-card" for="cat7">
-                      <input id="cat7" type="radio" name="Kiválasztott cica" value="Démon" aria-label="i18n:catsPage.cats.cat7.name">
+                      <input id="cat7" type="radio" name="Kiválasztott cica" value="Démon"
+                        aria-label="i18n:catsPage.cats.cat7.name">
                       <img src="../../../assets/img/cats/demon.jpg" alt="Démon">
                       <span data-i18n="catsPage.cats.cat7.name" aria-hidden="true"></span>
                     </label>
                     <label class="cat-card" for="cat8">
-                      <input id="cat8" type="radio" name="Kiválasztott cica" value="Tódor" aria-label="i18n:catsPage.cats.cat8.name">
+                      <input id="cat8" type="radio" name="Kiválasztott cica" value="Tódor"
+                        aria-label="i18n:catsPage.cats.cat8.name">
                       <img src="../../../assets/img/cats/todor.jpg" alt="Tódor">
                       <span data-i18n="catsPage.cats.cat8.name" aria-hidden="true"></span>
                     </label>
                     <label class="cat-card" for="cat9">
-                      <input id="cat9" type="radio" name="Kiválasztott cica" value="Riska" aria-label="i18n:catsPage.cats.cat9.name">
-                      <img src="../../../assets/img/cats/riska.jpg" alt="Riska">
+                      <input id="cat9" type="radio" name="Kiválasztott cica" value="Riska"
+                        aria-label="i18n:catsPage.cats.cat9.name">
                       <img src="../../../assets/img/cats/riska.jpg" alt="Riska">
                       <span data-i18n="catsPage.cats.cat9.name" aria-hidden="true"></span>
                     </label>
                     <label class="cat-card" for="cat10">
-                      <input id="cat10" type="radio" name="Kiválasztott cica" value="Peti" aria-label="i18n:catsPage.cats.cat10.name">
-                      <img src="../../../assets/img/cats/peti.jpg" alt="Peti">
+                      <input id="cat10" type="radio" name="Kiválasztott cica" value="Peti"
+                        aria-label="i18n:catsPage.cats.cat10.name">
                       <img src="../../../assets/img/cats/peti.jpg" alt="Peti">
                       <span data-i18n="catsPage.cats.cat10.name" aria-hidden="true"></span>
                     </label>
                     <label class="cat-card" for="cat11">
-                      <input id="cat11" type="radio" name="Kiválasztott cica" value="Lola" aria-label="i18n:catsPage.cats.cat11.name">
-                      <img src="../../../assets/img/cats/lola.jpg" alt="Lola">
+                      <input id="cat11" type="radio" name="Kiválasztott cica" value="Lola"
+                        aria-label="i18n:catsPage.cats.cat11.name">
                       <img src="../../../assets/img/cats/lola.jpg" alt="Lola">
                       <span data-i18n="catsPage.cats.cat11.name" aria-hidden="true"></span>
                     </label>
                     <label class="cat-card" for="cat12">
-                      <input id="cat12" type="radio" name="Kiválasztott cica" value="Max" aria-label="i18n:catsPage.cats.cat12.name">
-                      <img src="../../../assets/img/cats/max.jpg" alt="Max">
+                      <input id="cat12" type="radio" name="Kiválasztott cica" value="Max"
+                        aria-label="i18n:catsPage.cats.cat12.name">
                       <img src="../../../assets/img/cats/max.jpg" alt="Max">
                       <span data-i18n="catsPage.cats.cat12.name" aria-hidden="true"></span>
                     </label>
@@ -206,16 +212,19 @@
               </div>
 
               <div class="mb-3">
-                <label for="additionalNotes" class="form-label" data-i18n="adopterForm.form.additionalNotes" aria-label="i18n:adopterForm.form.additionalNotes"></label>
+                <label for="additionalNotes" class="form-label" data-i18n="adopterForm.form.additionalNotes"
+                  aria-label="i18n:adopterForm.form.additionalNotes"></label>
                 <textarea class="form-control" id="additionalNotes" name="Megjegyzés" rows="4"></textarea>
               </div>
 
-              <button type="submit" class="btn btn-primary w-100 mt-3" data-i18n="adopterForm.form.submit" aria-label="i18n:adopterForm.form.submit"></button>
+              <button type="submit" class="btn btn-primary w-100 mt-3" data-i18n="adopterForm.form.submit"
+                aria-label="i18n:adopterForm.form.submit"></button>
 
               <!-- ARIA live region for status messages -->
               <div id="formStatus" class="mt-3 text-center" role="status" aria-live="polite"></div>
               <!-- Honeypot field (hidden from users) to deter bots. If filled, submission will be rejected client-side. -->
-              <div style="position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;" aria-hidden="true">
+              <div style="position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;"
+                aria-hidden="true">
                 <label for="website">Leave this field empty</label>
                 <input id="website" name="website" type="text" autocomplete="off" tabindex="-1">
               </div>
@@ -227,162 +236,163 @@
   </main>
   <script>
 
-window.addEventListener("unhandledrejection", (event) => {
-  try {
-    const reason = event.reason;
-    const message = reason && reason.message ? String(reason.message) : String(reason);
-    if (
-      message.includes("A listener indicated an asynchronous response by returning true") ||
-      message.includes("message channel closed before a response was received")
-    ) {
-      
-      event.preventDefault();
-      
-      if (window.location && window.location.hostname === 'localhost') {
-        console.debug('Suppressed extension-origin unhandled rejection:', message);
+    window.addEventListener("unhandledrejection", (event) => {
+      try {
+        const reason = event.reason;
+        const message = reason && reason.message ? String(reason.message) : String(reason);
+        if (
+          message.includes("A listener indicated an asynchronous response by returning true") ||
+          message.includes("message channel closed before a response was received")
+        ) {
+
+          event.preventDefault();
+
+          if (window.location && window.location.hostname === 'localhost') {
+            console.debug('Suppressed extension-origin unhandled rejection:', message);
+          }
+        }
+      } catch (err) {
+
+        console.debug('unhandledrejection filter error', err);
       }
-    }
-  } catch (err) {
-    
-    console.debug('unhandledrejection filter error', err);
-  }
-});
+    });
 
-document.addEventListener('DOMContentLoaded', () => {
-    // EZT CSERÉLD KI A SAJÁT, FRISSEN TELEPÍTETT WEB APP URL-EDRE!
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxvNEBT2tmBw-XYI8CrESfT5Bkunc8s7AHy0y4fRbdEEExrLbI1QT7M5p0hSsrJB9UW/exec'; 
-    
-    const form = document.getElementById('catAdoptionForm');
-    const statusDiv = document.getElementById('formStatus');
-    const submitButton = form.querySelector('button[type="submit"]');
-  const phoneInput = document.getElementById('adopterPhone');
-  const phoneError = document.getElementById('phoneError');
+    document.addEventListener('DOMContentLoaded', () => {
+      // EZT CSERÉLD KI A SAJÁT, FRISSEN TELEPÍTETT WEB APP URL-EDRE!
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxvNEBT2tmBw-XYI8CrESfT5Bkunc8s7AHy0y4fRbdEEExrLbI1QT7M5p0hSsrJB9UW/exec';
 
-  form.addEventListener('submit', e => {
+      const form = document.getElementById('catAdoptionForm');
+      const statusDiv = document.getElementById('formStatus');
+      const submitButton = form.querySelector('button[type="submit"]');
+      const phoneInput = document.getElementById('adopterPhone');
+      const phoneError = document.getElementById('phoneError');
+
+      form.addEventListener('submit', e => {
         e.preventDefault();
-    // Validate phone before proceeding
-    if (phoneInput) {
-      const val = phoneInput.value || '';
-      const normalized = val.replace(/[\s\-()]/g, '');
-      const isValid = validatePhone(normalized);
-      if (!isValid) {
-        phoneError.textContent = 'Kérjük, érvényes telefonszámot adjon meg (pl. +36 30 123 4567).';
-        phoneInput.focus();
-        return;
-      } else {
-        phoneError.textContent = '';
-      }
-    }
-        
+        // Validate phone before proceeding
+        if (phoneInput) {
+          const val = phoneInput.value || '';
+          const normalized = val.replace(/[\s\-()]/g, '');
+          const isValid = validatePhone(normalized);
+          if (!isValid) {
+            phoneError.textContent = 'Kérjük, érvényes telefonszámot adjon meg (pl. +36 30 123 4567).';
+            phoneInput.focus();
+            return;
+          } else {
+            phoneError.textContent = '';
+          }
+        }
+
         // Honeypot check
         const honeypot = form.querySelector('input[name="website"]');
         if (honeypot && honeypot.value) {
-            statusDiv.innerHTML = '<div class="alert alert-danger" role="alert">Hiba történt: érvénytelen beküldés.</div>';
-            return;
+          statusDiv.innerHTML = '<div class="alert alert-danger" role="alert">Hiba történt: érvénytelen beküldés.</div>';
+          return;
         }
-        
-       
+
+
         statusDiv.innerHTML = '<div class="alert alert-info" role="alert">Küldés folyamatban...</div>';
         if (submitButton) submitButton.disabled = true;
 
         const formData = new URLSearchParams(new FormData(form)).toString();
 
         fetch(scriptURL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: formData
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: formData
         })
-        .then(response => {
+          .then(response => {
             if (!response.ok) {
-                throw new Error(`HTTP hiba! Státusz: ${response.status}`);
+              throw new Error(`HTTP hiba! Státusz: ${response.status}`);
             }
-          
-            return response.text(); 
-        })
-        .then(responseText => {
-            
+
+            return response.text();
+          })
+          .then(responseText => {
+
             let data;
             try {
-                data = JSON.parse(responseText);
+              data = JSON.parse(responseText);
             } catch (err) {
-                
-                if (responseText.includes('success') || responseText.includes('végrehajtva')) {
-                    data = { result: 'success' };
-                } else {
-                    throw new Error(`Ismeretlen válasz a szervertől: ${responseText}`);
-                }
+
+              if (responseText.includes('success') || responseText.includes('végrehajtva')) {
+                data = { result: 'success' };
+              } else {
+                throw new Error(`Ismeretlen válasz a szervertől: ${responseText}`);
+              }
             }
 
             if (data && data.result === 'success') {
-                statusDiv.innerHTML = '<div class="alert alert-success" role="alert">Sikeres beküldés! Köszönjük!</div>';
-                form.reset();
+              statusDiv.innerHTML = '<div class="alert alert-success" role="alert">Sikeres beküldés! Köszönjük!</div>';
+              form.reset();
             } else {
-                const msg = (data && data.message) ? data.message : 'Ismeretlen hiba történt a szerver oldalon.';
-                statusDiv.innerHTML = `<div class="alert alert-danger" role="alert">Hiba: ${msg}</div>`;
+              const msg = (data && data.message) ? data.message : 'Ismeretlen hiba történt a szerver oldalon.';
+              statusDiv.innerHTML = `<div class="alert alert-danger" role="alert">Hiba: ${msg}</div>`;
             }
-        })
-        .catch(error => {
+          })
+          .catch(error => {
             console.error('Hiba!', error);
             statusDiv.innerHTML = `<div class="alert alert-danger" role="alert">Hiba történt: ${error.message}</div>`;
-        })
-        .finally(() => {
-            
+          })
+          .finally(() => {
+
             if (submitButton) submitButton.disabled = false;
+          });
+      });
+      // Real-time feedback for phone input
+      if (phoneInput) {
+        phoneInput.addEventListener('input', () => {
+          const val = phoneInput.value || '';
+          const normalized = val.replace(/[\s\-()]/g, '');
+          if (!normalized) {
+            phoneError.textContent = '';
+            phoneInput.setCustomValidity('');
+            return;
+          }
+          const ok = validatePhone(normalized);
+          if (!ok) {
+            phoneError.textContent = 'Érvénytelen telefonszám formátum.';
+            phoneInput.setCustomValidity('Érvénytelen telefonszám');
+          } else {
+            phoneError.textContent = '';
+            phoneInput.setCustomValidity('');
+          }
         });
-    });
-  // Real-time feedback for phone input
-  if (phoneInput) {
-    phoneInput.addEventListener('input', () => {
-      const val = phoneInput.value || '';
-      const normalized = val.replace(/[\s\-()]/g, '');
-      if (!normalized) {
-        phoneError.textContent = '';
-        phoneInput.setCustomValidity('');
-        return;
       }
-      const ok = validatePhone(normalized);
-      if (!ok) {
-        phoneError.textContent = 'Érvénytelen telefonszám formátum.';
-        phoneInput.setCustomValidity('Érvénytelen telefonszám');
-      } else {
-        phoneError.textContent = '';
-        phoneInput.setCustomValidity('');
+
+      // Phone validation helper: accepts Hungarian numbers and reasonable international numbers
+      function validatePhone(normalizedDigits) {
+        // allow leading + in original, but here normalizedDigits should be digits or start with +
+        const s = String(normalizedDigits || '');
+        // If starts with +, remove it for length checks
+        const clean = s.startsWith('+') ? s.slice(1) : s;
+
+        // Only digits now
+        if (!/^\d+$/.test(clean)) return false;
+
+        // Hungarian numbers usually: country 36 + 9 or 10 local digits (e.g., 36301234567 -> 11-12 digits incl country)
+        // Accept patterns: +36 20 123 4567 => clean length 11 (36 + 9) or mobile codes like 30/20/70
+        if (clean.startsWith('36')) {
+          const rest = clean.slice(2);
+          // rest should be 8-9 digits typically: accept 8..10 to be lenient
+          if (rest.length >= 8 && rest.length <= 10) return true;
+        }
+
+        // Local Hungarian without country code: e.g., 06 30 123 4567 -> starts with 06, then 8-9 digits
+        if (clean.startsWith('06')) {
+          const rest = clean.slice(2);
+          if (rest.length >= 8 && rest.length <= 10) return true;
+        }
+
+        // Generic international: accept if total digits between 7 and 15
+        if (clean.length >= 7 && clean.length <= 15) return true;
+
+        return false;
       }
     });
-  }
-
-  // Phone validation helper: accepts Hungarian numbers and reasonable international numbers
-  function validatePhone(normalizedDigits) {
-    // allow leading + in original, but here normalizedDigits should be digits or start with +
-    const s = String(normalizedDigits || '');
-    // If starts with +, remove it for length checks
-    const clean = s.startsWith('+') ? s.slice(1) : s;
-
-    // Only digits now
-    if (!/^\d+$/.test(clean)) return false;
-
-    // Hungarian numbers usually: country 36 + 9 or 10 local digits (e.g., 36301234567 -> 11-12 digits incl country)
-    // Accept patterns: +36 20 123 4567 => clean length 11 (36 + 9) or mobile codes like 30/20/70
-    if (clean.startsWith('36')) {
-      const rest = clean.slice(2);
-      // rest should be 8-9 digits typically: accept 8..10 to be lenient
-      if (rest.length >= 8 && rest.length <= 10) return true;
-    }
-
-    // Local Hungarian without country code: e.g., 06 30 123 4567 -> starts with 06, then 8-9 digits
-    if (clean.startsWith('06')) {
-      const rest = clean.slice(2);
-      if (rest.length >= 8 && rest.length <= 10) return true;
-    }
-
-    // Generic international: accept if total digits between 7 and 15
-    if (clean.length >= 7 && clean.length <= 15) return true;
-
-    return false;
-  }
-});
-</script>
+  </script>
 
   <footer id="footer"></footer>
 </body>
+
 </html>

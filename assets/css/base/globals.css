@@ -1,16 +1,28 @@
 :root {
   --color-primary: #0e4309;
+  --color-secondary: #f29e38;
+  --color-success: #32a328;
+  --color-warning: #f1ba42;
+
+  --color-info: #6fb1ad;
+  --color-danger: #ec776e;
+  --color-light: #79b273;
+  --color-primary-dark: #080808;
   --color-primary-light: #2f8a28;
+  --color-primary-lightest: #7ca578;
   --color-primary-secondary: #5d7c5b;
   --color-primary-light: #0a4b0a91;
   --color-shadow: #8e8e8e;
   --color-shadow-light: #dedede;
+  --color-shadow-lightest: #f5f5f5;
   --color-shadow-inset: #e9e9e9;
   --color-btn-shadow-inset1: #a8cda4;
   --color-btn-shadow-inset2: #467242;
   --color-btn-text-shadow: #213f1f;
   --color-btn-img-shadow: #104610;
   --color-bg-body: #f8f8f8;
+  --color-green-light: #467242;
+  --color-green-lightest: #a8cda4;
 
   --color-bg-error: #fcbfbf;
   --color-text-error: #4f0808;
@@ -32,8 +44,44 @@
 
   --font-base: 14px;
   --font-h1: 48px;
-  --font-h2: 26px;
-  --font-h3: 20px;
+  --font-h2: 32px;
+  --font-h3: 26px;
+}
+
+.text-bg-primary {
+  background-color: var(--color-primary-light) !important;
+}
+.text-bg-secondary {
+  background-color: var(--color-secondary) !important;
+  color: black !important;
+}
+.text-bg-success {
+  background-color: var(--color-success) !important;
+  color: white !important;
+}
+.text-bg-warning {
+  background-color: var(--color-warning) !important;
+  color: black !important;
+}
+.text-bg-info {
+  background-color: var(--color-info) !important;
+  color: black !important;
+}
+.text-bg-danger {
+  background-color: var(--color-danger) !important;
+  color: black !important;
+}
+.text-bg-light border {
+  background-color: var(--color-light) !important;
+  color: black !important;
+}
+.text-bg-primary {
+  background-color: var(--color-btn-shadow-inset2) !important;
+  color: white !important;
+}
+
+::-webkit-scrollbar {
+  visibility: hidden;
 }
 
 * {
@@ -41,8 +89,19 @@
   padding: 0;
   box-sizing: border-box;
   font-size: var(--font-base);
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   text-align: justify;
 }
 
@@ -50,6 +109,7 @@ body {
   color: var(--color-primary);
   background-color: var(--color-bg-body);
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 section {
@@ -66,13 +126,14 @@ section {
 }
 
 h1,
-h2, h2 span {
+h2,
+h2 span {
   text-transform: uppercase;
   font-size: var(--font-h2);
 }
 
-h3{
-    font-size: var(--font-h3);
+h3 {
+  font-size: var(--font-h3);
 }
 
 img {
@@ -92,8 +153,39 @@ img {
   color: white;
 }
 
-.hidden{
-    visibility: hidden;
+.hidden {
+  visibility: hidden;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+a:not(.btn) {
+  transition: all 0.3s ease-in-out !important;
+}
+
+a:hover:not(.btn:hover):not(.btn) {
+  font-weight: bold;
+}
+
+.scroll-watcher {
+  height: 1rem;
+  position: fixed;
+  top: 3rem;
+  z-index: 1000;
+  background-color: var(--color-primary-light);
+  width: 100%;
+  scale: 0 1;
+  animation: scroll-watcher linear;
+  transform-origin: left;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1;
+  }
 }
 
 @media (min-width: 992px) {

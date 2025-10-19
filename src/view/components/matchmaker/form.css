@@ -5,7 +5,8 @@
   min-width: 300px;
   border-radius: 0.8rem;
   background-color: var(--color-bg-body);
-  box-shadow: 0 3px 4px var(--color-shadow),
+  box-shadow:
+    0 3px 4px var(--color-shadow),
     0 -2px 4px var(--color-shadow-light);
 }
 
@@ -79,7 +80,9 @@
   object-fit: contain;
   padding: 1rem;
   border-radius: 0.8rem;
-  transition: transform 0.1s ease-in, background-color 0.1s ease-in,
+  transition:
+    transform 0.1s ease-in,
+    background-color 0.1s ease-in,
     border 0.1s ease-in;
   -webkit-user-drag: none;
   -webkit-user-select: none;

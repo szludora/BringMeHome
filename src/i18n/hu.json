@@ -14,6 +14,14 @@
     "next": "Következő",
     "previous": "Előző"
   },
+  "footer": {
+    "address": "Cím: ",
+    "email": "Email: ",
+    "phone": "Telefon: ",
+    "links": "Gyorslinkek",
+    "cookies": "Cookie szabályzat",
+    "privacy": "Adatvédelmi tájékoztató"
+  },
   "test": "Kattints a gombra a nyelv angolra váltásához",
   "read-more": "Több...",
   "read-less": "Kevesebb...",
@@ -26,7 +34,7 @@
   "nav-homeSeeker": "Gazdikereső",
   "nav-faq": "GYIK",
   "nav-footer": "Elérhetőség",
-  "nav-findMyMatch": "Melyik cica illik hozzám?",
+  "nav-findMyMatch": "Hozzám illő cica",
   "about": {
     "title": "Rólunk",
     "text1": "A BringMeHome csapata azért jött létre, hogy minden cica megtalálja a szerető otthonát. Nap mint nap azon dolgozunk, hogy a menhelyeken élő cicák biztonságban, gondoskodásban és szeretetben nőhessenek fel. Hiszünk abban, hogy minden cica megérdemli a törődést, a játékos pillanatokat és a nyugodt pihenést.",
@@ -418,18 +426,18 @@
     "subtitle": "Kérjük, töltsd ki az alábbi űrlapot, hogy megismerhessük téged és a cicával kapcsolatos elképzeléseidet. Az adataidat bizalmasan kezeljük, és csak az örökbefogadási folyamat során használjuk fel.",
     "form": {
       "adopterName": {
-        "label": "Teljes név",
+        "label": "Teljes név *",
         "help": "Ahogy a személyi igazolványában szerepel."
       },
-      "adopterEmail": "Email cím",
+      "adopterEmail": "Email cím *",
       "adopterPhone": {
-        "label": "Telefonszám",
+        "label": "Telefonszám *",
         "help": "Kérjük, adja meg a +36-os előhívóval.",
         "placeholder": "pl. +36-XX-XXX-XXXX"
       },
-      "adopterCity": "Város",
+      "adopterCity": "Város *",
       "housingType": {
-        "label": "Milyen típusú ingatlanban lakik?",
+        "label": "Milyen típusú ingatlanban lakik? *",
         "options": {
           "default": "Válasszon...",
           "house": "Ház (saját kerttel)",
@@ -440,12 +448,12 @@
       },
       "safetyNetCommitment": "Ha kinti-benti tartással szeretnék macskát örökbefogadni, vállalom a biztonságos macskaháló beszerzését és felszerelését.",
       "hasPreviousPets": {
-        "label": "Volt már korábban kisállata?",
+        "label": "Volt már korábban kisállata? *",
         "yes": "Igen",
         "no": "Nem"
       },
       "currentPets": {
-        "label": "Jelenleg van egyéb állat a háztartásban?",
+        "label": "Jelenleg van egyéb állat a háztartásban? *",
         "options": {
           "none": "Nincs",
           "cat": "Macska",
@@ -455,10 +463,10 @@
           "other": "Egyéb"
         }
       },
-      "chooseCat": "Melyik cicát szeretné örökbefogadni?",
+      "chooseCat": "Melyik cicát szeretné örökbefogadni? *",
       "additionalNotes": "Egyéb megjegyzések / Amit fontosnak tart elmondani",
-      "dataConsent": "Hozzájárulok az adataim kezeléséhez az örökbefogadási folyamat során.",
-      "visitConsent": "Beleegyezem, hogy az örökbefogadás után a menhely ellenőrizheti a cica körülményeit.",
+      "dataConsent": "Hozzájárulok az adataim kezeléséhez az örökbefogadási folyamat során. *",
+      "visitConsent": "Beleegyezem, hogy az örökbefogadás után a menhely ellenőrizheti a cica körülményeit. *",
       "submit": "Kérelem elküldése",
       "status": {
         "sending": "Kérelem küldése...",

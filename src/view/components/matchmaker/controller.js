@@ -8,7 +8,6 @@ function showTab(n) {
   for (let i = 0; i < tabs.length; i++) tabs[i].classList.add("d-none");
   if (tabs[n]) tabs[n].classList.remove("d-none");
 
-
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
   const submitBtn = document.getElementById("submitBtn");
@@ -78,7 +77,7 @@ function validateForm() {
   for (let input of inputs) {
     if (input.type === "radio") {
       const radios = tabs[currentTab].querySelectorAll(
-        `input[name="${input.name}"]`
+        `input[name="${input.name}"]`,
       );
       const anyChecked = Array.from(radios).some((r) => r.checked);
       if (!anyChecked) valid = false;

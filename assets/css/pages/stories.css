@@ -1,19 +1,16 @@
 .stories .carousel-control-prev,
 .stories .carousel-control-next {
-    width: 20px; 
- 
-    opacity: 0.2; 
-   
-   
+  width: 20px;
+
+  opacity: 0.2;
 }
 
 .stories .carousel-control-prev:hover,
 .stories .carousel-control-next:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .stories .carousel-control-prev-icon,
 .stories .carousel-control-next-icon {
-    filter: invert(100%); 
+  filter: invert(100%);
 }
-

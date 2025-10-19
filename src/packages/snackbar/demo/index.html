@@ -1,27 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Snackbar Demo</title>
-  </head>
-  <body>
-    <button id="show-snack">Show Snackbar</button>
 
-    <!-- Instantiate JS module -->
-    <script type="module">
-      import { Snackbar, TYPE, POSITION } from "../node_modules/snackbar/dist/snackbar.min.js";
+<head>
+  <meta charset="UTF-8" />
+  <title>Snackbar Demo</title>
+</head>
 
-      // Runtime example
-      Snackbar.show({ message: "Hello! This snackbar uses default values." });
+<body>
+  <button id="show-snack">Show Snackbar</button>
 
-      // Example triggered by button click
-      document.getElementById("show-snack").addEventListener("click", () => {
-        Snackbar.show({
-          message: "You clicked the button! 💜",
-          type: TYPE.INFO,
-          position: POSITION.BOTTOM,
-        });
+  <!-- Instantiate JS module -->
+  <script type="module">
+    import {
+      Snackbar,
+      TYPE,
+      POSITION,
+    } from "../node_modules/snackbar/dist/snackbar.min.js";
+
+    // Runtime example
+    Snackbar.show({ message: "Hello! This snackbar uses default values." });
+
+    // Example triggered by button click
+    document.getElementById("show-snack").addEventListener("click", () => {
+      Snackbar.show({
+        message: "You clicked the button! 💜",
+        type: TYPE.INFO,
+        position: POSITION.BOTTOM,
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>

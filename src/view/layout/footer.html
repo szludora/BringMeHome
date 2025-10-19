@@ -1,52 +1,40 @@
 <footer id="footer" class="bg-primary text-white d-flex align-items-left p-4">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190.91240926940858!2d19.077537580509034!3d47.504219777370324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dd0122f61763%3A0x7262199d63b0fabc!2sMarci%20macska%20szobra!5e0!3m2!1shu!2shu!4v1760748913052!5m2!1shu!2shu"
-    width="300"
-    height="150"
-    style="border: 0"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
-    class="me-5"
-  ></iframe>
+    <div class="row col-12">
+      <div class="col-md-3 m-auto d-flex justify-content-center">
 
-  <div class="row col-12">
-    <div class="col-md-6">
-      <p>
-        Cím:
-        <a href="https://maps.app.goo.gl/mMh2icq7D4iSHsLEA">
-          1071 Budapest, Bethlen Gábor u. 20-24, 1071</a
-        >
-      </p>
-      <p>Telefonszám: <a href="tel:+36123456789">+36 1 234 567891011</a></p>
-      <p>
-        Email:
-        <a href="mailto:donotsendemailhere@itsnotexist.com"
-          >bringmehome@info.com</a
-        >
-      </p>
-      <p></p>
-    </div>
-    <div class="col-md-6">
-      <h5>Gyorslinkek</h5>
-      <ul>
-        <li><a href="#adopt.html">Örökbefogadás</a></li>
-        <li><a href="#about.html">Rólunk</a></li>
-        <li><a href="#faq.html">GYIK</a></li>
-        <li><a href=" /src/view/pages/privacy.html">Adatvédelem</a></li>
-        <li>
-          <a href="/src/view/pages/cookie-policy.html">Cookie szabályzat</a>
-        </li>
-      </ul>
-    </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190.91240926940858!2d19.077537580509034!3d47.504219777370324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dd0122f61763%3A0x7262199d63b0fabc!2sMarci%20macska%20szobra!5e0!3m2!1shu!2shu!4v1760748913052!5m2!1shu!2shu"
+          width="150" height="150" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" class="me-5"></iframe>
+      </div>
+
+      <div class="col m-auto">
+        <p>
+          <span data-i18n="footer.address"></span>
+          <a href="https://maps.app.goo.gl/mMh2icq7D4iSHsLEA">
+            1071 Budapest, Bethlen Gábor u. 20-24, 1071</a>
+        </p>
+        <p><span data-i18n="footer.phone"></span> <a href="tel:+36123456789">+36 1 234 567891011</a></p>
+        <p>
+          <span data-i18n="footer.email"></span>
+          <a href="mailto:donotsendemailhere@itsnotexist.com">bringmehome@info.com</a>
+        </p>
+        <p></p>
+      </div>
+      <div class="col m-auto">
+        <h5 data-i18n="footer.links"></h5>
+        <ul>
+          <li><a href="#adopt.html" data-i18n="nav-adopt"></a></li>
+          <li><a href="#about.html" data-i18n="nav-about"></a></li>
+          <li><a href="#faq.html" data-i18n="nav-faq"></a></li>
+          <li><a href="./src/view/pages/privacy.html" data-i18n="footer.privacy"></a></li>
+          <li>
+            <a href="./src/view/pages/cookie-policy.html" data-i18n="footer.cookies"></a>
+          </li>
+        </ul>
+      </div>
+
+    
+
   </div>
 </footer>
-<style>
-  #footer a {
-    text-decoration: none;
-    color: white;
-  }
-  #footer a:hover {
-    font-weight: bold;
-  }
-</style>

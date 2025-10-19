@@ -14,6 +14,14 @@
     "next": "Next",
     "previous": "Previous"
   },
+  "footer": {
+    "address": "Address: ",
+    "email": "Email: ",
+    "phone": "Phone: ",
+    "links": "Quick Links",
+    "cookies": "Cookie Policy",
+    "privacy": "Privacy Policy"
+  },
   "test": "Click the button to change language to Hungarian",
   "read-more": "Read more...",
   "read-less": "Less...",
@@ -139,13 +147,13 @@
       "4": "Contact us using the details below — the more information you provide, the faster we can help."
     },
     "importantLabel": "Important:",
-  "importantText": "If the kitten is injured or very lethargic, take it immediately to the nearest veterinarian! You can ask for a free microchip scan there, which may help reunite it with its owner. Never give cow's milk to a young kitten!",
+    "importantText": "If the kitten is injured or very lethargic, take it immediately to the nearest veterinarian! You can ask for a free microchip scan there, which may help reunite it with its owner. Never give cow's milk to a young kitten!",
     "cta": {
       "email": "Write us an email",
       "phoneLabel": "Call us:",
       "phoneNumber": "+36 1 234 5678"
     },
-  "surrender": "If you’re contacting us about surrendering your cat: please write us a detailed email explaining why you can’t keep it, when and where handover is possible, and we’ll help arrange a safe transfer and find a new home. Also please share any information about its health status, vaccinations received, age, and other relevant details.",
+    "surrender": "If you’re contacting us about surrendering your cat: please write us a detailed email explaining why you can’t keep it, when and where handover is possible, and we’ll help arrange a safe transfer and find a new home. Also please share any information about its health status, vaccinations received, age, and other relevant details.",
     "imageAlt": "Kitten needing help"
   },
   "thanks": "Thank You",
@@ -415,18 +423,18 @@
     "subtitle": "Please complete the form below so we can learn more about you and your ideas regarding the cat. Your data will be treated confidentially and used only during the adoption process.",
     "form": {
       "adopterName": {
-        "label": "Full Name",
+        "label": "Full Name *",
         "help": "As it appears on your ID card."
       },
-      "adopterEmail": "Email Address",
+      "adopterEmail": "Email Address *",
       "adopterPhone": {
-        "label": "Phone Number",
+        "label": "Phone Number *",
         "help": "Please include the country code (e.g., +36 for Hungary).",
         "placeholder": "e.g. +36-XX-XXX-XXXX"
       },
-      "adopterCity": "City",
+      "adopterCity": "City *",
       "housingType": {
-        "label": "What type of property do you live in?",
+        "label": "What type of property do you live in? *",
         "options": {
           "default": "Select...",
           "house": "House (with own garden)",
@@ -437,12 +445,12 @@
       },
       "safetyNetCommitment": "If I wish to adopt a cat with indoor-outdoor keeping, I commit to purchasing and installing a secure cat safety net.",
       "hasPreviousPets": {
-        "label": "Have you owned a pet before?",
+        "label": "Have you owned a pet before? *",
         "yes": "Yes",
         "no": "No"
       },
       "currentPets": {
-        "label": "Do you currently have other animals in your household?",
+        "label": "Do you currently have other animals in your household? *",
         "options": {
           "none": "None",
           "cat": "Cat",
@@ -452,10 +460,10 @@
           "other": "Other"
         }
       },
-      "chooseCat": "Which cat would you like to adopt?",
+      "chooseCat": "Which cat would you like to adopt? *",
       "additionalNotes": "Other notes / Anything you consider important to mention",
-      "dataConsent": "I consent to the processing of my personal data for the adoption process.",
-      "visitConsent": "I agree that the shelter may check the cat's living conditions after adoption.",
+      "dataConsent": "I consent to the processing of my personal data for the adoption process. *",
+      "visitConsent": "I agree that the shelter may check the cat's living conditions after adoption. *",
       "submit": "Submit Application",
       "status": {
         "sending": "Sending application...",
