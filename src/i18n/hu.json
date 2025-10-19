@@ -8,7 +8,19 @@
     "adopt": "Örökbe fogadok",
     "learn-more": "Tudj meg többet",
     "support-us": "Támogass minket",
-    "join-us": "Csatlakozz hozzánk"
+    "join-us": "Csatlakozz hozzánk",
+    "retry": "Újra",
+    "submit": "Beküldés",
+    "next": "Következő",
+    "previous": "Előző"
+  },
+  "footer": {
+    "address": "Cím: ",
+    "email": "Email: ",
+    "phone": "Telefon: ",
+    "links": "Gyorslinkek",
+    "cookies": "Cookie szabályzat",
+    "privacy": "Adatvédelmi tájékoztató"
   },
   "test": "Kattints a gombra a nyelv angolra váltásához",
   "read-more": "Több...",
@@ -21,6 +33,8 @@
   "nav-journey": "Utunk",
   "nav-homeSeeker": "Gazdikereső",
   "nav-faq": "GYIK",
+  "nav-footer": "Elérhetőség",
+  "nav-findMyMatch": "Melyik cica illik hozzám?",
   "about": {
     "title": "Rólunk",
     "text1": "A BringMeHome csapata azért jött létre, hogy minden cica megtalálja a szerető otthonát. Nap mint nap azon dolgozunk, hogy a menhelyeken élő cicák biztonságban, gondoskodásban és szeretetben nőhessenek fel. Hiszünk abban, hogy minden cica megérdemli a törődést, a játékos pillanatokat és a nyugodt pihenést.",
@@ -54,7 +68,6 @@
     "cta-button1": "Ismerd meg örökbefogadható cicáinkat!",
     "cta-button2": "További örökbefogadói történetek"
   },
-
   "journey": {
     "title": {
       "main": "Az utunk eddig...",
@@ -177,6 +190,34 @@
     "founder-role": "Alapító",
     "button-adopt": "Örökbe fogadok",
     "link-learn-more": "Tudj meg többet"
+  },
+  "privacy": {
+    "title": "Adatvédelmi tájékoztató",
+    "updatedLabel": "Frissítve:",
+    "updatedDate": "2025. október 18.",
+    "introTitle": "Bevezetés",
+    "introText": "Ez az oldal egy egyetemi projekt része. A BringMeHome weboldal jelenlegi verziója nem gyűjt személyes adatokat a látogatókról.",
+    "whatDataTitle": "Milyen adatokat kezelünk?",
+    "whatDataText": "Jelenleg az oldal nem tárol vagy dolgoz fel személyes adatokat. Minden funkció helyben fut a böngészőben.",
+    "thirdPartiesTitle": "Harmadik felek",
+    "thirdPartiesText": "Nem használunk harmadik féltől származó követő- vagy analitikai szolgáltatásokat a projekt jelen állapotában.",
+    "securityTitle": "Biztonság",
+    "securityText": "Bár nem gyűjtünk személyes adatokat, a weboldal általános biztonsági alapelvek szerint készült.",
+    "contactTitle": "Kapcsolat",
+    "contactText": "Ha kérdésed merülne fel az adatkezeléssel kapcsolatban, írj ide:"
+  },
+  "cookie": {
+    "title": "Cookie szabályzat",
+    "updatedLabel": "Frissítve:",
+    "updatedDate": "2025. október 18.",
+    "whatTitle": "Mi az a cookie?",
+    "whatText": "A cookie egy kis szöveges fájl, amelyet a weboldal elhelyezhet a böngésződben.",
+    "whichTitle": "Milyen cookie-kat használunk?",
+    "whichText": "Ez az egyetemi projekt nem használ semmilyen nem-esszenciális cookie-t.",
+    "essentialTitle": "Esszenciális cookie-k",
+    "essentialText": "Funkcionális cookie-k később kerülhetnek bevezetésre a munkamenet vagy beállítások megőrzésére.",
+    "contactTitle": "Kapcsolat",
+    "contactText": "Ha kérdésed van, írj:"
   },
   "month-names": {
     "Jan": { "short": "Jan", "long": "Január" },
@@ -380,20 +421,6 @@
       }
     }
   },
-  "month-names": {
-    "Jan": { "short": "Jan", "long": "Január" },
-    "Feb": { "short": "Feb", "long": "Február" },
-    "Mar": { "short": "Már", "long": "Március" },
-    "Apr": { "short": "Ápr", "long": "Április" },
-    "May": { "short": "Máj", "long": "Május" },
-    "Jun": { "short": "Jún", "long": "Június" },
-    "Jul": { "short": "Júl", "long": "Július" },
-    "Aug": { "short": "Aug", "long": "Augusztus" },
-    "Sep": { "short": "Szep", "long": "Szeptember" },
-    "Oct": { "short": "Okt", "long": "Október" },
-    "Nov": { "short": "Nov", "long": "November" },
-    "Dec": { "short": "Dec", "long": "December" }
-  },
   "adopterForm": {
     "title": "Örökbefogadó Kérelem",
     "subtitle": "Kérjük, töltsd ki az alábbi űrlapot, hogy megismerhessük téged és a cicával kapcsolatos elképzeléseidet. Az adataidat bizalmasan kezeljük, és csak az örökbefogadási folyamat során használjuk fel.",
@@ -447,5 +474,17 @@
         "error": "Hiba történt a kérelem küldése során! Kérjük, próbálja újra később."
       }
     }
+  },
+  "matchmaker": {
+    "matches-for-you": "legjobb párosítás számodra",
+    "match-percentage": "Egyezés:",
+    "questions": {
+      "home_type": "Milyen típusú otthonod van?",
+      "housemates": "Hányan éltek együtt?",
+      "sociability": "Mennyire keresed mások társaságát?",
+      "activity": "Melyik jellemző inkább rád?",
+      "pet_compatibility": "Van jelenleg háziállatod?"
+    },
+    "findMyMatch": "Találd meg a hozzád illő cicát"
   }
 }

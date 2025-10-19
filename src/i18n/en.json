@@ -8,7 +8,19 @@
     "adopt": "Adopt a Cat",
     "learn-more": "Learn more",
     "support-us": "Support us",
-    "join-us": "Join us"
+    "join-us": "Join us",
+    "retry": "Again",
+    "submit": "Submit",
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "footer": {
+    "address": "Address: ",
+    "email": "Email: ",
+    "phone": "Phone: ",
+    "links": "Quick Links",
+    "cookies": "Cookie Policy",
+    "privacy": "Privacy Policy"
   },
   "test": "Click the button to change language to Hungarian",
   "read-more": "Read more...",
@@ -21,6 +33,8 @@
   "nav-journey": "Our Journey",
   "nav-homeSeeker": "Home Seeker",
   "nav-faq": "FAQ",
+  "nav-footer": "Contact",
+  "nav-findMyMatch": "Find My Cat Match",
   "about": {
     "title": "About Us",
     "text1": "The BringMeHome team was founded to help every cat find a loving home. Every day we work to ensure that cats in shelters grow up safe, cared for, and loved. We believe that every cat deserves attention, playful moments, and peaceful rest.",
@@ -35,13 +49,11 @@
   },
   "adopt": {
     "title": "Adopt a Cat",
-
     "section-title": "Why adopt from us?",
     "para1": "These cats came to us with special stories: some are shy and gentle, others are true clowns - but they are all ready for a loving home.",
     "para2": "Adoption is a long-term commitment, but in return, you get unconditional love. Look around the gallery and find a companion for yourself!",
     "cta": "See Our Cats"
   },
-
   "adopters": {
     "title": "Our Adopters",
     "story1": {
@@ -177,6 +189,34 @@
     "founder-name": "Luca Kovács",
     "founder-role": "Founder"
   },
+  "privacy": {
+    "title": "Privacy Policy",
+    "updatedLabel": "Updated:",
+    "updatedDate": "18 October 2025",
+    "introTitle": "Introduction",
+    "introText": "This site is part of a university project. The current version of BringMeHome does not collect personal data from visitors.",
+    "whatDataTitle": "What data do we process?",
+    "whatDataText": "At present the site does not store or process personal data. All functionality runs locally in the browser.",
+    "thirdPartiesTitle": "Third parties",
+    "thirdPartiesText": "We do not use third-party tracking or analytics services in the current project state.",
+    "securityTitle": "Security",
+    "securityText": "Although we do not collect personal data, the site follows basic security principles. For production use, additional measures are recommended.",
+    "contactTitle": "Contact",
+    "contactText": "If you have questions about data processing, contact us at"
+  },
+  "cookie": {
+    "title": "Cookie Policy",
+    "updatedLabel": "Updated:",
+    "updatedDate": "18 October 2025",
+    "whatTitle": "What is a cookie?",
+    "whatText": "A cookie is a small text file stored by the website in your browser to remember settings or information.",
+    "whichTitle": "Which cookies do we use?",
+    "whichText": "This university project does not use any non-essential cookies. We do not place analytics or advertising cookies.",
+    "essentialTitle": "Essential cookies",
+    "essentialText": "If the site adds features later (login, forms), functional cookies may be used to preserve session or settings.",
+    "contactTitle": "Contact",
+    "contactText": "If you have questions, contact"
+  },
   "month-names": {
     "Jan": { "short": "Jan", "long": "January" },
     "Feb": { "short": "Feb", "long": "February" },
@@ -260,7 +300,6 @@
       "key-neutered": "Neutered:",
       "key-info": "Other Information:",
       "key-special_features": "Special features:",
-
       "cat1": {
         "name": "Csipesz",
         "gender": "Female",
@@ -432,5 +471,17 @@
         "error": "An error occurred while sending the application! Please try again later."
       }
     }
+  },
+  "matchmaker": {
+    "matches-for-you": "best matches for you",
+    "match-percentage": "Match:",
+    "questions": {
+      "home_type": "What type of home do you live in?",
+      "housemates": "How many people live with you?",
+      "sociability": "How much do you seek company from others?",
+      "activity": "Which description fits you better?",
+      "pet_compatibility": "Do you currently have a pet?"
+    },
+    "findMyMatch": "Find my cat match"
   }
 }

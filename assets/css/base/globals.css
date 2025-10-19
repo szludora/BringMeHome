@@ -118,7 +118,7 @@ section {
 }
 
 .hero {
-  height: 100dvh;
+  min-height: 100dvh;
 }
 
 .container {
@@ -126,8 +126,13 @@ section {
 }
 
 h1,
-h2 {
+h2, h2 span {
   text-transform: uppercase;
+  font-size: var(--font-h2);
+}
+
+h3{
+    font-size: var(--font-h3);
 }
 
 img {

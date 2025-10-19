@@ -1,4 +1,11 @@
 .btn-primary {
+  background-color: unset;
+  border-color: unset;
+  box-shadow: unset;
+  outline: unset;
+}
+
+.btn-primary {
   background-color: var(--color-primary-secondary);
   border: none;
   box-shadow:
@@ -15,7 +22,7 @@
 .btn-primary:hover {
   background-color: var(--color-primary-lightest);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(46, 77, 44, 0.25);
+  box-shadow: 0 5px 15px var(--color-primary-lightest); /* #2e4d2c40; */
 }
 
 .btn-primary img {
@@ -40,5 +47,10 @@
   background-color: var(--color-shadow-lightest);
   color: var(--color-text-success);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(46, 77, 44, 0.25);
+  box-shadow: 0 5px 15px var(--color-primary-lightest)  /* #2e4d2c40; */
+}
+
+
+.btn-secondary:active{
+    background-color: var(--color-primary-secondary) !important;
 }

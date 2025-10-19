@@ -33,11 +33,14 @@ export async function loadContent(isIndex = false) {
   if (isIndex && !container.innerHTML.trim()) container.innerHTML = template;
 
   if (!isIndex) {
-    await Promise.all(
-      Object.keys(layoutForIndividualPages).map((page) =>
-        loadSection(page, false),
-      ),
-    );
+    // For special single-page views (e.g. noFooter) we only inject the
+    // navbar and skip the rest of the site chrome (footer etc.). For normal
+    // pages load all layout parts defined in layoutForIndividualPages.
+    if (container.classList.contains("noFooter")) {
+      await loadSection("navbar", false);
+    } else {
+      await Promise.all(Object.keys(layoutForIndividualPages).map((page) => loadSection(page, false)));
+    }
   }
 
   if (isIndex) {
