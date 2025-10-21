@@ -5,7 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bring Me Home - Oops</title>
+  <link rel="icon" href="./assets/img/icons/favicon-16.ico" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="../../../assets/css/main.css" rel="stylesheet" />
+  <script type="module" src="../../main.js"></script>
   <style>
     button img {
       width: 32px;
@@ -14,20 +18,18 @@
 </head>
 
 <body>
-  <div class="container d-flex flex-column align-items-center vh-100 justify-content-center">
+  <div id="navbar"></div>
+  <div class="singlePage container d-flex flex-column align-items-center vh-100 justify-content-center">
     <div class="row w-100 align-items-center">
       <!-- 1. gap -->
       <div class="col-12 col-md-3"></div>
 
       <!-- 2. text  -->
       <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
-        <h4 class="mb-4">Cat-astrophe! Nothing to see here.</h4>
+        <h4 class="mb-4" data-i18n="inProgressTitle"></h4>
         <div class="bg-warning rounded p-4" data-i18n="websiteInProgress">
-          This page is still under construction. Until it’s ready, let’s take
-          you back to the home page.
         </div>
       </div>
-
       <!-- Cat -->
       <div class="col-12 col-md-3 d-flex justify-content-center justify-content-md-start mt-5">
         <img src="../../../assets/img/sadCat.png" alt="sad drawing of a cat" class="img-fluid w-50 w-md-auto" />
@@ -35,12 +37,13 @@
     </div>
     <!-- btn  -->
     <div class="row d-flex gap-5">
-      <button class="btn btn-secondary mt-4 d-flex align-items-center" onclick="window.location.href='/index.html'">
-        <img src="../../../assets/img/icons/home.png" alt="" class="me-2" />
-        Back to Homepage
-      </button>
+      <a class="btn btn-primary mt-4 d-flex align-items-center" href="../../../">
+        <img src="../../../assets/img/icons/home.png" alt="" class="me-2" style="width: 26px;" />
+        <span data-i18n="backToHome"></span>
+      </a>
     </div>
   </div>
+  <footer id="footer"></footer>
 </body>
 
 </html>

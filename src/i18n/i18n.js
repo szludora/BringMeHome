@@ -26,6 +26,7 @@ async function loadTranslations(lang) {
   try {
     const i18nPath = getI18nPath();
     const res = await fetch(`${i18nPath}${lang}.json`);
+
     translations = await res.json();
   } catch (err) {
     error("Failed to load translations", err);

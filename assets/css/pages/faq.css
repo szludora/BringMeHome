@@ -34,22 +34,35 @@
   gap: 1rem;
   margin: 3rem auto;
   text-align: center;
-  font:
-    700 2rem/1.2 system-ui,
-    -apple-system,
-    Segoe UI,
-    Roboto,
-    Arial;
-  color: var(--color-green-light);
+  font: 700 2rem/1.2 system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  color: var(--color-primary);
 }
 
 .rule-title::before,
 .rule-title::after {
   content: "";
   flex: 1 1 120px;
-  border-top: 2px solid currentColor;
+  border-top: 0.3rem solid currentColor;
   opacity: 0.6;
-  color: var(--color-green-lightest);
+  color: var(--color-highlight-title);
+  transform: scaleX(0);
+  transition: transform 0.8s cubic-bezier(0.2, 0.6, 0.6, 0.2);
+}
+
+.rule-title::before {
+  transform-origin: right center;
+}
+
+.rule-title::after {
+  transform-origin: left center;
+}
+
+.active .rule-title::before {
+  transform: scaleX(1);
+}
+
+.active .rule-title::after {
+  transform: scaleX(1);
 }
 
 .rule-title > span {

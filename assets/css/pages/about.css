@@ -1,5 +1,5 @@
 .about {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 #ourTeamImage {
@@ -13,7 +13,7 @@
   height: 10rem;
   border: none;
   border-radius: 12px;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 0 2rem;
   display: flex;
   align-items: center;
@@ -48,7 +48,7 @@
 
 @media (min-width: 767.98px) {
   .about .card-track {
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   .about .card-track-inner {

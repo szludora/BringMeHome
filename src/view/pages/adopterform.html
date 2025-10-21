@@ -56,7 +56,7 @@
 
                 <input type="tel" inputmode="tel" class="form-control" id="adopterPhone" name="Telefonszám"
                   aria-required="true" autocomplete="tel" placeholder="+36 30 123 4567"
-                  pattern="^[+]?[0-9\s\-()]{7,20}$" aria-describedby="phoneHelp phoneError">
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" aria-describedby="phoneHelp phoneError">
                 <div id="phoneHelp" class="form-text" data-i18n="adopterForm.form.adopterPhone.help"></div>
                 <div id="phoneError" class="form-text text-danger" aria-live="polite"></div>
               </div>
@@ -136,7 +136,7 @@
                   <legend id="chooseCatLabel" class="form-label mb-2" data-i18n="adopterForm.form.chooseCat"></legend>
                   <div class="cat-options" role="radiogroup" aria-labelledby="chooseCatLabel">
                     <label class="cat-card" for="cat1">
-                      <input id="cat1" type="radio" name="Kiválasztott cica" value="Csipesz" required
+                      <input id="cat1" type="radio" name="Kiválasztott cica" value="Csipesz"
                         aria-label="i18n:catsPage.cats.cat1.name">
                       <img src="../../../assets/img/cats/csipesz.jpg" alt="Csipesz">
                       <span data-i18n="catsPage.cats.cat1.name" aria-hidden="true"></span>

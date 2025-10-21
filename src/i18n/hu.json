@@ -2,8 +2,10 @@
   "bringMeHome": "BringMeHome",
   "en": "Angol",
   "hu": "Magyar",
+  "inProgressTitle": "Macskajaj! A helyzet cicás, de kezeljük.",
   "websiteInProgress": "Miau! Ez az oldal még készülőben van. Amíg elkészül, visszavezetünk a kezdőlapra.",
   "back": "Vissza",
+  "backToHome": "Vissza a főoldalra",
   "btn": {
     "adopt": "Örökbe fogadok",
     "learn-more": "Tudj meg többet",
@@ -83,7 +85,7 @@
         "long": "Az örökbefogadó rendezvények mindig különleges, örömteli és reményteli hangulatot árasztanak. A családok megismerkedhettek a cicákkal, történeteikkel és megtalálhatták új társukat. Önkénteseink figyelmesen segítették a folyamatot. Az esemény ráirányította a figyelmet a felelős állattartás fontosságára. Minden örökbefogadás egy új kezdetet jelentett mind az állat, mind a gazda számára."
       },
       {
-        "short": "Partnerséget kötöttünk a Paws &amp; Claws állatorvosi rendelővel hétvégi ivartalanító klinikákhoz.",
+        "short": "Partnerséget kötöttünk a Paws & Claws állatorvosi rendelővel hétvégi ivartalanító klinikákhoz.",
         "long": "A partnerségek kialakítása kulcsfontosságú a hosszú távú fenntarthatóság érdekében. Ez az együttműködés új lehetőségeket és forrásokat teremtett számunkra. Egyben növelte hitelességünket a tágabb közösség szemében is. A közös munka során mindkét fél értékes tapasztalatokat és támogatást nyert. Az ilyen partnerségek alapot adnak a jövőben még hatékonyabb mentési munkához."
       },
       {
@@ -111,7 +113,7 @@
         "long": "Ez a megállapodás biztosította az alapvető források folyamatos ellátását. A kapcsolat kialakítása időt és bizalmat igényelt. A partnerség csökkenti a bizonytalanságot és nagyobb stabilitást ad. Mindkét fél kölcsönösen támogatást nyert. Ez a lépés a mentési munkák ellenállóbbá válását segíti elő."
       },
       {
-        "short": "A „Furever Home Hét” alatt 28 cicát> fogadtak örökbe.",
+        "short": "A „Furever Home Hét” alatt 28 cicát fogadtak örökbe.",
         "long": "Az örökbefogadó hét ünnepi és felemelő hangulatot teremtett. A családoknak volt idejük több cicával is megismerkedni, hogy megtalálják a számukra megfelelőt. A folyamat a megfontolt döntést és az elköteleződést hangsúlyozta. Minden sikeres örökbefogadás örömöt hozott mindenkinek, aki részt vett benne. Ez emlékeztetett arra, hogy az örökbefogadás a mentési munka szíve."
       },
       {
@@ -432,7 +434,7 @@
       "adopterEmail": "Email cím *",
       "adopterPhone": {
         "label": "Telefonszám *",
-        "help": "Kérjük, adja meg a +36-os előhívóval.",
+        "help": "",
         "placeholder": "pl. +36-XX-XXX-XXXX"
       },
       "adopterCity": "Város *",

@@ -2,8 +2,10 @@
   "en": "English",
   "hu": "Hungarian",
   "bringMeHome": "BringMeHome",
+  "inProgressTitle": "Cat-astrophe! Nothing to see here.",
   "websiteInProgress": "Meow! This page is still under construction. Until it’s ready, let’s take you back to the home page.",
   "back": "Back",
+  "backToHome": "Back to Home page",
   "btn": {
     "adopt": "Adopt a Cat",
     "learn-more": "Learn more",
@@ -429,8 +431,8 @@
       "adopterEmail": "Email Address *",
       "adopterPhone": {
         "label": "Phone Number *",
-        "help": "Please include the country code (e.g., +36 for Hungary).",
-        "placeholder": "e.g. +36-XX-XXX-XXXX"
+        "help": "",
+        "placeholder": "e.g. +36-XX-XXX-XXXX 06-70-123-4567 or 06701234567"
       },
       "adopterCity": "City *",
       "housingType": {
