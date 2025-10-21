@@ -5,6 +5,5 @@ export async function onLoad(){
 }
 
 export async function unLoad(){
-    console.log("Unloading join us form.");
     document.getElementById("show-join-us-btn").disabled = false;
 }

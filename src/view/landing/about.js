@@ -1,5 +1,5 @@
 import {loadDynamicContent, destroyDynamicContent} from "/src/controller/load.js";
-
+//src/view/landing/about.js
 export async function onLoad(){
     // TODO
 }
@@ -13,8 +13,7 @@ export function showJoinUsForm(event){
     event.target.disabled = true;
 }
 
-export function abaddonJoinUsForm(){
-    console.log("I give up on you...for now.");
+export function abandonJoinUsForm(){
     document.getElementById("sample_form").classList.toggle("slideBottomToTop");
     setTimeout(() => {
         destroyDynamicContent(document.getElementById("join-us-form-container"));
@@ -30,12 +29,11 @@ export function submitJoinUsForm(e){
     if(form.checkValidity()){
         const fd = new FormData(form);
         const data = Object.fromEntries(fd.entries());
-        console.log(data);
         if(validateJoinUsForm(data)){
             document.getElementById("sample_form").classList.toggle("slideBottomToTop");
             setTimeout(() => {
                 destroyDynamicContent(document.getElementById("join-us-form-container"));
-            },1000);
+            },900);
         }
     }else{
         e.stopPropagation();
