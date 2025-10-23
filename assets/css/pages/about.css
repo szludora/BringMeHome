@@ -34,6 +34,7 @@
   grid-template-columns: 1fr;
   gap: 2rem;
   justify-items: center;
+  overflow: hidden;
 }
 
 @keyframes scrollCards {

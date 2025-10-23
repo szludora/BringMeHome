@@ -8,8 +8,10 @@
 
   --color-info: #6fb1ad;
   --color-danger: #ec776e;
+  --color-primary-danger: #dc3545;
   --color-light: #79b273;
   --color-primary-dark: #080808;
+  --color-primary-dark-semi-transparent: rgba(0,0,0,.15);
   --color-primary-light: #2f8a28;
   --color-primary-lightest: #7ca578;
   --color-primary-secondary: #5d7c5b;
