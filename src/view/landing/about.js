@@ -9,7 +9,7 @@ export async function unLoad(){
 }
 
 export function showJoinUsForm(event){
-    loadDynamicContent("/src/view/components/joinUsForm/joinUsForm.html",document.getElementById("join-us-form-container"));
+    loadDynamicContent("./src/view/components/joinUsForm/joinUsForm.html",document.getElementById("join-us-form-container"));
     event.target.disabled = true;
 }
 
