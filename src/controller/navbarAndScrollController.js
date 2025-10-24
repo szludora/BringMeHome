@@ -1,6 +1,17 @@
-import { getBasePath } from "./pathFixer.js";
 let sections = [];
 let navLinks = [];
+
+let isFooterVisible = false;
+
+export function setIsFooterVisible(value) {
+  isFooterVisible = value;
+}
+
+export function getBasePath() {
+  const path = window.location.pathname;
+  const isGitHubPages = path.includes("/BringMeHome/");
+  return isGitHubPages ? "/BringMeHome/" : "/";
+}
 
 sections = Array.from(document.querySelectorAll("[data-wrapper][id]")).map(
   (el) => ({ id: el.id, el })
@@ -40,16 +51,15 @@ export function onScroll(ticking = false) {
       const { el, id } = sections[i];
       const top = el.offsetTop;
       if (fromTop >= top) activeId = id;
-      else break;
     }
 
-    // nav links
+    if (isFooterVisible) activeId = "footer";
+
     navLinks.forEach((link) => {
       const h = hrefHash(link);
       link.classList.toggle("active", h && activeId === h);
     });
 
-    // sections
     sections.forEach(({ el, id }) => {
       el.classList.toggle("active", id === activeId);
     });

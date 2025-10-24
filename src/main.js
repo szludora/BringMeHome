@@ -1,6 +1,6 @@
 import { initEvents } from "./controller/initEvents.js";
 import { setDevMode } from "./core/logger.js";
-import { getBasePath } from "./controller/pathFixer.js";
+import { getBasePath } from "./controller/navbarAndScrollController.js";
 import { Snackbar } from "./packages/snackbar/dist/snackbar.min.js";
 
 window.Snackbar = Snackbar;
@@ -23,7 +23,7 @@ export const heroPages = {
   adopters: `${getBasePath()}src/view/landing/adopters.html`,
   journey: `${getBasePath()}src/view/landing/journey.html`,
   homeSeeker: `${getBasePath()}src/view/landing/homeSeeker.html`,
-  thanks: `${getBasePath()}src/view/landing/thanks.html`,
+  // thanks: `${getBasePath()}src/view/landing/thanks.html`,
   faq: `${getBasePath()}src/view/landing/faq.html`,
   footer: `${getLayoutPath()}footer.html`,
 };

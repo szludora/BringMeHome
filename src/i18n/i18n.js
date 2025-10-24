@@ -1,6 +1,6 @@
 import { log, warn, error } from "../core/logger.js";
 // TODO: change this route
-import { getBasePath } from "../controller/pathFixer.js";
+import { getBasePath } from "../controller/navbarAndScrollController.js";
 
 let currentLanguage = localStorage.getItem("lang") || "hu";
 let translations = {};
