@@ -162,7 +162,21 @@
 }
 .adopterform-embed .cat-card input[type="radio"] { display: none; }
 .adopterform-embed .cat-card:hover { border-color: var(--color-shadow-light); }
-.adopterform-embed .cat-card input[type="radio"]:checked + img { border: 3px solid var(--color-primary); }
+.adopterform-embed .cat-card input[type="radio"]:checked + img {
+  border: 3px solid var(--color-primary);
+}
+
+/* Visual feedback: make selected cat clearly visible with green outline and soft shadow */
+.adopterform-embed .cat-card input[type="radio"]:checked + img,
+.adopterform-embed .cat-card.selected img {
+  border: 3px solid #4a8a3a; /* friendly green */
+  box-shadow: 0 6px 18px rgba(74,138,58,0.12);
+}
+.adopterform-embed .cat-card input[type="radio"]:focus + img,
+.adopterform-embed .cat-card input[type="radio"]:focus-visible + img {
+  outline: 3px solid rgba(74,138,58,0.18);
+}
+.adopterform-embed .cat-card img { transition: border 180ms ease, box-shadow 220ms ease; }
 
 #miniAdopterForm {
   max-width: 320px;
@@ -199,6 +213,14 @@
   padding: 0.5rem 0.6rem;
   border-radius: 8px;
   font-size: 0.95rem;
+}
+
+/* If there's only one button, make it full width and remove flex shrink
+   so it sits centered and aligned with inputs */
+#miniAdopterForm .d-flex.gap-2 .btn:only-child {
+  flex: none;
+  width: 100%;
+  min-width: 0;
 }
 
 @media (max-width: 420px) {

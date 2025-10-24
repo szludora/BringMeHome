@@ -309,7 +309,6 @@
     <div class="text-center mt-5">
       <a href="./src/view/pages/cats.html" class="btn btn-primary btn-lg" data-i18n="adopt.cta"></a>
     </div>
-    <!-- Modal for full adopter form (loaded on demand) -->
     <div id="adopterFormModal" class="modal-overlay d-none" aria-hidden="true" role="dialog" aria-modal="true">
       <div class="modal-content">
         <button id="closeAdopterForm" class="modal-close" aria-label="Close">×</button>
@@ -317,7 +316,6 @@
       </div>
     </div>
 
-    <!-- styles for CTA/modal moved to assets/css/pages/adopt.css -->
 
     <script>
       (function(){
@@ -341,25 +339,20 @@
             if(!res.ok) throw new Error('Nem sikerült betölteni az űrlapot.');
             const html = await res.text();
 
-            // parse the fetched HTML and extract only the meaningful fragment (the form/container)
             const parser = new DOMParser();
             const doc = parser.parseFromString(html, 'text/html');
 
-            // Copy stylesheet links and inline styles from the fetched page into current head
-            // so the injected form renders with its intended styles.
             try{
               const links = Array.from(doc.querySelectorAll('link[rel="stylesheet"]'));
               links.forEach(l => {
                 const href = l.getAttribute('href');
                 if(!href) return;
-                // avoid duplicate insertion
                 if(!document.head.querySelector(`link[href="${href}"]`)){
                   const nl = document.createElement('link');
                   nl.rel = 'stylesheet'; nl.href = href;
                   document.head.appendChild(nl);
                 }
               });
-              // inline <style> tags
               const styles = Array.from(doc.querySelectorAll('style'));
               styles.forEach(s => {
                 const txt = s.textContent || '';
@@ -370,23 +363,18 @@
               });
             }catch(e){ console.debug('Failed to copy styles from adopterform.html', e); }
 
-            // Prefer the form container; fall back to <main> or whole body.
             let fragment = doc.querySelector('.form-container.adopterform') || doc.querySelector('#catAdoptionForm') || doc.querySelector('main') || doc.body;
 
-            // Clear container and inject the fragment's inner HTML
             container.innerHTML = '';
-            // Add a header matching the standalone adopterform page so the modal has a clear title/subtitle
             const header = document.createElement('header');
             header.className = 'mb-4 text-center';
             header.innerHTML = '<h1 class="mb-3" data-i18n="adopterForm.title"></h1><p class="lead" data-i18n="adopterForm.subtitle"></p>';
             container.appendChild(header);
 
             const wrapper = document.createElement('div');
-            // copy the fragment's children into wrapper to preserve structure
             Array.from(fragment.childNodes).forEach((n) => wrapper.appendChild(document.importNode(n, true)));
             container.appendChild(wrapper);
 
-            // Execute only inline scripts from the fetched document (avoid re-executing module main.js)
             const inlineScripts = Array.from(doc.querySelectorAll('script')).filter(s => !s.src || s.src.trim() === '');
             inlineScripts.forEach((s)=>{
               const ns = document.createElement('script');
@@ -395,7 +383,6 @@
               container.appendChild(ns);
             });
 
-            // Run i18n for the injected fragment (fetch translations and apply only inside container)
             try{
               const lang = localStorage.getItem('lang') || 'hu';
               const i18nRes = await fetch(`src/i18n/${lang}.json`);
@@ -411,7 +398,6 @@
               }
             }catch(e){ console.debug('i18n for modal failed', e); }
 
-            // Prefill fields robustly (retry if inputs are populated later by scripts)
             if(prefill){
               const trySet = ()=>{
                 let did = false;
@@ -421,7 +407,6 @@
                 if(emailEl && prefill.email){ emailEl.value = prefill.email; did = true; }
                 return did;
               };
-              // immediate attempt
               if(!trySet()){
                 let attempts = 0;
                 const maxAttempts = 30;
@@ -433,11 +418,9 @@
               }
             }
 
-            // Enhance phone input validation inside modal: accept +36 and international formats
             try{
               const phoneEl = container.querySelector('#adopterPhone');
               if(phoneEl){
-                // remove restrictive pattern so custom validation can run
                 phoneEl.removeAttribute('pattern');
 
                 function validatePhone(normalizedDigits){
@@ -465,14 +448,11 @@
                 };
 
                 phoneEl.addEventListener('input', updateValidity);
-                // run once to initialize
                 setTimeout(updateValidity, 150);
               }
             }catch(e){ console.debug('phone enhancement failed', e); }
 
-            // Attach submit handler for the injected form so submission works from modal
             try{
-              // extract script URL from fetched HTML if present
               const m = html.match(/const\s+scriptURL\s*=\s*['"]([^'"]+)['"]/);
               const scriptURLVal = m ? m[1] : null;
               const form = container.querySelector('#catAdoptionForm');
@@ -482,7 +462,6 @@
 
                 form.addEventListener('submit', async (e)=>{
                   e.preventDefault();
-                  // phone validation (same logic as standalone page)
                   const phoneInput = form.querySelector('#adopterPhone');
                   const phoneError = form.querySelector('#phoneError');
                   if(phoneInput){
@@ -502,7 +481,6 @@
                     } else if(phoneError) phoneError.textContent = '';
                   }
 
-                  // honeypot
                   const honeypot = form.querySelector('input[name="website"]');
                   if(honeypot && honeypot.value){
                     statusDiv.innerHTML = '<div class="alert alert-danger" role="alert">Hiba történt: érvénytelen beküldés.</div>';
@@ -525,7 +503,6 @@
                     if(data && data.result === 'success'){
                       statusDiv.innerHTML = '<div class="alert alert-success" role="alert">Sikeres beküldés! Köszönjük!</div>';
                       form.reset();
-                      // close modal shortly after success
                       setTimeout(()=>{ hideModal(); }, 1200);
                     } else {
                       const msg = (data && data.message) ? data.message : 'Ismeretlen hiba történt a szerver oldalon.';
@@ -548,25 +525,13 @@
           }
         }
 
-        // Open full form when user clicks the CTA on back
         document.addEventListener('click', (e)=>{
-          if(e.target && (e.target.id === 'openFullAdopter' || e.target.closest('#openFullAdopter'))){
-            // If there is a saved draft in localStorage, use it; otherwise use current mini fields
-            let draft = null;
-            try{ draft = JSON.parse(localStorage.getItem('adopterDraft') || 'null'); }catch(e){ draft = null; }
-            const name = draft?.name || document.getElementById('miniName')?.value || '';
-            const email = draft?.email || document.getElementById('miniEmail')?.value || '';
-            loadFullForm({ name, email });
-          }
-
           if(e.target && (e.target.id === 'miniSubmit' || e.target.closest('#miniSubmit'))){
-            // Save the mini info to localStorage (no network call) and then open full form.
             const name = document.getElementById('miniName')?.value || '';
             const email = document.getElementById('miniEmail')?.value || '';
             const draft = { name, email, savedAt: new Date().toISOString() };
             try{ localStorage.setItem('adopterDraft', JSON.stringify(draft)); }catch(err){ console.warn('LocalStorage nem elérhető', err); }
 
-            // show a small transient confirmation
             (function showTmpMsg(msg){
               const existing = document.getElementById('miniSavedMsg');
               if(existing) existing.remove();

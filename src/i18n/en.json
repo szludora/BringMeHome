@@ -63,8 +63,7 @@
         "emailLabel": "Email",
         "namePlaceholder": "e.g. Anna Kovács",
         "emailPlaceholder": "email@example.com",
-        "saveAndContinue": "Save & Continue",
-        "openFullForm": "Full form"
+        "saveAndContinue": "Save & Continue"
       },
       "savedMessage": "Interest saved in your browser — continue on the detailed form."
     }
