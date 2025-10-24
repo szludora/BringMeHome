@@ -156,6 +156,7 @@ h2,
 h2 span {
   text-transform: uppercase;
   font-size: var(--font-h2);
+  overflow-wrap: break-word !important;
 }
 
 h3 {

@@ -4,6 +4,11 @@ async function onSubmit() {
   userAnswers = await collectFormData();
   let result = await score(userAnswers);
   showResults(result);
+  meow();
+}
+
+function meow() {
+  document.getElementById("myAudio").play();
 }
 
 const scoreKeys = [
@@ -98,7 +103,7 @@ function showResults(topCats) {
   if (!resultContainer) return;
 
   const placeholders = Array.from(
-    resultContainer.querySelectorAll(".resultCard"),
+    resultContainer.querySelectorAll(".resultCard")
   );
 
   for (let i = 0; i < placeholders.length; i++) {
@@ -126,7 +131,7 @@ function showResults(topCats) {
         newSpan.className = "percentage";
         newSpan.textContent = pctValue;
         const strong = percentEl.querySelector(
-          '[data-i18n="match-percentage"]',
+          '[data-i18n="match-percentage"]'
         );
         if (strong && strong.parentNode === percentEl) {
           strong.insertAdjacentElement("afterend", newSpan);

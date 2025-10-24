@@ -1,94 +1,137 @@
-import {loadDynamicContent, destroyDynamicContent} from "/src/controller/load.js";
+import { currentLanguage, langs } from "../../i18n/i18n.js";
+import {
+  loadDynamicContent,
+  destroyDynamicContent,
+} from "/src/controller/load.js";
 
-export async function onLoad(){
-    // TODO
+let attentionTexts = {
+  hu: "Kattins, hogy kitöltsd a jelentkezési űrlapot és együtt tegyünk a változásért!",
+  en: "Click here to fill out the application form and join our team to make a difference!",
+};
+let currentText;
+export async function onLoad() {
+  continueTyping();
 }
 
-export async function unLoad(){
-    // TODO
+let i = 0;
+let speed = 50;
+
+function continueTyping() {
+  typeWriter(currentText);
+  setTimeout(() => {
+    document.querySelectorAll(".attentionText").forEach((e) => {
+      e.innerHTML = "";
+    });
+    i = 0;
+    continueTyping();
+    typeWriter();
+  }, 15000);
 }
 
-export function showJoinUsForm(event){
-    loadDynamicContent("./src/view/components/joinUsForm/joinUsForm.html",document.getElementById("join-us-form-container"));
-    event.target.disabled = true;
+function typeWriter() {
+  currentText =
+    currentLanguage == langs.en ? attentionTexts.en : attentionTexts.hu;
+  if (currentText.length < 1) return;
+
+  if (i < currentText.length) {
+    document.querySelectorAll(".attentionText").forEach((e) => {
+      e.innerHTML += currentText[i];
+    });
+
+    setTimeout(typeWriter, speed);
+    i++;
+  }
 }
 
-export function abandonJoinUsForm(){
-    document.getElementById("sample_form").classList.toggle("slideBottomToTop");
-    setTimeout(() => {
-        destroyDynamicContent(document.getElementById("join-us-form-container"));
-    },1000);
+export async function unLoad() {
+  // TODO
 }
 
-export function submitJoinUsForm(e){
-    e.preventDefault();
+export function showJoinUsForm(event) {
+  loadDynamicContent(
+    "./src/view/components/joinUsForm/joinUsForm.html",
+    document.getElementById("join-us-form-container")
+  );
+  event.target.disabled = true;
+}
 
-    let form = document.getElementById('sample_form');
-    clearCustomErrors(form);
-    if(form.checkValidity()){
+export function abandonJoinUsForm() {
+  document.getElementById("sample_form").classList.toggle("slideBottomToTop");
+  setTimeout(() => {
+    destroyDynamicContent(document.getElementById("join-us-form-container"));
+  }, 1000);
+}
 
-        const fd = new FormData(form);
+export function submitJoinUsForm(e) {
+  e.preventDefault();
 
-        const data = Object.fromEntries(fd.entries());
-        if(validateJoinUsForm(data)){
+  let form = document.getElementById("sample_form");
+  clearCustomErrors(form);
+  if (form.checkValidity()) {
+    const fd = new FormData(form);
 
-            document.getElementById("sample_form").classList.toggle("slideBottomToTop");
-            setTimeout(() => {
-                destroyDynamicContent(document.getElementById("join-us-form-container"));
-            },900);
-        }
-    }else{
-        e.stopPropagation();
-        form.reportValidity();
+    const data = Object.fromEntries(fd.entries());
+    if (validateJoinUsForm(data)) {
+      document
+        .getElementById("sample_form")
+        .classList.toggle("slideBottomToTop");
+      setTimeout(() => {
+        destroyDynamicContent(
+          document.getElementById("join-us-form-container")
+        );
+      }, 900);
     }
+  } else {
+    e.stopPropagation();
+    form.reportValidity();
+  }
 }
 
 function clearCustomErrors(frm) {
-    for (const el of frm.elements) {
-        if (typeof el.setCustomValidity === 'function') {
-            el.setCustomValidity('');
-        }
+  for (const el of frm.elements) {
+    if (typeof el.setCustomValidity === "function") {
+      el.setCustomValidity("");
     }
+  }
 }
 
-function validateJoinUsForm(data){
-    if(!isCapitalizedNameSimple(data.fullName)){
-        const nameInput = document.getElementById("full_name_input");
-        nameInput.setCustomValidity('Please provide a valid name.');
-        nameInput.reportValidity();
-        return false;
-    }
-    return true;
+function validateJoinUsForm(data) {
+  if (!isCapitalizedNameSimple(data.fullName)) {
+    const nameInput = document.getElementById("full_name_input");
+    nameInput.setCustomValidity("Please provide a valid name.");
+    nameInput.reportValidity();
+    return false;
+  }
+  return true;
 }
 
-function isCapitalizedNameSimple(value, locale = 'hu-HU') {
-    if (!value) return false;
-    const trimmed = value.trim().replace(/\s+/g, ' '); // collapse spaces
-    const words = trimmed.split(' ');
+function isCapitalizedNameSimple(value, locale = "hu-HU") {
+  if (!value) return false;
+  const trimmed = value.trim().replace(/\s+/g, " "); // collapse spaces
+  const words = trimmed.split(" ");
 
-    return words.every(word => {
-        const segments = word.split('-');
-        return segments.every(seg => isCapitalizedSegment(seg, locale));
-    });
+  return words.every((word) => {
+    const segments = word.split("-");
+    return segments.every((seg) => isCapitalizedSegment(seg, locale));
+  });
 }
 
-function isCapitalizedSegment(seg, locale = 'hu-HU') {
-    if (!seg) return false;
-    const chars = Array.from(seg);
-    const first = chars[0];
-    const rest = chars.slice(1);
-    if (!isLetter(first, locale)) return false;
-    if (first !== first.toLocaleUpperCase(locale)){
-        return false;
-    }
-    for (const ch of rest) {
-        if (!isLetter(ch, locale)) return false;
-        if (ch !== ch.toLocaleLowerCase(locale)) return false;
-    }
-    return true;
+function isCapitalizedSegment(seg, locale = "hu-HU") {
+  if (!seg) return false;
+  const chars = Array.from(seg);
+  const first = chars[0];
+  const rest = chars.slice(1);
+  if (!isLetter(first, locale)) return false;
+  if (first !== first.toLocaleUpperCase(locale)) {
+    return false;
+  }
+  for (const ch of rest) {
+    if (!isLetter(ch, locale)) return false;
+    if (ch !== ch.toLocaleLowerCase(locale)) return false;
+  }
+  return true;
 }
 
-function isLetter(ch, locale = 'hu-HU') {
-    return ch.toLocaleLowerCase(locale) !== ch.toLocaleUpperCase(locale);
+function isLetter(ch, locale = "hu-HU") {
+  return ch.toLocaleLowerCase(locale) !== ch.toLocaleUpperCase(locale);
 }
-

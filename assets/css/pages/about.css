@@ -1,6 +1,7 @@
 #ourTeamImage {
   aspect-ratio: 1/1;
-  width: clamp(6rem, 100%, 30rem) !important;
+  width: clamp(20rem, 100%, 25rem) !important;
+  margin: auto;
 }
 
 .about .card {
@@ -16,7 +17,8 @@
   box-shadow: 0 2px 6px var(--color-shadow-light);
   box-sizing: border-box;
 }
-
+.aboutTexts {
+}
 .about .circle {
   width: 7rem;
   height: 7rem;
@@ -33,6 +35,43 @@
   overflow: hidden;
 }
 
+#show-join-us-btn {
+  width: 10rem;
+}
+
+.onMobile {
+  display: flex !important;
+}
+.onWeb {
+  display: none !important;
+}
+
+.joinUsBtn {
+  height: min-content;
+  width: max-content !important;
+}
+
+.about #attentionArrowMobile {
+  transform: translateY(-3rem) rotateX(180deg);
+  margin-left: 2rem;
+  animation: pointWithArrowOnMobile 1s infinite alternate;
+}
+
+.about #attentionArrowWeb {
+  transform: translateY(-3rem);
+  animation: pointWithArrowOnWeb 1s infinite alternate;
+}
+
+.about .attentionText {
+  margin-top: -2rem;
+}
+
+.attentionJoinUsContainer {
+  margin: 0 0 5rem 0;
+  width: min-content;
+  margin-left: auto;
+}
+
 @keyframes scrollCards {
   0% {
     transform: translate3d(0, 0, 0);
@@ -40,6 +79,26 @@
 
   100% {
     transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes pointWithArrowOnMobile {
+  0% {
+    transform: translate3d(0, -3rem, 0) rotateX(180deg);
+  }
+
+  100% {
+    transform: translate3d(-20%, -3rem, 0) rotateX(180deg);
+  }
+}
+
+@keyframes pointWithArrowOnWeb {
+  0% {
+    transform: translate3d(0, 1rem, 0);
+  }
+
+  100% {
+    transform: translate3d(-20%, 1rem, 0);
   }
 }
 
@@ -68,6 +127,18 @@
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .onMobile {
+    display: none !important;
+  }
+  .onWeb {
+    display: flex !important;
+  }
+
+  .attentionJoinUsContainer {
+    margin: 0 0 1rem;
+  }
+}
 @media (max-width: 767.98px) {
   .about .card-track {
     display: block;
