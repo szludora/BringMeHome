@@ -54,7 +54,21 @@
     "section-title": "Miért fogadj örökbe?",
     "para1": "Ezek a cicák különleges történetekkel érkeztek hozzánk: van, aki félénk kezes, van, aki igazi bohóc - de mindannyian készen állnak szerető otthonra.",
     "para2": "Az örökbe fogadás egy hosszú távú elköteleződés, de cserébe feltétel nélküli szeretetet kapsz. Nézz körül a galériában, és találd meg a neked való társat!",
-    "cta": "Tovább a cicákhoz"
+    "cta": "Tovább a cicákhoz",
+    "teaser": {
+      "frontTitle": "Szeretnél örökbe fogadni?",
+      "frontSubtitle": "Tölts ki egy rövid űrlapot a jelentkezéshez!",
+      "mini": {
+        "nameLabel": "Név",
+        "emailLabel": "Email",
+        "namePlaceholder": "Pl. Kovács Anna",
+        "emailPlaceholder": "email@pelda.hu",
+        "saveAndContinue": "Mentés és folytatás",
+        "openFullForm": "Teljes űrlap",
+        "helpText": "Az adataid a böngésződben tárolódnak — nem küldünk semmit a háttérben. A részletes űrlapban tudod befejezni a jelentkezést."
+      },
+      "savedMessage": "Érdeklődés elmentve a böngésződben — folytathatod a részletes űrlapon."
+    }
   },
   "adopters": {
     "title": "Örökbefogadóink",

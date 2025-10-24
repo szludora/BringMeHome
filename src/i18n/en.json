@@ -54,7 +54,21 @@
     "section-title": "Why adopt from us?",
     "para1": "These cats came to us with special stories: some are shy and gentle, others are true clowns - but they are all ready for a loving home.",
     "para2": "Adoption is a long-term commitment, but in return, you get unconditional love. Look around the gallery and find a companion for yourself!",
-    "cta": "See Our Cats"
+    "cta": "See Our Cats",
+    "teaser": {
+      "frontTitle": "Want to adopt?",
+      "frontSubtitle": "Fill a short form to apply!",
+      "mini": {
+        "nameLabel": "Name",
+        "emailLabel": "Email",
+        "namePlaceholder": "e.g. Anna Kovács",
+        "emailPlaceholder": "email@example.com",
+        "saveAndContinue": "Save & Continue",
+        "openFullForm": "Full form",
+        "helpText": "Your data is stored in your browser — we do not send anything. You can complete the application on the detailed form."
+      },
+      "savedMessage": "Interest saved in your browser — continue on the detailed form."
+    }
   },
   "adopters": {
     "title": "Our Adopters",

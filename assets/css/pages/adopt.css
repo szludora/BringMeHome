@@ -90,3 +90,58 @@
 .adopt .d-flex.overflow-x-auto {
   scrollbar-color: var(--color-primary-light) var(--color-shadow-lightest);
 }
+
+/* --- moved from inline styles in src/view/landing/adopt.html --- */
+/* CTA card tweaks */
+.cta-card .card-body .card-text{ margin:0; }
+.cta-card .card-body p.small{ margin:0; color:var(--color-primary-dark); }
+.cta-card .flip-card-front{ background: linear-gradient(180deg, var(--color-primary-lightest), #fff); }
+.cta-card .flip-card-back{ background: linear-gradient(180deg,#fff,var(--color-shadow-lightest)); }
+.cta-card .cta-icon{ margin-top:1rem; width:100px; height:100px; object-fit:contain; }
+
+/* Modal styles (local) */
+.modal-overlay{ position:fixed; inset:0; background:rgba(0,0,0,0.6); display:flex; align-items:center; justify-content:center; z-index:1050; }
+.modal-overlay.d-none{ display:none; }
+.modal-content{ background:#fff; width:94%; max-width:980px; max-height:92vh; overflow:auto; border-radius:8px; padding:1rem; position:relative; box-shadow:0 20px 60px rgba(0,0,0,0.4); }
+.modal-close{ position:absolute; top:8px; right:8px; border:none; background:transparent; font-size:1.8rem; line-height:1; cursor:pointer; }
+.adopterform-embed img{ max-width:100%; height:auto; }
+/* Prevent justified/stretchy text inside the flip-cards and injected form cards */
+.flip-card .card-body .card-text,
+.cta-card .card-body .card-text,
+.adopterform-embed .cat-card,
+.adopterform-embed .cat-card p,
+.adopterform-embed .cat-card .card-body {
+  text-align: left !important;
+  text-align-last: left !important;
+  hyphens: auto;
+}
+/* Make cat cards inside injected adopter form match the standalone adopterform.css */
+.adopterform-embed .cat-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.adopterform-embed .cat-card {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border 0.2s ease;
+  width: 140px;
+  box-sizing: border-box;
+}
+.adopterform-embed .cat-card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  transition: border 0.2s ease;
+  display:block;
+}
+.adopterform-embed .cat-card input[type="radio"] { display: none; }
+.adopterform-embed .cat-card:hover { border-color: var(--color-shadow-light); }
+.adopterform-embed .cat-card input[type="radio"]:checked + img { border: 3px solid var(--color-primary); }
+/* --- end moved styles --- */
