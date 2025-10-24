@@ -68,6 +68,7 @@
         </div>
       </div>
 
+
       <!-- CAT 3 -->
       <div class="col-md-4 col-lg-3 flex-grow-0 flex-shrink-0">
         <div class="flip-card">
@@ -94,6 +95,43 @@
                   <strong data-i18n="catsPage.cats.key-special_features"></strong><span
                     data-i18n="catsPage.cats.cat3.special_features"></span> <br>
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="col-md-4 col-lg-3 flex-grow-0 flex-shrink-0">
+        <div class="flip-card cta-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front d-flex align-items-center justify-content-center text-center">
+              <div class="card h-100 shadow d-flex flex-column align-items-center justify-content-center">
+                <div class="card-body">
+                  <img src="./assets/img/icons/paw.png" class="card-img-top cta-icon" alt="Jelentkezés ikon">
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-back d-flex align-items-center justify-content-center text-center">
+              <div class="card-body w-100">
+                <div class="reveal-header text-center mb-2">
+                  <div class="reveal-title" data-i18n="adopt.teaser.frontTitle"></div>
+                  <div class="reveal-sub" data-i18n="adopt.teaser.frontSubtitle"></div>
+                </div>
+                <form id="miniAdopterForm" class="text-start">
+                  <div class="mb-2">
+                    <label for="miniName" class="form-label" data-i18n="adopt.teaser.mini.nameLabel"></label>
+                    <input id="miniName" class="form-control" type="text" data-i18n-placeholder="adopt.teaser.mini.namePlaceholder" />
+                  </div>
+                  <div class="mb-2">
+                    <label for="miniEmail" class="form-label" data-i18n="adopt.teaser.mini.emailLabel"></label>
+                    <input id="miniEmail" class="form-control" type="email" data-i18n-placeholder="adopt.teaser.mini.emailPlaceholder" />
+                  </div>
+                  <div class="d-flex gap-2 mt-2">
+                    <button type="button" id="miniSubmit" class="btn btn-primary btn-sm flex-grow-1" data-i18n="adopt.teaser.mini.saveAndContinue"></button>
+                  </div>
+                  <span id="miniSavedText" class="d-none" data-i18n="adopt.teaser.savedMessage"></span>
+                </form>
               </div>
             </div>
           </div>
@@ -271,5 +309,249 @@
     <div class="text-center mt-5">
       <a href="./src/view/pages/cats.html" class="btn btn-primary btn-lg" data-i18n="adopt.cta"></a>
     </div>
+    <div id="adopterFormModal" class="modal-overlay d-none" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-content">
+        <button id="closeAdopterForm" class="modal-close" aria-label="Close">×</button>
+        <div id="adopterFormContainer" class="adopterform-embed"></div>
+      </div>
+    </div>
+
+
+    <script>
+      (function(){
+        const modal = document.getElementById('adopterFormModal');
+        const container = document.getElementById('adopterFormContainer');
+        const closeBtn = document.getElementById('closeAdopterForm');
+
+        function showModal(){
+          modal.classList.remove('d-none');
+          modal.setAttribute('aria-hidden','false');
+        }
+        function hideModal(){
+          modal.classList.add('d-none');
+          modal.setAttribute('aria-hidden','true');
+          container.innerHTML = '';
+        }
+
+        async function loadFullForm(prefill){
+          try{
+            const res = await fetch('src/view/pages/adopterform.html');
+            if(!res.ok) throw new Error('Nem sikerült betölteni az űrlapot.');
+            const html = await res.text();
+
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+
+            try{
+              const links = Array.from(doc.querySelectorAll('link[rel="stylesheet"]'));
+              links.forEach(l => {
+                const href = l.getAttribute('href');
+                if(!href) return;
+                if(!document.head.querySelector(`link[href="${href}"]`)){
+                  const nl = document.createElement('link');
+                  nl.rel = 'stylesheet'; nl.href = href;
+                  document.head.appendChild(nl);
+                }
+              });
+              const styles = Array.from(doc.querySelectorAll('style'));
+              styles.forEach(s => {
+                const txt = s.textContent || '';
+                if(!txt.trim()) return;
+                const ns = document.createElement('style');
+                ns.textContent = txt;
+                document.head.appendChild(ns);
+              });
+            }catch(e){ console.debug('Failed to copy styles from adopterform.html', e); }
+
+            let fragment = doc.querySelector('.form-container.adopterform') || doc.querySelector('#catAdoptionForm') || doc.querySelector('main') || doc.body;
+
+            container.innerHTML = '';
+            const header = document.createElement('header');
+            header.className = 'mb-4 text-center';
+            header.innerHTML = '<h1 class="mb-3" data-i18n="adopterForm.title"></h1><p class="lead" data-i18n="adopterForm.subtitle"></p>';
+            container.appendChild(header);
+
+            const wrapper = document.createElement('div');
+            Array.from(fragment.childNodes).forEach((n) => wrapper.appendChild(document.importNode(n, true)));
+            container.appendChild(wrapper);
+
+            const inlineScripts = Array.from(doc.querySelectorAll('script')).filter(s => !s.src || s.src.trim() === '');
+            inlineScripts.forEach((s)=>{
+              const ns = document.createElement('script');
+              ns.type = s.type || 'text/javascript';
+              ns.textContent = s.textContent;
+              container.appendChild(ns);
+            });
+
+            try{
+              const lang = localStorage.getItem('lang') || 'hu';
+              const i18nRes = await fetch(`src/i18n/${lang}.json`);
+              if(i18nRes.ok){
+                const i18nJson = await i18nRes.json();
+                const applyText = (el)=>{
+                  const key = el.dataset.i18n;
+                  if(!key) return;
+                  const text = key.split('.').reduce((o,k)=>o?.[k], i18nJson);
+                  if(text !== undefined) el.textContent = text;
+                };
+                container.querySelectorAll('[data-i18n]').forEach(applyText);
+              }
+            }catch(e){ console.debug('i18n for modal failed', e); }
+
+            if(prefill){
+              const trySet = ()=>{
+                let did = false;
+                const nameEl = container.querySelector('#adopterName');
+                const emailEl = container.querySelector('#adopterEmail');
+                if(nameEl && prefill.name){ nameEl.value = prefill.name; did = true; }
+                if(emailEl && prefill.email){ emailEl.value = prefill.email; did = true; }
+                return did;
+              };
+              if(!trySet()){
+                let attempts = 0;
+                const maxAttempts = 30;
+                const interval = setInterval(()=>{
+                  attempts++;
+                  trySet();
+                  if(attempts >= maxAttempts) clearInterval(interval);
+                }, 100);
+              }
+            }
+
+            try{
+              const phoneEl = container.querySelector('#adopterPhone');
+              if(phoneEl){
+                phoneEl.removeAttribute('pattern');
+
+                function validatePhone(normalizedDigits){
+                  const s = String(normalizedDigits || '');
+                  const clean = s.startsWith('+') ? s.slice(1) : s;
+                  if (!/^\d+$/.test(clean)) return false;
+                  if (clean.startsWith('36')){
+                    const rest = clean.slice(2);
+                    if (rest.length >= 8 && rest.length <= 10) return true;
+                  }
+                  if (clean.startsWith('06')){
+                    const rest = clean.slice(2);
+                    if (rest.length >= 8 && rest.length <= 10) return true;
+                  }
+                  if (clean.length >= 7 && clean.length <= 15) return true;
+                  return false;
+                }
+
+                const updateValidity = ()=>{
+                  const val = phoneEl.value || '';
+                  const normalized = val.replace(/[\s\-()]/g, '');
+                  if(!normalized){ phoneEl.setCustomValidity(''); return; }
+                  if(validatePhone(normalized)) phoneEl.setCustomValidity('');
+                  else phoneEl.setCustomValidity('Érvénytelen telefonszám formátum.');
+                };
+
+                phoneEl.addEventListener('input', updateValidity);
+                setTimeout(updateValidity, 150);
+              }
+            }catch(e){ console.debug('phone enhancement failed', e); }
+
+            try{
+              const m = html.match(/const\s+scriptURL\s*=\s*['"]([^'"]+)['"]/);
+              const scriptURLVal = m ? m[1] : null;
+              const form = container.querySelector('#catAdoptionForm');
+              if(form && scriptURLVal){
+                const statusDiv = form.querySelector('#formStatus') || (function(){ const d = document.createElement('div'); d.id='formStatus'; form.appendChild(d); return d; })();
+                const submitButton = form.querySelector('button[type="submit"]');
+
+                form.addEventListener('submit', async (e)=>{
+                  e.preventDefault();
+                  const phoneInput = form.querySelector('#adopterPhone');
+                  const phoneError = form.querySelector('#phoneError');
+                  if(phoneInput){
+                    const val = phoneInput.value || '';
+                    const normalized = val.replace(/[\s\-()]/g, '');
+                    const clean = normalized.startsWith('+') ? normalized.slice(1) : normalized;
+                    let ok = false;
+                    if(/^\d+$/.test(clean)){
+                      if(clean.startsWith('36')){ const rest = clean.slice(2); if(rest.length>=8 && rest.length<=10) ok=true; }
+                      if(clean.startsWith('06')){ const rest = clean.slice(2); if(rest.length>=8 && rest.length<=10) ok=true; }
+                      if(clean.length>=7 && clean.length<=15) ok = ok || true;
+                    }
+                    if(!ok){
+                      if(phoneError) phoneError.textContent = 'Kérjük, érvényes telefonszámot adjon meg (pl. +36 30 123 4567).';
+                      phoneInput.focus();
+                      return;
+                    } else if(phoneError) phoneError.textContent = '';
+                  }
+
+                  const honeypot = form.querySelector('input[name="website"]');
+                  if(honeypot && honeypot.value){
+                    statusDiv.innerHTML = '<div class="alert alert-danger" role="alert">Hiba történt: érvénytelen beküldés.</div>';
+                    return;
+                  }
+
+                  statusDiv.innerHTML = '<div class="alert alert-info" role="alert">Küldés folyamatban...</div>';
+                  if(submitButton) submitButton.disabled = true;
+
+                  const formData = new URLSearchParams(new FormData(form)).toString();
+                  try{
+                    const res2 = await fetch(scriptURLVal, { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: formData });
+                    if(!res2.ok) throw new Error(`HTTP hiba! Státusz: ${res2.status}`);
+                    const responseText = await res2.text();
+                    let data;
+                    try{ data = JSON.parse(responseText); }catch(err){
+                      if(responseText.includes('success') || responseText.includes('végrehajtva')) data = { result: 'success' };
+                      else throw err;
+                    }
+                    if(data && data.result === 'success'){
+                      statusDiv.innerHTML = '<div class="alert alert-success" role="alert">Sikeres beküldés! Köszönjük!</div>';
+                      form.reset();
+                      setTimeout(()=>{ hideModal(); }, 1200);
+                    } else {
+                      const msg = (data && data.message) ? data.message : 'Ismeretlen hiba történt a szerver oldalon.';
+                      statusDiv.innerHTML = `<div class="alert alert-danger" role="alert">Hiba: ${msg}</div>`;
+                    }
+                  }catch(error){
+                    console.error('Hiba!', error);
+                    statusDiv.innerHTML = `<div class="alert alert-danger" role="alert">Hiba történt: ${error.message}</div>`;
+                  }finally{
+                    if(submitButton) submitButton.disabled = false;
+                  }
+                });
+              }
+            }catch(err){ console.debug('attach submit handler failed', err); }
+
+            showModal();
+          }catch(e){
+            console.error(e);
+            alert('Hiba történt az űrlap betöltésekor.');
+          }
+        }
+
+        document.addEventListener('click', (e)=>{
+          if(e.target && (e.target.id === 'miniSubmit' || e.target.closest('#miniSubmit'))){
+            const name = document.getElementById('miniName')?.value || '';
+            const email = document.getElementById('miniEmail')?.value || '';
+            const draft = { name, email, savedAt: new Date().toISOString() };
+            try{ localStorage.setItem('adopterDraft', JSON.stringify(draft)); }catch(err){ console.warn('LocalStorage nem elérhető', err); }
+
+            (function showTmpMsg(msg){
+              const existing = document.getElementById('miniSavedMsg');
+              if(existing) existing.remove();
+              const el = document.createElement('div');
+              el.id = 'miniSavedMsg';
+              el.className = 'form-text text-success mt-2';
+              el.textContent = msg;
+              const form = document.getElementById('miniAdopterForm');
+              form.appendChild(el);
+              setTimeout(()=> el.remove(), 3500);
+            })( document.getElementById('miniSavedText')?.textContent || 'Érdeklődés elmentve a böngésződben — folytathatod a részletes űrlapon.' );
+
+            loadFullForm({ name, email });
+          }
+        });
+
+        closeBtn?.addEventListener('click', hideModal);
+        modal?.addEventListener('click', (e)=>{ if(e.target===modal) hideModal(); });
+        document.addEventListener('keydown', (e)=>{ if(e.key==='Escape' && !modal.classList.contains('d-none')) hideModal(); });
+      })();
+    </script>
   </div>
 </section>

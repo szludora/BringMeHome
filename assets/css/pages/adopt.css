@@ -90,3 +90,149 @@
 .adopt .d-flex.overflow-x-auto {
   scrollbar-color: var(--color-primary-light) var(--color-shadow-lightest);
 }
+
+.cta-card .card-body .card-text{ margin:0; }
+.cta-card .card-body p.small{ margin:0; color:var(--color-primary-dark); }
+.cta-card .flip-card-front{ background: linear-gradient(180deg, var(--color-primary-lightest), #fff); }
+.cta-card .flip-card-back{ background: linear-gradient(180deg,#fff,var(--color-shadow-lightest)); }
+
+
+.cta-card {
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.cta-card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(0,0,0,0.16); }
+.cta-card .flip-card-front .card-body { display:flex; align-items:center; justify-content:center; padding: 1.5rem; }
+.cta-card .flip-card-front .card-body .card-text { display:none; }
+.cta-card .flip-card-front .cta-icon { width:84px; height:84px; opacity:0.95; }
+.cta-card .flip-card-back .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.cta-card .reveal-title { font-weight:700; margin-bottom:0.25rem; text-align:center; }
+.cta-card .reveal-sub { font-size:0.95rem; color:var(--color-primary-dark); margin-bottom:0.6rem; text-align:center; }
+
+
+
+.cta-card .reveal-paragraph { width: 100%; box-sizing: border-box; margin-bottom: 0.4rem; }
+
+.modal-overlay{ position:fixed; inset:0; background:rgba(0,0,0,0.6); display:flex; align-items:center; justify-content:center; z-index:1050; }
+.modal-overlay.d-none{ display:none; }
+.modal-content{ background:#fff; width:94%; max-width:980px; max-height:92vh; overflow:auto; border-radius:8px; padding:1rem; position:relative; box-shadow:0 20px 60px rgba(0,0,0,0.4); }
+.modal-close{ position:absolute; top:8px; right:8px; border:none; background:transparent; font-size:1.8rem; line-height:1; cursor:pointer; }
+.adopterform-embed img{ max-width:100%; height:auto; }
+.flip-card .card-body .card-text,
+.cta-card .card-body .card-text,
+.adopterform-embed .cat-card,
+.adopterform-embed .cat-card p,
+.adopterform-embed .cat-card .card-body {
+  text-align: left !important;
+  text-align-last: left !important;
+  hyphens: auto;
+}
+.adopterform-embed .cat-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.adopterform-embed .cat-card {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border 0.2s ease;
+  width: 140px;
+  box-sizing: border-box;
+}
+.adopterform-embed .cat-card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  transition: border 0.2s ease;
+  display:block;
+}
+.adopterform-embed .cat-card input[type="radio"] { display: none; }
+.adopterform-embed .cat-card:hover { border-color: var(--color-shadow-light); }
+.adopterform-embed .cat-card input[type="radio"]:checked + img {
+  border: 3px solid var(--color-primary);
+}
+
+/* Visual feedback: make selected cat clearly visible with green outline and soft shadow */
+.adopterform-embed .cat-card input[type="radio"]:checked + img,
+.adopterform-embed .cat-card.selected img {
+  border: 3px solid #4a8a3a; /* friendly green */
+  box-shadow: 0 6px 18px rgba(74,138,58,0.12);
+}
+.adopterform-embed .cat-card input[type="radio"]:focus + img,
+.adopterform-embed .cat-card input[type="radio"]:focus-visible + img {
+  outline: 3px solid rgba(74,138,58,0.18);
+}
+.adopterform-embed .cat-card img { transition: border 180ms ease, box-shadow 220ms ease; }
+
+#miniAdopterForm {
+  max-width: 320px;
+  margin: 0.25rem auto 0;
+  display: block;
+}
+
+#miniAdopterForm .form-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+  color: var(--color-primary-dark);
+}
+
+#miniAdopterForm .form-control {
+  width: 100%;
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.12);
+  box-shadow: none;
+  background: #fff;
+}
+
+#miniAdopterForm .mb-2 { margin-bottom: 0.5rem !important; }
+
+#miniAdopterForm .d-flex.gap-2 {
+  gap: 0.5rem;
+  align-items: center;
+}
+
+#miniAdopterForm .d-flex.gap-2 .btn {
+  flex: 1 1 48%;
+  min-width: 110px;
+  padding: 0.5rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+/* If there's only one button, make it full width and remove flex shrink
+   so it sits centered and aligned with inputs */
+#miniAdopterForm .d-flex.gap-2 .btn:only-child {
+  flex: none;
+  width: 100%;
+  min-width: 0;
+}
+
+@media (max-width: 420px) {
+  #miniAdopterForm { max-width: 260px; }
+  #miniAdopterForm .d-flex.gap-2 { flex-direction: column; }
+  #miniAdopterForm .d-flex.gap-2 .btn { width: 100%; }
+}
+
+#miniSavedMsg { display: block; font-size: 0.9rem; margin-top: 0.4rem; }
+
+.cta-card .reveal-header { padding: 0 0.4rem; }
+
+.cta-card .cta-icon { width: 96px; height: 96px; }
+
+
