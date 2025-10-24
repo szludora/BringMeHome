@@ -499,5 +499,53 @@
       }
     },
     "findMyMatch": "Találd meg a hozzád illő cicát"
+  },
+  "Days": {
+    "monday": "Hétfő",
+    "tuesday": "Kedd",
+    "wednesday": "Szerda",
+    "thursday": "Csütörtök",
+    "friday": "Péntek",
+    "saturday": "Szombat",
+    "sunday": "Vasárnap"
+  },
+  "joinUsForm": {
+    "join-us-title": "Csatlakozz Hozzánk",
+    "full-name-label": "Teljes Név",
+    "email-label": "Email",
+    "phone-label": "Telefonszám",
+    "preferred-contact-method-label": "Hogyan léphetünk kapcsolatban Önnel:",
+    "available-day": "A hét melyik napján érnél rá?",
+    "preferred-contact-method-options": {
+      "contactChoice1": "Email",
+      "contactChoice2": "Telefon",
+      "contactChoice3": "SMS"
+    },
+    "preferred-role-label": "Választott szerepkör",
+    "preferred-role-options": {
+      "fundraising": "Adományozó",
+      "fostering": "Örökbefogadás",
+      "events": "Események",
+      "transport": "Szállítás",
+      "cleaning": "Tisztítás",
+      "admin": "Admin",
+      "photography": "Fotózás",
+      "socialization": "Közösségi Média"
+    },
+    "earliest-start-date-label": "Legkorábbi kezdési dátum",
+    "experience-label": "Korábbi tapasztalatok",
+    "source-label": "Hol halottál rólunk?",
+    "source-options": {
+      "friend": "Barát",
+      "social_media": "Közösségi Média",
+      "university": "Egyetem",
+      "event": "Rendezvény",
+      "other": "Más"
+    },
+    "attachment-label": "PDF Melléklet csatolása",
+    "portfolio-label": "Portfólió",
+    "agreement-label": "Elfogadom a felhasználási feltételeket.",
+    "cancel-form": "Mégse",
+    "submit-form": "Küldés"
   }
 }

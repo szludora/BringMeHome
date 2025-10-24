@@ -44,6 +44,13 @@
     </div>
   </div>
   <div class="pt-5">
-    <a class="btn btn-secondary float-end" data-i18n="btn.join-us" href="./src/view/pages/inProgress.html"></a>
+    <button
+      class="btn btn-secondary float-end"
+      data-i18n="btn.join-us"
+      onclick="showJoinUsForm(event)"
+      id="show-join-us-btn"
+    ></button>
+    <div id="join-us-form-container"></div>
+    <script type="module" src="./src/view/landing/about.js"></script>
   </div>
 </section>

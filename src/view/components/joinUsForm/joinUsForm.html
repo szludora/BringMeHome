@@ -1,0 +1,84 @@
+<div id="sample_form_container" class="sample_form_container">
+  <form id="sample_form" class="sample_form sample_form_active">
+    <h2 id="join_use_form_title" data-i18n="joinUsForm.join-us-title">Join Us</h2>
+    <label class="main_label" id="full_name_label" for="full_name_input" data-i18n="joinUsForm.full-name-label">Full Name</label><br/>
+    <input name="fullName" required id="full_name_input" type="text" placeholder="Tibor"/><br/>
+
+    <label class="main_label" id="email_label" for="email_input" data-i18n="joinUsForm.email-label">Email</label><br/>
+    <input name="email" required id="email_input" type="email" placeholder="example@example.com"/><br/>
+
+    <label class="main_label" id="phone_label" for="phone_input" data-i18n="joinUsForm.phone-label">Phone</label><br/>
+    <input name="phone" id="phone_input" type="tel" placeholder="+00 12 345 6789"/><br/>
+
+    <label class="main_label" id="preferred_contact_method_label" for="preferred_contact_method_field_set" data-i18n="joinUsForm.preferred-contact-method-label">Please select your preferred contact method:</label><br/>
+    <fieldset id="preferred_contact_method_field_set">
+      <input type="radio" id="contactChoice1" name="contact" value="email" />
+      <label for="contactChoice1" data-i18n="joinUsForm.preferred-contact-method-options.contactChoice1">Email</label><br/>
+      <input type="radio" id="contactChoice2" name="contact" value="phone" />
+      <label for="contactChoice2" data-i18n="joinUsForm.preferred-contact-method-options.contactChoice2">Phone</label><br/>
+      <input type="radio" id="contactChoice3" name="contact" value="mail" />
+      <label for="contactChoice3" data-i18n="joinUsForm.preferred-contact-method-options.contactChoice3">SMS</label><br/>
+    </fieldset>
+
+    <label class="main_label" id="availability_label" for="availability_input" data-i18n="joinUsForm.available-day">Availability (days of week)</label><br/>
+    <div id="availability_input">
+      <input required type="radio" id="availabilityChoice1" name="availability" value="monday" />
+      <label for="availabilityChoice1" data-i18n="Days.monday">Monday</label><br/>
+      <input type="radio" id="availabilityChoice2" name="availability" value="tuesday" />
+      <label for="availabilityChoice2" data-i18n="Days.tuesday">Tuesday</label><br/>
+      <input type="radio" id="availabilityChoice3" name="availability" value="wednesday" />
+      <label for="availabilityChoice3" data-i18n="Days.wednesday">Wednesday</label><br/>
+      <input type="radio" id="availabilityChoice4" name="availability" value="thursday" />
+      <label for="availabilityChoice4" data-i18n="Days.thursday">Thursday</label><br/>
+      <input type="radio" id="availabilityChoice5" name="availability" value="friday" />
+      <label for="availabilityChoice5" data-i18n="Days.friday">Friday</label><br/>
+      <input type="radio" id="availabilityChoice6" name="availability" value="saturday" />
+      <label for="availabilityChoice6" data-i18n="Days.saturday">Saturday</label><br/>
+      <input type="radio" id="availabilityChoice7" name="availability" value="sunday" />
+      <label for="availabilityChoice7" data-i18n="Days.sunday">Sunday</label><br/>
+    </div>
+
+    <label class="main_label" id="role_label" for="role_input" data-i18n="joinUsForm.preferred-role-label">Preferred Role</label><br/>
+    <select required name="role" id="role_input">
+      <option value="fundraising" data-i18n="joinUsForm.preferred-role-options.fundraising">Fundraising</option>
+      <option value="fostering" data-i18n="joinUsForm.preferred-role-options.fostering">Fostering</option>
+      <option value="events" data-i18n="joinUsForm.preferred-role-options.events">Events</option>
+      <option value="transport" data-i18n="joinUsForm.preferred-role-options.transport">Transport</option>
+      <option value="cleaning" data-i18n="joinUsForm.preferred-role-options.cleaning">Cleaning</option>
+      <option value="admin" data-i18n="joinUsForm.preferred-role-options.admin">Admin</option>
+      <option value="photography" data-i18n="joinUsForm.preferred-role-options.photography">Photography</option>
+      <option value="socialization" data-i18n="joinUsForm.preferred-role-options.socialization">Socialization</option>
+    </select>
+
+    <label class="main_label" id="start_date_label" for="start_date_input" data-i18n="joinUsForm.earliest-start-date-label">Earliest start date</label><br/>
+    <input name="startDate" required id="start_date_input" type="date"/><br/>
+
+    <label class="main_label" id="experience_label" for="experience_input" data-i18n="joinUsForm.experience-label">Experience</label><br/>
+    <textarea name="experience" id="experience_input"></textarea><br/>
+
+    <label class="main_label" id="source_label" for="source_input" data-i18n="joinUsForm.source-label">How did you hear about us?</label><br/>
+    <select name="source" id="source_input">
+      <option value="friend" data-i18n="joinUsForm.source-options.friend">Friend</option>
+      <option value="social_media" data-i18n="joinUsForm.source-options.social_media">Social media</option>
+      <option value="university" data-i18n="joinUsForm.source-options.university">University</option>
+      <option value="event" data-i18n="joinUsForm.source-options.event">Event</option>
+      <option value="other" data-i18n="joinUsForm.source-options.other">Other</option>
+    </select>
+
+    <label class="main_label" id="attachment_label" for="attachment_input" data-i18n="joinUsForm.attachment-label">Upload Attachment</label><br/>
+    <input name="attachment" id="attachment_input" type="file" accept=".pdf,application/pdf"/><br/>
+
+    <label class="main_label" id="portfolio_label" for="portfolio_input" data-i18n="joinUsForm.portfolio-label">Your Portfolio</label><br/>
+    <input name="portfolio" id="portfolio_input" type="url"/><br/>
+
+    <input required type="checkbox" id="agreement_input" name="agreement"/>
+    <label id="agreement_label" for="agreement_input" data-i18n="joinUsForm.agreement-label">I agree to the privacy policy.</label><br/>
+
+    <div class="form_buttons">
+      <button onclick="abandonJoinUsForm()" data-i18n="joinUsForm.cancel-form">Close</button>
+      <button type="submit" onclick="submitJoinUsForm(event)" data-i18n="joinUsForm.submit-form">Submit</button><br/>
+    </div>
+
+  </form>
+  <script type="module" src="./src/view/components/joinUsForm/joinUsForm.js"></script>
+</div>
