@@ -23,13 +23,15 @@ export function abandonJoinUsForm(){
 export function submitJoinUsForm(e){
     e.preventDefault();
 
-    const form = document.getElementById('sample_form');
-
-
+    let form = document.getElementById('sample_form');
+    clearCustomErrors(form);
     if(form.checkValidity()){
+
         const fd = new FormData(form);
+
         const data = Object.fromEntries(fd.entries());
         if(validateJoinUsForm(data)){
+
             document.getElementById("sample_form").classList.toggle("slideBottomToTop");
             setTimeout(() => {
                 destroyDynamicContent(document.getElementById("join-us-form-container"));
@@ -39,8 +41,14 @@ export function submitJoinUsForm(e){
         e.stopPropagation();
         form.reportValidity();
     }
+}
 
-
+function clearCustomErrors(frm) {
+    for (const el of frm.elements) {
+        if (typeof el.setCustomValidity === 'function') {
+            el.setCustomValidity('');
+        }
+    }
 }
 
 function validateJoinUsForm(data){
