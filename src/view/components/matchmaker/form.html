@@ -1,4 +1,4 @@
-<section id="findMyMatch" class="container matchmaker mt-5" >
+<section id="findMyMatch" class="container matchmaker mt-5">
   <h2 data-i18n="matchmaker.findMyMatch" class="sectionTitle"></h2>
   <form id="matchmakerForm" class="pt-5">
     <div id="questions">
@@ -8,18 +8,30 @@
         <h2 data-i18n="matchmaker.questions.home_type"></h2>
         <div class="selectableOptions d-flex justify-content-center">
           <label for="home1">
-            <input required id="home1" class="singleOptions" type="radio" name="home_type" value="1" />
-            <img class="d-block" src="./assets/img/form/home1.png" alt="house without yard" />
+            <div class="col">
+              <input required id="home1" class="singleOptions" type="radio" name="home_type" value="1" />
+              <img class="d-block" src="./assets/img/form/home1.png" alt="house without yard" />
+              <p class="text-center pt-1" data-i18n="matchmaker.options.house.1"></p>
+            </div>
           </label>
 
           <label for="home2">
-            <input required id="home2" class="singleOptions" type="radio" name="home_type" value="2" checked default />
-            <img class="d-block" src="./assets/img/form/home2.png" alt="house with yard" />
+            <div class="col">
+              <input required id="home2" class="singleOptions" type="radio" name="home_type" value="2" checked
+                default />
+              <img class="d-block" src="./assets/img/form/home2.png" alt="house with yard" />
+              <p class="text-center pt-1" data-i18n="matchmaker.options.house.2"></p>
+
+            </div>
           </label>
 
           <label for="home3">
-            <input required id="home3" class="singleOptions" type="radio" name="home_type" value="3" />
-            <img class="d-block" src="./assets/img/form/home3.png" alt="flat" />
+            <div class="col">
+              <input required id="home3" class="singleOptions" type="radio" name="home_type" value="3" />
+              <img class="d-block" src="./assets/img/form/home3.png" alt="flat" />
+              <p class="text-center pt-1" data-i18n="matchmaker.options.house.3"></p>
+
+            </div>
           </label>
         </div>
       </div>
@@ -69,8 +81,10 @@
             <img class="img-left range-img" src="./assets/img/form/calm.png" />
             <img class="img-right range-img" src="./assets/img/form/playful.png" />
           </div>
-          <div class="w-50 m-auto mt-4">
+          <div class="w-50 m-auto mt-4 d-flex flex-row">
+            <p class="pe-3" data-i18n="matchmaker.options.style.1"></p>
             <input required type="range" class="form-range sliderMM" min="0" max="10" value="5" name="activity" />
+            <p class="ps-3" data-i18n="matchmaker.options.style.2"></p>
           </div>
         </div>
       </div>

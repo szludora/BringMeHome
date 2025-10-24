@@ -484,6 +484,17 @@
       "activity": "Which description fits you better?",
       "pet_compatibility": "Do you currently have a pet?"
     },
+    "options": {
+      "house": {
+        "1": "house",
+        "2": "house with yard",
+        "3": "flat"
+      },
+      "style": {
+        "1": "calm",
+        "2": "playful"
+      }
+    },
     "findMyMatch": "Find my cat match"
   }
 }

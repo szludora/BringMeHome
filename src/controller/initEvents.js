@@ -8,6 +8,7 @@ import {
   setupLayoutLinksForSinglePage,
   onScroll,
   refreshNavState,
+  setIsFooterVisible
 } from "./navbarAndScrollController.js";
 
 export async function initEvents() {
@@ -21,7 +22,11 @@ export async function initEvents() {
     refreshNavState();
     createTimeline();
 
-    onScroll();
+    const scrollObserver = new IntersectionObserver((e) => {
+      setIsFooterVisible(e[0].isIntersecting ? true : false);
+    });
+    scrollObserver.observe(document.getElementById("footer"));
+
     window.addEventListener("scroll", () => onScroll(), {
       passive: true,
     });

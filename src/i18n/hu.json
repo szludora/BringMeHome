@@ -487,6 +487,17 @@
       "activity": "Melyik jellemző inkább rád?",
       "pet_compatibility": "Van jelenleg háziállatod?"
     },
+    "options": {
+      "house": {
+        "1": "ház",
+        "2": "ház kerttel",
+        "3": "lakás"
+      },
+      "style": {
+        "1": "nyugodt",
+        "2": "játékos"
+      }
+    },
     "findMyMatch": "Találd meg a hozzád illő cicát"
   }
 }

@@ -48,6 +48,8 @@
   --font-h1: 48px;
   --font-h2: 32px;
   --font-h3: 26px;
+
+  --about-card-gap: 1.5rem;
 }
 
 .text-bg-primary {
