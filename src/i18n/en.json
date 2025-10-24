@@ -64,8 +64,7 @@
         "namePlaceholder": "e.g. Anna Kovács",
         "emailPlaceholder": "email@example.com",
         "saveAndContinue": "Save & Continue",
-        "openFullForm": "Full form",
-        "helpText": "Your data is stored in your browser — we do not send anything. You can complete the application on the detailed form."
+        "openFullForm": "Full form"
       },
       "savedMessage": "Interest saved in your browser — continue on the detailed form."
     }

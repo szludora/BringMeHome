@@ -107,15 +107,17 @@
           <div class="flip-card-inner">
             <div class="flip-card-front d-flex align-items-center justify-content-center text-center">
               <div class="card h-100 shadow d-flex flex-column align-items-center justify-content-center">
-                <img src="./assets/img/icons/paw.png" class="card-img-top cta-icon" alt="Jelentkezés ikon">
-                <div class="card-body text-center">
-                  <p class="card-text fw-bold" data-i18n="adopt.teaser.frontTitle"></p>
-                  <p class="small" data-i18n="adopt.teaser.frontSubtitle"></p>
+                <div class="card-body">
+                  <img src="./assets/img/icons/paw.png" class="card-img-top cta-icon" alt="Jelentkezés ikon">
                 </div>
               </div>
             </div>
             <div class="flip-card-back d-flex align-items-center justify-content-center text-center">
               <div class="card-body w-100">
+                <div class="reveal-header text-center mb-2">
+                  <div class="reveal-title" data-i18n="adopt.teaser.frontTitle"></div>
+                  <div class="reveal-sub" data-i18n="adopt.teaser.frontSubtitle"></div>
+                </div>
                 <form id="miniAdopterForm" class="text-start">
                   <div class="mb-2">
                     <label for="miniName" class="form-label" data-i18n="adopt.teaser.mini.nameLabel"></label>
@@ -127,10 +129,7 @@
                   </div>
                   <div class="d-flex gap-2 mt-2">
                     <button type="button" id="miniSubmit" class="btn btn-primary btn-sm flex-grow-1" data-i18n="adopt.teaser.mini.saveAndContinue"></button>
-                    <button type="button" id="openFullAdopter" class="btn btn-outline-secondary btn-sm flex-grow-1" data-i18n="adopt.teaser.mini.openFullForm"></button>
                   </div>
-                  <div class="form-text mt-2" data-i18n="adopt.teaser.mini.helpText"></div>
-                  <!-- translation holder for dynamic mini-saved message -->
                   <span id="miniSavedText" class="d-none" data-i18n="adopt.teaser.savedMessage"></span>
                 </form>
               </div>

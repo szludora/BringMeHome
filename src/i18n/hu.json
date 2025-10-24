@@ -64,8 +64,7 @@
         "namePlaceholder": "Pl. Kovács Anna",
         "emailPlaceholder": "email@pelda.hu",
         "saveAndContinue": "Mentés és folytatás",
-        "openFullForm": "Teljes űrlap",
-        "helpText": "Az adataid a böngésződben tárolódnak — nem küldünk semmit a háttérben. A részletes űrlapban tudod befejezni a jelentkezést."
+        "openFullForm": "Teljes űrlap"
       },
       "savedMessage": "Érdeklődés elmentve a böngésződben — folytathatod a részletes űrlapon."
     }
