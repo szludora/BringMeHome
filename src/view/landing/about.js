@@ -1,7 +1,5 @@
-// import { currentLanguage, langs } from "../../i18n/i18n.js";
-// import { loadDynamicContent, destroyDynamicContent } from "/src/controller/load.js";
-import { currentLanguage, langs } from "./src/i18n/i18n.js";
-import { loadDynamicContent, destroyDynamicContent } from "./src/controller/load.js";
+import { currentLanguage, langs } from "../../i18n/i18n.js";
+import { loadDynamicContent, destroyDynamicContent } from "../../controller/load.js";
 
 let attentionTexts = {
   hu: "Kattins, hogy kitöltsd a jelentkezési űrlapot és együtt tegyünk a változásért!",
