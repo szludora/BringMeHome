@@ -1,8 +1,7 @@
-import { currentLanguage, langs } from "../../i18n/i18n.js";
-import {
-  loadDynamicContent,
-  destroyDynamicContent,
-} from "/src/controller/load.js";
+// import { currentLanguage, langs } from "../../i18n/i18n.js";
+// import { loadDynamicContent, destroyDynamicContent } from "/src/controller/load.js";
+import { currentLanguage, langs } from "./src/i18n/i18n.js";
+import { loadDynamicContent, destroyDynamicContent } from "./src/controller/load.js";
 
 let attentionTexts = {
   hu: "Kattins, hogy kitöltsd a jelentkezési űrlapot és együtt tegyünk a változásért!",
@@ -29,8 +28,7 @@ function continueTyping() {
 }
 
 function typeWriter() {
-  currentText =
-    currentLanguage == langs.en ? attentionTexts.en : attentionTexts.hu;
+  currentText = currentLanguage == langs.en ? attentionTexts.en : attentionTexts.hu;
   if (currentText.length < 1) return;
 
   if (i < currentText.length) {
@@ -48,10 +46,7 @@ export async function unLoad() {
 }
 
 export function showJoinUsForm(event) {
-  loadDynamicContent(
-    "./src/view/components/joinUsForm/joinUsForm.html",
-    document.getElementById("join-us-form-container")
-  );
+  loadDynamicContent("./src/view/components/joinUsForm/joinUsForm.html", document.getElementById("join-us-form-container"));
   event.target.disabled = true;
 }
 
@@ -72,13 +67,9 @@ export function submitJoinUsForm(e) {
 
     const data = Object.fromEntries(fd.entries());
     if (validateJoinUsForm(data)) {
-      document
-        .getElementById("sample_form")
-        .classList.toggle("slideBottomToTop");
+      document.getElementById("sample_form").classList.toggle("slideBottomToTop");
       setTimeout(() => {
-        destroyDynamicContent(
-          document.getElementById("join-us-form-container")
-        );
+        destroyDynamicContent(document.getElementById("join-us-form-container"));
       }, 900);
     }
   } else {
