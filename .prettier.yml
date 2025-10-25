@@ -1,0 +1,26 @@
+name: Prettier format & commit
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  push:
+    branches: [main]
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Install deps
+        run: npm ci
+      - name: Run Prettier and commit changes
+        uses: styfle/prettier-action@v4
+        with:
+          prettier_options: "--config .prettierrc --ignore-path .prettierignore"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          commit: true

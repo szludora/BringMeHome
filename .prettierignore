@@ -3,3 +3,11 @@
 
 *snackbar.js
 *.html
+
+node_modules
+dist
+build
+coverage
+*.lock
+.vscode
+.git
