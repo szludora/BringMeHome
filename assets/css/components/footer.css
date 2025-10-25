@@ -2,13 +2,13 @@
   color: var(--color-bg-body);
 }
 
-iframe {
+#footer iframe {
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
   transition-delay: 0.2s;
 }
 
-iframe:hover {
+#footer iframe:hover {
   width: 300px;
   border-radius: 0.8rem;
 }
